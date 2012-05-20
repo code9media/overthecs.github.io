@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        * Author:         OverAPI
+        -->
+        <meta charset="utf-8" />
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+        <meta name="generator" content="Jekyll" />
+        <meta name="author" content="{{ site.author.name }}" />
+        <meta name="description" content="{{ site.description }}" />
+        <link rel="stylesheet" href="/static/css/default.css" type="text/css" />
+        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="/static/js/jquery.1.7.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.quicksearch.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <a id="logo" href="">OverAPI.com</a>
+            <ul id="navlist" class="nav">
+                <li class="active"><a href="">jQuery</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">Javascript</a></li>
+                <li><a href="">PHP</a></li>
+                <li><input type="" id="searchApi" placeholder="search"/></li>
+            </ul>
+        </div>
+    {{ content }}
+
+        <script type="text/javascript">
+            $(function(){
+                $('.board-content').masonry({
+                    // options
+                    itemSelector : '.board-card'
+                    ,isAnimated: !$.browser.msie
+                });
+
+                var color = [
+                    '#d355de'
+                    ,'#a4f527'
+                    ,'#e23a99'
+                    ,'#17ef6b'
+                    ,'#5e85d8'
+                    ,'#ffda29'
+                    ,'#ff4d93'
+                    ,'#a7cc44'
+                    ,'#8cecce'
+                    ,'#4f9ed6'
+                    ,'#ff864b'
+                    ,'#b55de0'
+                    ,'#24bae3'
+                ]
+
+                $.each($('.board'),function(index,item){
+                    var i = index % color.length;
+                    $(item).css('backgroundColor',color[i]);
+                });
+
+                $('.board').delegate('a','click',function(e){
+                    e.preventDefault()
+                    var target = e.target;
+                    if(!$(this).parent().hasClass('inactive')){
+                        window.open($(target).attr('href'));
+                    }
+                });
+
+                $(window).bind('keydown',function (e) {
+                    if (!e.metaKey && !e.shiftKey && !e.ctrlKey && !e.altKey && e.keyCode != 27 && !$('#searchApi').is(':focus')) {
+                        $('#searchApi').focus();
+                    }
+                });
+
+                $('#searchApi').quicksearch('.board-card li', {
+                    onAfter: function () {
+                        var $cards = $('.board-card');
+                        var $boards = $('.board');
+
+                        $cards.each(function (index) {
+                            if (!$(this).find('li:not(.inactive)').length) {
+                                $(this).children('h3').addClass('inactive');
+                            } else {
+                                $(this).children('h3').removeClass('inactive');
+                            }
+                        });
+                        $boards.each(function(index){
+                            if (!$(this).find('h3:not(.inactive)').length) {
+                                $.browser.msie?$(this).hide():$(this).slideUp()
+                            }else{
+                                $.browser.msie?$(this).show():$(this).slideDown()
+                            }
+                        });
+                    }
+                    ,hide: function () {
+                        $(this).addClass('inactive')
+                    }
+                    ,show: function () {
+                        $(this).removeClass('inactive')
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

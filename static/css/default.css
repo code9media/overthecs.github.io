@@ -1,0 +1,71 @@
+/**
+ *
+ * Author:           OverAPI
+ * Contact:          OverAPI.com
+ *
+ */
+
+/* 重置浏览器CSS */
+html{color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body,button,input,select,textarea{font-size:12px/1.5;}
+input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}
+fieldset,img,a img{border:0;}
+iframe{display:block;}
+abbr,acronym{border:0;font-variant:normal;}
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:500;}
+ol,ul {list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+q:before,q:after {content:'';}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{zoom:1; /* for IE6 IE7 */}
+body .hide{display:none;}
+.left,.right{display:inline;}
+.left{float:left;}
+.right{float:right;}
+
+
+/***********default settings**********/
+html{background:#2c2c2c;}
+body {background:#F8F8F0;background:#2c2c2c;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+.index{margin:30px auto;color:#fff;width:600px;}
+.index h1{font-size:38px;margin-bottom:35px;}
+.index-title{font-size:38px;border-bottom:1px solid #777;margin-bottom:15px;}
+.index-content{margin-bottom:50px;overflow:hidden;zoom:1;}
+.index-content li{float:left;margin:5px;font-size:18px;}
+.index-content li a{color:#000;text-decoration:none;display:block;padding:20px 20px;}
+.index-content li a:hover{color:#000;background:#fff;}
+.index-item{font-size:18px;margin-bottom:15px;}
+.index-item a{color:red}
+
+
+#navbar{position:fixed;background:#2c2c2c;height:40px;line-height:40px;color:#999;width:100%;opacity:0.9;filter:alpha(opacity=90);z-index:100;}
+#navbar a{color:#999;text-decoration:none;font-size:14px;}
+#navbar a:visited{color:#999;}
+#navbar a:hover{color:#fff;}
+#navbar a#logo{color:#fff;font-size:18px;font-weight:bold;float:left;margin-right:20px;margin-left:15px;}
+#navlist{float:left;}
+.nav li{float:left;margin-right:5px;padding:0 5px;}
+.nav li a{display:block;}
+#navlist li.active a{font-size:15px;font-weight:bold;color:#fff;}
+#searchApi{margin-left:30px;border:1px solid #ccc;border-radius:3px;font-size:12px;line-height:20px;padding:0 5px;width:150px;}
+
+
+.content{padding-top:35px;}
+.board{background:#f8f8f0;border-radius:8px;margin:15px 40px;;padding:20px;}
+.board-title{font-size:28px;font-weight:bold;padding-right:10px;margin-bottom:5px;text-align:right}
+.board-card{float:left;display:block;margin:5px;}
+.board-card a{font-size:14px;color:#000;text-decoration:none;display:block;}
+.board-card a:hover{background:#2c2c2c;color:#fff;}
+.board-card-title{font-size:16px;font-weight:bold;}
+.board-card h3.inactive{color:#777;}
+.board-card li.inactive a{color:#777;cursor:default;font-size:8px;font-size:12px\9;}
+.board-card li.inactive a:hover{color:#777;background:none;}
