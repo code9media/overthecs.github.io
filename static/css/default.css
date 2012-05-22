@@ -64,7 +64,7 @@ body {background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-fa
 .board{border-radius:8px;margin:5px 8px;padding:15px;width:200px;color:#fff;}
 .content-250{margin:0 30px;margin:0 28px\9;}
 .content-250 .board{width:250px;margin:5px 10px;}
-.board-title{font-size:28px;font-weight:bold;padding-right:10px;margin-bottom:5px;text-align:right;}
+.board-title{font-size:28px;font-weight:bold;padding-right:10px;margin-bottom:5px;text-align:right;border-bottom:1px solid #ccc;padding-bottom:3px;}
 .board-card{margin-bottom:15px;word-break:break-all}
 .board-card a{font-size:14px;color:#fff;text-decoration:none;display:block;}
 .board-card a:hover{background:#ccc;color:#000;}
