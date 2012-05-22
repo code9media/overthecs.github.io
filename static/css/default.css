@@ -33,8 +33,8 @@ body .hide{display:none;}
 
 
 /***********default settings**********/
-html{background:#2c2c2c;}
-body {background:#F8F8F0;background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+html{background:#000 url(/static/images/background.jpg) fixed 100% 100%;}
+body {background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
 /*body {background:#F8F8F0;background:#000;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}*/
 
 .index{margin:30px auto;color:#fff;width:600px;}
