@@ -32,15 +32,24 @@
 
         <script type="text/javascript">
             $(function(){
-                $('.board-content').masonry({
+                $('.content').masonry({
                     // options
-                    itemSelector : '.board-card'
+                    itemSelector : '.board'
                     ,isAnimated: !$.browser.msie
                 });
 
                 var color = [
-                    '#d355de'
-                    ,'#a4f527'
+                    '#e797d1'
+
+                    ,'#e5ddf3'
+                    ,'#f1f9f8'
+                    ,'#edfccc'
+                    ,'#f9e1ef'
+                    ,'#d8e5d4'
+                    ,'#bcbef3'
+                    ,'#f5cdaa'
+                    ,'#98a2fd'
+
                     ,'#e23a99'
                     ,'#17ef6b'
                     ,'#5e85d8'
@@ -54,9 +63,20 @@
                     ,'#24bae3'
                 ]
 
+                var rgba = [
+                    'rgba(251,34,240,0.25)'
+                    ,'rgba(214,17,21,0.25)'
+                    ,'rgba(14,251,252,0.25)'
+                    ,'rgba(158,134,255,0.25)'
+                    ,'rgba(60,255,20,0.25)'
+                    ,'rgba(44,158,52,0.25)'
+                    ,'rgba(225,211,20,0.25)'
+                    ,'rgba(100,117,121,0.25)'
+                ];
+
                 $.each($('.board'),function(index,item){
-                    var i = index % color.length;
-                    $(item).css('backgroundColor',color[i]);
+                    var i = index % rgba.length;
+                    $(item).css('background',rgba[i]);
                 });
 
                 $('.board').delegate('a','click',function(e){
@@ -67,7 +87,7 @@
                     }
                 });
 
-                $(window).bind('keydown',function (e) {
+                $('body').bind('keydown',function (e) {
                     if (!e.metaKey && !e.shiftKey && !e.ctrlKey && !e.altKey && e.keyCode != 27 && !$('#searchApi').is(':focus')) {
                         $('#searchApi').focus();
                     }
@@ -85,6 +105,7 @@
                                 $(this).children('h3').removeClass('inactive');
                             }
                         });
+                        /*
                         $boards.each(function(index){
                             if (!$(this).find('h3:not(.inactive)').length) {
                                 $.browser.msie?$(this).hide():$(this).slideUp()
@@ -92,6 +113,7 @@
                                 $.browser.msie?$(this).show():$(this).slideDown()
                             }
                         });
+                        */
                     }
                     ,hide: function () {
                         $(this).addClass('inactive')

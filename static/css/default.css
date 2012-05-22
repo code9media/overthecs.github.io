@@ -34,7 +34,8 @@ body .hide{display:none;}
 
 /***********default settings**********/
 html{background:#2c2c2c;}
-body {background:#F8F8F0;background:#2c2c2c;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+body {background:#F8F8F0;background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+/*body {background:#F8F8F0;background:#000;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}*/
 
 .index{margin:30px auto;color:#fff;width:600px;}
 .index h1{font-size:38px;margin-bottom:35px;}
@@ -47,7 +48,7 @@ body {background:#F8F8F0;background:#2c2c2c;font-family:"Helvetica Neue",Helveti
 .index-item a{color:red}
 
 
-#navbar{position:fixed;background:#2c2c2c;height:40px;line-height:40px;color:#999;width:100%;opacity:0.9;filter:alpha(opacity=90);z-index:100;}
+#navbar{position:fixed;background:#000;background:rgba(0,0,0,0.6);height:40px;line-height:40px;color:#999;width:100%;filter:alpha(opacity=60);z-index:100;}
 #navbar a{color:#999;text-decoration:none;font-size:14px;}
 #navbar a:visited{color:#999;}
 #navbar a:hover{color:#fff;}
@@ -59,13 +60,15 @@ body {background:#F8F8F0;background:#2c2c2c;font-family:"Helvetica Neue",Helveti
 #searchApi{margin-left:30px;border:1px solid #ccc;border-radius:3px;font-size:12px;line-height:20px;padding:0 5px;width:150px;}
 
 
-.content{padding-top:35px;}
-.board{background:#f8f8f0;border-radius:8px;margin:15px 40px;;padding:20px;}
-.board-title{font-size:28px;font-weight:bold;padding-right:10px;margin-bottom:5px;text-align:right}
-.board-card{float:left;display:block;margin:5px;}
-.board-card a{font-size:14px;color:#000;text-decoration:none;display:block;}
-.board-card a:hover{background:#2c2c2c;color:#fff;}
+.content{padding-top:45px;margin:0 15px;margin:0 10px\9;}
+.board{border-radius:8px;margin:5px 8px;padding:15px;width:200px;color:#fff;}
+.content-250{margin:0 30px;margin:0 28px\9;}
+.content-250 .board{width:250px;margin:5px 10px;}
+.board-title{font-size:28px;font-weight:bold;padding-right:10px;margin-bottom:5px;text-align:right;}
+.board-card{margin-bottom:15px;word-break:break-all}
+.board-card a{font-size:14px;color:#fff;text-decoration:none;display:block;}
+.board-card a:hover{background:#ccc;color:#000;}
 .board-card-title{font-size:16px;font-weight:bold;}
-.board-card h3.inactive{color:#777;}
-.board-card li.inactive a{color:#777;cursor:default;font-size:8px;font-size:12px\9;}
-.board-card li.inactive a:hover{color:#777;background:none;}
+.board-card h3.inactive{color:#666;}
+.board-card li.inactive a{color:#666;cursor:default;}
+.board-card li.inactive a:hover{color:#666;background:none;}
