@@ -76,7 +76,8 @@
                 ];
 
                 $.each($('.board'),function(index,item){
-                    var i = index % rgba.length;
+                    var charCode = location.pathname.substr(1).charCodeAt()
+                    var i = index+charCode % rgba.length;
                     $(item).css('background',rgba[i]);
                 });
 
@@ -147,6 +148,12 @@
                     ,show: function () {
                         $(this).removeClass('inactive')
                     }
+                });
+
+                var pathname = location.pathname.substr(1).toLowerCase();
+                $('#navList a').each(function(index){
+                    $(this).text().toLoweCase() == pathname;
+                    $(this).parent().addClass('active')
                 });
             });
         </script>
