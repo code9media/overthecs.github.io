@@ -152,7 +152,7 @@
 
                 var pathname = location.pathname.substr(1).toLowerCase();
                 $('#navlist a').each(function(index){
-                    $(this).text().toLoweCase() == pathname;
+                    $(this).text().toLowerCase() == pathname;
                     $(this).parent().addClass('active')
                 });
             });
