@@ -70,5 +70,7 @@ body {background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-fa
 .board-card a:hover{background:#ccc;color:#000;}
 .board-card-title{font-size:16px;font-weight:bold;}
 .board-card h3.inactive{color:#666;}
+.board-card li.tip{color:#999;padding-left:15px;}
+.board-card li.inactive {color:#666;cursor:default;}
 .board-card li.inactive a{color:#666;cursor:default;}
 .board-card li.inactive a:hover{color:#666;background:none;}
