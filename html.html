@@ -194,7 +194,7 @@ title:     HTML Cheatsheet
     <div class="board">
         <h2 class="board-title">HTML Events</h2>
         <div class="board-card">
-            <h3 class="board-card-title">&lt;body&gt;and&lt;frameset&gt;Events</h3>
+            <h3 class="board-card-title">&lt;body&gt;Events</h3>
             <ul>
                 <li><span title="Script to be run when a document load">onload</span></li>
                 <li><span title="Script to be run when a document load">Script to be run when a document unload</span></li>
@@ -232,7 +232,7 @@ title:     HTML Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Status Messages</h2>
+        <h2 class="board-title">Status 1XX</h2>
         <div class="board-card">
             <h3 class="board-card-title">1XX:Information</h3>
             <ul>
@@ -325,6 +325,118 @@ title:     HTML Cheatsheet
                 <li class="tip">The server cannot meet the requirements of the Expect request-header field</li>
             </ul>
         </div>
+        <div class="board-card">
+            <h3 class="board-card-title">5XX:Server Error</h3>
+            <ul>
+                <li>500 Internal Server Error</li>
+                <li class="tip">A generic error message, given when no more specific message is suitable</li>
+                <li>501 Not Implemented</li>
+                <li class="tip">The server either does not recognize the request method, or it lacks the ability to fulfill the request</li>
+                <li>502 Bad Gateway</li>
+                <li class="tip">The server was acting as a gateway or proxy and received an invalid response from the upstream server</li>
+                <li>503 Service Unavailable</li>
+                <li class="tip">The server is currently unavailable (overloaded or down)</li>
+                <li>504 Gateway Timeout</li>
+                <li class="tip">The server was acting as a gateway or proxy and did not receive a timely response from the upstream server</li>
+                <li>505 HTTP Version Not Supported</li>
+                <li class="tip">The server does not support the HTTP protocol version used in the request</li>
+                <li>511 Network Authentication Required</li>
+                <li class="tip">The client needs to authenticate to gain network access</li>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Status 2XX</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">2XX:Successful</h3>
+            <ul>
+                <li>200 OK</li>
+                <li class="tip">The request is OK (this is the standard response for successful HTTP requests)</li>
+                <li>201 Created</li>
+                <li class="tip">The request has been fulfilled, and a new resource is created</li>
+                <li>202 Accepted</li>
+                <li class="tip">The request has been accepted for processing, but the processing has not been completed</li>
+                <li>203 Non-Authoritative Information</li>
+                <li class="tip">The request has been successfully processed, but is returning information that may be from another source</li>
+                <li>204 No Content</li>
+                <li class="tip">The request has been successfully processed, but is not returning any content</li>
+                <li>205 Reset Content</li>
+                <li class="tip">The request has been successfully processed, but is not returning any content, and requires that the requester reset the document view</li>
+                <li>206 Partial Content</li>
+                <li class="tip">The server is delivering only part of the resource due to a range header sent by the client</li>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Status 3XX</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">3XX:Redirection</h3>
+            <ul>
+                <li>300 Multiple Choices</li>
+                <li class="tip">A link list. The user can select a link and go to that location. Maximum five addresses</li>
+                <li>301 Moved Permanently</li>
+                <li class="tip">The requested page has moved to a new URL</li>
+                <li>302 Found</li>
+                <li class="tip">The requested page has moved temporarily to a new URL</li>
+                <li>303 See Other</li>
+                <li class="tip">The requested page can be found under a different URL</li>
+                <li>304 Not Modified</li>
+                <li class="tip">Indicates the requested page has not been modified since last requested</li>
+                <li>306 Switch Proxy</li>
+                <li class="tip"><i>No longer used</i></li>
+                <li>307 Temporary Redirect</li>
+                <li class="tip">The requested page has moved temporarily to a new URL</li>
+                <li>308 Resume Incomplete</li>
+                <li class="tip">Used in the resumable requests proposal to resume aborted PUT or POST requests</li>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Status 4XX</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">4XX:Client Error</h3>
+            <ul>
+                <li>400 Bad Request</li>
+                <li class="tip">The request cannot be fulfilled due to bad syntax</li>
+                <li>401 Unauthorized</li>
+                <li class="tip">The request was a legal request, but the server is refusing to respond to it. For use when authentication is possible but has failed or not yet been provided</li>
+                <li>402 Payment Required</li>
+                <li class="tip">Reserved for future use</li>
+                <li>403 Forbidden</li>
+                <li class="tip">The request was a legal request, but the server is refusing to respond to it</li>
+                <li>404 Not Found</li>
+                <li class="tip">The requested page could not be found but may be available again in the future</li>
+                <li>405 Method Not Allowed</li>
+                <li class="tip">A request was made of a page using a request method not supported by that page</li>
+                <li>406 Not Acceptable</li>
+                <li class="tip">The server can only generate a response that is not accepted by the client</li>
+                <li>407 Proxy Authentication Required</li>
+                <li class="tip">The client must first authenticate itself with the proxy</li>
+                <li>408 Request Timeout</li>
+                <li class="tip">The server timed out waiting for the request</li>
+                <li>409 Conflict</li>
+                <li class="tip">The request could not be completed because of a conflict in the request</li>
+                <li>410 Gone</li>
+                <li class="tip">The requested page is no longer available</li>
+                <li>411 Length Required</li>
+                <li class="tip">The "Content-Length" is not defined. The server will not accept the request without it</li>
+                <li>412 Precondition Failed</li>
+                <li class="tip">The precondition given in the request evaluated to false by the server</li>
+                <li>413 Request Entity Too Large</li>
+                <li class="tip">The server will not accept the request, because the request entity is too large</li>
+                <li>414 Request-URI Too Long</li>
+                <li class="tip">The server will not accept the request, because the URL is too long. Occurs when you convert a POST request to a GET request with a long query information</li>
+                <li>415 Unsupported Media Type</li>
+                <li class="tip">The server will not accept the request, because the media type is not supported </li>
+                <li>416 Requested Range Not Satisfiable</li>
+                <li class="tip">The client has asked for a portion of the file, but the server cannot supply that portion</li>
+                <li>417 Expectation Failed</li>
+                <li class="tip">The server cannot meet the requirements of the Expect request-header field</li>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Status 5XX</h2>
         <div class="board-card">
             <h3 class="board-card-title">5XX:Server Error</h3>
             <ul>
