@@ -1,0 +1,748 @@
+---
+layout:    default 
+title:     HTML-DOM Cheatsheet 
+---
+
+<div class="content">
+
+    <div class="board">
+        <h2 class="board-title">DOM Events</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Mouse Events</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_onclick.asp" title="The event occurs when the user clicks on an element">click</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_ondblclick.asp" title="The event occurs when the user double-clicks on an element">dblclick</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onmousedown.asp" title="The event occurs when a user presses a mouse button over an element">mousedown</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onmousemove.asp" title="The event occurs when a user moves the mouse pointer over an element">mousemove</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onmouseover.asp" title="The event occurs when a user mouse over an element">mouseover</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onmouseout.asp" title="The event occurs when a user moves the mouse pointer out of an element">mouseout</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onmouseup.asp" title="The event occurs when a user releases a mouse button over an element">mouseup</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Keyboard Events</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_onkeydown.asp" title="The event occurs when the user is pressing a key or holding down a key">keydown</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onkeypress.asp" title="The event occurs when the user is pressing a key or holding down a key">keypress</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onkeyup.asp" title="The event occurs when a keyboard key is released">keyup</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Frame Events</h3>
+            <ul>
+                <li><span title="The event occurs when an image is stopped from loading before completely loaded (for &lt;object&gt;)">abort</span></li>
+                <li><span title="The event occurs when an image does not load properly">error</span></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onload.asp" title="The event occurs when a document, frameset, or &lt;object&gt; has been loaded">load</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onresize.asp" title="The event occurs when a document view is resized">resize</a></li>
+                <li><span title="The event occurs when a document view is scrolled">scroll</span></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onunload.asp" title="The event occurs when a document is removed from a window or frame (for &lt;body&gt; and &lt;frameset&gt;)">unload</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Form Events</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_onblur.asp" title="The event occurs when a form element loses focus">blur</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onchange.asp" title="The event occurs when the content of a form element, the selection, or the checked state have changed (for &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt;)">change</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onfocus.asp" title="The event occurs when an element gets focus (for &lt;label&gt;, &lt;input&gt;, &lt;select&gt;, textarea&gt;, and &lt;button&gt;)">focus</a></li>
+                <li><span title="onreset">reset</span></li>
+                <li><a href="http://www.w3schools.com/jsref/event_onselect.asp" title="The event occurs when a user selects some&nbsp; text (for &lt;input&gt; and &lt;textarea&gt;)">select</a></li>
+                <li><span title="The event occurs when a form is submitted">onsubmit</span></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Event Object Constant</h3>
+            <ul>
+                <li><span title="The current event is in the target phase, i.e. it is being evaluated at the event target (1)">AT_TARGET</span></li>
+                <li><span title="The current event phase is the bubbling phase (2)">BUBBLING_PHASE</span></li>
+                <li><span title="The current event phase is the capture phase (3)">CAPTURING_PHASE</span></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Event Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_bubbles.asp" title="Returns whether or not an event is a bubbling event">bubbles</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_cancelable.asp" title="Returns whether or not an event can have its default action prevented">cancelable</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_currenttarget.asp" title="Returns the element whose event listeners triggered the event">currentTarget</a></li>
+                <li><span title="Returns which phase of the event flow is currently being evaluated">eventPhase</span></li>
+                <li><a href="http://www.w3schools.com/jsref/event_target.asp" title="Returns the element that triggered the event">target</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_timestamp.asp" title="Returns the time (in milliseconds relative to the epoch) at which the event was created">timeStamp</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_type.asp" title="Returns the name of the event">type</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Event Object Methods</h3>
+            <ul>
+                <li><span title="Specifies the event type, whether or not the event can bubble, whether or not the event's default action can be prevented">initEvent()</span></li>
+                <li><span title="To cancel the event if it is cancelable, meaning that any default action normally taken by the implementation as a result of the event will not occur">preventDefault()</span></li>
+                <li><span title="To prevent further propagation of an event during event flow">stopPropagation()</span></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">EventTarget Object</h3>
+            <ul>
+                <li><span title="Allows the registration of event listeners on the event target (IE8 = attachEvent())">addEventListener()</span></li>
+                <li><span title="Allows to send the event to the subscribed event listeners (IE8 = fireEvent())">dispatchEvent()</span></li>
+                <li><span title="Allows the removal of event listeners on the event target (IE8 = detachEvent())">removeEventListener()</span></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">EventListener Object</h3>
+            <ul>
+                <li><span title="Called whenever an event occurs of the event type for which the EventListener interface was registered">handleEvent()</span></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">MouseEvent/KeyboardEvent Object</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_altkey.asp" title="Returns whether or not the "ALT" key was pressed when an event was triggered">altKey</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_button.asp" title="Returns which mouse button was clicked when an event was triggered">button</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_clientx.asp" title="Returns the horizontal coordinate of the mouse pointer, relative to the current window, when an event was triggered">clientX</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_clienty.asp" title="Returns the vertical coordinate of the mouse pointer, relative to the current window, when an event was triggered">clientY</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_ctrlkey.asp" title="Returns whether or not the "CTRL" key was pressed when an event was triggered">ctrlKey</a></li>
+                <li><span title="Returns the identifier of a key">keyIdentifier</span></li>
+                <li><span title="Returns the location of the key on the advice">keyLocation</span></li>
+                <li><a href="http://www.w3schools.com/jsref/event_metakey.asp" title="Returns whether or not the "meta" key was pressed when an event was triggered">metaKey</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_relatedtarget.asp" title="Returns the element related to the element that triggered the event">relatedTarget</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_screenx.asp" title="Returns the horizontal coordinate of the mouse pointer, relative to the screen, when an event was triggered">screenX</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_screeny.asp" title="Returns the vertical coordinate of the mouse pointer, relative to the screen, when an event was triggered">screenY</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_shiftkey.asp" title="Returns whether or not the "SHIFT" key was pressed when an event was triggered">shiftKey</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">MouseEvent/KeyboardEvent Methods</h3>
+            <ul>
+                <li><span title="Initializes the value of a MouseEvent object">initMouseEvent()</span></li>
+                <li><span title="Initializes the value of a KeyboardEvent object">initKeyboardEvent()</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">HTML DOM</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Elements Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_accesskey.asp" title="Sets or returns an accesskey for an element">accessKey</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_classname.asp" title="Sets or returns the class attribute of an element">className</a></li>
+                <li><span title="Returns the viewable height of the content on a page (not including borders, margins, or scrollbars)">clientHeight</span></li>
+                <li><span title="Returns the viewable width of the content on a page (not including borders, margins, or scrollbars)">clientWidth</span></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_dir.asp" title="Sets or returns the text direction of an element">dir</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_id.asp" title="Sets or returns the id of an element">id</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_innerhtml.asp" title="Sets or returns the HTML contents (+text) of an element">innerHTML</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_lang.asp" title="Sets or returns the language code for an element">lang</a></li>
+                <li><span title="Returns the height of an element, including borders and padding if any, but not margins">offsetHeight</span></li>
+                <li><span title="Returns the horizontal offset position of the current element relative to its offset container">offsetLeft</span></li>
+                <li><span title="Returns the offset container of an element">offsetParent</span></li>
+                <li><span title="Returns the vertical offset position of the current element relative to its offset container">offsetTop</span></li>
+                <li><span title="Returns the width of an element, including borders and padding if any, but not margins">offsetWidth</span></li>
+                <li><span title="Returns the entire height of an element (including areas hidden with scrollbars)">scrollHeight</span></li>
+                <li><span title="Returns the distance between the actual left edge of an element and its left edge currently in view">scrollLeft</span></li>
+                <li><span title="Returns the distance between the actual top edge of an element and its top edge currently in view">scrollTop</span></li>
+                <li><span title="Returns the entire width of an element (including areas hidden with scrollbars)">scrollWidth</span></li>
+                <li><span title="Sets or returns the style attribute of an element">style</span></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_tabindex.asp" title="Sets or returns the tab order of an element">tabIndex</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_html_title.asp" title="Sets or returns the title attribute of an element">title</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Elements Methods</h3>
+            <ul>
+                <li><span title="Converts an element to a string">toString()</span></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">Document Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/coll_doc_anchors.asp" title="Returns a collection of all the anchors in the document">anchors</a></li>
+                <li><span title="Returns a collection of all the applets in the document">applets</span></li>
+                <li><span title="Returns the body element of the document">body</span></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_cookie.asp" title="Returns all name/value pairs of cookies in the document">cookie</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_documentmode.asp" title="Returns the mode used by the browser to render the document">documentMode</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_domain.asp" title="Returns the domain name of the server that loaded the document">domain</a></li>
+                <li><a href="http://www.w3schools.com/jsref/coll_doc_forms.asp" title="Returns a collection of all the forms in the document">forms</a></li>
+                <li><a href="http://www.w3schools.com/jsref/coll_doc_images.asp" title="Returns a collection of all the images in the document">images</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_lastmodified.asp" title="Returns the date and time the document was last modified">lastModified</a></li>
+                <li><a href="http://www.w3schools.com/jsref/coll_doc_links.asp" title="Returns a collection of all the links in the document">links</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_readystate.asp" title="Returns the (loading) status of the document">readyState</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_referrer.asp" title="Returns the URL of the document that loaded the current document">referrer</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_title.asp" title="Sets or returns the title of the document">title</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_doc_url.asp" title="Returns the full URL of the document">URL</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Document Methods</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/met_doc_close.asp" title="Closes the output stream previously opened with document.open()">close()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_doc_getelementsbyname.asp" title="Accesses all elements with a specified name">getElementsByName()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_doc_open.asp" title="Opens an output stream to collect the output from document.write() or document.writeln()">open()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_doc_write.asp" title="Writes HTML expressions or JavaScript code to a document">write()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_doc_writeln.asp" title="Same as write(), but adds a newline character after each statement">writeln()</a></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">HTML Object Properties</h3>
+            <ul>
+                <li><span title="Sets or returns the alignment of the object according to the surrounding text">align</span></li>
+                <li><span title="Sets or returns a string that can be used to implement your own archive functionality for the object">archive</span></li>
+                <li><span title="Sets or returns the border around the object">border</span></li>
+                <li><span title="Sets or returns the URL of the file that contains the compiled Java class">code</span></li>
+                <li><span title="Sets or returns the URL of the component">codeBase</span></li>
+                <li><span>codeType</span></li>
+                <li><span>data</span></li>
+                <li><span>declare</span></li>
+                <li><span title="Returns a reference to the object's parent form">form</span></li>
+                <li><span title="Sets or returns the height of the object">height</span></li>
+                <li><span title="Sets or returns the horizontal margin of the object">hspace</span></li>
+                <li><span title="Sets or returns the name of the object">name</span></li>
+                <li><span title="Sets or returns a message when loading the object">standby</span></li>
+                <li><span title="Sets or returns the content type for data downloaded via the data attribute">type</span></li>
+                <li><span>useMap</span></li>
+                <li><span title="Sets or returns the vertical margin of the object">vspace</span></li>
+                <li><span title="Sets or returns the width of the object">width</span></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Area Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_alt.asp" title="Sets or returns the value of the alt attribute of an area">alt</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_coords.asp" title="Sets or returns the value of the coords attribute of an area">coords</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_hash.asp" title="Sets or returns the anchor part of the href attribute value">hash</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_host.asp" title="Sets or returns the hostname:port part of the href attribute value">host</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_hostname.asp" title="Sets or returns the hostname part of the href attribute value">hostname</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_href.asp" title="Sets or returns the value of the href attribute of an area">href</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_nohref.asp" title="Sets or returns the value of the nohref attribute of an area">noHref</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_pathname.asp" title="Sets or returns the pathname part of the href attribute value">pathname</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_port.asp" title="Sets or returns the port part of the href attribute value">port</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_protocol.asp" title="Sets or returns the protocol part of the href attribute value">protocol</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_search.asp" title="Sets or returns the querystring part of the href attribute value">search</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_shape.asp" title="Sets or returns the value of the shape attribute of an area">shape</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_area_target.asp" title="Sets or returns the value of the target attribute of an area">target</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Base Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_base_href.asp" title="Sets or returns the value of the href attribute in a base element">href</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_base_target.asp" title="Sets or returns the value of the target attribute in a base element">target</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Body Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_body_alink.asp" title="Sets or returns the value of the alink attribute of the body element">aLink</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_body_background.asp" title="Sets or returns the value of the background attribute of the body element">background</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_body_bgcolor.asp" title="Sets or returns the value of the bgcolor attribute of the body element">bgColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_body_link.asp" title="Sets or returns the value of the link attribute of the body element">link</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_body_text.asp" title="Sets or returns the value of the text attribute of the body element">text</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_body_vlink.asp" title="Sets or returns the value of the vlink attribute of the body element">vLink</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Frame Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_iframe_align.asp" title="Sets or returns the value of the align attribute in an iframe">align</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_contentdocument.asp" title="Returns the document object generated by a frame/iframe">contentDocument</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_contentwindow.asp" title="Returns the window object generated by a frame/iframe">contentWindow</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_frameborder.asp" title="Sets or returns the value of the frameborder attribute in a frame/iframe">frameBorder</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_iframe_height.asp" title="Sets or returns the value of the height attribute in an iframe">height</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_longdesc.asp" title="Sets or returns the value of the longdesc attribute in a frame/iframe">longDesc</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_marginheight.asp" title="Sets or returns the value of the marginheight attribute in a frame/iframe">marginHeight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_marginwidth.asp" title="Sets or returns the value of the marginwidth attribute in a frame/iframe">marginWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_name.asp" title="Sets or returns the value of the name attribute in a frame/iframe">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_noresize.asp" title="Sets or returns the value of the noresize attribute in a frame">noResize</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_scrolling.asp" title="Sets or returns the value of the scrolling attribute in a frame/iframe">scrolling</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_frame_src.asp" title="Sets or returns the value of the src attribute in a frame/iframe">src</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_iframe_width.asp" title="Sets or returns the value of the width attribute in an iframe">width</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Meta Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_meta_content.asp" title="Sets or returns the value of the content attribute of a meta element">content</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_meta_httpequiv.asp" title="Sets or returns an HTTP header for the information in the content attribute">httpEquiv</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_meta_name.asp" title="Sets or returns a name for the information in the content attribute">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_meta_scheme.asp" title="Sets or returns how the value of content should be interpreted">scheme</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">DOM Input</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Button Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_button_disabled.asp" title="Sets or returns whether a button is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_button_form.asp" title="Returns a reference to the form that contains the input button">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_button_name.asp" title="Sets or returns the value of the name attribute of an input button">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_button_type.asp" title="Returns which type of form element the button is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_button_value.asp" title="Sets or returns the value of the value attribute of a button">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Checkbox Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_disabled.asp" title="Sets or returns whether a checkbox is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_checked.asp" title="Sets or returns the checked state of a checkbox">checked</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_defaultchecked.asp" title="Returns the default value of the checked attribute">defaultChecked</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_form.asp" title="Returns a reference to the form that contains the checkbox">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_name.asp" title="Sets or returns the value of the name attribute of a checkbox">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_type.asp" title="Returns which type of form element the checkbox is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_checkbox_value.asp" title="Sets or returns the value of the value attribute of a checkbox">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">File Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_fileupload_disabled.asp" title="Sets or returns whether the fileUpload button is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_fileupload_accept.asp" title="Sets or returns a comma-separated list of accepted content types">accept</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_fileupload_form.asp" title="Returns a reference to the form that contains the FileUpload object">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_fileupload_name.asp" title="Sets or returns the value of the name attribute of the FileUpload object">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_fileupload_type.asp" title="Returns which type of form element the FileUpload object is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_fileupload_value.asp" title="Returns the path or the name of the selected file">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Hidden Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_hidden_form.asp" title="Returns a reference to the form that contains the hidden input field">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_hidden_name.asp" title="Sets or returns the value of the name attribute of the hidden input field">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_hidden_type.asp" title="Returns which type of form element a hidden input field is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_hidden_value.asp" title="Sets or returns the value of the value attribute of the hidden input field">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Password Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_defaultvalue.asp" title="Sets or returns the default value of a password field">defaultValue</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_disabled.asp" title="Sets or returns whether the password field is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_form.asp" title="Returns a reference to the form that contains the password field">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_maxlength.asp" title="Sets or returns the maximum number of characters allowed in a password field">maxLength</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_name.asp" title="Sets or returns the value of the name attribute of a password field">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_readonly.asp" title="Sets or returns whether a password field is read-only, or not">readOnly</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_size.asp" title="Sets or returns the width of a password field (in number of characters)">size</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_type.asp" title="Returns which type of form element a password field is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_password_value.asp" title="Sets or returns the value of the value attribute of the password field">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Password Methods</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/met_password_select.asp" title="Selects the content of a password field">select()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Radio Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_checked.asp" title="Sets or returns the checked state of a radio button">checked</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_defaultchecked.asp" title="Returns the default value of the checked attribute">defaultChecked</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_disabled.asp" title="Sets or returns whether the radio button is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_form.asp" title="Returns a reference to the form that contains the radio button">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_name.asp" title="Sets or returns the value of the name attribute of a radio button">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_type.asp" title="Returns which type of form element the radio button is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_radio_value.asp" title="Sets or returns the value of the value attribute of the radio button">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Reset Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_reset_disabled.asp" title="Sets or returns whether the reset button is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_reset_form.asp" title="Returns a reference to the form that contains the reset button">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_reset_name.asp" title="Sets or returns the value of the name attribute of a reset button">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_reset_type.asp" title="Returns which type of form element the reset button is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_reset_value.asp" title="Sets or returns the value of the value attribute of the reset button">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Submit Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_submit_disabled.asp" title="Sets or returns whether the submit button is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_submit_form.asp" title="Returns a reference to the form that contains the submit button">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_submit_name.asp" title="Sets or returns the value of the name attribute of a submit button">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_submit_type.asp" title="Returns which type of form element the submit button is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_submit_value.asp" title="Sets or returns the value of the value attribute of the submit button">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Text Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_defaultvalue.asp" title="Sets or returns the default value of a text field">defaultValue</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_disabled.asp" title="Sets or returns whether the text field is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_form.asp" title="Returns a reference to the form that contains the text field">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_maxlength.asp" title="Sets or returns the maximum number of characters allowed in a text field">maxLength</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_name.asp" title="Sets or returns the value of the name attribute of a text field">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_readonly.asp" title="Sets or returns whether a text field is read-only, or not">readOnly</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_size.asp" title="Sets or returns the width of a text field (in number of characters)">size</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_type.asp" title="Returns which type of form element a text field is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_text_value.asp" title="Sets or returns the value of the value attribute of the text field">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Text Methods</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/met_text_select.asp" title="Selects the content of a text field">select()</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Dom Elements</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchor Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_charset.asp" title="Sets or returns the value of the charset attribute of a link">charset</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_href.asp" title="Sets or returns the value of the href attribute of a link">href</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_hreflang.asp" title="Sets or returns the value of the hreflang attribute of a link">hreflang</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_name.asp" title="Sets or returns the value of the name attribute of a link">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_rel.asp" title="Sets or returns the value of the rel attribute of a link">rel</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_rel.asp" title="Sets or returns the value of the rev attribute of a link">rev</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_target.asp" title="Sets or returns the value of the target attribute of a link">target</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_anchor_type.asp" title="Sets or returns the value of the type attribute of a link">type</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Button Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_pushbutton_disabled.asp" title="Sets or returns whether a button is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_pushbutton_form.asp" title="Returns a reference to the form that contains a button">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_pushbutton_name.asp" title="Sets or returns the value of the name attribute of a button">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_pushbutton_type.asp" title="Sets or returns the type of a button">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_pushbutton_value.asp" title="Sets or returns the value of the value attribute of a button">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Form Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_acceptcharset.asp" title="Sets or returns the value of the accept-charset attribute in a form">acceptCharset</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_action.asp" title="Sets or returns the value of the action attribute in a form">action</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_enctype.asp" title="Sets or returns the value of the enctype attribute in a form">enctype</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_length.asp" title="Returns the number of elements in a form">length</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_method.asp" title="Sets or returns the value of the method attribute in a form">method</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_name.asp" title="Sets or returns the value of the name attribute in a form">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_form_target.asp" title="Sets or returns the value of the target attribute in a form">target</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Form Object Methods</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/met_form_reset.asp" title="Resets a form">reset()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_form_submit.asp" title="Submits a form">submit()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Form Object Events</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_form_onreset.asp" title="The reset button is clicked">onreset</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_form_onsubmit.asp" title="The submit button is clicked">onsubmit</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Image Object Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_align.asp" title="Sets or returns the value of the align attribute of an image">align</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_alt.asp" title="Sets or returns the value of the alt attribute of an image">alt</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_border.asp" title="Sets or returns the value of the border attribute of an image">border</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_complete.asp" title="Returns whether or not the browser is finished loading an image">complete</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_height.asp" title="Sets or returns the value of the height attribute of an image">height</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_hspace.asp" title="Sets or returns the value of the hspace attribute of an image">hspace</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_longdesc.asp" title="Sets or returns the value of the longdesc attribute of an image">longDesc</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_lowsrc.asp" title="Sets or returns a URL to a low-resolution version of an image">lowsrc</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_name.asp" title="Sets or returns the name of an image">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_src.asp" title="Sets or returns the value of the src attribute of an image">src</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_usemap.asp" title="Sets or returns the value of the usemap attribute of an image">useMap</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_vspace.asp" title="Sets or returns the value of the vspace attribute of an image">vspace</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_img_width.asp" title="Sets or returns the value of the width attribute of an image">width</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Image Object Events</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/event_img_onabort.asp" title="Loading of an image is interrupted">onabort</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_img_onerror.asp" title="An error occurs when loading an image">onerror</a></li>
+                <li><a href="http://www.w3schools.com/jsref/event_img_onload.asp" title="An image is finished loading">onload</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Link Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_charset.asp" title="Sets or returns the character encoding of a linked document">charset</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_href.asp" title="Sets or returns the URL of a linked document">href</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_hreflang.asp" title="Sets or returns the language code of the linked document">hreflang</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_media.asp" title="Sets or returns the media type for the link element">media</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_rel.asp" title="Sets or returns the relationship between the current document and the linked document">rel</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_rev.asp" title="Sets or returns the reverse relationship from the linked document to the current document">rev</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_link_type.asp" title="Sets or returns the content type of the linked document">type</a></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">Option Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_defaultselected.asp" title="Returns the default value of the selected attribute">defaultSelected</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_disabled.asp" title="Sets or returns whether an option is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_form.asp" title="Returns a reference to the form that contains the option">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_index.asp" title="Sets or returns the index position of an option in a dropdown list">index</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_selected.asp" title="Sets or returns the value of the selected attribute">selected</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_text.asp" title="Sets or returns the text of an option element">text</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_option_value.asp" title="Sets or returns the value to be sent to the server">value</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Select Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_disabled.asp" title="Sets or returns whether the dropdown list is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_form.asp" title="Returns a reference to the form that contains the dropdown list">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_length.asp" title="Returns the number of options in a dropdown list">length</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_multiple.asp" title="Sets or returns whether more than one item can be selected from the dropdown list">multiple</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_name.asp" title="Sets or returns the name of a dropdown list">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_selectedindex.asp" title="Sets or returns the index of the selected option in a dropdown list">selectedIndex</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_size.asp" title="Sets or returns the number of visible options in a dropdown list">size</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_select_type.asp" title="Returns which type of form element a dropdown list is">type</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Select Methods</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/met_select_add.asp" title="Adds an option to a dropdown list">add()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_select_remove.asp" title="Removes an option from a dropdown list">remove()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Textarea Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_cols.asp" title="Sets or returns the width of a text area">cols</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_defaultvalue.asp" title="Sets or returns the default value of a text area">defaultValue</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_disabled.asp" title="Sets or returns whether the text area is disabled, or not">disabled</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_form.asp" title="Returns a reference to the form that contains the text area">form</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_name.asp" title="Sets or returns the name of a text area">name</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_readonly.asp" title="Sets or returns whether the contents of a text area is read-only">readOnly</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_rows.asp" title="Sets or returns the height (in rows) of a text area">rows</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_type.asp" title="Returns the type of the form element the text area is">type</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_textarea_value.asp" title="Sets or returns the contents of a text area">value</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Dom Style</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Background Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_background.asp" title="Sets or returns all the background properties in one declaration">background</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_backgroundattachment.asp" title="Sets or returns whether a background-image is fixed or scrolls with the page">backgroundAttachment</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_backgroundcolor.asp" title="Sets or returns the background-color of an element">backgroundColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_backgroundimage.asp" title="Sets or returns the background-image for an element">backgroundImage</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_backgroundposition.asp" title="Sets or returns the starting position of a background-image">backgroundPosition</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_backgroundrepeat.asp" title="Sets or returns how to repeat (tile) a background-image">backgroundRepeat</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Border/Outline Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_border.asp" title="Sets or returns border-width, border-style, and border-color in one declaration">border</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderbottom.asp" title="Sets or returns all the borderBottom* properties in one declaration">borderBottom</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderbottomcolor.asp" title="Sets or returns the color of the bottom border">borderBottomColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderbottomstyle.asp" title="Sets or returns the style of the bottom border">borderBottomStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderbottomwidth.asp" title="Sets or returns the width of the bottom border">borderBottomWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bordercolor.asp" title="Sets or returns the color of an element's border (can have up to four values)">borderColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderleft.asp" title="Sets or returns all the borderLeft* properties in one declaration">borderLeft</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderleftcolor.asp" title="Sets or returns the color of the left border">borderLeftColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderleftstyle.asp" title="Sets or returns the style of the left border">borderLeftStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderleftwidth.asp" title="Sets or returns the width of the left border">borderLeftWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderright.asp" title="Sets or returns all the borderRight* properties in one declaration">borderRight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderrightcolor.asp" title="Sets or returns the color of the right border">borderRightColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderrightstyle.asp" title="Sets or returns the style of the right border">borderRightStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderrightwidth.asp" title="Sets or returns the width of the right border">borderRightWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderstyle.asp" title="Sets or returns the style of an element's border (can have up to four values)">borderStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bordertop.asp" title="Sets or returns all the borderTop* properties in one declaration">borderTop</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bordertopcolor.asp" title="Sets or returns the color of the top border">borderTopColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bordertopstyle.asp" title="Sets or returns the style of the top border">borderTopStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bordertopwidth.asp" title="Sets or returns the width of the top border">borderTopWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderwidth.asp" title="Sets or returns the width of an element's border (can have up to four values)">borderWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_outline.asp" title="Sets or returns all the outline properties in one declaration">outline</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_outlinecolor.asp" title="Sets or returns the color of the outline around a element">outlineColor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_outlinestyle.asp" title="Sets or returns the style of the outline around an element">outlineStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_outlinewidth.asp" title="Sets or returns the width of the outline around an element">outlineWidth</a></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">Generated Content Properties</h3>
+            <ul>
+                <li><span title="Sets or returns the generated content before or after the element">content</span></li>
+                <li><span title="Sets or returns the list of counters and increment values">counterIncrement</span></li>
+                <li><span title="Sets or returns the list of counters and their initial values">counterReset</span></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">List Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_liststyle.asp" title="Sets or returns list-style-image, list-style-position, and list-style-type in one declaration">listStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_liststyleimage.asp" title="Sets or returns an image as the list-item marker">listStyleImage</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_liststyleposition.asp" title="Sets or returns the position of the list-item marker">listStylePosition</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_liststyletype.asp" title="Sets or returns the list-item marker type">listStyleType</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Margin/Padding Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_margin.asp" title="Sets or returns the margins of an element (can have up to four values)">margin</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_marginbottom.asp" title="Sets or returns the bottom margin of an element">marginBottom</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_marginleft.asp" title="Sets or returns the left margin of an element">marginLeft</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_marginright.asp" title="Sets or returns the right margin of an element">marginRight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_margintop.asp" title="Sets or returns the top margin of an element">marginTop</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_padding.asp" title="Sets or returns the padding of an element (can have up to four values)">padding</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_paddingbottom.asp" title="Sets or returns the bottom padding of an element">paddingBottom</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_paddingleft.asp" title="Sets or returns the left padding of an element">paddingLeft</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_paddingright.asp" title="Sets or returns the right padding of an element">paddingRight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_paddingtop.asp" title="Sets or returns the top padding of an element">paddingTop</a></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">Misc Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_csstext.asp" title="Sets or returns the contents of a style declaration as a string">cssText</a></li>
+            </ul>
+        </div>
+
+        <div class="board-card">
+            <h3 class="board-card-title">Positioning Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bottom.asp" title="Sets or returns the bottom position of a positioned element">bottom</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_clear.asp" title="Sets or returns the position of the element relative to floating objects">clear</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_clip.asp" title="Sets or returns which part of a positioned element is visible">clip</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_cssfloat.asp" title="Sets or returns the horizontal alignment of an object">cssFloat</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_cursor.asp" title="Sets or returns the type of cursor to display for the mouse pointer">cursor</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_display.asp" title="Sets or returns an element's display type">display</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_height.asp" title="Sets or returns the height of an element">height</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_left.asp" title="Sets or returns the left position of a positioned element">left</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_maxheight.asp" title="Sets or returns the maximum height of an element">maxHeight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_maxwidth.asp" title="Sets or returns the maximum width of an element">maxWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_minheight.asp" title="Sets or returns the minimum height of an element">minHeight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_minwidth.asp" title="Sets or returns the minimum width of an element">minWidth</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_overflow.asp" title="Sets or returns what to do with content that renders outside the element box">overflow</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_position.asp" title="Sets or returns the type of positioning method used for an element (static, relative, absolute or fixed)">position</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_right.asp" title="Sets or returns the right position of a positioned element">right</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_top.asp" title="Sets or returns the top position of a positioned element">top</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_verticalalign.asp" title="Sets or returns the vertical alignment of the content in an element">verticalAlign</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_visibility.asp" title="Sets or returns whether an element should be visible">visibility</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_width.asp" title="Sets or returns the width of an element">width</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_zindex.asp" title="Sets or returns the stack order of a positioned element">zIndex</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Printing Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_orphans.asp" title="Sets or returns the minimum number of lines for an element that must be visible at the bottom of a page">orphans</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_pagebreakafter.asp" title="Sets or returns the page-break behavior after an element">pageBreakAfter</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_pagebreakbefore.asp" title="Sets or returns the page-break behavior before an element">pageBreakBefore</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_pagebreakinside.asp" title="Sets or returns the page-break behavior inside an element">pageBreakInside</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_widows.asp" title="Sets or returns the minimum number of lines for an element that must be visible at the top of a page">widows</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Table Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_bordercollapse.asp" title="Sets or returns whether the table border should be collapsed into a single border, or not">borderCollapse</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_borderspacing.asp" title="Sets or returns the space between cells in a table">borderSpacing</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_captionside.asp" title="Sets or returns the position of the table caption">captionSide</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_emptycells.asp" title="Sets or returns whether to show the border and background of empty cells, or not">emptyCells</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_tablelayout.asp" title="Sets or returns the way to lay out table cells, rows, and columns">tableLayout</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Text Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_color.asp" title="Sets or returns the color of the text">color</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_direction.asp" title="Sets or returns the text direction">direction</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_font.asp" title="Sets or returns font-style, font-variant, font-weight, font-size, line-height, and font-family in one declaration">font</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_fontfamily.asp" title="Sets or returns the font face for text">fontFamily</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_fontsize.asp" title="Sets or returns the font size of the text">fontSize</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_fontsizeadjust.asp" title="Sets or returns the font aspect value">fontSizeAdjust</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_fontstyle.asp" title="Sets or returns whether the style of the font is normal, italic or oblique">fontStyle</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_fontvariant.asp" title="Sets or returns whether the font should be displayed in small capital letters">fontVariant</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_fontweight.asp" title="Sets or returns the boldness of the font">fontWeight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_letterspacing.asp" title="Sets or returns the space between characters in a text">letterSpacing</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_lineheight.asp" title="Sets or returns the distance between lines in a text">lineHeight</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_quotes.asp" title="Sets or returns the type of quotation marks for embedded quotations">quotes</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_textalign.asp" title="Sets or returns the horizontal alignment of text">textAlign</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_textdecoration.asp" title="Sets or returns the decoration of a text">textDecoration</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_textindent.asp" title="Sets or returns the indentation of the first line of text">textIndent</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_textshadow.asp" title="Sets or returns the shadow effect of a text">textShadow</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_texttransform.asp" title="Sets or returns the case of a text">textTransform</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_unicodebidi.asp" title="Sets or returns whether the text should be overridden to support multiple languages in the same document">unicodeBidi</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_whitespace.asp" title="Sets or returns how to handle tabs, line breaks and whitespace in a text">whiteSpace</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_style_wordspacing.asp" title="Sets or returns the spacing between words in a text">wordSpacing</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Dom Table</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Table Object Collections</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/coll_table_cells.asp" title="Returns a collection of all &lt;td&gt; or &lt;th&gt; elements in a table">cells</a></li>
+                <li><a href="http://www.w3schools.com/jsref/coll_table_rows.asp" title="Returns a collection of all &lt;tr&gt; elements in a table">rows</a></li>
+                <li><a href="http://www.w3schools.com/jsref/coll_table_tbodies.asp" title="Returns a collection of all &lt;tbody&gt; elements in a table">tBodies</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Table Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_caption.asp" title="Returns the caption of a table">caption</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_cellpadding.asp" title="Sets or returns the amount of space between the cell border and cell content">cellPadding</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_cellspacing.asp" title="Sets or returns the amount of space between the cells in a table">cellSpacing</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_frame.asp" title="Sets or returns which outer-borders (of a table) that should be displayed">frame</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_rules.asp" title="Sets or returns which inner-borders (between the cells) that should be displayed in a table">rules</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_summary.asp" title="Sets or returns a description of the data in a table">summary</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_tfoot.asp" title="Returns a reference to the tfoot element of a table">tFoot</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_table_thead.asp" title="Returns a reference to the thead element of a table">tHead</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Table Methods</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/met_table_createcaption.asp" title="Creates an empty caption element and adds it to the table">createCaption()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_createtfoot.asp" title="Creates an empty tfoot element and adds it to the table">createTFoot()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_createthead.asp" title="Creates an empty thead element and adds it to the table">createTHead()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_deletecaption.asp" title="Removes the first caption element from the table">deleteCaption()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_deleterow.asp" title="Removes a row from the table">deleteRow()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_deletetfoot.asp" title="Removes the tfoot element from the table">deleteTFoot()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_deletethead.asp" title="Removes the thead element from the table">deleteTHead()</a></li>
+                <li><a href="http://www.w3schools.com/jsref/met_table_insertrow.asp" title="Creates an empty tr element and adds it to the table">insertRow()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Td/Th Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_abbr.asp" title="Sets or returns an abbreviated version of the content in a data cell">abbr</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_axis.asp" title="Sets or returns a comma-separated list of related data cells">axis</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_cellindex.asp" title="Returns the position of a cell in the cells collection of a table row">cellIndex</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_ch.asp" title="Sets or returns an alignment character for a data cell">ch</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_choff.asp" title="Sets or returns the horizontal offset of the ch property">chOff</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_colspan.asp" title="Sets or returns the number of columns a cell should span">colSpan</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_headers.asp" title="Sets or returns a list of header cell ids for the current data cell">headers</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_rowspan.asp" title="Sets or returns the number of rows a cell should span">rowSpan</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_valign.asp" title="Sets or returns the vertical alignment of the content within a cell">vAlign</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Tr Properties</h3>
+            <ul>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_abbr.asp" title="Sets or returns an abbreviated version of the content in a data cell">abbr</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_axis.asp" title="Sets or returns a comma-separated list of related data cells">axis</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_cellindex.asp" title="Returns the position of a cell in the cells collection of a table row">cellIndex</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_ch.asp" title="Sets or returns an alignment character for a data cell">ch</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_choff.asp" title="Sets or returns the horizontal offset of the ch property">chOff</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_colspan.asp" title="Sets or returns the number of columns a cell should span">colSpan</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_headers.asp" title="Sets or returns a list of header cell ids for the current data cell">headers</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_rowspan.asp" title="Sets or returns the number of rows a cell should span">rowSpan</a></li>
+                <li><a href="http://www.w3schools.com/jsref/prop_tabledata_valign.asp" title="Sets or returns the vertical alignment of the content within a cell">vAlign</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
