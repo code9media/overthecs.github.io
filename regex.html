@@ -28,6 +28,7 @@ title:     Regex Cheatsheet
             </ul>
         </div>
     </div>
+
     <div class="board">
         <h2 class="board-title">Quantifiers</h2>
         <div class="board-card">
@@ -48,34 +49,7 @@ title:     Regex Cheatsheet
             </ul>
         </div>
     </div>
-    <div class="board">
-        <h2 class="board-title">Groups</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">Groups and Ranges</h3>
-            <ul>
-                <li>.</li>
-                <li class="tip">Any character except new line (\n)</li>
-                <li>(a|b)</li>
-                <li class="tip">a or b</li>
-                <li>(...)</li>
-                <li class="tip">Group</li>
-                <li>(?:...)</li>
-                <li class="tip">Passive (non-c-apt-uring) group</li>
-                <li>[abc]</li>
-                <li class="tip">Range (a or b or c)</li>
-                <li>[^abc]</li>
-                <li class="tip">Not a or b or c</li>
-                <li>[a-q]</li>
-                <li class="tip">Letter from a to q</li>
-                <li>[A-Q]</li>
-                <li class="tip">Upper case letter from A to Q</li>
-                <li>[0-7]</li>
-                <li class="tip">Digit from 0 to 7</li>
-                <li>\n</li>
-                <li class="tip">nth group/-sub-pattern</li>
-            </ul>
-        </div>
-    </div>
+
     <div class="board">
         <h2 class="board-title">Character</h2>
         <div class="board-card">
@@ -121,127 +95,7 @@ title:     Regex Cheatsheet
             </ul>
         </div>
     </div>
-    <div class="board">
-        <h2 class="board-title">POSIX</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">POSIX</h3>
-            <ul>
-                <li>[:upper:]</li>
-                <li class="tip">Upper case letters</li>
-                <li>[:lower:]</li>
-                <li class="tip">Lower case letters</li>
-                <li>[:alpha:]</li>
-                <li class="tip">All letters</li>
-                <li>[:alnum:]</li>
-                <li class="tip">Digits and letters</li>
-                <li>[:digit:]</li>
-                <li class="tip">Digits</li>
-                <li>[:xdigit:]</li>
-                <li class="tip">Hexade-cimal digits</li>
-                <li>[:punct:]</li>
-                <li class="tip">Punctu-ation</li>
-                <li>[:blank:]</li>
-                <li class="tip">Space and tab</li>
-                <li>[:space:]</li>
-                <li class="tip">Blank characters</li>
-                <li>[:cntrl:]</li>
-                <li class="tip">Control characters</li>
-                <li>[:graph:]</li>
-                <li class="tip">Printed characters</li>
-                <li>[:print:]</li>
-                <li class="tip">Printed characters and spaces</li>
-                <li>[:word:]</li>
-                <li class="tip">Digits, letters and underscore</li>
-            </ul>
-        </div>
-    </div>
-    <div class="board">
-        <h2 class="board-title">Modifiers</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">Modifiers</h3>
-            <ul>
-                <li>g</li>
-                <li class="tip">Global match</li>
-                <li>i</li>
-                <li class="tip">Case-i-nse-nsitive</li>
-                <li>m</li>
-                <li class="tip">Multiple lines</li>
-                <li>s</li>
-                <li class="tip">Treat string as single line</li>
-                <li>x</li>
-                <li class="tip">Allow comments and white space in pattern</li>
-                <li>e</li>
-                <li class="tip">Evaluate replac-ement</li>
-                <li>U</li>
-                <li class="tip">Ungreedy pattern</li>
-            </ul>
-        </div>
-    </div>
-    <div class="board">
-        <h2 class="board-title">Basic Tags</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">Basic</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Basic</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Basic</h3>
-            <ul>
-            </ul>
-        </div>
-    </div>
-    <div class="board">
-        <h2 class="board-title">String</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">Replacement</h3>
-            <ul>
-                <li>$n</li>
-                <li class="tip">nth non-pa-ssive group</li>
-                <li>$2</li>
-                <li class="tip">&quot;-xyz-&quot; in /^(abc-(xy-z))$/</li>
-                <li>$1</li>
-                <li class="tip">&quot;-xyz-&quot; in /^(?:a-bc)-(xyz)$/</li>
-                <li>$`</li>
-                <li class="tip">Before matched string</li>
-                <li>$'</li>
-                <li class="tip">After matched string</li>
-                <li>$+</li>
-                <li class="tip">Last matched string</li>
-                <li>$&amp;</li>
-                <li class="tip">Entire matched string</li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="board">
-        <h2 class="board-title">Assertions</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">Assertions</h3>
-            <ul>
-                <li>?=</li>
-                <li class="tip">Lookahead assertion</li>
-                <li>?!</li>
-                <li class="tip">Negative lookahead</li>
-                <li>?&lt;=</li>
-                <li class="tip">Lookbehind assertion</li>
-                <li>?!= or ?&lt;!</li>
-                <li class="tip">Negative lookbehind</li>
-                <li>?&gt;</li>
-                <li class="tip">Once-only Subexp-ression</li>
-                <li>?()</li>
-                <li class="tip">Condition [if then]</li>
-                <li>?()|</li>
-                <li class="tip">Condition [if then else]</li>
-                <li>?#</li>
-                <li class="tip">Comment</li>
-            </ul>
-        </div>
-    </div>
     <div class="board">
         <h2 class="board-title">Examples</h2>
         <div class="board-card">
@@ -293,4 +147,140 @@ title:     Regex Cheatsheet
             </ul>
         </div>
     </div>
+
+    <div class="board">
+        <h2 class="board-title">POSIX</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">POSIX</h3>
+            <ul>
+                <li>[:upper:]</li>
+                <li class="tip">Upper case letters</li>
+                <li>[:lower:]</li>
+                <li class="tip">Lower case letters</li>
+                <li>[:alpha:]</li>
+                <li class="tip">All letters</li>
+                <li>[:alnum:]</li>
+                <li class="tip">Digits and letters</li>
+                <li>[:digit:]</li>
+                <li class="tip">Digits</li>
+                <li>[:xdigit:]</li>
+                <li class="tip">Hexade-cimal digits</li>
+                <li>[:punct:]</li>
+                <li class="tip">Punctu-ation</li>
+                <li>[:blank:]</li>
+                <li class="tip">Space and tab</li>
+                <li>[:space:]</li>
+                <li class="tip">Blank characters</li>
+                <li>[:cntrl:]</li>
+                <li class="tip">Control characters</li>
+                <li>[:graph:]</li>
+                <li class="tip">Printed characters</li>
+                <li>[:print:]</li>
+                <li class="tip">Printed characters and spaces</li>
+                <li>[:word:]</li>
+                <li class="tip">Digits, letters and underscore</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Groups</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Groups and Ranges</h3>
+            <ul>
+                <li>.</li>
+                <li class="tip">Any character except new line (\n)</li>
+                <li>(a|b)</li>
+                <li class="tip">a or b</li>
+                <li>(...)</li>
+                <li class="tip">Group</li>
+                <li>(?:...)</li>
+                <li class="tip">Passive (non-c-apt-uring) group</li>
+                <li>[abc]</li>
+                <li class="tip">Range (a or b or c)</li>
+                <li>[^abc]</li>
+                <li class="tip">Not a or b or c</li>
+                <li>[a-q]</li>
+                <li class="tip">Letter from a to q</li>
+                <li>[A-Q]</li>
+                <li class="tip">Upper case letter from A to Q</li>
+                <li>[0-7]</li>
+                <li class="tip">Digit from 0 to 7</li>
+                <li>\n</li>
+                <li class="tip">nth group/-sub-pattern</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Modifiers</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Modifiers</h3>
+            <ul>
+                <li>g</li>
+                <li class="tip">Global match</li>
+                <li>i</li>
+                <li class="tip">Case-i-nse-nsitive</li>
+                <li>m</li>
+                <li class="tip">Multiple lines</li>
+                <li>s</li>
+                <li class="tip">Treat string as single line</li>
+                <li>x</li>
+                <li class="tip">Allow comments and white space in pattern</li>
+                <li>e</li>
+                <li class="tip">Evaluate replac-ement</li>
+                <li>U</li>
+                <li class="tip">Ungreedy pattern</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">String</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Replacement</h3>
+            <ul>
+                <li>$n</li>
+                <li class="tip">nth non-pa-ssive group</li>
+                <li>$2</li>
+                <li class="tip">&quot;-xyz-&quot; in /^(abc-(xy-z))$/</li>
+                <li>$1</li>
+                <li class="tip">&quot;-xyz-&quot; in /^(?:a-bc)-(xyz)$/</li>
+                <li>$`</li>
+                <li class="tip">Before matched string</li>
+                <li>$'</li>
+                <li class="tip">After matched string</li>
+                <li>$+</li>
+                <li class="tip">Last matched string</li>
+                <li>$&amp;</li>
+                <li class="tip">Entire matched string</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Assertions</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Assertions</h3>
+            <ul>
+                <li>?=</li>
+                <li class="tip">Lookahead assertion</li>
+                <li>?!</li>
+                <li class="tip">Negative lookahead</li>
+                <li>?&lt;=</li>
+                <li class="tip">Lookbehind assertion</li>
+                <li>?!= or ?&lt;!</li>
+                <li class="tip">Negative lookbehind</li>
+                <li>?&gt;</li>
+                <li class="tip">Once-only Subexp-ression</li>
+                <li>?()</li>
+                <li class="tip">Condition [if then]</li>
+                <li>?()|</li>
+                <li class="tip">Condition [if then else]</li>
+                <li>?#</li>
+                <li class="tip">Comment</li>
+            </ul>
+        </div>
+    </div>
+
 </div>
