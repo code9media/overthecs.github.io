@@ -1,0 +1,309 @@
+---
+layout:    default 
+title:     Python Cheatsheet 
+---
+
+<div class="content">
+    <div class="board">
+        <h2 class="board-title">String</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">String Methods</h3>
+            <ul>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.capitalize" title="Return centered in a string of length width. Padding is done using the specified fillchar (default is a space).">capitalize()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.center" title="Return centered in a string of length width. Padding is done using the specified fillchar (default is a space).">center(width[, fillchar])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.count" title="Return the number of non-overlapping occurrences of substring sub in the range [start, end].">count(sub[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.decode" title="Decodes the string using the codec registered for encoding.">decode</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.encode" title="Return an encoded version of the string.  Default encoding is the current default string encoding.  ">encode([encoding[, errors]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.endswith" title="Return True if the string ends with the specified suffix, otherwise return False.">endswith(suffix[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.expandtabs" title="Return a copy of the string where all tab characters are replaced by one or more spaces, depending on the current column and the given tab size.  ">expandtabs([tabsize])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.find" title="Return the lowest index in the string where substring sub is found, such that sub is contained in the slice s[start:end]. ">find(sub[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.format" title="Perform a string formatting operation.">format(*args, **kwargs)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.index" title="Like find(), but raise ValueError when the substring is not found.">index(sub[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.isalnum" title="Return true if all characters in the string are alphanumeric and there is at least one character, false otherwise.">isalnum()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.isalpha" title="Return true if all characters in the string are alphabetic and there is at least one character, false otherwise.">isalpha()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.isdigit" title="Return true if all characters in the string are digits and there is at least one character, false otherwise.">isdigit()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.islower" title="Return true if all cased characters in the string are lowercase and there is at least one cased character, false otherwise.">islower()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.isspace" title="Return true if there are only whitespace characters in the string and there is at least one character, false otherwise.">isspace()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.istitle" title="Return true if the string is a titlecased string and there is at least one character, for example uppercase characters may only follow uncased characters and lowercase characters only cased ones.">istitle()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.isupper" title="Return true if all cased characters in the string are uppercase and there is at least one cased character, false otherwise.">isupper()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.join" title="Return a string which is the concatenation of the strings in the iterable iterable.">join(iterable)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.ljust" title="Return the string left justified in a string of length width.">ljust(width[, fillchar])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.lower" title="Return a copy of the string converted to lowercase.">lower()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.lstrip" title="Return a copy of the string with leading characters removed.">lstrip([chars])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.partition" title="Split the string at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator.">partition(sep)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.replace" title="Return a copy of the string with all occurrences of substring old replaced by new.">replace(old, new[, count])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.rfind" title="Return the highest index in the string where substring sub is found, such that sub is contained within s[start:end]. ">rfind(sub[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.rindex" title="Like rfind() but raises ValueError when the substring sub is not found.">rindex(sub[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.rjust" title="Return the string right justified in a string of length width.">rjust(width[, fillchar])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.rpartition" title="Split the string at the last occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator.">rpartition(sep)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.rsplit" title="Return a list of the words in the string, using sep as the delimiter string.">rsplit([sep[, maxsplit]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.rstrip" title="Return a copy of the string with trailing characters removed.">rstrip([chars])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.split" title="Return a list of the words in the string, using sep as the delimiter string.">split([sep[, maxsplit]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.splitlines" title="Return a list of the lines in the string, breaking at line boundaries.">splitlines([keepends])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.startswith" title="Return True if string starts with the prefix, otherwise return False.">startswith(prefix[, start[, end]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.strip" title="Return a copy of the string with the leading and trailing characters removed.">strip([chars])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.swapcase" title="Return a copy of the string with uppercase characters converted to lowercase and vice versa.">swapcase</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.title" title="Return a titlecased version of the string where words start with an uppercase character and the remaining characters are lowercase.">title()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.translate" title="Return a copy of the string where all characters occurring in the optional argument deletechars are removed, and the remaining characters have been mapped through the given translation table, which must be a string of length 256.">translate(table[, deletechars])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.upper" title="Return a copy of the string converted to uppercase.">upper()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#str.zfill" title="Return the numeric string left filled with zeros in a string of length width.">zfill(width)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#unicode.isnumeric" title="Return True if there are only numeric characters in S, False otherwise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155, VULGAR FRACTION ONE FIFTH.">isnumeric()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#unicode.isdecimal" title="Return True if there are only decimal characters in S, False otherwise.">isdecimal()</a></li> 
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">String Formatting Operations</h3>
+            <ul>
+                <li>'d'</li>
+                <li class="tip">Signed integer decimal.</li>
+                <li>'i'</li>
+                <li class="tip">Signed integer decimal.</li>
+                <li>'o'</li>
+                <li class="tip">Signed octal value.</li>
+                <li>'u'</li>
+                <li class="tip">Obsolete type – it is identical to <tt class="docutils literal"><span class="pre">'d'</span></tt>.</li>
+                <li>'x'</li>
+                <li class="tip">Signed hexadecimal (lowercase).</li>
+                <li>'X'</li>
+                <li class="tip">Signed hexadecimal (uppercase).</li>
+                <li>'e'</li>
+                <li class="tip">Floating point exponential format (lowercase).</li>
+                <li>'E'</li>
+                <li class="tip">Floating point exponential format (uppercase).</li>
+                <li>'f'</li>
+                <li class="tip">Floating point decimal format.</li>
+                <li>'F'</li>
+                <li class="tip">Floating point decimal format.</li>
+                <li>'g'</li>
+                <li class="tip">Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.</li>
+                <li>'G'</li>
+                <li class="tip">Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.</li>
+                <li>'c'</li>
+                <li class="tip">Single character (accepts integer or single character string).</li>
+                <li>'r'</li>
+                <li class="tip">String (converts any Python object using repr().</li>
+                <li>'s'</li>
+                <li class="tip">String (converts any Python object using str()</li>
+                <li>'%'</li>
+                <li class="tip">No argument is converted, results in a '%' character in the result.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">File</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Methods</h3>
+            <ul>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.close" title="Close the file.">close()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.flush" title="Flush the internal buffer, like stdio‘s fflush().">flush()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.fileno" title="Return the integer “file descriptor” that is used by the underlying implementation to request I/O operations from the operating system.">fileno()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.isatty" title="Return True if the file is connected to a tty(-like) device, else False.">isatty()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.next" title="A file object is its own iterator, for example iter(f) returns f (unless f is closed).">next()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.read" title="Read at most size bytes from the file (less if the read hits EOF before obtaining size bytes).">read([size])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.readline" title="Read one entire line from the file.">readline([size])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.readlines" title="Read until EOF using readline() and return a list containing the lines thus read.">readlines([sizehint])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.xreadlines" title="This method returns the same thing as iter(f).">xreadlines()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.seek" title="Set the file’s current position, like stdio‘s fseek().">seek(offset[, whence])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.tell" title="Return the file’s current position, like stdio‘s ftell().">tell()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.truncate" title="Truncate the file’s size. ">truncate([size])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.write" title="Write a string to the file. ">write(str)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.writelines" title="Write a sequence of strings to the file.">writelines(sequence)</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Attributes</h3>
+            <ul>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.closed" title="bool indicating the current state of the file object.">closed</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.encoding" title="The encoding that this file uses.">encoding</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.errors" title="The Unicode error handler used along with the encoding.">errors</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.mode" title="The I/O mode for the file.">mode</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.name" title="If the file object was created using open(), the name of the file. ">name</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.newlines" title="If Python was built with the --with-universal-newlines option to configure (the default) this read-only attribute exists, and for files opened in universal newline read mode it keeps track of the types of newlines encountered while reading the file.">newlines</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#file.softspace" title="Boolean that indicates whether a space character needs to be printed before another value when using the print statement.">softspace</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Set &nbsp; Mapping</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Set Types</h3>
+            <ul>
+                <li><span title="Return the cardinality of set s.">len(s)</span></li>
+                <li><span title="Return the cardinality of set s.">x in s</span></li>
+                <li><span title="Test x for non-membership in s.">x not in s</span></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.isdisjoint" title="Return True if the set has no elements in common with other.">isdisjoint(other)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.issubset" title="Test whether every element in the set is in others">issubset(others)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.issuperset" title="Test whether every element in other is in the set.">issuperset</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.union" title="Return a new set with elements from the set and all others.">union(other...)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.intersection" title="Return a new set with elements common to the set and all others.">intersection(other, ...)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.difference" title="Return a new set with elements in the set that are not in the others.">difference(other...)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.symmetric_difference" title="Return a new set with elements in either the set or other but not both.">symmetric_difference(other)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.copy" title="Return a new set with a shallow copy of s">copy()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.update" title="Update the set, adding elements from all others.">update()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.intersection_update" title="Update the set, adding elements from all others.">intersection_update()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.difference_update" title="Update the set, removing elements found in others.">difference_update()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.symmetric_difference_update" title="Update the set, keeping only elements found in either set, but not in both.">symmetric_difference_update()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.add" title="Add element elem to the set.">add(elem)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.remove" title="Remove element elem from the set. Raises KeyError if elem is not contained in the set.">remove()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.discard" title="Remove element elem from the set if it is present.">discard(elem)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.pop" title="Remove element elem from the set if it is present.">pop()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#set.clear" title="Remove all elements from the set.">clear()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Mapping Types</h3>
+            <ul>
+                <li><span title="Return the number of items in the dictionary d">len(d)</span></li>
+                <li><span title="Return the item of d with key key. Raises a KeyError if key is not in the map.">d[key]</span></li>
+                <li><span title="Set d[key] to value.">d[key] = value</span></li>
+                <li><span title="Remove d[key] from d. Raises a KeyError if key is not in the map.">del d[key]</span></li>
+                <li><span title="Return True if d has a key key, else False.">key in d</span></li>
+                <li><span title="Equivalent to not key in d.">key not in d</span></li>
+                <li><span title="Return an iterator over the keys of the dictionary.">iter(d)</span></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.clear" title="Remove all items from the dictionary.">clear()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.copy" title="Return a shallow copy of the dictionary.">copy()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.fromkeys" title="Create a new dictionary with keys from seq and values set to value.">fromkeys(seq[, value])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.get" title="Return the value for key if key is in the dictionary, else default.">get(key[, default])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.has_key" title="Test for the presence of key in the dictionary. has_key() is deprecated in favor of key in d.">has_key(key)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.items" title="Return a copy of the dictionary’s list of (key, value) pairs.">items()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.iteritems" title="Return an iterator over the dictionary’s (key, value) pairs. See the note for dict.items().">iteritems()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.iterkeys" title="Return an iterator over the dictionary’s keys. See the note for dict.items().">iterkeys()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.itervalues" title="Return an iterator over the dictionary’s values. See the note for dict.items().">itervalues()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.keys" title="Return a copy of the dictionary’s list of keys. See the note for dict.items().">keys()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.pop" title="If key is in the dictionary, remove it and return its value, else return default.">pop(key[, default])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.popitem" title="Remove and return an arbitrary (key, value) pair from the dictionary.">popitem()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.setdefault" title="If key is in the dictionary, return its value. If not, insert key with a value of default and return default.">setdefault(key[, default])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.update" title="Update the dictionary with the key/value pairs from other, overwriting existing keys. Return None.">update([other])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#dict.values" title="Return a copy of the dictionary’s list of values. See the note for dict.items().">values</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Character</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Examples</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Metacharacter</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Sample</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">POSIX</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">POSIX</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Groups</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Groups and Ranges</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Modifiers</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Modifiers</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">String</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Replacement</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Assertions</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Assertions</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
