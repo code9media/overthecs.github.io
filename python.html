@@ -51,43 +51,6 @@ title:     Python Cheatsheet
                 <li><a href="http://docs.python.org/release/2.6.8/library/stdtypes.html#unicode.isdecimal" title="Return True if there are only decimal characters in S, False otherwise.">isdecimal()</a></li> 
             </ul>
         </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Formatting Operations</h3>
-            <ul>
-                <li>'d'</li>
-                <li class="tip">Signed integer decimal.</li>
-                <li>'i'</li>
-                <li class="tip">Signed integer decimal.</li>
-                <li>'o'</li>
-                <li class="tip">Signed octal value.</li>
-                <li>'u'</li>
-                <li class="tip">Obsolete type – it is identical to <tt class="docutils literal"><span class="pre">'d'</span></tt>.</li>
-                <li>'x'</li>
-                <li class="tip">Signed hexadecimal (lowercase).</li>
-                <li>'X'</li>
-                <li class="tip">Signed hexadecimal (uppercase).</li>
-                <li>'e'</li>
-                <li class="tip">Floating point exponential format (lowercase).</li>
-                <li>'E'</li>
-                <li class="tip">Floating point exponential format (uppercase).</li>
-                <li>'f'</li>
-                <li class="tip">Floating point decimal format.</li>
-                <li>'F'</li>
-                <li class="tip">Floating point decimal format.</li>
-                <li>'g'</li>
-                <li class="tip">Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.</li>
-                <li>'G'</li>
-                <li class="tip">Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.</li>
-                <li>'c'</li>
-                <li class="tip">Single character (accepts integer or single character string).</li>
-                <li>'r'</li>
-                <li class="tip">String (converts any Python object using repr().</li>
-                <li>'s'</li>
-                <li class="tip">String (converts any Python object using str()</li>
-                <li>'%'</li>
-                <li class="tip">No argument is converted, results in a '%' character in the result.</li>
-            </ul>
-        </div>
     </div>
 
     <div class="board">
@@ -233,55 +196,6 @@ title:     Python Cheatsheet
                 <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.tzname" title="If tzinfo is None, returns None, else returns self.tzinfo.tzname(None), or raises an exception if the latter doesn’t return None or a string object.">tzname()</a></li>
             </ul>
         </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Date Formatting</h3>
-            <ul>
-                <li>%a</li>
-                <li class="tip">Abbrev-iated weekday (Sun)</li>
-                <li>%A</li>
-                <li class="tip">Weekday (Sunday)</li>
-                <li>%b</li>
-                <li class="tip">Abbrev-iated month name (Jan)</li>
-                <li>%B</li>
-                <li class="tip">Month name (January)</li>
-                <li>%c</li>
-                <li class="tip">Date and time</li>
-                <li>%d</li>
-                <li class="tip">Day (leading zeros) (01 to 31)</li>
-                <li>%H</li>
-                <li class="tip">24 hour (leading zeros) (00 to 23)</li>
-                <li>%I</li>
-                <li class="tip">12 hour (leading zeros) (01 to 12)</li>
-                <li>%j</li>
-                <li class="tip">Day of year (001 to 366)</li>
-                <li>%m</li>
-                <li class="tip">Month (01 to 12)</li>
-                <li>%M</li>
-                <li class="tip">Minute (00 to 59)</li>
-                <li>%p</li>
-                <li class="tip">AM or PM</li>
-                <li>%S</li>
-                <li class="tip">Second (00 to 61?)</li>
-                <li>%U</li>
-                <li class="tip">Week number1 (00 to 53)</li>
-                <li>%w</li>
-                <li class="tip">Weekday2 (0 to 6)</li>
-                <li>%W</li>
-                <li class="tip">Week number3 (00 to 53)</li>
-                <li>%x</li>
-                <li class="tip">Date</li>
-                <li>%X</li>
-                <li class="tip">Time</li>
-                <li>%y</li>
-                <li class="tip">Year without century (00 to 99)</li>
-                <li>%Y</li>
-                <li class="tip">Year (2008)</li>
-                <li>%Z</li>
-                <li class="tip">Time zone (GMT)</li>
-                <li>%%</li>
-                <li class="tip">A literal "-%" character (%)</li>
-            </ul>
-        </div>
     </div>
 
     <div class="board">
@@ -340,7 +254,101 @@ title:     Python Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">POSIX</h2>
+        <h2 class="board-title">String Formatting</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Formatting Operations</h3>
+            <ul>
+                <li>'d'</li>
+                <li class="tip">Signed integer decimal.</li>
+                <li>'i'</li>
+                <li class="tip">Signed integer decimal.</li>
+                <li>'o'</li>
+                <li class="tip">Signed octal value.</li>
+                <li>'u'</li>
+                <li class="tip">Obsolete type – it is identical to <tt class="docutils literal"><span class="pre">'d'</span></tt>.</li>
+                <li>'x'</li>
+                <li class="tip">Signed hexadecimal (lowercase).</li>
+                <li>'X'</li>
+                <li class="tip">Signed hexadecimal (uppercase).</li>
+                <li>'e'</li>
+                <li class="tip">Floating point exponential format (lowercase).</li>
+                <li>'E'</li>
+                <li class="tip">Floating point exponential format (uppercase).</li>
+                <li>'f'</li>
+                <li class="tip">Floating point decimal format.</li>
+                <li>'F'</li>
+                <li class="tip">Floating point decimal format.</li>
+                <li>'g'</li>
+                <li class="tip">Floating point format. Uses lowercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.</li>
+                <li>'G'</li>
+                <li class="tip">Floating point format. Uses uppercase exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.</li>
+                <li>'c'</li>
+                <li class="tip">Single character (accepts integer or single character string).</li>
+                <li>'r'</li>
+                <li class="tip">String (converts any Python object using repr().</li>
+                <li>'s'</li>
+                <li class="tip">String (converts any Python object using str()</li>
+                <li>'%'</li>
+                <li class="tip">No argument is converted, results in a '%' character in the result.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Date Formatting</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Date Formatting</h3>
+            <ul>
+                <li>%a</li>
+                <li class="tip">Abbrev-iated weekday (Sun)</li>
+                <li>%A</li>
+                <li class="tip">Weekday (Sunday)</li>
+                <li>%b</li>
+                <li class="tip">Abbrev-iated month name (Jan)</li>
+                <li>%B</li>
+                <li class="tip">Month name (January)</li>
+                <li>%c</li>
+                <li class="tip">Date and time</li>
+                <li>%d</li>
+                <li class="tip">Day (leading zeros) (01 to 31)</li>
+                <li>%H</li>
+                <li class="tip">24 hour (leading zeros) (00 to 23)</li>
+                <li>%I</li>
+                <li class="tip">12 hour (leading zeros) (01 to 12)</li>
+                <li>%j</li>
+                <li class="tip">Day of year (001 to 366)</li>
+                <li>%m</li>
+                <li class="tip">Month (01 to 12)</li>
+                <li>%M</li>
+                <li class="tip">Minute (00 to 59)</li>
+                <li>%p</li>
+                <li class="tip">AM or PM</li>
+                <li>%S</li>
+                <li class="tip">Second (00 to 61?)</li>
+                <li>%U</li>
+                <li class="tip">Week number1 (00 to 53)</li>
+                <li>%w</li>
+                <li class="tip">Weekday2 (0 to 6)</li>
+                <li>%W</li>
+                <li class="tip">Week number3 (00 to 53)</li>
+                <li>%x</li>
+                <li class="tip">Date</li>
+                <li>%X</li>
+                <li class="tip">Time</li>
+                <li>%y</li>
+                <li class="tip">Year without century (00 to 99)</li>
+                <li>%Y</li>
+                <li class="tip">Year (2008)</li>
+                <li>%Z</li>
+                <li class="tip">Time zone (GMT)</li>
+                <li>%%</li>
+                <li class="tip">A literal "-%" character (%)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Modifiers</h2>
         <div class="board-card">
             <h3 class="board-card-title">Special</h3>
             <ul>
@@ -366,19 +374,11 @@ title:     Python Cheatsheet
             <ul>
             </ul>
         </div>
-    </div>
-
-    <div class="board">
-        <h2 class="board-title">Groups</h2>
         <div class="board-card">
             <h3 class="board-card-title">Groups and Ranges</h3>
             <ul>
             </ul>
         </div>
-    </div>
-
-    <div class="board">
-        <h2 class="board-title">Modifiers</h2>
         <div class="board-card">
             <h3 class="board-card-title">Modifiers</h3>
             <ul>
@@ -404,9 +404,4 @@ title:     Python Cheatsheet
         </div>
     </div>
 </div>
-
-
-
-<tbody>
-</tbody>
 
