@@ -52,7 +52,7 @@ title:     Python Cheatsheet
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">String Formatting Operations</h3>
+            <h3 class="board-card-title">Formatting Operations</h3>
             <ul>
                 <li>'d'</li>
                 <li class="tip">Signed integer decimal.</li>
@@ -126,7 +126,7 @@ title:     Python Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Set &nbsp; Mapping</h2>
+        <h2 class="board-title">Set &amp; Mapping</h2>
         <div class="board-card">
             <h3 class="board-card-title">Set Types</h3>
             <ul>
@@ -182,45 +182,104 @@ title:     Python Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Character</h2>
+        <h2 class="board-title">Date Time</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
+            <h3 class="board-card-title">Date Object</h3>
             <ul>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.replace" title="Return a date with the same value, except for those members given new values by whichever keyword arguments are specified.">replace((year, month, day))</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.timetuple" title="Return a time.struct_time such as returned by time.localtime().">timetuple()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.toordinal" title="Return the proleptic Gregorian ordinal of the date, where January 1 of year 1 has ordinal 1. ">toordinal()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.weekday" title="Return the day of the week as an integer, where Monday is 0 and Sunday is 6.">weekday()()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.isoweekday" title="Return the day of the week as an integer, where Monday is 1 and Sunday is 7.">isoweekday()()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.isocalendar" title="Return a 3-tuple, (ISO year, ISO week number, ISO weekday).">isocalendar()()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.isoformat" title="Return a string representing the date in ISO 8601 format, ‘YYYY-MM-DD’.">isoformat()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.__str__" title="For a date d, str(d) is equivalent to d.isoformat().">__str__()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.ctime" title="Return a string representing the date, for example date(2002, 12, 4).ctime() == 'Wed Dec 4 00:00:00 2002'.">ctime()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.date.strftime" title="Return a string representing the date, controlled by an explicit format string.">strftime()</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
+            <h3 class="board-card-title">Datetime Object</h3>
             <ul>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.date" title="Return date object with same year, month and day.">date()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.time" title="Return time object with same hour, minute, second and microsecond.">time()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.timetz" title="Return time object with same hour, minute, second, microsecond, and tzinfo members.">timetz()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.replace" title="Return a datetime with the same members, except for those members given new values by whichever keyword arguments are specified.">replace([year[, month[, day[, hour[, minute[, second[, microsecond[, tzinfo]]]]]]]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.astimezone" title="Return a datetime object with new tzinfo member tz, adjusting the date and time members so the result is the same UTC time as self, but in tz‘s local time.">astimezone(tz)</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.utcoffset" title="If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(self), and raises an exception if the latter doesn’t return None, or a timedelta object representing a whole number of minutes with magnitude less than one day.">utcoffset()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.dst" title="If tzinfo is None, returns None, else returns self.tzinfo.dst(self), and raises an exception if the latter doesn’t return None, or a timedelta object representing a whole number of minutes with magnitude less than one day.">dst()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.tzname" title="If tzinfo is None, returns None, else returns self.tzinfo.tzname(self), raises an exception if the latter doesn’t return None or a string object">tzname()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.timetuple" title="Return a time.struct_time such as returned by time.localtime(). ">timetuple()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.utctimetuple" title="If datetime instance d is naive, this is the same as d.timetuple() except that tm_isdst is forced to 0 regardless of what d.dst() returns.">utctimetuple()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.toordinal" title="Return the proleptic Gregorian ordinal of the date.">toordinal()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.weekday" title="Return the day of the week as an integer, where Monday is 0 and Sunday is 6.">weekday()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.isoweekday" title="Return the day of the week as an integer, where Monday is 1 and Sunday is 7.">isoweekday()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.isocalendar" title="Return a 3-tuple, (ISO year, ISO week number, ISO weekday).">isocalendar()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.isoformat" title="Return a string representing the date and time in ISO 8601 format, YYYY-MM-DDTHH:MM:SS.mmmmmm or, if microsecond is 0, YYYY-MM-DDTHH:MM:SS">isoformat()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.__str__" title="For a datetime instance d, str(d) is equivalent to d.isoformat(' ').">__str__()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.ctime" title="Return a string representing the date and time, for example datetime(2002, 12, 4, 20, 30, 40).ctime() == 'Wed Dec  4 20:30:40 2002'.">ctime()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.datetime.strftime" title="Return a string representing the date and time, controlled by an explicit format string.">strftime()</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
+            <h3 class="board-card-title">Time Object</h3>
             <ul>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.replace" title="Return a time with the same value, except for those members given new values by whichever keyword arguments are specified.">replace([hour[, minute[, second[, microsecond[, tzinfo]]]]])</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.isoformat" title="Return a string representing the time in ISO 8601 format, HH:MM:SS.mmmmmm or, if self.microsecond is 0, HH:MM:SS If utcoffset() does not return None, a 6-character string is appended, giving the UTC offset in (signed) hours and minutes: HH:MM:SS.mmmmmm+HH:MM or, if self.microsecond is 0, HH:MM:SS+HH:MM">isoformat()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.__str__" title="For a time t, str(t) is equivalent to t.isoformat().">__str__()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.strftime" title="Return a string representing the time, controlled by an explicit format string.">strftime()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.utcoffset" title="If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(None), and raises an exception if the latter doesn’t return None or a timedelta object representing a whole number of minutes with magnitude less than one day.">utcoffset()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.dst" title="If tzinfo is None, returns None, else returns self.tzinfo.dst(None), and raises an exception if the latter doesn’t return None, or a timedelta object representing a whole number of minutes with magnitude less than one day.">dst()</a></li>
+                <li><a href="http://docs.python.org/release/2.6.8/library/datetime.html#datetime.time.tzname" title="If tzinfo is None, returns None, else returns self.tzinfo.tzname(None), or raises an exception if the latter doesn’t return None or a string object.">tzname()</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
+            <h3 class="board-card-title">Date Formatting</h3>
             <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Special</h3>
-            <ul>
+                <li>%a</li>
+                <li class="tip">Abbrev-iated weekday (Sun)</li>
+                <li>%A</li>
+                <li class="tip">Weekday (Sunday)</li>
+                <li>%b</li>
+                <li class="tip">Abbrev-iated month name (Jan)</li>
+                <li>%B</li>
+                <li class="tip">Month name (January)</li>
+                <li>%c</li>
+                <li class="tip">Date and time</li>
+                <li>%d</li>
+                <li class="tip">Day (leading zeros) (01 to 31)</li>
+                <li>%H</li>
+                <li class="tip">24 hour (leading zeros) (00 to 23)</li>
+                <li>%I</li>
+                <li class="tip">12 hour (leading zeros) (01 to 12)</li>
+                <li>%j</li>
+                <li class="tip">Day of year (001 to 366)</li>
+                <li>%m</li>
+                <li class="tip">Month (01 to 12)</li>
+                <li>%M</li>
+                <li class="tip">Minute (00 to 59)</li>
+                <li>%p</li>
+                <li class="tip">AM or PM</li>
+                <li>%S</li>
+                <li class="tip">Second (00 to 61?)</li>
+                <li>%U</li>
+                <li class="tip">Week number1 (00 to 53)</li>
+                <li>%w</li>
+                <li class="tip">Weekday2 (0 to 6)</li>
+                <li>%W</li>
+                <li class="tip">Week number3 (00 to 53)</li>
+                <li>%x</li>
+                <li class="tip">Date</li>
+                <li>%X</li>
+                <li class="tip">Time</li>
+                <li>%y</li>
+                <li class="tip">Year without century (00 to 99)</li>
+                <li>%Y</li>
+                <li class="tip">Year (2008)</li>
+                <li>%Z</li>
+                <li class="tip">Time zone (GMT)</li>
+                <li>%%</li>
+                <li class="tip">A literal "-%" character (%)</li>
             </ul>
         </div>
     </div>
@@ -229,6 +288,26 @@ title:     Python Cheatsheet
         <h2 class="board-title">Examples</h2>
         <div class="board-card">
             <h3 class="board-card-title">Metacharacter</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
             <ul>
             </ul>
         </div>
@@ -285,25 +364,4 @@ title:     Python Cheatsheet
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
 
