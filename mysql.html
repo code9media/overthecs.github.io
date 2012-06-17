@@ -1,6 +1,6 @@
 ---
 layout:    default 
-title:     Regex Cheatsheet 
+title:     MySQL Cheatsheet 
 ---
 
 <div class="content">
@@ -248,6 +248,129 @@ title:     Regex Cheatsheet
         </div>
     </div>
 
+    <div class="board">
+        <h2 class="board-title">Date</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Date and Time</h3>
+            <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_adddate" title="Add time values (intervals) to a date value">ADDDATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_addtime" title="Add time">ADDTIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_convert-tz" title="Convert from one timezone to another">CONVERT_TZ()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_curdate" title="Return the current date">CURDATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_current-date" title="Synonyms for CURDATE()">CURRENT_DATE(), CURRENT_DATE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_current-time" title="Synonyms for CURTIME()">CURRENT_TIME(), CURRENT_TIME</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_current-timestamp" title="Synonyms for NOW()">CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_curtime" title="Return the current time">CURTIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date-add" title="Add time values (intervals) to a date value">DATE_ADD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date-format" title="Format date as specified">DATE_FORMAT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date-sub" title="Subtract a time value (interval) from a date">DATE_SUB()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date" title="Extract the date part of a date or datetime expression">DATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_datediff" title="Subtract two dates">DATEDIFF()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_day" title="Synonym for DAYOFMONTH()">DAY()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_dayname" title="Return the name of the weekday">DAYNAME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_dayofmonth" title="Return the day of the month (0-31)">DAYOFMONTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_dayofweek" title="Return the weekday index of the argument">DAYOFWEEK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_dayofyear" title="Return the day of the year (1-366)">DAYOFYEAR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_extract" title="Extract part of a date">EXTRACT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_from-days" title="Convert a day number to a date">FROM_DAYS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_from-unixtime" title="Format UNIX timestamp as a date">FROM_UNIXTIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_get-format" title="Return a date format string">GET_FORMAT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_hour" title="Extract the hour">HOUR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_last-day" title="Return the last day of the month for the argument">LAST_DAY</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_localtime" title="Synonym for NOW()">LOCALTIME(), LOCALTIME</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_localtimestamp" title="Synonym for NOW()">LOCALTIMESTAMP, LOCALTIMESTAMP()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_makedate" title="Create a date from the year and day of year">MAKEDATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_maketime" title="MAKETIME()">MAKETIME</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_microsecond" title="Return the microseconds from argument">MICROSECOND()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_minute" title="Return the minute from the argument">MINUTE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_month" title="Return the month from the date passed">MONTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_monthname" title="Return the name of the month">MONTHNAME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_now" title="Return the current date and time">NOW()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_period-add" title="Add a period to a year-month">PERIOD_ADD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_period-diff" title="Return the number of months between periods">PERIOD_DIFF()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_quarter" title="Return the quarter from a date argument">QUARTER()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_sec-to-time" title="Converts seconds to 'HH:MM:SS' format">SEC_TO_TIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_second" title="Return the second (0-59)">SECOND()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_str-to-date" title="Convert a string to a date">STR_TO_DATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_subdate" title="A synonym for DATE_SUB() when invoked with three arguments">SUBDATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_subtime" title="Subtract times">SUBTIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_sysdate" title="Return the time at which the function executes">SYSDATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_time-format" title="Format as time">TIME_FORMAT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_time-to-sec" title="Return the argument converted to seconds">TIME_TO_SEC()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_time" title="Extract the time portion of the expression passed">TIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_timediff" title="Subtract time">TIMEDIFF()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_timestamp" title="With a single argument, this function returns the date or  datetime expression; with two arguments, the sum of the arguments">TIMESTAMP()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_timestampadd" title="Add an interval to a datetime expression">TIMESTAMPADD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_timestampdiff" title="Subtract an interval from a datetime expression">TIMESTAMPDIFF()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_to-days" title="Return the date argument converted to days">TO_DAYS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_to-seconds" title="Return the date or datetime argument converted to seconds since  Year 0">TO_SECONDS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_unix-timestamp" title="Return a UNIX timestamp">UNIX_TIMESTAMP()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_utc-date" title="Return the current UTC date">UTC_DATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_utc-time" title="Return the current UTC time">UTC_TIME()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_utc-timestamp" title="Return the current UTC date and time">UTC_TIMESTAMP()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_week" title="Return the week number">WEEK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_weekday" title="Return the weekday index">WEEKDAY()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_weekofyear" title="Return the calendar week of the date (0-53)">WEEKOFYEAR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_year" title="Return the year">YEAR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_yearweek" title="Return the year and week">YEARWEEK()</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
     <div class="board">
         <h2 class="board-title">Anchors</h2>
         <div class="board-card">
