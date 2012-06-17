@@ -318,23 +318,68 @@ title:     MySQL Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">Miscellaneous</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Encryption and Compression</h3>
             <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_aes-decrypt" title="Decrypt using AES">AES_DECRYPT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_aes-encrypt" title="Encrypt using AES">AES_ENCRYPT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_compress" title="Return result as a binary string">COMPRESS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_decode" title="Decodes a string encrypted using ENCODE()">DECODE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_des-decrypt" title="Decrypt a string">DES_DECRYPT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_des-encrypt" title="Encrypt a string">DES_ENCRYPT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_encode" title="Encode a string">ENCODE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_encrypt" title="Encrypt a string">ENCRYPT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_md5" title="Calculate MD5 checksum">MD5()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_old-password" title="Return the value of the  pre-4.1 implementation of PASSWORD">OLD_PASSWORD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_password" title="Calculate and return a password string">PASSWORD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_sha1" title="Calculate an SHA-1 160-bit checksum">SHA1(), SHA()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_sha2" title="Calculate an SHA-2 checksum">SHA2()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_uncompress" title="Uncompress a string compressed">UNCOMPRESS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_uncompressed-length" title="Return the length of a string before compression">UNCOMPRESSED_LENGTH()</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Information Functions</h3>
             <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_benchmark" title="Repeatedly execute an expression">BENCHMARK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_charset" title="Return the character set of the argument">CHARSET()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_coercibility" title="Return the collation coercibility value of the string  argument">COERCIBILITY()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_collation" title="Return the collation of the string argument">COLLATION()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_connection-id" title="Return the connection ID (thread ID)  for the connection">CONNECTION_ID()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_current-user" title="The authenticated user name and host name">CURRENT_USER(), CURRENT_USER</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_database" title="Return the default (current) database name">DATABASE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_found-rows" title="For a SELECT with a LIMIT clause, the  number of rows that would be returned were there no LIMIT clause">FOUND_ROWS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_last-insert-id" title="Value of the AUTOINCREMENT column  for the last INSERT">LAST_INSERT_ID()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_row-count" title="The number of rows  updated">ROW_COUNT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_schema" title="A synonym for DATABASE()">SCHEMA()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_session-user" title="Synonym for USER()">SESSION_USER()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_system-user" title="Synonym for USER()">SYSTEM_USER()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_user" title="The user name and host name provided by the client">USER()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/information-functions.html#function_version" title="Returns a string that indicates the MySQL server version">VERSION()</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Miscellaneous Functions</h3>
             <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_default" title="Return the default value for a table column">DEFAULT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_get-lock" title="Get a named lock">GET_LOCK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_inet-aton" title="Return the numeric value of an IP address">INET_ATON()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_inet-ntoa" title="Return the IP address from a numeric value">INET_NTOA()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_is-free-lock" title="Checks whether the named lock  is free">IS_FREE_LOCK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_is-used-lock" title="Checks whether the named lock is in use.  Return connection identifier if true.">IS_USED_LOCK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_master-pos-wait" title="Block until the slave has read and  applied all updates up to the specified position">MASTER_POS_WAIT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_name-const" title="Causes the column to have the given name">NAME_CONST()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/mathematical-functions.html#function_rand" title="Return a random floating-point value">RAND()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_release-lock" title="Releases the named lock">RELEASE_LOCK()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_sleep" title="Sleep for a number of seconds">SLEEP()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_uuid-short" title="Return an integer-valued universal identifier">UUID_SHORT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_uuid" title="Return a Universal Unique Identifier (UUID)">UUID()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_values" title="Defines the values to be used during an INSERT">VALUES()</a></li>
             </ul>
         </div>
     </div>
+
     <div class="board">
         <h2 class="board-title">Anchors</h2>
         <div class="board-card">
@@ -409,4 +454,3 @@ title:     MySQL Cheatsheet
     </div>
 
 </div>
-
