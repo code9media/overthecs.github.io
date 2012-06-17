@@ -1,0 +1,201 @@
+---
+layout:    default 
+title:     Regex Cheatsheet 
+---
+
+<div class="content">
+    <div class="board">
+        <h2 class="board-title">Data Types</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Types</h3>
+            <ul>
+                <li>CHAR</li>
+                <li class="tip">String (0 - 255)</li>
+                <li>VARCHAR</li>
+                <li class="tip">String (0 - 255)</li>
+                <li>TINYTEXT</li>
+                <li class="tip">String (0 - 255)</li>
+                <li>TEXT</li>
+                <li class="tip">String (0 - 65535)</li>
+                <li>BLOB</li>
+                <li class="tip">String (0 - 65535)</li>
+                <li>MEDIUMTEXT</li>
+                <li class="tip">String (0 - 16777215)</li>
+                <li>MEDIUMBLOB</li>
+                <li class="tip">String (0 - 16777215)</li>
+                <li>LONGTEXT</li>
+                <li class="tip">String (0 - 429496-7295)</li>
+                <li>LONGBLOB</li>
+                <li class="tip">String (0 - 429496-7295)</li>
+                <li>TINYINT x</li>
+                <li class="tip">Integer (-128 to 127)</li>
+                <li>SMALLINT x</li>
+                <li class="tip">Integer (-32768 to 32767)</li>
+                <li>MEDIUMINT x</li>
+                <li class="tip">Integer (-8388608 to 8388607)</li>
+                <li>INT x</li>
+                <li class="tip">Integer (-2147-483648 to 214748-3647)</li>
+                <li>BIGINT x</li>
+                <li class="tip">Integer (-9223-372-036-854-775808 to 922337-203-685-477-5807)</li>
+                <li>FLOAT</li>
+                <li class="tip">Decimal (precise to 23 digits)</li>
+                <li>DOUBLE</li>
+                <li class="tip">Decimal (24 to 53 digits)</li>
+                <li>DECIMAL</li>
+                <li class="tip">"-DOU-BLE-" stored as string</li>
+                <li>DATE</li>
+                <li class="tip">YYYY-MM-DD</li>
+                <li>DATETIME</li>
+                <li class="tip">YYYY-MM-DD HH:MM:SS</li>
+                <li>TIMESTAMP</li>
+                <li class="tip">YYYYMM-DDH-HMMSS</li>
+                <li>TIME</li>
+                <li class="tip">HH:MM:SS</li>
+                <li>ENUM</li>
+                <li class="tip">One of preset options</li>
+                <li>SET</li>
+                <li class="tip">Selection of preset options</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Operators</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Assignment Operators</h3>
+            <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/assignment-operators.html#operator_assign-equal" title="Assign a value (as part of a SET statement, or as part of the SET clause in an UPDATE statement)">=</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/assignment-operators.html#operator_assign-value" title="Assign a value">:=</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Logical Operators</h3>
+            <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/logical-operators.html#operator_and" title="Logical AND">AND, &amp;&amp;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/logical-operators.html#operator_not" title="Negates value">NOT, !</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/logical-operators.html#operator_or" title="Logical OR">||, OR</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/logical-operators.html#operator_xor" title="Logical XOR">XOR</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Comparison Operators</h3>
+            <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_between" title="Check whether a value is within a range of values">BETWEEN ... AND ... </a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/cast-functions.html#operator_binary" title="Cast a string to a binary string">BINARY</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/bit-functions.html#operator_bitwise-and" title="Bitwise AND">&amp;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/bit-functions.html#operator_bitwise-invert" title="Invert bits">~</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/bit-functions.html#operator_bitwise-or" title="Bitwise OR">|</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/bit-functions.html#operator_bitwise-xor" title="Bitwise XOR">^</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/control-flow-functions.html#operator_case" title="Case operator">CASE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_div" title="Integer division">DIV</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_divide" title="Division operator">/</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_equal-to" title="NULL-safe equal to operator">&lt;=&gt;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_equal" title="Equal operator">=</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_greater-than-or-equal" title="Greater than or equal operator">&gt;=</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_greater-than" title="Greater than operator">&gt;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_is-not-null" title="NOT NULL value test">IS NOT NULL</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_is-not" title="Test a value against a boolean">IS NOT</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_is-null" title="NULL value test">IS NULL</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_is" title="Test a value against a boolean">IS</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/bit-functions.html#operator_left-shift" title="Left shift">&lt;&lt;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_less-than-or-equal" title="Less than or equal operator">&lt;=</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_less-than" title="Less than operator">&lt;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_like" title="Simple pattern matching">LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_minus" title="Minus operator">-</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_mod" title="Modulo operator">% or MOD</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_not-between" title="Check whether a value is not within a range of values">NOT BETWEEN ... AND ...</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_not-equal" title="Not equal operator">!=, &lt;&gt;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_not-like" title="Negation of simple pattern matching">NOT LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_not-regexp" title="Negation of REGEXP">NOT REGEXP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_plus" title="Addition operator">+</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_regexp" title="Pattern matching using regular expressions">REGEXP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/bit-functions.html#operator_right-shift" title="Right shift">&gt;&gt;</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_regexp" title="Synonym for REGEXP">RLIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#operator_sounds-like" title="Compare sounds">SOUNDS LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_times" title="Multiplication operator">*</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/arithmetic-functions.html#operator_unary-minus" title="Change the sign of the argument">-</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Anchors</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Anchros</h3>
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<tbody>
+</tbody>
+
