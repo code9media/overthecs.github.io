@@ -119,23 +119,83 @@ title:     Regex Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">String</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">String Comparison</h3>
             <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_like" title="Simple pattern matching">LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_not-like" title="Negation of simple pattern matching">NOT LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#function_strcmp" title="Compare two strings">STRCMP()</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Regular Expressions</h3>
             <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_not-regexp" title="Negation of REGEXP">NOT REGEXP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_regexp" title="Pattern matching using regular expressions">REGEXP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_regexp" title="Synonym for REGEXP">RLIKE</a></li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">String Functions</h3>
             <ul>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_ascii" title="Return numeric value of left-most character">ASCII()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_bin" title="Return a string representation of the argument">BIN()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_bit-length" title="Return length of argument in bits">BIT_LENGTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_char-length" title="Return number of characters in argument">CHAR_LENGTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_char" title="Return the character for each integer passed">CHAR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_character-length" title="A synonym for CHAR_LENGTH()">CHARACTER_LENGTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_concat-ws" title="Return concatenate with  separator">CONCAT_WS()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_concat" title="Return concatenated string">CONCAT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_elt" title="Return string at index number">ELT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_export-set" title="Return a string such that for every bit set in the value  bits, you get an on string and for every unset bit, you get an off string">EXPORT_SET()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_field" title="Return the index (position) of the first argument  in the subsequent arguments">FIELD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_find-in-set" title="Return the index position of  the first argument within the second argument">FIND_IN_SET()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_format" title="Return a number formatted to specified number of decimal places">FORMAT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_hex" title="Return a hexadecimal representation of a  decimal or string value">HEX()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_insert" title="Insert a substring at the specified position up to  the specified number of characters">INSERT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_instr" title="Return the index of the first occurrence of substring">INSTR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_lcase" title="Synonym for LOWER() ">LCASE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_left" title="Return the leftmost number of characters as specified">LEFT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_length" title="Return the length of a string in bytes">LENGTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_like" title="Simple pattern matching">LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_load-file" title="Load the named file">LOAD_FILE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_locate" title="Return the position of the first occurrence  of substring">LOCATE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_lower" title="Return the argument in lowercase ">LOWER()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_lpad" title="Return the string argument, left-padded  with the specified string">LPAD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_ltrim" title="Remove leading spaces">LTRIM()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_make-set" title="Return a set of comma-separated strings  that have the corresponding bit in bits set">MAKE_SET()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/fulltext-search.html#function_match" title="Perform full-text search">MATCH</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_mid" title="Return a substring starting from the specified position">MID()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_not-like" title="Negation of simple pattern matching">NOT LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_not-regexp" title="Negation of REGEXP">NOT REGEXP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_octet-length" title="A synonym for LENGTH()">OCTET_LENGTH()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_ord" title="Return character code for leftmost character of the  argument">ORD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_position" title="A synonym for LOCATE()">POSITION()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_quote" title="Escape the argument for use in an SQL statement">QUOTE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_regexp" title="Pattern matching using regular expressions">REGEXP</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_repeat" title="Repeat a string the specified number of times">REPEAT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_replace" title="Replace occurrences of a specified string">REPLACE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_reverse" title="Reverse the characters in a string">REVERSE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_right" title="Return the specified rightmost number of characters">RIGHT()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/regexp.html#operator_regexp" title="Synonym for REGEXP">RLIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_rpad" title="Append string the specified number of times">RPAD()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_rtrim" title="Remove trailing spaces">RTRIM()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_soundex" title="Return a soundex string">SOUNDEX()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#operator_sounds-like" title="Compare sounds">SOUNDS LIKE</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_space" title="Return a string of the specified number of spaces">SPACE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#function_strcmp" title="Compare two strings">STRCMP()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_substr" title="Return the substring as specified">SUBSTR()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_substring-index" title="Return a substring from a  string before the specified number of occurrences of the delimiter">SUBSTRING_INDEX()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_substring" title="Return the substring as specified">SUBSTRING()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_trim" title="Remove leading and trailing spaces">TRIM()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_ucase" title="Synonym for UPPER()">UCASE()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_unhex" title="Convert each pair of hexadecimal digits  to a character">UNHEX()</a></li>
+                <li><a href="http://dev.mysql.com/doc/refman/5.5/en/string-functions.html#function_upper" title="Convert to uppercase">UPPER()</a></li>
             </ul>
         </div>
     </div>
+
     <div class="board">
         <h2 class="board-title">Anchors</h2>
         <div class="board-card">
@@ -195,7 +255,10 @@ title:     Regex Cheatsheet
 
 
 
-
+<tbody>
+</tbody>
+<tbody>
+</tbody>
 <tbody>
 </tbody>
 
