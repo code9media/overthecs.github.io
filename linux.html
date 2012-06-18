@@ -109,117 +109,246 @@ title:     Linux Command Line Cheatsheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">Pipes</h2>
         <div class="board-card">
             <h3 class="board-card-title">Anchros</h3>
             <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
+                <li>cmd1 | cmd2</li>
+                <li class="tip">stdout of cmd1 to cmd2</li>
+                <li>cmd1 |&amp; cmd2</li>
+                <li class="tip">stderr of cmd1 to cmd2</li>
             </ul>
         </div>
     </div>
+
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">Command Lists</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
             <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
+                <li>cmd1 ; cmd2</li>
+                <li class="tip">Run cmd1 then cmd2</li>
+                <li>cmd1 &amp;&amp; cmd2</li>
+                <li class="tip">Run cmd2 if cmd1 is successful</li>
+                <li>cmd1 || cmd2</li>
+                <li class="tip">Run cmd2 if cmd1 is not successful</li>
+                <li>cmd</li>
+                <li class="tip">Run cmd in a subshell</li>
             </ul>
         </div>
     </div>
+
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">Directory Operations</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
             <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
+                <li>pwd</li>
+                <li class="tip">Show current directory</li>
+                <li>mkdir <em>dir</em></li>
+                <li class="tip">Make directory <em>dir</em></li>
+                <li>cd <em>dir</em></li>
+                <li class="tip">Change directory to <em>dir</em></li>
+                <li>cd ..</li>
+                <li class="tip">Go up a directory</li>
+                <li>ls</li>
+                <li class="tip">List files</li>
             </ul>
         </div>
     </div>
+
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">ls Options</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
             <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
-            <ul>
+                <li>-a</li>
+                <li class="tip">Show all (including hidden)</li>
+                <li>-R</li>
+                <li class="tip">Recursive list</li>
+                <li>-r</li>
+                <li class="tip">Reverse order</li>
+                <li>-t</li>
+                <li class="tip">Sort by last modified</li>
+                <li>-S</li>
+                <li class="tip">Sort by file size</li>
+                <li>-l</li>
+                <li class="tip">Long listing format</li>
+                <li>-1</li>
+                <li class="tip">One file per line</li>
+                <li>-m</li>
+                <li class="tip">Comma--sep-arated output</li>
+                <li>-Q</li>
+                <li class="tip">Quoted output</li>
             </ul>
         </div>
     </div>
+
     <div class="board">
-        <h2 class="board-title">Anchors</h2>
+        <h2 class="board-title">Search Files</h2>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
             <ul>
+                <li>grep pattern files</li>
+                <li class="tip">Search for pattern in files</li>
+                <li>grep -i</li>
+                <li class="tip">Case insens-itive search</li>
+                <li>grep -r</li>
+                <li class="tip">Recursive search</li>
+                <li>grep -v</li>
+                <li class="tip">Inverted search</li>
+                <li>grep -o</li>
+                <li class="tip">Show matched part of file only</li>
+                <li>find /dir/ -name name*</li>
+                <li class="tip">Find files starting with name in dir</li>
+                <li>find /dir/ -user name</li>
+                <li class="tip">Find files owned by name in dir</li>
+                <li>find /dir/ -mmin num</li>
+                <li class="tip">Find files modifed less than num minutes ago in dir</li>
+                <li>whereis command</li>
+                <li class="tip">Find binary / source / manual for command</li>
+                <li>locate file</li>
+                <li class="tip">Find file (quick search of system index)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">File Operations</h2>
+        <div class="board-card">
+            <ul>
+                <li>touch file1</li>
+                <li class="tip">Create file1</li>
+                <li>cat file1 file2</li>
+                <li class="tip">Concat-enate files and output</li>
+                <li>less file1</li>
+                <li class="tip">View and paginate file1</li>
+                <li>file file1</li>
+                <li class="tip">Get type of file1</li>
+                <li>cp file1 file2</li>
+                <li class="tip">Copy file1 to file2</li>
+                <li>mv file1 file2</li>
+                <li class="tip">Move file1 to file2</li>
+                <li>rm file1</li>
+                <li class="tip">Delete file1</li>
+                <li>head file1</li>
+                <li class="tip">Show first 10 lines of file1</li>
+                <li>tail file1</li>
+                <li class="tip">Show last 10 lines of file1</li>
+                <li>tail -f file1</li>
+                <li class="tip">Output last lines of file1 as it changes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Process Management</h2>
+        <div class="board-card">
+            <ul>
+                <li>ps</li>
+                <li class="tip">Show snapshot of processes</li>
+                <li>top</li>
+                <li class="tip">Show real time processes</li>
+                <li>kill <em>pid</em></li>
+                <li class="tip">Kill process with id <em>pid</em></li>
+                <li>pkill <em>name</em></li>
+                <li class="tip">Kill process with name <em>name</em></li>
+                <li>killall <em>name</em></li>
+                <li class="tip">Kill all processes with names beginning <em>name</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Nano Shortcuts</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Files</h3>
+            <ul>
+                <li>Ctrl-R</li>
+                <li class="tip">Read file</li>
+                <li>Ctrl-O</li>
+                <li class="tip">Save file</li>
+                <li>Ctrl-X</li>
+                <li class="tip">Close file</li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Images</h3>
             <ul>
+                <li>ALT-A</li>
+                <li class="tip">Start marking text</li>
+                <li>CTRL-K</li>
+                <li class="tip">Cut marked text or line</li>
+                <li>CTRL-U</li>
+                <li class="tip">Paste text</li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Navigate File</h3>
             <ul>
+                <li>ALT-/</li>
+                <li class="tip">End of file</li>
+                <li>CTRL-A</li>
+                <li class="tip">Beginning of line</li>
+                <li>CTRL-E</li>
+                <li class="tip">End of line</li>
+                <li>CTRL-C</li>
+                <li class="tip">Show line number</li>
+                <li>CTRL-_</li>
+                <li class="tip">Go to line number</li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Anchros</h3>
+            <h3 class="board-card-title">Search File</h3>
             <ul>
+                <li>CTRL-W</li>
+                <li class="tip">Find</li>
+                <li>ALT-W</li>
+                <li class="tip">Find next</li>
+                <li>CTRL-\</li>
+                <li class="tip">Search and replace</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Screen Shortcuts</h2>
+        <div class="board-card">
+            <ul>
+                <li>screen</li>
+                <li class="tip">Start a screen session.</li>
+                <li>screen -r</li>
+                <li class="tip">Resume a screen session.</li>
+                <li>screen -list</li>
+                <li class="tip">Show your current screen sessions.</li>
+                <li>CTRL-A</li>
+                <li class="tip">Activate commands for screen.</li>
+                <li>CTRL-A c</li>
+                <li class="tip">Create a new instance of terminal.</li>
+                <li>CTRL-A n</li>
+                <li class="tip">Go to the next instance of terminal.</li>
+                <li>CTRL-A p</li>
+                <li class="tip">Go to the previous instance of terminal.</li>
+                <li>CTRL-A "</li>
+                <li class="tip">Show current instances of terminals.</li>
+                <li>CTRL-A A</li>
+                <li class="tip">Rename the current instance.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">File Permissions</h2>
+        <div class="board-card">
+            <ul>
+                <li>4</li>
+                <li class="tip">read (r)</li>
+                <li>2</li>
+                <li class="tip">write (w)</li>
+                <li>1</li>
+                <li class="tip">execute (x)</li>
+                <li>chmod 775 file</li>
+                <li class="tip">Change mode of file to 775</li>
+                <li>chmod -R 600 folder</li>
+                <li class="tip">Recurs-ively chmod folder to 600</li>
+                <li>chown user-:g-roup file</li>
+                <li class="tip">Change file owner to user and group to group</li>
             </ul>
         </div>
     </div>
