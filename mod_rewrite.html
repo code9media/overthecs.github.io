@@ -1,0 +1,232 @@
+---
+layout:    default 
+title:     mod_rewrite Cheat Sheet
+---
+
+<div class="content">
+    <div class="board">
+        <h2 class="board-title">RewriteRule Flags</h2>
+        <div class="board-card">
+            <ul>
+                <li>C</li>
+                <li class="tip">Chained with next rule</li>
+                <li>CO=cookie</li>
+                <li class="tip">Set specified cookie</li>
+                <li>E=var:-value</li>
+                <li class="tip">Set enviro-nmental variable “var” to “value”</li>
+                <li>F</li>
+                <li class="tip">Forbidden (403 header)</li>
+                <li>G</li>
+                <li class="tip">Gone - no longer exists</li>
+                <li>H=handler</li>
+                <li class="tip">Set handler</li>
+                <li>L</li>
+                <li class="tip">Last - stop processing rules</li>
+                <li>N</li>
+                <li class="tip">Next - continue processing</li>
+                <li>NC</li>
+                <li class="tip">Case insens-itive</li>
+                <li>NE</li>
+                <li class="tip">Do not escape output</li>
+                <li>NS</li>
+                <li class="tip">Ignore if subrequest</li>
+                <li>P</li>
+                <li class="tip">Proxy</li>
+                <li>PT</li>
+                <li class="tip">Pass through</li>
+                <li>R[=code]</li>
+                <li class="tip">Redirect to new URL, with optional code (see below)</li>
+                <li>QSA</li>
+                <li class="tip">Append query string</li>
+                <li>S=x</li>
+                <li class="tip">Skip next x rules</li>
+                <li>T=mime--type</li>
+                <li class="tip">Set mime type</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">RegExp</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Regular Expressions Syntax</h3>
+            <ul>
+                <li>^</li>
+                <li class="tip">Start of string</li>
+                <li>$</li>
+                <li class="tip">End of string</li>
+                <li>.</li>
+                <li class="tip">Any single character</li>
+                <li>(a|b)</li>
+                <li class="tip">a or b</li>
+                <li>(...)</li>
+                <li class="tip">Group section</li>
+                <li>[abc]</li>
+                <li class="tip">In range (a, b or c)</li>
+                <li>[^abc]</li>
+                <li class="tip">Not in range</li>
+                <li>\s</li>
+                <li class="tip">White space</li>
+                <li>a?</li>
+                <li class="tip">Zero or one of a</li>
+                <li>a*</li>
+                <li class="tip">Zero or more of a</li>
+                <li>a*?</li>
+                <li class="tip">Zero or more, ungreedy</li>
+                <li>a+</li>
+                <li class="tip">One or more of a</li>
+                <li>a+?</li>
+                <li class="tip">One or more, ungreedy</li>
+                <li>a{3}</li>
+                <li class="tip">Exactly 3 of a</li>
+                <li>a{3,}</li>
+                <li class="tip">3 or more of a</li>
+                <li>a{,6}</li>
+                <li class="tip">Up to 6 of a</li>
+                <li>a{3,6}</li>
+                <li class="tip">3 to 6 of a</li>
+                <li>a{3,6}?</li>
+                <li class="tip">3 to 6 of a, ungreedy</li>
+                <li>\</li>
+                <li class="tip">Escape character</li>
+                <li>[:punct:]</li>
+                <li class="tip">Any punctu-ation symbol</li>
+                <li>[:space:]</li>
+                <li class="tip">Any space character</li>
+                <li>[:blank:]</li>
+                <li class="tip">Space or tab</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Directives</h2>
+        <div class="board-card">
+            <ul>
+                <li>Rewrit-eEngine</li>
+                <li>Rewrit-eOp-tions</li>
+                <li>RewriteLog</li>
+                <li>Rewrit-eLo-gLevel</li>
+                <li>Rewrit-eLock</li>
+                <li>RewriteMap</li>
+                <li>Rewrit-eBase</li>
+                <li>Rewrit-eCond</li>
+                <li>Rewrit-eRule</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Miscellaneous</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">RewriteCond Flags</h3>
+            <ul>
+                <li>NC</li>
+                <li class="tip">Case insens-itive</li>
+                <li>OR</li>
+                <li class="tip">Combine with next rule using 'OR' instead of the default of 'AND'</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Redirection Header Codes</h3>
+            <ul>
+                <li>301</li>
+                <li class="tip">Moved perman-ently</li>
+                <li>302</li>
+                <li class="tip">Moved tempor-arily (default)</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Sample Rule: Site Moved</h3>
+            <ul>
+                <li class="tip"># Site moved perman-ently</li>
+                <li>Rewrit-eCond   %{HTTP-_HOST}   ^www.d-oma-in.com$   [NC]</li>
+                <li>Rewrit-eRule   ^(.*)$   http:/-/ww-w.d-oma-in2.com/$1   [R=301,L]</li>
+                <li class="tip">Rewrites domain.com to domain-2.com</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Sample Rule: Temporary Page Move</h3>
+            <ul>
+                <li class="tip"># Page has moved tempor-arily</li>
+                <li>Rewrit-eRule   ^page.h-tml$   new_pa-ge.html   [R,NC,L]</li>
+                <li class="tip">Rewrites domain.co-m/p-age.html to domain.co-m/n-ew_-pag-e.html</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Sample Rule: Nice URLs</h3>
+            <ul>
+                <li class="tip"># Nice URLs (no query string)</li>
+                <li>Rewrit-eRule   ^([A-Z-a-z-0-9--]+)/?$   catego-rie-s.p-hp?-name=$1 [L]</li>
+                <li class="tip">Rewrites domain.co-m/c-ate-gor-y-n-ame-1/ to domain.co-m/c-ate-gor-ies.ph-p?n-ame-=ca-teg-ory--name-1</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Server Variables</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">HTTP Headers</h3>
+            <ul>
+                <li>%{HTTP-_US-ER_-AGENT}</li>
+                <li>%{HTTP-_RE-FERER}</li>
+                <li>%{HTTP-_CO-OKIE}</li>
+                <li>%{HTTP-_FO-RWA-RDED}</li>
+                <li>%{HTTP-_HOST}</li>
+                <li>%{HTTP-_PR-OXY-_CO-NNE-CTION}</li>
+                <li>%{HTTP-_AC-CEPT}</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Server Internals</h3>
+            <ul>
+                <li>%{DOCU-MEN-T_ROOT}</li>
+                <li>%{SERV-ER_-ADMIN}</li>
+                <li>%{SERV-ER_-NAME}</li>
+                <li>%{SERV-ER_-ADDR}</li>
+                <li>%{SERV-ER_-PORT}</li>
+                <li>%{SERV-ER_-PRO-TOCOL}</li>
+                <li>%{SERV-ER_-SOF-TWARE}</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Special</h3>
+            <ul>
+                <li>%{API_-VER-SION}</li>
+                <li>%{THE_-REQ-UEST}</li>
+                <li>%{REQU-EST-_URI}</li>
+                <li>%{REQU-EST-_FI-LENAME}</li>
+                <li>%{IS_S-UBREQ}</li>
+                <li>%{HTTPS}</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Request</h3>
+            <ul>
+                <li>%{REMO-TE_-ADDR}</li>
+                <li>%{REMO-TE_-HOST}</li>
+                <li>%{REMO-TE_-PORT}</li>
+                <li>%{REMO-TE_-USER}</li>
+                <li>%{REMO-TE_-IDENT}</li>
+                <li>%{REQU-EST-_ME-THOD}</li>
+                <li>%{SCRI-PT_-FIL-ENAME}</li>
+                <li>%{PATH-_INFO}</li>
+                <li>%{QUER-Y_S-TRING}</li>
+                <li>%{AUTH-_TYPE}</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Time</h3>
+            <ul>
+                <li>%{TIME-_YEAR}</li>
+                <li>%{TIME-_MON}</li>
+                <li>%{TIME-_DAY}</li>
+                <li>%{TIME-_HOUR}</li>
+                <li>%{TIME-_MIN}</li>
+                <li>%{TIME-_SEC}</li>
+                <li>%{TIME-_WDAY}</li>
+                <li>%{TIME}</li>
+            </ul>
+        </div>
+    </div>
+</div>
