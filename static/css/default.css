@@ -39,12 +39,12 @@ body {background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-fa
 
 .index{margin:30px auto;color:#fff;width:600px;}
 .index h1{font-size:38px;margin-bottom:35px;}
-.index-title{font-size:38px;border-bottom:1px solid #777;margin-bottom:15px;}
+.index-title{font-size:30px;border-bottom:1px solid #777;margin-bottom:15px;}
 .index-content{margin-bottom:50px;overflow:hidden;zoom:1;}
 .index-content li{float:left;margin:5px;font-size:18px;border-radius:10px;padding:20px 20px;}
 .index-content li:hover{background:#fff;}
 .index-content li a{color:#000;text-decoration:none;}
-.index-item{font-size:18px;margin-bottom:15px;}
+.index-item{font-size:18px;margin-bottom:15px;color:#bbb;}
 .index-item a{color:red}
 
 
