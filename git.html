@@ -3,7 +3,7 @@ layout:    default
 title:     Git Cheat Sheet 
 ---
 
-<div class="content">
+<div class="content content-250">
     <div class="board">
         <h2 class="board-title">Create Git</h2>
         <div class="board-card">
@@ -148,78 +148,146 @@ title:     Git Cheat Sheet
     </div>
 
     <div class="board">
-        <h2 class="board-title"></h2>
+        <h2 class="board-title">Merge/Rebase</h2>
         <div class="board-card">
+            <h3 class="board-card-title">Merge branch into current</h3>
             <ul>
+                <li>git merge <em>branch</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Rebase into branch</h3>
             <ul>
+                <li>git rebase <em>branch</em></li>
+                <li>git rebase <em>master</em> <em>branch</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Abort rebase</h3>
             <ul>
+                <li>git rebase --abort</li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Merge tool to solve confli-cts</h3>
             <ul>
-            </ul>
-        </div>
-    </div>
-    <div class="board">
-        <h2 class="board-title"></h2>
-        <div class="board-card">
-            <ul>
+                <li>git mergetool</li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Conf-licts against base file</h3>
             <ul>
+                <li>git diff --base <em>file</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Diff other users changes</h3>
             <ul>
+                <li>git diff --theirs <em>file</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Diff your changes</h3>
             <ul>
-            </ul>
-        </div>
-    </div>
-    <div class="board">
-        <h2 class="board-title"></h2>
-        <div class="board-card">
-            <ul>
+                <li>git diff --ours <em>file</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">After resolving confli-cts</h3>
             <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <ul>
-            </ul>
-        </div>
-        <div class="board-card">
-            <ul>
+                <li>git rebase --continue</li>
             </ul>
         </div>
     </div>
+
     <div class="board">
-        <h2 class="board-title"></h2>
+        <h2 class="board-title">Remote Updat / Publish</h2>
         <div class="board-card">
+            <h3 class="board-card-title">List remotes</h3>
             <ul>
+                <li>git remote -v</li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Show inform-ation</h3>
             <ul>
+                <li>git remote show <em>remote</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Add remote</h3>
             <ul>
+                <li>git remote add <em>path/url</em></li>
             </ul>
         </div>
         <div class="board-card">
+            <h3 class="board-card-title">Fetch changes</h3>
             <ul>
+                <li>git fetch <em>remote</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Fetch + merge</h3>
+            <ul>
+                <li>git pull <em>remote</em> <em>branch</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Publish local to remote</h3>
+            <ul>
+                <li>git push <em>remote</em> <em>branch</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Delete remote branch</h3>
+            <ul>
+                <li>git push <em>remote</em> :<em>branch</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Publish tags</h3>
+            <ul>
+                <li>git push --tags</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Branching/Tagging</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">List branches</h3>
+            <ul>
+            <li>git branch</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Switch to branch</h3>
+            <ul>
+            <li>git checkout <em>branch</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Create new branch</h3>
+            <ul>
+            <li>git branch <em>new</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Create branch from existing</h3>
+            <ul>
+            <li>git branch <em>new</em> <em>existing</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Delete branch</h3>
+            <ul>
+            <li>git branch -d <em>branch</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Tag current commit</h3>
+            <ul>
+            <li>git tag <em>tag-name</em></li>
             </ul>
         </div>
     </div>
