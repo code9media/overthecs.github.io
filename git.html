@@ -1,0 +1,226 @@
+---
+layout:    default 
+title:     Git Cheat Sheet 
+---
+
+<div class="content">
+    <div class="board">
+        <h2 class="board-title">Create Git</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">From existing direct-ory</h3>
+            <ul>
+                <li>cd <em>proje-ct_dir</em></li>
+                <li>git init</li>
+                <li>git add .</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">From other reposi-tory</h3>
+            <ul>
+                <li>git clone <em>exist-ing-_dir</em> <em>new_dir</em></li>
+                <li>git clone <em>git:/-/gi-thu-b.c-om/-use-r/r-epo.git</em></li>
+                <li>git clone <em>https-://-git-hub.co-m/u-ser-/re-po.git</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Local Changes</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Changed in working direct-ory</h3>
+            <ul>
+                <li>git status</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Tracked file changes</h3>
+            <ul>
+                <li>git diff</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Add changed files</h3>
+            <ul>
+                <li>git add <em>file1</em> <em>file2</em> <em>file3</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Remove file</h3>
+            <ul>
+                <li>git rm <em>file</em></li>
+                <li>git rm <em>dir/</em> -r</li>
+                <li class="tip">(recu-rsive under direct-ory)</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">See files ready for commit</h3>
+            <ul>
+                <li>git diff --cached</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Commit changes</h3>
+            <ul>
+                <li>git commit</li>
+                <li>git commit -m "My messag-e"</li>
+                <li>git commit -a -m "My Messag-e"</li>
+                <li class="tip">(tracked files only, auto add)</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Change last commit</h3>
+            <ul>
+                <li>git commit --amend</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Revert changes to file</h3>
+            <ul>
+                <li>git checkout -- <em>file</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Revert changes (new commit)</h3>
+            <ul>
+                <li>git revert HEAD</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Return to last committed state</h3>
+            <ul>
+                <li>git reset --hard HEAD</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">History</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Show all commits</h3>
+            <ul>
+                <li>git log</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Short Format</h3>
+            <ul>
+                <li>git log --pret-ty=-short</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Patc-hes</h3>
+            <ul>
+                <li>git log -p</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Show file commits</h3>
+            <ul>
+                <li>git log <em>file</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Show directory commits</h3>
+            <ul>
+                <li>git log <em>dir/</em></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Stats</h3>
+            <ul>
+                <li>git log --stat</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Who changed file</h3>
+            <ul>
+                <li>git blame <em>file</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title"></h2>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title"></h2>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title"></h2>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title"></h2>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+        <div class="board-card">
+            <ul>
+            </ul>
+        </div>
+    </div>
+</div>
