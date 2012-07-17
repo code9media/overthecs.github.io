@@ -29,6 +29,125 @@ title:     Svn Cheat Sheet
     </div>
 
     <div class="board">
+        <h2 class="board-title">Checkout & Help</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Checkout Working Copy</h3>
+            <ul>
+                <li>$ svn checkout "-/pa-th/-to/-rep-osi-tor-y"</li>
+                <li class="tip">Checkout working copy into current folder</dli>
+                <li>$ svn checkout "-/pa-th/-to/-rep-osi-tor-y" "-/pa-th/-to/-fol-der-"</li>
+                <li class="tip">Checkout working copy into target folder</dli>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">SVN Help</h3>
+            <ul>
+                <li>$ svn help</li>
+                <li>$ svn help import</li>
+                <li class="tip">Show help for "-imp-ort-" command</dli>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Commit</h2>
+        <div class="board-card">
+            <ul>
+                <li>$ svn commit "-/pa-th"</li>
+                <li class="tip">Commit changes to path</dli>
+                <li>$ svn commit -m "-Mes-sag-e" "-/pa-th"</li>
+                <li class="tip">Commit with log message</dli>
+                <li>$ svn commit -N "-/pa-th"</li>
+                <li class="tip">Commit without recursion</dli>
+                <li>$ svn import "-/pa-th/-to/-fol-der-" "-/pa-th"</li>
+                <li class="tip">Import and commit local folder</dli>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Update</h2>
+        <div class="board-card">
+            <ul>
+                <li>$ svn update "-/pa-th"</li>
+                <li class="tip">Update path</dli>
+                <li>$ svn update -r9 "-/pa-th"</li>
+                <li class="tip">Update path to revision 9</dli>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Diff/Revert/Merge</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Differences Between Files</h3>
+            <ul>
+                <li>$ svn diff "-/pa-th/-fil-e"</li>
+                <li>$ svn diff "-/pa-th/-fil-e@2-" "-/pa-th/-fil-e@7-"</li>
+                <li>$ svn diff -r 2:7 "-/pa-th/-fol-der-"</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Revert</h3>
+            <ul>
+                <li>$ svn revert "-/pa-th"</li>
+                <li class="tip">Revert changes to path</dli>
+                <li>$ svn revert -R "-/pa-th"</li>
+                <li class="tip">Revert changes recurs-ively</dli>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Merge Changes</h3>
+            <ul>
+                <li>$ svn merge -r2:7 "-ite-m" "-/pa-th"</li>
+                <li class="tip">Apply diff between revisions 2 and 7 of "-ite-m" to path</dli>
+                <li>$ svn merge "-url-1" "-url-2" "-/pa-th"</li>
+                <li class="tip">Apply diff between "-url-1" and "-url-2" to path</dli>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Add/Delete</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Add Files / Folders</h3>
+            <ul>
+                <li>$ svn add *</li>
+                <li class="tip">Add all items, recurs-ively</dli>
+                <li>$ svn add itemname</li>
+                <li class="tip">Add itemname (if folder, adds recurs-ively)</dli>
+                <li>$ svn add * --force</li>
+                <li class="tip">Force recursion into versioned direct-ories</dli>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Deleteing Copying Moving</h3>
+            <ul>
+                <li>$ svn delete "-/pa-th"</li>
+                <li class="tip">Delete path</dli>
+                <li>$ svn -m "-Delete messag-e" delete "-/pa-th"</li>
+                <li class="tip">Delete with log message</dli>
+                <li>$ svn copy "-/so-urc-e" "-/ta-rge-t"</li>
+                <li class="tip">Copy source to target</dli>
+                <li>$ svn move "-/so-urc-e" "-/ta-rge-t"</li>
+                <li class="tip">Move source to target</dli>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Logs and Blame</h2>
+        <div class="board-card">
+            <ul>
+                <li>$ svn log "-/pa-th"</li>
+                <li class="tip">Show log messages for path</dli>
+                <li>$ svn blame "-/pa-th"</li>
+                <li class="tip">Show commits for path</dli>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
         <h2 class="board-title">Protocols</h2>
         <div class="board-card">
             <ul>
@@ -58,108 +177,6 @@ title:     Svn Cheat Sheet
                 <li class="tip">Dump repository to file (backup)</dli>
                 <li>$ svnadmin load "-/pa-th/-to/-rep-osi-tor-y" &lt; filename</li>
                 <li class="tip">Load repository from file (restore)</dli>
-            </ul>
-        </div>
-    </div>
-
-    <div class="board">
-        <h2 class="board-title">Command</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">Checkout Working Copy</h3>
-            <ul>
-                <li>$ svn checkout "-/pa-th/-to/-rep-osi-tor-y"</li>
-                <li class="tip">Checkout working copy into current folder</dli>
-                <li>$ svn checkout "-/pa-th/-to/-rep-osi-tor-y" "-/pa-th/-to/-fol-der-"</li>
-                <li class="tip">Checkout working copy into target folder</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Differences Between Files</h3>
-            <ul>
-                <li>$ svn diff "-/pa-th/-fil-e"</li>
-                <li>$ svn diff "-/pa-th/-fil-e@2-" "-/pa-th/-fil-e@7-"</li>
-                <li>$ svn diff -r 2:7 "-/pa-th/-fol-der-"</li>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Update</h3>
-            <ul>
-                <li>$ svn update "-/pa-th"</li>
-                <li class="tip">Update path</dli>
-                <li>$ svn update -r9 "-/pa-th"</li>
-                <li class="tip">Update path to revision 9</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Add Files / Folders</h3>
-            <ul>
-                <li>$ svn add *</li>
-                <li class="tip">Add all items, recurs-ively</dli>
-                <li>$ svn add itemname</li>
-                <li class="tip">Add itemname (if folder, adds recurs-ively)</dli>
-                <li>$ svn add * --force</li>
-                <li class="tip">Force recursion into versioned direct-ories</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">SVN Help</h3>
-            <ul>
-                <li>$ svn help</li>
-                <li>$ svn help import</li>
-                <li class="tip">Show help for "-imp-ort-" command</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Commit</h3>
-            <ul>
-                <li>$ svn commit "-/pa-th"</li>
-                <li class="tip">Commit changes to path</dli>
-                <li>$ svn commit -m "-Mes-sag-e" "-/pa-th"</li>
-                <li class="tip">Commit with log message</dli>
-                <li>$ svn commit -N "-/pa-th"</li>
-                <li class="tip">Commit without recursion</dli>
-                <li>$ svn import "-/pa-th/-to/-fol-der-" "-/pa-th"</li>
-                <li class="tip">Import and commit local folder</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Deleteing Copying Moving</h3>
-            <ul>
-                <li>$ svn delete "-/pa-th"</li>
-                <li class="tip">Delete path</dli>
-                <li>$ svn -m "-Delete messag-e" delete "-/pa-th"</li>
-                <li class="tip">Delete with log message</dli>
-                <li>$ svn copy "-/so-urc-e" "-/ta-rge-t"</li>
-                <li class="tip">Copy source to target</dli>
-                <li>$ svn move "-/so-urc-e" "-/ta-rge-t"</li>
-                <li class="tip">Move source to target</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Logs and Blame</h3>
-            <ul>
-                <li>$ svn log "-/pa-th"</li>
-                <li class="tip">Show log messages for path</dli>
-                <li>$ svn blame "-/pa-th"</li>
-                <li class="tip">Show commits for path</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Revert</h3>
-            <ul>
-                <li>$ svn revert "-/pa-th"</li>
-                <li class="tip">Revert changes to path</dli>
-                <li>$ svn revert -R "-/pa-th"</li>
-                <li class="tip">Revert changes recurs-ively</dli>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">Merge Changes</h3>
-            <ul>
-                <li>$ svn merge -r2:7 "-ite-m" "-/pa-th"</li>
-                <li class="tip">Apply diff between revisions 2 and 7 of "-ite-m" to path</dli>
-                <li>$ svn merge "-url-1" "-url-2" "-/pa-th"</li>
-                <li class="tip">Apply diff between "-url-1" and "-url-2" to path</dli>
             </ul>
         </div>
     </div>
