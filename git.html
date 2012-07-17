@@ -175,26 +175,30 @@ title:     Git Cheat Sheet
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Conf-licts against base file</h3>
+            <h3 class="board-card-title">To view the merge conflicts</h3>
             <ul>
-                <li>git diff --base file</li>
+                <li>git diff</li>
+                <li class="tip">complete conflict diff</li>
+                <li>git diff --base $file</li>
+                <li class="tip">against base file</li>
+                <li>git diff --ours $file</li>
+                <li class="tip">against your changes</li>
+                <li>git diff --theirs $file</li>
+                <li class="tip">against other changes</li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Diff other users changes</h3>
+            <h3 class="board-card-title">To discard conflicting patch</h3>
             <ul>
-                <li>git diff --theirs file</li>
+                <li>git reset --hard</li>
+                <li>git rebase --skip</li>
             </ul>
         </div>
         <div class="board-card">
-            <h3 class="board-card-title">Diff your changes</h3>
+            <h3 class="board-card-title">After resolving conflicts</h3>
             <ul>
-                <li>git diff --ours file</li>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">After resolving confli-cts</h3>
-            <ul>
+                <li>git add $conflicting_file</li>
+                <li class="tip">do for all resolved files</li>
                 <li>git rebase --continue</li>
             </ul>
         </div>
@@ -288,6 +292,40 @@ title:     Git Cheat Sheet
             <h3 class="board-card-title">Tag current commit</h3>
             <ul>
                 <li>git tag tag-name</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Useful Commands</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Finding Regressions</h3>
+            <ul>
+                <li>git bisect start</li>
+                <li class="tip">to start</li>
+                <li>git bisect good $id</li>
+                <li class="tip">$id is the last working version</li>
+                <li>git bisect bad $id</li>
+                <li class="tip">$id is a broken version</li>
+                <li>git bisect bad/good</li>
+                <li class="tip">to mark it as bad or good</li>
+                <li>git bisect visualize</li>
+                <li class="tip">to launch gitk and mark it</li>
+                <li>git bisect reset</li>
+                <li class="tip">once you're done</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Check for Errors and Cleanup Repository</h3>
+            <ul>
+                <li>git fsck</li>
+                <li>git gc --prune</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Search Working Directory for foo()</h3>
+            <ul>
+                <li>git grep "foo()"</li>
             </ul>
         </div>
     </div>
