@@ -1,0 +1,343 @@
+---
+layout:    default 
+title:     ActionScript Cheat Sheet 
+---
+
+<div class="content">
+    <div class="board">
+        <h2 class="board-title">Global</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Constants</h3>
+            <ul>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#Infinity" title="A special value representing positive Infinity.">Infinity</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#-Infinity" title="A special value representing negative Infinity.">-Infinity</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#NaN" title="A special member of the Number data type that represents a value that is "not a number" (NaN).">NaN</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#undefined" title="A special value that applies to untyped variables that have not been initialized or dynamic object properties that are not initialized.">undefined</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Functions</h3>
+            <ul>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#Array()" title="Creates a new array.">Array</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#Boolean()" title="Converts the expression parameter to a Boolean value and returns the value.">Boolean</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#decodeURI()" title=" Decodes an encoded URI into a string.">decodeURI</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#decodeURIComponent()" title=" Decodes an encoded URI component into a string.">decodeURIComponent</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#encodeURI()" title=" Encodes a string into a valid URI (Uniform Resource Identifier).">encodeURI</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#encodeURIComponent()" title=" Encodes a string into a valid URI component.">encodeURIComponent</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#escape()" title=" Converts the parameter to a string and encodes it in a URL-encoded format, where most nonalphanumeric characters are replaced with % hexadecimal sequences.<">escape</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#int()" title=" Converts a given numeric value to an integer value.<">int</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#isFinite()" title=" Returns true if the value is a finite number, or false if the value is Infinity or -Infinity.">isFinite</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#isNaN()" title=" Returns true if the value is NaN(not a number).">isNaN</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#isXMLName()" title=" Determines whether the specified string is a valid name for an XML element or attribute.">isXMLName</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#Number()" title=" Converts a given value to a Number value.">Number</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#Object()" title=" Every value in ActionScript 3.0 is an object, which means that calling Object() on a value returns that value.">Object</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#parseFloat()" title=" Converts a string to a floating-point number.">parseFloat</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#parseInt()" title=" Converts a string to an integer.">parseInt</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#String()" title=" Returns a string representation of the specified parameter.">String</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#trace()" title=" Displays expressions, or writes to log files, while debugging.">trace</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#uint()" title=" Converts a given numeric value to an unsigned integer value.">uint</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#unescape()" title=" Evaluates the parameter str as a string, decodes the string from URL-encoded format (converting all hexadecimal sequences to ASCII characters), and returns the string.">unescape</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#Vector()" title=" Creates a new Vector instance whose elements are instances of the specified data type.">Vector</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#XML()" title=" Converts an object to an XML object.">XML</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#XMLList()" title="</t">XMLList</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="board">
+    <h2 class="board-title">ArgumentError</h2>
+    <div class="board-card">
+        <ul>
+            <li class="tip">The ArgumentError class represents an error that occurs when the arguments supplied in a function do not match the arguments defined for that function.</li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/ArgumentError.html#ArgumentError()" title="Creates an ArgumentError object.">ArgumentError(message:String = "")</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="board">
+    <h2 class="board-title">arguments</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">An arguments object is used to store and access a function's arguments.</li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/arguments.html#callee" title="A reference to the currently executing function.">callee:Function</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/arguments.html#length" title="The number of arguments passed to the function.">length:Number</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="board">
+    <h2 class="board-title">Array</h2>
+    <div class="board-card">
+        <ul>
+            <li class="tip">The Array class lets you access and manipulate arrays.</li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#Array()" title="Lets you create an array that contains the specified elements.">Array(... values)</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#Array2()" title="Lets you create an array of the specified number of elements.">Array(numElements:int = 0)</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#concat()" title="Concatenates the elements specified in the parameters with the elements in an array and creates a new array.">concat(... args):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#every()" title="Executes a test function on each item in the array until an item is reached that returns false for the specified function.">every(callback:Function, thisObject:* = null):Boolean</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#filter()" title="Executes a test function on each item in the array and constructs a new array for all items that return true for the specified function.">filter(callback:Function, thisObject:* = null):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#forEach()" title="Executes a function on each item in the array.">forEach(callback:Function, thisObject:* = null):void</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#indexOf()" title="Searches for an item in an array by using strict equality (===) and returns the index position of the item.">indexOf(searchElement:*, fromIndex:int = 0):int</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#join()" title="Converts the elements in an array to strings, inserts the specified separator between the elements, concatenates them, and returns the resulting string.">join(sep:*):String</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#lastIndexOf()" title="Searches for an item in an array, working backward from the last item, and returns the index position of the matching item using strict equality (===).">lastIndexOf(searchElement:*, fromIndex:int = 0x7fffffff):int</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#map()" title="Executes a function on each item in an array, and constructs a new array of items corresponding to the results of the function on each item in the original array.">map(callback:Function.html">Function, thisObject:* = null):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#pop()" title="Removes the last element from an array and returns the value of that element.">pop():*</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#push()" title="Adds one or more elements to the end of an array and returns the new length of the array.">push(...args):uint</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#reverse()" title="Reverses the array in place.">reverse():Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#shift()" title="Removes the first element from an array and returns that element.">shift():*</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#slice()" title="Returns a new array that consists of a range of elements from the original array, without modifying the original array.">slice(startIndex:int = 0, endIndex:int = 16777215):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#some()" title="Executes a test function on each item in the array until an item is reached that returns true.">some(callback:Function, thisObject:* = null):Boolean</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#sort()" title="Sorts the elements in an array.">sort(...args):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#sortOn()" title="Sorts the elements in an array according to one or more fields in the array.">sortOn(fieldName:Object, options:Object = null):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#splice()" title="Adds elements to and removes elements from an array.">splice</a>(startIndex:<a href="int.html">int</a>, deleteCount:<a href="uint.html">uint,...values):Array</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#toLocaleString()" title="Returns a string that represents the elements in the specified array.">toLocaleString():String</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#toString()" title="Returns a string that represents the elements in the specified array.">toString():String</a></li>
+            <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#unshift()" title="Adds one or more elements to the beginning of an array and returns the new length of the array.">unshift(...args):uint</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="board">
+    <h2 class="board-title">Boolean</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A Boolean object is a data type that can have one of two values, either true or false,  used for logical operations.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Class</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A Class object is created for each class definition in a program.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Date</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The Date class represents date and time information.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">DefinitionError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The DefinitionError class represents an error that occurs when user code attempts to define an identifier that is already defined.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Error</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The Error class contains information about an error that occurred in a script.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">EvalError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The EvalError class represents an error that occurs when user code calls the eval() function or attempts to use the new operator with the Function object.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Function</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A function is the basic unit of code that can be invoked in ActionScript.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">int</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The int class lets you work with the data type representing a 32-bit signed integer.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">JSON</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The JSON class lets applications import and export data using JavaScript Object Notation (JSON) format.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Math</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The Math class contains methods and constants that represent common mathematical functions and values.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Namespace</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The Namespace class contains methods and properties for defining and working with namespaces.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Number</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A data type representing an IEEE-754 double-precision floating-point number.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Object</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The Object class is at the root of the ActionScript runtime class hierarchy.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">QName</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">QName objects represent qualified names of XML elements and attributes.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">RangeError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A RangeError exception is thrown when a numeric value is outside the acceptable range.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">ReferenceError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A ReferenceError exception is thrown when a reference to an undefined property is attempted on a sealed (nondynamic) object.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">RegExp</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The RegExp class lets you work with regular expressions, which are patterns that you can use to perform searches in strings and to replace text in strings.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">SecurityError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The SecurityError exception is thrown when some type of security violation takes place.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">String</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The String class is a data type that represents a string of characters.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">SyntaxError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A SyntaxError exception is thrown when a parsing error occurs, for one of the following reasons:.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">TypeError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A TypeError exception is thrown when the actual type of an operand is different from the expected type.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">uint</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The uint class provides methods for working with a data type representing a 32-bit unsigned integer.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">URIError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">A URIError exception is thrown when one of the global URI handling functions is used in a way that is incompatible with its definition.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">Vector</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The Vector class lets you access and manipulate a vector — an array whose elements all have the same data type.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">VerifyError</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The VerifyError class represents an error that occurs when a malformed or corrupted SWF file is encountered.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">XML</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The XML class contains methods and properties for working with XML objects.</li>
+        </ul>
+    </div>
+</div>
+<div class="board">
+    <h2 class="board-title">XMLList</h2>
+    <div class="board-card">
+        <h3 class="board-card-title"></h3>
+        <ul>
+            <li class="tip">The XMLList class contains methods for working with one or more XML elements.</li>
+        </ul>
+    </div>
+</div>
+</div>
