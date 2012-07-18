@@ -45,13 +45,56 @@ title:     ActionScript Cheat Sheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">arguments</h2>
+        <h2 class="board-title">OO</h2>
         <div class="board-card">
-            <h3 class="board-card-title"></h3>
+            <h3 class="board-card-title">arguments</h3>
             <ul>
                 <li class="tip">An arguments object is used to store and access a function's arguments.</li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/arguments.html#callee" title="A reference to the currently executing function.">callee:Function</a></li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/arguments.html#length" title="The number of arguments passed to the function.">length:Number</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Boolean</h3>
+            <ul>
+                <li class="tip">A Boolean object is a data type that can have one of two values, either true or false,  used for logical operations.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Boolean.html#Boolean()" class="signatureLink" title="Creates a Boolean object with the specified value.">Boolean()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Boolean.html#toString()" title="Returns the string representation ('true' or 'false') of the Boolean object.">toString():String</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Boolean.html#valueOf()" title="Returns true if the value of the specified Boolean object is true; false otherwise.">valueOf():Boolean</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Function</h3>
+            <ul>
+                <li class="tip">A function is the basic unit of code that can be invoked in ActionScript.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Function.html#apply()" title="Specifies the value of thisObject to be used within any function that ActionScript calls.">apply()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Function.html#call()" title="Invokes the function represented by a Function object.">call()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Namespace</h3>
+            <ul>
+                <li class="tip">The Namespace class contains methods and properties for defining and working with namespaces.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#prefix" title="The prefix of the namespace.">prefix</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#uri" title="The Uniform Resource Identifier (URI) of the namespace.">uri</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#Namespace()" title="Creates a Namespace object according to the values of the prefixValue and uriValue parameters.">Namespace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#Namespace2()" title="Creates a Namespace object.">Namespace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#toString()" title="Equivalent to the Namespace.uri property.">toString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#valueOf()" title="Returns the URI value of the specified object.">valueOf()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Object</h3>
+            <ul>
+                <li class="tip">The Object class is at the root of the ActionScript runtime class hierarchy.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#Object()" title="Creates an Object object and stores a reference to the object's constructor method in the object's constructor property.">Object()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#hasOwnProperty()" title="Indicates whether an object has a specified property defined.">hasOwnProperty()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#isPrototypeOf()" title="Indicates whether an instance of the Object class is in the prototype chain of the object specified as the parameter.">isPrototypeOf()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#propertyIsEnumerable()" title="Indicates whether the specified property exists and is enumerable.">propertyIsEnumerable()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#setPropertyIsEnumerable()" title="Sets the availability of a dynamic property for loop operations.">setPropertyIsEnumerable()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#toLocaleString()" title="Returns the string representation of this object, formatted according to locale-specific conventions.">toLocaleString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#toString()" title="Returns the string representation of the specified object.">toString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#valueOf()" title="Returns the primitive value of the specified object.">valueOf()</a></li>
             </ul>
         </div>
     </div>
@@ -83,19 +126,6 @@ title:     ActionScript Cheat Sheet
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#toLocaleString()" title="Returns a string that represents the elements in the specified array.">toLocaleString():String</a></li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#toString()" title="Returns a string that represents the elements in the specified array.">toString():String</a></li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html#unshift()" title="Adds one or more elements to the beginning of an array and returns the new length of the array.">unshift():uint</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="board">
-        <h2 class="board-title">Boolean</h2>
-        <div class="board-card">
-            <h3 class="board-card-title"></h3>
-            <ul>
-                <li class="tip">A Boolean object is a data type that can have one of two values, either true or false,  used for logical operations.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Boolean.html#Boolean()" class="signatureLink" title="Creates a Boolean object with the specified value.">Boolean()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Boolean.html#toString()" title="Returns the string representation ('true' or 'false') of the Boolean object.">toString():String</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Boolean.html#valueOf()" title="Returns true if the value of the specified Boolean object is true; false otherwise.">valueOf():Boolean</a></li>
             </ul>
         </div>
     </div>
@@ -262,13 +292,96 @@ title:     ActionScript Cheat Sheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Function</h2>
+        <h2 class="board-title">XML</h2>
         <div class="board-card">
-            <h3 class="board-card-title"></h3>
+            <h3 class="board-card-title">XML Properties</h3>
             <ul>
-                <li class="tip">A function is the basic unit of code that can be invoked in ActionScript.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Function.html#apply()" title="Specifies the value of thisObject to be used within any function that ActionScript calls.">apply()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Function.html#call()" title="Invokes the function represented by a Function object.">call()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#ignoreComments">ignoreComments</a></li>
+                <li class="tip">[static] Determines whether XML comments are ignored when XML objects parse the source XML data.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#ignoreProcessingInstructions">ignoreProcessingInstructions</a></li>
+                <li class="tip">[static] Determines whether XML processing instructions are ignored when XML objects parse the source XML data.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#ignoreWhitespace">ignoreWhitespace</a></li>
+                <li class="tip">[static] Determines whether white space characters at the beginning and end of text nodes are ignored during parsing.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#prettyIndent">prettyIndent</a></li>
+                <li class="tip">[static] Determines the amount of indentation applied by the toString() and toXMLString() methods when the XML.prettyPrinting property is set to true.</li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#prettyPrinting">prettyPrinting</a></li>
+                <li class="tip">[static] Determines whether the toString() and toXMLString() methods normalize white space characters between some tags.</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">XML Methods</h3>
+            <ul>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#XML()" title="Creates a new XML object.">XML()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#addNamespace()" title="Adds a namespace to the set of in-scope namespaces for the XML object.">addNamespace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#appendChild()" title="Appends the given child to the end of the XML object's properties.">appendChild()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#attribute()" title="Returns the XML value of the attribute that has the name matching the attributeName parameter.">attribute()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#attributes()" title="Returns a list of attribute values for the given XML object.">attributes()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#child()" title="Lists the children of an XML object.">child()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#childIndex()" title="Identifies the zero-indexed position of this XML object within the context of its parent.">childIndex()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#children()" title="Lists the children of the XML object in the sequence in which they appear.">children()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#comments()" title="Lists the properties of the XML object that contain XML comments.">comments()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#contains()" title="Compares the XML object against the given value parameter.">contains()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#copy()" title="Returns a copy of the given XML object.">copy()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#defaultSettings()" title="[static] Returns an object with the following properties set to the default values: ignoreComments, ignoreProcessingInstructions, ignoreWhitespace, prettyIndent, and prettyPrinting.">defaultSettings()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#descendants()" title="Returns all descendants (children, grandchildren, great-grandchildren, and so on) of the XML object that have the given name parameter.">descendants()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#elements()" title="Lists the elements of an XML object.">elements()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#hasComplexContent()" title="Checks to see whether the XML object contains complex content.">hasComplexContent()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#hasOwnProperty()" title="Checks to see whether the object has the property specified by the p parameter.">hasOwnProperty()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#hasSimpleContent()" title="Checks to see whether the XML object contains simple content.">hasSimpleContent()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#inScopeNamespaces()" title="Lists the namespaces for the XML object, based on the object's parent.">inScopeNamespaces()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#insertChildAfter()" title="Inserts the given child2 parameter after the child1 parameter in this XML object and returns the resulting object.">insertChildAfter()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#insertChildBefore()" title="Inserts the given child2 parameter before the child1 parameter in this XML object and returns the resulting object.">insertChildBefore()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#length()" title="For XML objects, this method always returns the integer 1.">length()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#localName()" title="Gives the local name portion of the qualified name of the XML object.">localName()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#name()" title="Gives the qualified name for the XML object.">name()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#namespace()" title="If no parameter is provided, gives the namespace associated with the qualified name of this XML object.">namespace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#namespaceDeclarations()" title="Lists namespace declarations associated with the XML object in the context of its parent.">namespaceDeclarations()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#nodeKind()" title="Specifies the type of node: text, comment, processing-instruction,  attribute, or element.">nodeKind()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#normalize()" title="For the XML object and all descendant XML objects, merges adjacent text nodes and eliminates empty text nodes.">normalize()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#parent()" title="Returns the parent of the XML object.">parent()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#prependChild()" title="Inserts a copy of the provided child object into the XML element before any existing XML properties for that element.">prependChild()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#processingInstructions()" title="If a name parameter is provided, lists all the children of the XML object that contain processing instructions with that name.">processingInstructions()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#propertyIsEnumerable()" title="Checks whether the property p is in the set of properties that can be iterated in a for..in statement applied to the XML object.">propertyIsEnumerable()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#removeNamespace()" title="Removes the given namespace for this object and all descendants.">removeNamespace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#replace()" title="Replaces the properties specified by the propertyName parameter with the given value parameter.">replace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setChildren()" title="Replaces the child properties of the XML object with the specified set of XML properties, provided in the value parameter.">setChildren()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setLocalName()" title="Changes the local name of the XML object to the given name parameter.">setLocalName()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setName()" title="Sets the name of the XML object to the given qualified name or attribute name.">setName()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setNamespace()" title="Sets the namespace associated with the XML object.">setNamespace()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setSettings()" title="[static] Sets values for the following XML properties: ignoreComments, ignoreProcessingInstructions, ignoreWhitespace, prettyIndent, and prettyPrinting.">setSettings()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#settings()" title="[static] Retrieves the following properties: ignoreComments, ignoreProcessingInstructions, ignoreWhitespace, prettyIndent, and prettyPrinting.">settings()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#text()" title="Returns an XMLList object of all XML properties of the XML object that represent XML text nodes.">text()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#toJSON()" title="Provides an overridable method for customizing the JSON encoding of values in an XML object.">toJSON()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#toString()" title="Returns a string representation of the XML object.">toString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#toXMLString()" title="Returns a string representation of the XML object.">toXMLString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#valueOf()" title="Returns the XML object.">valueOf()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">XMLList</h3>
+            <ul>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#XMLList()" title="Creates a new XMLList object.">XMLList()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#attribute()" title="Calls the attribute() method of each XML object and returns an XMLList object of the results.">attribute()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#attributes()" title="Calls the attributes() method of each XML object and returns an XMLList object of attributes for each XML object.">attributes()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#child()" title="Calls the child() method of each XML object and returns an XMLList object that contains the results in order.">child()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#children()" title="Calls the children() method of each XML object and returns an XMLList object that contains the results.">children()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#comments()" title="Calls the comments() method of each XML object and returns an XMLList of comments.">comments()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#contains()" title="Checks whether the XMLList object contains an XML object that is equal to the given value parameter.">contains()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#copy()" title="Returns a copy of the given XMLList object.">copy()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#descendants()" title="Returns all descendants (children, grandchildren, great-grandchildren, and so on) of the XML object that have the given name parameter.">descendants()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#elements()" title="Calls the elements() method of each XML object.">elements()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#hasComplexContent()" title="Checks whether the XMLList object contains complex content.">hasComplexContent()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#hasOwnProperty()" title="Checks for the property specified by p.">hasOwnProperty()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#hasSimpleContent()" title="Checks whether the XMLList object contains simple content.">hasSimpleContent()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#length()" title="Returns the number of properties in the XMLList object.">length()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#normalize()" title="Merges adjacent text nodes and eliminates empty text nodes for each of the following: all text nodes in the XMLList, all the XML objects contained in the XMLList, and the descendants of all the XML objects in the XMLList.">normalize()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#parent()" title="Returns the parent of the XMLList object if all items in the XMLList object have the same parent.">parent()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#processingInstructions()" title="If a name parameter is provided, lists all the children of the XMLList object that contain processing instructions with that name.">processingInstructions()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#propertyIsEnumerable()" title="Checks whether the property p is in the set of properties that can be iterated in a for..in statement applied to the XMLList object.">propertyIsEnumerable()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#text()" title="Calls the text() method of each XML object and returns an XMLList object that contains the results.">text()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#toString()" title="Returns a string representation of all the XML objects in an XMLList object.">toString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#toXMLString()" title="Returns a string representation of all the XML objects in an XMLList object.">toXMLString()</a></li>
+                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#valueOf()" title="Returns the XMLList object.">valueOf()</a></li>
             </ul>
         </div>
     </div>
@@ -344,22 +457,6 @@ title:     ActionScript Cheat Sheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">Namespace</h2>
-        <div class="board-card">
-            <h3 class="board-card-title"></h3>
-            <ul>
-                <li class="tip">The Namespace class contains methods and properties for defining and working with namespaces.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#prefix" title="The prefix of the namespace.">prefix</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#uri" title="The Uniform Resource Identifier (URI) of the namespace.">uri</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#Namespace()" title="Creates a Namespace object according to the values of the prefixValue and uriValue parameters.">Namespace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#Namespace2()" title="Creates a Namespace object.">Namespace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#toString()" title="Equivalent to the Namespace.uri property.">toString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Namespace.html#valueOf()" title="Returns the URI value of the specified object.">valueOf()</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="board">
         <h2 class="board-title">Number</h2>
         <div class="board-card">
             <h3 class="board-card-title">Methods</h3>
@@ -386,24 +483,6 @@ title:     ActionScript Cheat Sheet
                 <li class="tip">[static] Specifies the IEEE-754 value representing negative infinity.</li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Number.html#POSITIVE_INFINITY">POSITIVE_INFINITY</a></li>
                 <li class="tip">[static] Specifies the IEEE-754 value representing positive infinity.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="board">
-        <h2 class="board-title">Object</h2>
-        <div class="board-card">
-            <h3 class="board-card-title"></h3>
-            <ul>
-                <li class="tip">The Object class is at the root of the ActionScript runtime class hierarchy.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#Object()" title="Creates an Object object and stores a reference to the object's constructor method in the object's constructor property.">Object()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#hasOwnProperty()" title="Indicates whether an object has a specified property defined.">hasOwnProperty()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#isPrototypeOf()" title="Indicates whether an instance of the Object class is in the prototype chain of the object specified as the parameter.">isPrototypeOf()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#propertyIsEnumerable()" title="Indicates whether the specified property exists and is enumerable.">propertyIsEnumerable()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#setPropertyIsEnumerable()" title="Sets the availability of a dynamic property for loop operations.">setPropertyIsEnumerable()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#toLocaleString()" title="Returns the string representation of this object, formatted according to locale-specific conventions.">toLocaleString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#toString()" title="Returns the string representation of the specified object.">toString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#valueOf()" title="Returns the primitive value of the specified object.">valueOf()</a></li>
             </ul>
         </div>
     </div>
@@ -521,101 +600,6 @@ title:     ActionScript Cheat Sheet
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html#toLocaleString()" title="Returns a string that represents the elements in the specified Vector.">toLocaleString()</a></li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html#toString()" title="Returns a string that represents the elements in the Vector.">toString()</a></li>
                 <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html#unshift()" title="Adds one or more elements to the beginning of the Vector and returns the new length of the Vector.">unshift()</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="board">
-        <h2 class="board-title">XML</h2>
-        <div class="board-card">
-            <h3 class="board-card-title">XML Properties</h3>
-            <ul>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#ignoreComments">ignoreComments</a></li>
-                <li class="tip">[static] Determines whether XML comments are ignored when XML objects parse the source XML data.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#ignoreProcessingInstructions">ignoreProcessingInstructions</a></li>
-                <li class="tip">[static] Determines whether XML processing instructions are ignored when XML objects parse the source XML data.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#ignoreWhitespace">ignoreWhitespace</a></li>
-                <li class="tip">[static] Determines whether white space characters at the beginning and end of text nodes are ignored during parsing.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#prettyIndent">prettyIndent</a></li>
-                <li class="tip">[static] Determines the amount of indentation applied by the toString() and toXMLString() methods when the XML.prettyPrinting property is set to true.</li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#prettyPrinting">prettyPrinting</a></li>
-                <li class="tip">[static] Determines whether the toString() and toXMLString() methods normalize white space characters between some tags.</li>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">XML Methods</h3>
-            <ul>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#XML()" title="Creates a new XML object.">XML()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#addNamespace()" title="Adds a namespace to the set of in-scope namespaces for the XML object.">addNamespace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#appendChild()" title="Appends the given child to the end of the XML object's properties.">appendChild()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#attribute()" title="Returns the XML value of the attribute that has the name matching the attributeName parameter.">attribute()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#attributes()" title="Returns a list of attribute values for the given XML object.">attributes()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#child()" title="Lists the children of an XML object.">child()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#childIndex()" title="Identifies the zero-indexed position of this XML object within the context of its parent.">childIndex()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#children()" title="Lists the children of the XML object in the sequence in which they appear.">children()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#comments()" title="Lists the properties of the XML object that contain XML comments.">comments()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#contains()" title="Compares the XML object against the given value parameter.">contains()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#copy()" title="Returns a copy of the given XML object.">copy()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#defaultSettings()" title="[static] Returns an object with the following properties set to the default values: ignoreComments, ignoreProcessingInstructions, ignoreWhitespace, prettyIndent, and prettyPrinting.">defaultSettings()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#descendants()" title="Returns all descendants (children, grandchildren, great-grandchildren, and so on) of the XML object that have the given name parameter.">descendants()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#elements()" title="Lists the elements of an XML object.">elements()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#hasComplexContent()" title="Checks to see whether the XML object contains complex content.">hasComplexContent()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#hasOwnProperty()" title="Checks to see whether the object has the property specified by the p parameter.">hasOwnProperty()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#hasSimpleContent()" title="Checks to see whether the XML object contains simple content.">hasSimpleContent()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#inScopeNamespaces()" title="Lists the namespaces for the XML object, based on the object's parent.">inScopeNamespaces()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#insertChildAfter()" title="Inserts the given child2 parameter after the child1 parameter in this XML object and returns the resulting object.">insertChildAfter()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#insertChildBefore()" title="Inserts the given child2 parameter before the child1 parameter in this XML object and returns the resulting object.">insertChildBefore()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#length()" title="For XML objects, this method always returns the integer 1.">length()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#localName()" title="Gives the local name portion of the qualified name of the XML object.">localName()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#name()" title="Gives the qualified name for the XML object.">name()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#namespace()" title="If no parameter is provided, gives the namespace associated with the qualified name of this XML object.">namespace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#namespaceDeclarations()" title="Lists namespace declarations associated with the XML object in the context of its parent.">namespaceDeclarations()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#nodeKind()" title="Specifies the type of node: text, comment, processing-instruction,  attribute, or element.">nodeKind()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#normalize()" title="For the XML object and all descendant XML objects, merges adjacent text nodes and eliminates empty text nodes.">normalize()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#parent()" title="Returns the parent of the XML object.">parent()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#prependChild()" title="Inserts a copy of the provided child object into the XML element before any existing XML properties for that element.">prependChild()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#processingInstructions()" title="If a name parameter is provided, lists all the children of the XML object that contain processing instructions with that name.">processingInstructions()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#propertyIsEnumerable()" title="Checks whether the property p is in the set of properties that can be iterated in a for..in statement applied to the XML object.">propertyIsEnumerable()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#removeNamespace()" title="Removes the given namespace for this object and all descendants.">removeNamespace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#replace()" title="Replaces the properties specified by the propertyName parameter with the given value parameter.">replace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setChildren()" title="Replaces the child properties of the XML object with the specified set of XML properties, provided in the value parameter.">setChildren()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setLocalName()" title="Changes the local name of the XML object to the given name parameter.">setLocalName()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setName()" title="Sets the name of the XML object to the given qualified name or attribute name.">setName()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setNamespace()" title="Sets the namespace associated with the XML object.">setNamespace()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#setSettings()" title="[static] Sets values for the following XML properties: ignoreComments, ignoreProcessingInstructions, ignoreWhitespace, prettyIndent, and prettyPrinting.">setSettings()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#settings()" title="[static] Retrieves the following properties: ignoreComments, ignoreProcessingInstructions, ignoreWhitespace, prettyIndent, and prettyPrinting.">settings()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#text()" title="Returns an XMLList object of all XML properties of the XML object that represent XML text nodes.">text()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#toJSON()" title="Provides an overridable method for customizing the JSON encoding of values in an XML object.">toJSON()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#toString()" title="Returns a string representation of the XML object.">toString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#toXMLString()" title="Returns a string representation of the XML object.">toXMLString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XML.html#valueOf()" title="Returns the XML object.">valueOf()</a></li>
-            </ul>
-        </div>
-        <div class="board-card">
-            <h3 class="board-card-title">XMLList</h3>
-            <ul>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#XMLList()" title="Creates a new XMLList object.">XMLList()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#attribute()" title="Calls the attribute() method of each XML object and returns an XMLList object of the results.">attribute()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#attributes()" title="Calls the attributes() method of each XML object and returns an XMLList object of attributes for each XML object.">attributes()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#child()" title="Calls the child() method of each XML object and returns an XMLList object that contains the results in order.">child()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#children()" title="Calls the children() method of each XML object and returns an XMLList object that contains the results.">children()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#comments()" title="Calls the comments() method of each XML object and returns an XMLList of comments.">comments()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#contains()" title="Checks whether the XMLList object contains an XML object that is equal to the given value parameter.">contains()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#copy()" title="Returns a copy of the given XMLList object.">copy()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#descendants()" title="Returns all descendants (children, grandchildren, great-grandchildren, and so on) of the XML object that have the given name parameter.">descendants()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#elements()" title="Calls the elements() method of each XML object.">elements()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#hasComplexContent()" title="Checks whether the XMLList object contains complex content.">hasComplexContent()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#hasOwnProperty()" title="Checks for the property specified by p.">hasOwnProperty()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#hasSimpleContent()" title="Checks whether the XMLList object contains simple content.">hasSimpleContent()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#length()" title="Returns the number of properties in the XMLList object.">length()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#normalize()" title="Merges adjacent text nodes and eliminates empty text nodes for each of the following: all text nodes in the XMLList, all the XML objects contained in the XMLList, and the descendants of all the XML objects in the XMLList.">normalize()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#parent()" title="Returns the parent of the XMLList object if all items in the XMLList object have the same parent.">parent()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#processingInstructions()" title="If a name parameter is provided, lists all the children of the XMLList object that contain processing instructions with that name.">processingInstructions()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#propertyIsEnumerable()" title="Checks whether the property p is in the set of properties that can be iterated in a for..in statement applied to the XMLList object.">propertyIsEnumerable()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#text()" title="Calls the text() method of each XML object and returns an XMLList object that contains the results.">text()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#toString()" title="Returns a string representation of all the XML objects in an XMLList object.">toString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#toXMLString()" title="Returns a string representation of all the XML objects in an XMLList object.">toXMLString()</a></li>
-                <li><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html#valueOf()" title="Returns the XMLList object.">valueOf()</a></li>
             </ul>
         </div>
     </div>
