@@ -171,12 +171,12 @@
                 $('#nav-more').click(function(e){
                     e.preventDefault();
                     $('#nav-more-list').show();
-                    $(this).parent('li').addClass('on-more');
+                    $(this).parents('li').addClass('on-more');
                     return false;
                 });
                 $('body').click(function(e){
                     $('#nav-more-list').hide();
-                    $('#nav-more').parent('li').removeClass('on-more');
+                    $('#nav-more').parents('li').removeClass('on-more');
                 });
 
                 //自适应大小
