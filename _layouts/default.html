@@ -28,9 +28,9 @@
                 <li><a href="/javascript" title="Javascript Cheat Sheet">Javascript</a></li>
                 <li><a href="/actionscript" title="ActionScript Cheat Sheet">ActionScript</a></li>
                 <li><a href="/css" title="CSS Cheat Sheet">CSS</a></li>
-                <li id="nav-more">
+                <li>
                     <div class="more-list-container">
-                        <a href="#more">More &raquo;</a>
+                        <a href="#more" id="nav-more">More &raquo;</a>
                         <ul id="nav-more-list">
                             <li><a href="/git" title="Git Cheat Sheet">Git</a></li>
                             <li><a href="/svn" title="SVN Cheat Sheet">SVN</a></li>
@@ -171,12 +171,12 @@
                 $('#nav-more').click(function(e){
                     e.preventDefault();
                     $('#nav-more-list').show();
-                    $(this).addClass('on-more');
+                    $(this).parent('li').addClass('on-more');
                     return false;
                 });
                 $('body').click(function(e){
                     $('#nav-more-list').hide();
-                    $('#nav-more').removeClass('on-more');
+                    $('#nav-more')..parent('li').removeClass('on-more');
                 });
 
                 //自适应大小
