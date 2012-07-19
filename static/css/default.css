@@ -58,7 +58,7 @@ body {background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-fa
 #navlist li.active a{font-size:15px;font-weight:bold;color:#fff;}
 #searchApi{border:1px solid #ccc;border-radius:3px;font-size:12px;padding:3px 5px;width:150px;}
 
-#more-list-container{position:absolute;width:240px;border:1px solid #333;background:#000;display:none;z-index:200;line-height:28px;}
+#more-list-container{position:fixed;width:240px;border:1px solid #333;background:#000;display:none;z-index:200;line-height:28px;}
 #more-list-container a{color:#999;text-decoration:none;font-size:14px;}
 #more-list-container a:visited{color:#999;}
 #more-list-container a:hover{color:#fff;}
