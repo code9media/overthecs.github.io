@@ -47,18 +47,22 @@ body {background:#000 url(/static/images/background.jpg) fixed 100% 100%;font-fa
 .index-item{font-size:18px;margin-bottom:15px;color:#bbb;}
 .index-item a{color:red}
 
-
-#navbar{position:fixed;background:#000;background:rgba(0,0,0,0.6);height:40px;line-height:40px;color:#999;width:100%;filter:alpha(opacity=60);z-index:100;}
+#navbar{position:fixed;background:#000;background:rgba(0,0,0,0.6);height:40px;line-height:32px;color:#999;width:100%;filter:alpha(opacity=60);z-index:100;}
 #navbar a{color:#999;text-decoration:none;font-size:14px;}
 #navbar a:visited{color:#999;}
 #navbar a:hover{color:#fff;}
-#navbar a#logo{color:#fff;font-size:18px;font-weight:bold;float:left;margin-right:20px;margin-left:15px;}
-#navlist{float:left;}
+#navbar a#logo{color:#fff;font-size:18px;font-weight:bold;float:left;margin-right:20px;margin-left:15px;margin-top:7px;}
+#navlist{float:left;margin-top:7px;}
 .nav li{float:left;margin-right:5px;padding:0 5px;}
 .nav li a{display:block;}
 #navlist li.active a{font-size:15px;font-weight:bold;color:#fff;}
 #searchApi{border:1px solid #ccc;border-radius:3px;font-size:12px;padding:3px 5px;width:150px;}
 
+.more-list-container{position:relative;width:240px;}
+.on-more .more-list-container{border:1px solid #333;background:#000}
+#nav-more-list{display:none;overflow:hidden;zoom:1}
+#nav-more-list li{float:left;width:100px;}
+#nav-more{position:relative;}
 
 .content{padding-top:45px;margin:0 auto;}
 .board{border-radius:8px;margin:5px 8px;padding:15px;width:200px;color:#fff;}

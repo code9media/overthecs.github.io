@@ -24,14 +24,26 @@
                 <li><a href="/jquery" title="jQuery Cheat Sheet">jQuery</a></li>
                 <li><a href="/nodejs" title="NodeJS Cheat Sheet">NodeJS</a></li>
                 <li><a href="/php" title="PHP Cheat Sheet">PHP</a></li>
+                <li><a href="/ruby" title="Ruby Cheat Sheet">Ruby</a></li>
                 <li><a href="/javascript" title="Javascript Cheat Sheet">Javascript</a></li>
+                <li><a href="/actionscript" title="ActionScript Cheat Sheet">ActionScript</a></li>
                 <li><a href="/css" title="CSS Cheat Sheet">CSS</a></li>
-                <li><a href="/mysql" title="MySQL Cheat Sheet">MySQL</a></li>
-                <li><a href="/regex" title="Regular Expression Cheat Sheet">Regex</a></li>
-                <li><a href="/linux" title="Linux Command Line Cheat Sheet">Linux</a></li>
-                <li><a href="/html" title="HTML Cheat Sheet">HTML</a></li>
-                <li><a href="/html-dom" title="HTML-DOM Cheat Sheet">HTML-DOM</a></li>
-                <li><a href="/mod_rewrite" title="mod_rewrite Cheat Sheet">mod_rewrite</a></li>
+                <li id="nav-more">
+                    <div class="more-list-container">
+                        <a href="#more">More &raquo;</a>
+                        <ul id="nav-more-list">
+                            <li><a href="/git" title="Git Cheat Sheet">Git</a></li>
+                            <li><a href="/svn" title="SVN Cheat Sheet">SVN</a></li>
+                            <li><a href="/mysql" title="MySQL Cheat Sheet">MySQL</a></li>
+                            <li><a href="/regex" title="Regular Expression Cheat Sheet">Regex</a></li>
+                            <li><a href="/linux" title="Linux Command Line Cheat Sheet">Linux</a></li>
+                            <li><a href="/html" title="HTML Cheat Sheet">HTML</a></li>
+                            <li><a href="/html-dom" title="HTML-DOM Cheat Sheet">HTML-DOM</a></li>
+                            <li><a href="/mod_rewrite" title="mod_rewrite Cheat Sheet">mod_rewrite</a></li>
+                            <li><a href="/" id="">Even More &raquo;</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -154,6 +166,34 @@
                         $(this).parent().addClass('active')
                     }
                 });
+
+                //导航的更多链接
+                $('#nav-more').click(function(e){
+                    e.preventDefault();
+                    $('#nav-more-list').show();
+                    $(this).addClass('on-more');
+                    return false;
+                });
+                $('body').click(function(e){
+                    $('#nav-more-list').hide();
+                    $('#nav-more').removeClass('on-more');
+                });
+
+                //自适应大小
+                var adjustmentNavlist = function(){
+                    var navlistWidth = $('#navlist').width();
+                    var windowWidth = $(window).width();
+
+                    if((windowWidth-450) > navlistWidth || $('#navlist>li').length<3){
+                        return true;
+                    }else{
+                        var $item = $('#nav-more').prev();
+                        $item.insertBefore($('#nav-more-list li:first'));
+                        arguments.callee();
+                    }
+                };
+                adjustmentNavlist();
+                $(window).bind('resize',adjustmentNavlist);
             });
         </script>
         <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
