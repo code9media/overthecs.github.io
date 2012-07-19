@@ -169,13 +169,14 @@
                 //导航的更多链接
                 $('#nav-more').click(function(e){
                     e.preventDefault();
-                    $('#nav-more-list').show();
-                    $(this).parents('li').addClass('on-more');
+                    var top = $(this).offset().top;
+                    var left = $(this).offset().left;
+
+                    $('#more-list-container').css({left:left-1,top:top+4}).fadeIn('fast');
                     return false;
                 });
                 $('body').click(function(e){
-                    $('#nav-more-list').hide();
-                    $('#nav-more').parents('li').removeClass('on-more');
+                    $('#more-list-container').fadeOut('fast');
                 });
 
                 //自适应大小
@@ -183,7 +184,7 @@
                     var navlistWidth = $('#navlist').width();
                     var windowWidth = $(window).width();
 
-                    if( (windowWidth-450) > navlistWidth || ($('#navlist>li').length<3) ){
+                    if( (windowWidth-650) > navlistWidth || ($('#navlist>li').length<3) ){
                         return true;
                     }else{
                         var $item = $('#nav-more').parents('li').prev();
