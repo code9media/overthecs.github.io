@@ -12,50 +12,128 @@
         <link rel="stylesheet" href="/static/css/default.css" type="text/css" />
         <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="/static/js/jquery.1.7.min.js"></script>
     </head>
     <body>
         <div class="index">
-            <h2 class="index-title">About OverAPI</h2>
-            <div class="index-content">
-                <div class="index-item">OverAPI.com is a site collecting all the cheat sheets.All!</div>
-                <div class="index-item">If you want to join us doing something useful for people,you can leave a message down below.</div>
+            <div class="index-logo">
+                <a href="http://overapi.com" class="logo"><img src="/static/images/overapi-logo.png" alt="overapi" width="140" height="140"/></a>
+                <div class="index-desc">
+                    <p><a href="" class="index-desc-logo">OverAPI.com</a></p>
+                    <p class="index-slogan">Collecting All Cheat Sheets</p>
+                </div>
             </div>
-            <h2 class="index-title">Now we have</h2>
-            <ul class="index-content">
-                <li><a href="/python" title="Python Cheat Sheet">Python</a></li>
-                <li><a href="/jquery" title="jQuery Cheat Sheet">jQuery</a></li>
-                <li><a href="/nodejs" title="NodeJS Cheat Sheet">NodeJS</a></li>
-                <li><a href="/php" title="PHP Cheat Sheet">PHP</a></li>
-                <li><a href="/ruby" title="Ruby Cheat Sheet">Ruby</a></li>
-                <li><a href="/javascript" title="Javascript Cheat Sheet">Javascript</a></li>
-                <li><a href="/actionscript" title="ActionScript Cheat Sheet">ActionScript</a></li>
-                <li><a href="/css" title="CSS Cheat Sheet">CSS</a></li>
-                <li><a href="/git" title="Git Cheat Sheet">Git</a></li>
-                <li><a href="/svn" title="SVN Cheat Sheet">SVN</a></li>
-                <li><a href="/mysql" title="MySQL Cheat Sheet">MySQL</a></li>
-                <li><a href="/regex" title="Regular Expression Cheat Sheet">Regex</a></li>
-                <li><a href="/linux" title="Linux Command Line Cheat Sheet">Linux</a></li>
-                <li><a href="/html" title="HTML Cheat Sheet">HTML</a></li>
-                <li><a href="/html-dom" title="HTML-DOM Cheat Sheet">HTML-DOM</a></li>
-                <li><a href="/mod_rewrite" title="mod_rewrite Cheat Sheet">mod_rewrite</a></li>
-            </ul>
-            <h2 class="index-title" onclick="document.getElementById('disqus_thread').style.display='block'" style="cursor:pointer;">Any Question &raquo;</h2>
-            <div id="disqus_thread" style="display:none"></div>
+
+            <div class="index-content">
+                <a href="/phthon/" title="Python Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/python-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/python-logo.png', sizingMethod='scale');background-image:none\9;" class="lang-logo">
+                    <span>Python</span>
+                    </div>
+                </a>
+                <a href="/jquery/" title="jQuery Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/jquery-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/jquery-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>jQuery</span>
+                    </div>
+                </a>
+                <a href="/nodejs/" title="NodeJS Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/nodejs-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/nodejs-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>NodeJS</span>
+                    </div>
+                </a>
+                <a href="/php/" title="PHP Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/php-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/php-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>PHP</span>
+                    </div>
+                </a>
+                <a href="/ruby/" title="Ruby Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/ruby-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/ruby-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>Ruby</span>
+                    </div>
+                </a>
+                <a href="/actionscript/" title="JavaScript Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/javascript-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/javascript-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>JavaScript</span>
+                    </div>
+                </a>
+                <a href="/actionscript/" title="ActionScript Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/actionscript-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/actionscript-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>ActionScript</span>
+                    </div>
+                </a>
+                <a href="/css/" title="CSS Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/css-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/css-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>CSS</span>
+                    </div>
+                </a>
+                <a href="/git/" title="Git Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/git-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/git-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>Git</span>
+                    </div>
+                </a>
+                <a href="/svn/" title="SVN Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/svn-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/svn-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>SVN</span>
+                    </div>
+                </a>
+                <a href="/mysql/" title="MySQL Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/mysql-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/mysql-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>MySQL</span>
+                    </div>
+                </a>
+                <a href="/regex/" title="Regular Expression Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/regex-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/regex-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>RegExp</span>
+                    </div>
+                </a>
+                <a href="/linux/" title="Linux Command Line Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/linux-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/linux-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>Linux</span>
+                    </div>
+                </a>
+                <a href="/html/" title="HTML Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/html-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/html-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>HTML</span>
+                    </div>
+                </a>
+                <a href="/html-dom/" title="HTML-DOM Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/html_dom-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/html_dom-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>HTML-DOM</span>
+                    </div>
+                </a>
+                <a href="/mod_rewrite/" title="mod_rewrite Cheat Sheet">
+                    <div style="background-image:url(/static/images/logo/mod_rewrite-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/mod_rewrite-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+                    <span>mod_rewrite</span>
+                    </div>
+                </a>
+            </div>
+
+            <!--<h2 class="index-title" onclick="document.getElementById('disqus_thread').style.display='block'" style="cursor:pointer;">Any Question &raquo;</h2>-->
+            <!--<div id="disqus_thread" style="display:none"></div>-->
         </div>
+
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'overapi'; // required: replace example with your forum shortname
-
             /* * * DON'T EDIT BELOW THIS LINE * * */
+            /*
+            var disqus_shortname = 'overapi'; // required: replace example with your forum shortname
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
+            */
+
+            $('.index-logo .logo').animate({'margin-left':'250px'},'slow',function(){
+                $('.index-desc').fadeIn('fast');
+            });
+            $('body').delegate('.index-content .lang-logo','mouseenter',function(){
+                $(this).find('span').fadeIn('fast');
+            }).delegate('.index-content .lang-logo','mouseleave',function(){
+                $(this).find('span').hide();
+            });
         </script>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-        <script type="text/javascript" src="/static/js/jquery.1.7.min.js"></script>
         <script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
         <script type="text/javascript" src="/static/js/jquery.quicksearch.js"></script>
         <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
