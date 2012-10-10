@@ -1,5 +1,4 @@
-auto:	          true
-
+auto:    true
 markdown:         rdiscount
 pygments:         true
 paginate:         6
