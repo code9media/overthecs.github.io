@@ -1,16 +1,15 @@
-auto:    true
-markdown:         rdiscount
-pygments:         true
-paginate:         6
-permalink:        /:title
+auto: true
+markdown: rdiscount
+pygments: true
+paginate: 6
+permalink: /:title
 
-title:            OverAPI.com
-url:              http://overapi.com
-feed:             /atom.xml
+title: OverAPI.com
+url: http://overapi.com
+feed: /atom.xml
 author:
-    name:         OverAPI
-description:      "OverAPI.com is a site collecting all the cheatsheets,all!"
-author_info:      <a href="http://overapi.com/">OverAPI</a>
+    name: OverAPI
+description: OverAPI.com is a site collecting all the cheatsheets,all!
+author_info: <a href="http://overapi.com/">OverAPI</a>
 
-copyright:
-    - Design by <a href="http://overapi.com" title="overapi" target="_blank">OverAPI</a> &copy; Copyright 2012
+copyright: Design by <a href="http://overapi.com" title="overapi" target="_blank">OverAPI</a> &copy; Copyright 2012
