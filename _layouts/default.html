@@ -103,24 +103,6 @@
                 });
 
                 var scrollTimeout;
-                var findScrollableElement = function(els) {
-                    for (var i = 0, argLength = arguments.length; i < argLength; i++) {
-                        var el = arguments[i],
-                        $scrollElement = $(el);
-                        if ($scrollElement.scrollTop() > 0) {
-                            return $scrollElement;
-                        } else {
-                            $scrollElement.scrollTop(1);
-                            var isScrollable = $scrollElement.scrollTop() > 0;
-                            $scrollElement.scrollTop(0);
-                            if (isScrollable) {
-                                return $scrollElement;
-                            }
-                        }
-                    }
-                    return [];
-                };
-
                 $('#searchApi').quicksearch('.board-card li', {
                     onAfter: function () {
                         var $cards = $('.board-card');
@@ -139,13 +121,14 @@
 
                         clearTimeout(scrollTimeout);
                         scrollTimeout = setTimeout(function(){
-                            var scrollable = findScrollableElement('body','html');
                             inactiveOffset.sort(function(a,b){return a-b;});
 
                             if(inactiveOffset[0]<150){
-                                scrollable.animate({ scrollTop: 0}, 400, 'swing');
+                                $('body').animate({ scrollTop: 0}, 400, 'swing');
+                                $('html').animate({ scrollTop: 0}, 400, 'swing');
                             }else{
-                                scrollable.animate({ scrollTop: inactiveOffset[0]-80}, 400, 'swing');
+                                $('body').animate({ scrollTop: inactiveOffset[0]-80}, 400, 'swing');
+                                $('html').animate({ scrollTop: inactiveOffset[0]-80}, 400, 'swing');
                             }
                         },500)
                     }
