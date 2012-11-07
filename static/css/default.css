@@ -101,3 +101,4 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .board-card li.inactive {color:#666;cursor:default;}
 .board-card li.inactive a{color:#666;cursor:default;}
 .board-card li.inactive a:hover{color:#666;background:none;}
+.board-326{min-height:326px;}
