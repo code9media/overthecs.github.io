@@ -16,71 +16,30 @@
         <script type="text/javascript" src="/static/js/main.js"></script>
     </head>
     <body class="cheat-detail">
-        <div id="more-list-container">
-            <a href="javascript:void(0)">More &raquo;</a>
-            <ul id="nav-more-list">
-                <li><a href="/git" title="Git Cheat Sheet">Git</a></li>
-                <li><a href="/svn" title="SVN Cheat Sheet">SVN</a></li>
-                <li><a href="/mysql" title="MySQL Cheat Sheet">MySQL</a></li>
-                <li><a href="/regex" title="Regular Expression Cheat Sheet">Regex</a></li>
-                <li><a href="/linux" title="Linux Command Line Cheat Sheet">Linux</a></li>
-                <li><a href="/html" title="HTML Cheat Sheet">HTML</a></li>
-                <li><a href="/html-dom" title="HTML-DOM Cheat Sheet">HTML-DOM</a></li>
-                <li><a href="/mod_rewrite" title="mod_rewrite Cheat Sheet">mod_rewrite</a></li>
-                <li><a href="/" id="">Even More &raquo;</a></li>
-            </ul>
-        </div>
-        <div id="navbar">
-            <a id="logo" href="/">OverAPI.com</a>
-            <ul id="navlist" class="nav">
-                <li><a href="/python" title="Python Cheat Sheet">Python</a></li>
-                <li><a href="/jquery" title="jQuery Cheat Sheet">jQuery</a></li>
-                <li><a href="/nodejs" title="NodeJS Cheat Sheet">NodeJS</a></li>
-                <li><a href="/php" title="PHP Cheat Sheet">PHP</a></li>
-                <li><a href="/ruby" title="Ruby Cheat Sheet">Ruby</a></li>
-                <li><a href="/javascript" title="Javascript Cheat Sheet">Javascript</a></li>
-                <li><a href="/actionscript" title="ActionScript Cheat Sheet">ActionScript</a></li>
-                <li><a href="/css" title="CSS Cheat Sheet">CSS</a></li>
-                <li><a href="#more" id="nav-more">More &raquo;</a></li>
-            </ul>
-        </div>
+        {% include detail_nav.html %}
+        {{ content }}
 
-        <div style="position:fixed;right:105px;top:10px;z-index:200;">
-            <input type="" id="searchApi" placeholder="Search"/>
+        <div id="more-ad" style="display:none;">
+            <h2 class="board-title">Support Us</h2>
+            <script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5503280202576307";
+                /* overapi-336 */
+                google_ad_slot = "7680797348";
+                google_ad_width = 336;
+                google_ad_height = 280;
+                //-->
+            </script>
+            <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
         </div>
-        <div class="addthis_toolbox addthis_default_style" style="position:fixed;right:5px;top:17px;z-index:200;">
-            <a class="addthis_button_facebook"></a>
-            <a class="addthis_button_twitter"></a>
-            <a class="addthis_button_sinaweibo"></a>
-            <a class="addthis_button_compact"></a>
-        </div>
-        <div class="loading">
-            Loading...
-        </div>
-    {{ content }}
-
 
         <script type="text/javascript">
-            $(function(){
-                $('#ad').html($('#more-ad').html())
-                $('#more-ad').remove();
-            });
+            $('#ad').html($('#more-ad').html())
+            $('#more-ad').remove();
         </script>
-        <!--<script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>-->
+        <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fddf49419e0facd"></script>
-        <div id="more-ad" style="display:none;">
-        <h2 class="board-title">Support Us</h2>
-        <!--<img src="//www.google.com/help/hc/images/adsense_185665_adformat-text_160x600_zh-CN.png" alt="宽幅摩天大楼" width="160" height="600" border="0">-->
-        <img src="https://www.google.com/help/hc/images/adsense_185666_adformat-display_336x280_en.jpg" alt="宽幅摩天大楼" width="336" height="280" border="0">
-        <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-5503280202576307";
-            /* overapi-more */
-            google_ad_slot = "4527508576";
-            google_ad_width = 120;
-            google_ad_height = 600;
-            //-->
-        </script>
-        <!--<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>-->
-        </div>
+
 </body>
 </html>
