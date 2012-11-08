@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        * Author:         OverAPI
+        -->
+        <meta charset="utf-8" />
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+        <meta name="author" content="{{ site.author.name }}" />
+        <meta name="description" content="{{ site.description }}" />
+        <link rel="stylesheet" href="/static/css/default.css" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="/static/js/jquery.1.7.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.quicksearch.js"></script>
+        <script type="text/javascript" src="/static/js/main.js"></script>
+    </head>
+    <body class="cheat-detail">
+        {% include detail_nav.html %}
+        {{ content }}
+
+        <div id="more-ad" style="display:none;">
+            <h2 class="board-title">Support Us</h2>
+            <script type="text/javascript"><!--
+                google_ad_client = "ca-pub-5503280202576307";
+                /* overapi-336 */
+                google_ad_slot = "7680797348";
+                google_ad_width = 336;
+                google_ad_height = 280;
+                //-->
+            </script>
+            <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </div>
+
+        <script type="text/javascript">
+            $('#ad').html($('#more-ad').html())
+            $('#more-ad').remove();
+        </script>
+        <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fddf49419e0facd"></script>
+
+</body>
+</html>
