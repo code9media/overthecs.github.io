@@ -539,27 +539,14 @@
                 </div>
             </div>
 
-            <h2 id="make-comment" class="index-title" style="cursor:pointer;">Leave a comment &gt;&gt;</h2>
-            <div id="disqus_thread" style="display:none"></div>
+            <a href="/about" style="text-decoration:none">About and Comments &gt;&gt;</a>                                                        
+
             <div class="back-to-top">
                 <a href="#">&#8593;TOP</a>                                                        
             </div>  
         </div>
 
         <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            var disqus_shortname = 'overapi'; // required: replace example with your forum shortname
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-            $('#make-comment').bind('click',function(){
-                $('#disqus_thread').show()
-                $(this).remove();
-            });
-
             $('body').delegate('.index-content .lang-logo','mouseenter',function(){
                 $(this).find('span').fadeIn('fast');
             }).delegate('.index-content .lang-logo','mouseleave',function(){
@@ -611,7 +598,6 @@
                 $(window).trigger('resize');
             })();
         </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
         <script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
