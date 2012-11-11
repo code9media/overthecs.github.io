@@ -539,8 +539,8 @@
                 </div>
             </div>
 
-            <!--<h2 class="index-title" onclick="document.getElementById('disqus_thread').style.display='block'" style="cursor:pointer;">Any Question &raquo;</h2>-->
-            <!--<div id="disqus_thread" style="display:none"></div>-->
+            <h2 id="make-comment" class="index-title" style="cursor:pointer;">Leave a comment &gt;&gt;</h2>
+            <div id="disqus_thread" style="display:none"></div>
             <div class="back-to-top">
                 <a href="#">&#8593;TOP</a>                                                        
             </div>  
@@ -549,14 +549,16 @@
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             /* * * DON'T EDIT BELOW THIS LINE * * */
-            /*
             var disqus_shortname = 'overapi'; // required: replace example with your forum shortname
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
-            */
+            $('#make-comment').bind('click',function(){
+                $('#disqus_thread').show()
+                $(this).remove();
+            });
 
             $('body').delegate('.index-content .lang-logo','mouseenter',function(){
                 $(this).find('span').fadeIn('fast');
