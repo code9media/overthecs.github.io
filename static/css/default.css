@@ -48,7 +48,7 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .lang-logo span{background-color:rgba(30,30,30,0.9);width:100%;height:100%;position:absolute;top:center;left:0;border-radius:50em;line-height:100px;color:#fff;font-size:18px;text-decoration:none;display:none;background:#222\9;}
 .index-alphabeta {margin-top:35px;font-size:0;}
 .index-alphabeta a:link,
-.index-alphabeta a:visited {display:inline-block;width:3.7%;text-decoration:none;text-align:center;color:#444;zoom:1;line-height:25px;font-size:16px;}
+.index-alphabeta a:visited {display:inline-block;width:3.8%;text-decoration:none;text-align:center;color:#444;zoom:1;line-height:25px;font-size:16px;}
 .index-alphabeta a:hover {background-color:#ccc;border-radius:20em;}
 .index-more {margin-top:50px;margin-bottom:50px;}
 .index-more-alpha{overflow:hidden;zoom:1;margin-bottom:50px;}
