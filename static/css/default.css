@@ -38,8 +38,8 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 
 .index{margin:30px auto;width:900px;}
 .index-logo{margin:10px auto;zoom:1;overflow:hidden;}
-.index-logo .logo{float:left;margin-left:380px;}
-.index-desc{float:left;margin-left:20px;padding-top:35px;display:none;}
+.index-logo .logo{float:left;margin-left:250px;}
+.index-desc{float:left;margin-left:20px;padding-top:35px;}
 .index-desc-logo{font-size:35px;text-decoration:none;color:#000;font-weight:bold;}
 .index-slogan{font-size:16px;margin-top:10px;color:#666;padding-left:3px;}
 .index-content{zoom:1;}
