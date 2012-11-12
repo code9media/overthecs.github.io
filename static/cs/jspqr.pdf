@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- Template $Revision: 2.12 $ applied. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link id="test-css" href="/css/features_test.css" rel="stylesheet" rev="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<script src="/js/global.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/globalnav.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/dyn/ui.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/htmltemplate/util.js" type="text/javascript" charset="utf-8"></script>
+<!-- InstanceBeginEditable name="head" -->
+<title>Adobe - Site Area Temporarily Unavailable</title>
+<link rel="stylesheet" rev="stylesheet" href="/css/mm_import.css" type="text/css" media="all" charset="utf-8" />
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="ssi_syntax" type="text" value="#include virtual=" --><!-- InstanceParam name="MMlocale" type="text" value="en_us" --><!-- InstanceParam name="flashdetection" type="boolean" value="true" --><!-- InstanceParam name="fma" type="boolean" value="false" --><!-- InstanceParam name="pod" type="boolean" value="false" --><!-- InstanceParam name="promo" type="boolean" value="false" --><!-- InstanceParam name="fullwidth" type="boolean" value="true" -->
+</head>
+<body>
+<script type="text/javascript">
+	// <![CDATA[
+	com.adobe.htmltemplate.loadCondAssets("dropdown", "backcompat");
+	// ]]>
+</script>
+<!--googleoff: index--><a href="/help/accessibility.html" tabindex="1" id="accesslink">Accessibility</a><!--googleon: index-->
+<!--googleoff: index-->
+<!--$Revision: 1.39 $-->
+<form id="globalnav-search" class="en" name="globalnav-search" method="get" action="/go/gnav_search" accept-charset="utf-8">
+	<dl id="globalnav" class="clear-after">
+		<dt id="adobe-logo"><a href="/">Adobe</a></dt>
+		<dd id="user-menu">
+			<ul class="pipe menu">
+				<li id="globalnav-cart"><a class="icon-replace cart" href="/go/gn_cart">Your Cart</a></li>
+				<li><span id="greeting" style="display:none">Welcome, <span id="screenName">Guest</span></span></li>
+				<li id="account"><a href="/go/gn_your_account">Your Account</a></li>
+				<li id="signout" style="display:none"><a href="/go/gn_signout">Sign Out</a></li>
+				<li id="help"><a href="/go/gn_contact">Contact</a></li>
+				<li id="international"><a href="/go/gn_intl">United States (Change)</a></li>
+			</ul>
+		</dd>
+		<dd id="site-menu">
+			<ul id="site-menu-dropdown" class="d-dropdown pipe menu compact">
+				<li><span class="menu-title"><a href="/go/gn_sol">Solutions</a></span>
+					<dl class="menu">
+						<dt>Industries</dt>
+						<dd><a href="/go/gntray_ind_education">Education</a></dd>
+						<dd><a href="/go/gntray_ind_finance">Financial Services</a></dd>
+						<dd><a href="/go/gntray_ind_govt">Government</a></dd>
+						<dd><a href="/go/gntray_ind_manufacturing">Manufacturing</a></dd>
+						<dd><a href="/go/gntray_ind_telecommunications">Telecommunications</a></dd>
+						<dt class="divide">Solutions</dt>
+						<dd><a href="/go/gntray_sol_digital_imaging">Digital Imaging</a></dd>
+						<dd><a href="/go/gntray_sol_mobile">Mobile</a></dd>
+						<dd><a href="/go/gntray_sol_print_publishing">Print Publishing</a></dd>
+						<dd><a href="/go/gntray_sol_ria">Rich Internet Applications</a></dd>
+						<dd><a href="/go/gntray_sol_elearning">Training and eLearning</a></dd>
+						<dd><a href="/go/gntray_sol_video_audio">Video and Audio</a></dd>
+						<dd><a href="/go/gntray_sol_web_conferencing">Web Conferencing</a></dd>
+						<dd><a href="/go/gntray_sol_web_publishing">Web Publishing</a></dd>
+						<dt class="divide"><a href="/go/gntray_sol_more">All Industries &amp; Solutions &#8250;</a></dt>
+					</dl>
+				</li>
+				<li><span class="menu-title"><a href="/go/gn_prod">Products</a></span>
+					<ul class="menu">
+						<li><a href="/go/gntray_prod_acrobat_connect_pro_home">Acrobat Connect</a></li>
+						<li><a href="/go/gntray_prod_acrobat_family_home">Acrobat Family</a></li>
+						<li><a href="/go/gntray_prod_after_effects_home">After Effects</a></li>
+						<li><a href="/go/gntray_prod_coldfusion_home">ColdFusion</a></li>
+						<li><a href="/go/gntray_prod_creative_suite_family_home">Creative Suite Family</a></li>
+						<li><a href="/go/gntray_prod_dreamweaver_home">Dreamweaver</a></li>
+						<li><a href="/go/gntray_prod_flash_home">Flash</a></li>
+						<li><a href="/go/gntray_prod_flex_home">Flex</a></li>
+						<li><a href="/go/gntray_prod_illustrator_home">Illustrator</a></li>
+						<li><a href="/go/gntray_prod_indesign_home">InDesign</a></li>
+						<li><a href="/go/gntray_prod_livecycle_home">LiveCycle Enterprise Suite</a></li>
+						<li><a href="/go/gntray_prod_mobile_devices_home">Mobile Products</a></li>
+						<li><a href="/go/gntray_prod_photoshop_family_home">Photoshop Family</a></li>
+						<li><a href="/go/gntray_prod_premiere_home">Premiere</a></li>
+						<li class="divide"><a href="/go/gntray_prod_products">All Products &#8250;</a></li>
+					</ul>
+				</li>
+				<li><span class="menu-title"><a href="/go/gn_supp">Support</a></span>
+					<ul class="menu">
+						<li><a href="/go/gn_supp_support">Support Home</a></li>
+						<li><a href="/go/gntray_supp_cs_home">Customer Service</a></li>
+						<li><a href="/go/gntray_supp_kb">Knowledgebase</a></li>
+						<li><a href="/go/gntray_supp_books">Books</a></li>
+						<li><a href="/go/gntray_supp_train_home">Training and Certification</a></li>
+						<li><a href="/go/gntray_supp_programs">Support Programs</a></li>
+						<li><a href="/go/gntray_supp_forums_home">Forums</a></li>
+						<li><a href="/go/gntray_supp_documentation">Documentation</a></li>
+						<li><a href="/go/gntray_supp_updates">Updates</a></li>
+						<li class="divide"><a href="/go/gntray_supp_more">More &#8250;</a></li>
+					</ul>
+				</li>
+				<li><span class="menu-title"><a href="/go/gn_comm">Communities</a></span>
+					<dl class="menu">
+						<dt>By User</dt>
+						<dd><a href="/go/gntray_comm_designers">Designers</a></dd>
+						<dd><a href="/go/gntray_comm_devnet">Developers</a></dd>
+						<dd><a href="/go/gntray_comm_educators">Educators</a></dd>
+						<dd><a href="/go/gntray_comm_partners">Partners</a></dd>
+						<dt class="divide">By Resource</dt>
+						<dd><a href="/go/gntray_comm_labs" target="mm_window">Adobe Labs</a></dd>
+						<dd><a href="/go/gntray_comm_forums">Forums</a></dd>
+						<dd><a href="/go/gntray_comm_exchange_home">Exchange</a></dd>
+						<dd><a href="/go/gntray_comm_blogs" target="mm_window">Blogs</a></dd>
+					</dl>
+				</li>
+				<li><span class="menu-title"><a href="/go/gn_comp">Company</a></span>
+					<ul class="menu">
+						<li><a href="/go/gntray_comp_aboutadobe">About Adobe</a></li>
+						<li><a href="/go/gntray_comp_press">Press</a></li>
+						<li><a href="/go/gntray_comp_investor_relations">Investor Relations</a></li>
+						<li><a href="/go/gntray_comp_community_affairs">Corporate Affairs</a></li>
+						<li><a href="/go/gntray_comp_careers">Careers</a></li>
+						<li><a href="/go/gntray_comp_showcase">Showcase</a></li>
+						<li><a href="/go/gntray_comp_events">Events</a></li>
+						<li><a href="/go/gntray_comp_contact_adobe">Contact Adobe</a></li>
+						<li><a href="/go/gntray_comp_become_affiliate">Become an Affiliate</a></li>
+						<li class="divide"><a href="/go/gntray_comp_company_more">More &#8250;</a></li>
+					</ul>
+				</li>
+				<li><span class="menu-title"><a href="/go/gn_dl">Downloads</a></span>
+					<ul class="menu">
+						<li><a href="/go/gntray_dl_downloads">Downloads Home</a></li>
+						<li><a href="/go/gntray_dl_downloads">Trial Downloads</a></li>
+						<li><a href="/go/gntray_dl_updates">Updates</a></li>
+						<li><a href="/go/gntray_dl_exchange">Exchange</a></li>
+						<li><a href="/go/gntray_dl_get_reader">Get Adobe Reader</a></li>
+						<li><a href="/go/gntray_dl_getflashplayer">Get Flash Player</a></li>
+						<li class="divide"><a href="/go/gntray_dl_more">More &#8250;</a></li>
+					</ul>
+				</li>
+				<li><span class="menu-title"><a href="/go/gn_store">Store</a></span>
+					<ul class="menu">
+						<li><a href="/go/gntray_store">Store Home</a></li>
+						<li><a href="/go/gntray_store_software">Software</a></li>
+						<li><a href="/go/gntray_store_fonts">Fonts</a></li>
+						<li><a href="/go/gntray_store_books">Books</a></li>
+						<li><a href="/go/gntray_store_programs">Support</a></li>
+						<li><a href="/go/gntray_store_your_hist">Your Account</a></li>
+						<li><a href="/go/gntray_store_mvlp">Volume Licensing</a></li>
+						<li class="divide"><a href="/go/gntray_store_purchase_options">Other Ways to Buy &#8250;</a></li>
+					</ul>
+				</li>
+			</ul>
+		</dd>
+		<dd id="site-search">
+			<p><input type="hidden" name="loc" value="en_us" />
+			<input type="text" id="search-input" name="term" />
+			<button type="submit" id="search">Search</button></p>
+		</dd>
+	</dl>
+<noscript>
+<div id="globalnav-noscript">You may not have everything you need to view certain sections of Adobe.com. Please see our <a href="/go/gn_sitereqs">site requirements</a>.</div>
+</noscript>
+</form>
+<!--googleon: index-->
+<div id="layoutLogic" class="full-width">
+  <div id="gecko"><!-- InstanceBeginEditable name="header" -->
+    <div id="contentHeader" class="macromedia">
+      <div id="depthpath"><a href="/">Home</a></div>
+      <h1>Site Area Temporarily Unavailable</h1>
+    </div>
+    <!-- InstanceEndEditable -->
+    <div id="contentBody"><!-- InstanceBeginEditable name="content" -->
+      <div class="columns-2-aaB-aa txtcenter"> <img src="/images/shared/error_sm.gif" alt="Error" width="95" height="90" /> </div>
+      <div class="columns-2-aaB-B">
+        <p>We're sorry, the site area you've requested is unavailable due to
+          scheduled maintenance. Please try again later. </p>
+		  <p>アドビストアは、システムメインテナンスのためサービスを一時停止しております。ご利用の皆様にはご不便をおかけして大変申し訳ございません。メインテナンス作業が終り次第、サービスを開始できるよう準備を進めておりますので、今しばらくお待ち下さいますようお願いいたします。なお、メインテナンス中は、Webサイトでの製品の購入やご注文履歴の確認、ダウンロード販売で購入された製品の再ダウンロードなどができませんのでご了承ください。よろしくお願いします。</p>
+        <p>For any concerns, contact our <a href="/support/contact/"> Customer
+            Service Center</a>. Your business is very much appreciated.</p>
+        <p>In the interim, many areas of our website are still available. You
+          may want to try one of the following links:</p>
+        <ul>
+          <li><a href="/"><strong>Adobe.com Home</strong></a></li>
+          <li><a href="/support/"><strong>Support &amp; Training</strong></a></li>
+          <li><a href="/products/"><strong>Products</strong></a></li>
+		  <li><a href="/products/acrobat/readstep2.html"><strong>Download the Adobe Reader</strong></a></li>
+          <li><a href="/go/getflashplayer"><strong>Download the Flash Player</strong></a></li>
+          <li><a href="/aboutadobe/contact.html"><strong>Contact Us</strong></a></li>
+        </ul>
+        <p>Thank you for your patience.</p>
+      </div>
+      <br class="clear-both" />
+      <!-- InstanceEndEditable --></div>
+  </div>
+  <br />
+  <!-- extra break for opera 7 bug -->
+</div>
+<div id="capBottom">&nbsp;</div>
+<!--googleoff: index--><!-- global footer $Revision: 1.34 $ -->
+<div id="globalfooter">
+	<ul class="pipe menu">
+		<li><a href="/go/gftray_foot_aboutadobe">Company</a></li>
+		<li><a href="/go/gftray_foot_privacy_security">Online Privacy Policy</a></li>
+		<li><a href="/go/gftray_foot_terms">Terms of Use</a></li>
+		<li><a href="/go/gftray_foot_contact_adobe">Contact Us</a></li>
+		<li><a href="/go/gftray_foot_accessibility">Accessibility</a></li>
+		<li><a href="/go/gftray_foot_report_piracy">Report Piracy</a></li>
+		<li><a href="/go/gftray_foot_permissions_trademarks">Permissions &amp; Trademarks</a></li>
+		<li><a href="/go/gftray_foot_product_license_agreements">Product License Agreements</a></li>
+		<li>
+		<script language="javascript" type="text/javascript" charset="windows-1252" src="/ubi/feedback/oo_engine.js"></script>
+		<script language="javascript" type="text/javascript" charset="windows-1252">
+			O_GoT('Send Feedback');
+		</script>
+		<noscript><a href="/go/gftray_foot_feedback">Send Feedback</a></noscript></li>
+	</ul>
+	<div class="pullout-right right-125"> 
+		<p class="pullout-item"><a href="/go/gftray_foot_truste" target="_blank"><img src="/images/globalnav/eufinalmark.gif" alt="Reviewed by TRUSTe: site privacy statement" width="116" height="41" id="trustelogo" /></a></p>		
+		<p id="copyright">Copyright &#169; 2007 Adobe Systems Incorporated. <a href="/go/gftray_all_rights_reserved">All rights reserved</a>.</p>
+		<p id="terms">Use of this website signifies your agreement to the <a href="/go/gftray_foot_terms">Terms of Use</a> and <a href="/go/gftray_foot_privacy_security">Online Privacy Policy (updated 03-30-2007)</a>.</p>
+		<p id="searchengine">Search powered by<a href="http://www.google.com/" target="new"><img class="googlelogo" src="/images/master/logo_google.gif" width="43" height="18" alt="Powered by Google" /></a></p>
+	</div>
+</div>
+<!--googleon: index-->
+<!-- InstanceBeginEditable name="analytics" -->
+<script type="text/javascript" language="Javascript1.2" charset="utf-8">
+var s_prop25="502"
+</script>
+<div style="display: none;"><!-- SiteCatalyst code version: F.3. error-page version
+$Id: $
+Copyright 2002 Omniture, Inc. More info available at
+http://www.omniture.com --><script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+var s_pageName=""
+var s_server=""
+var s_channel=""
+var s_pageType="errorPage"
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop7=""
+/* E-commerce Variables */
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW ************/
+/********** DO NOT ALTER ANYTHING ELSE BELOW THIS LINE! *************/
+var s_code=' '//--></script>
+<script language="JavaScript" src="/uber/js/omniture_s_code.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript"><!--
+//make account name an easily changed variable
+var s_accountName="mxmacromedia";
+var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc(
+s_accountName);if(s_code)document.write(s_code)}else
+document.write('<im'+'g src="http://192.168.112.2O7.net/b/ss/'+s_accountName+'/1/F.3-fb/s'+s_tm.getTime()+'?[AQB]'
++'&pageName='+escape(s_wd.s_pageName?s_wd.s_pageName:(s_wd.pageName?s_wd.pageName:''))
++'&server='+escape(s_wd.s_server?s_wd.s_server:(s_wd.server?s_wd.server:''))
++'&ch='+escape(s_wd.s_channel?s_wd.s_channel:(s_wd.channel?s_wd.channel:''))
++'&[AQE]" height="1" width="1" border="0" alt="" />')
+//send all requests through an interface method in case any checking needs to be done
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+//--></script><noscript><img
+src="http://192.168.112.2O7.net/b/ss/mxmacromedia/1/F.3-XELvs"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: F.3. -->
+</div>
+
+<!-- InstanceEndEditable --><img id="flash_pixel" name="flash_pixel" src="/images/pixel.gif" width="1" height="1" alt="" />
+<script src="/js/htmltemplate/beforeonload.js" type="text/javascript"></script>
+</body>
+<!-- InstanceEnd -->
+</html>
