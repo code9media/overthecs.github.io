@@ -57,7 +57,7 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .index-alpha-nav {font-size:80px;font-weight:bold;width:100px;height:100px;border-radius:50em;background-color:#fff;text-align:center;}
 .index-more-cheat {*width:750px;padding-left:30px;}
 .index-more-cheat a:link,
-.index-more-cheat a:visited {text-decoration:none;text-align:center;zoom:1;line-height:25px;font-size:16px;padding-right:25px;color:#0026E6;_font-weight:bold;}
+.index-more-cheat a:visited {text-decoration:none;text-align:center;zoom:1;line-height:25px;font-size:16px;padding-right:25px;color:#0026E6;_font-weight:bold;display:inline-block;}
 .index-more-cheat a:hover {text-decoration:underline;}
 
 .back-to-top {display:none; position: fixed; width: 100px; height: 40px; overflow:hidden; _position:absolute;bottom:0;}
