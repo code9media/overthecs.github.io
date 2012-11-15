@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="988.58264"
+   height="744.09448"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   sodipodi:docbase="/home/jast/doc/git"
+   sodipodi:docname="git-cheat-sheet-v2-back.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4905"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path4902"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;">
+      <path
+         id="path4911"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Sstart"
+       style="overflow:visible">
+      <path
+         id="path4908"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path4893"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Sstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Sstart"
+       style="overflow:visible">
+      <path
+         id="path4890"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.2) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path4884"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path4887"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10.1"
+     objecttolerance="10"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="294.29313"
+     inkscape:cy="553.62931"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="279mm"
+     height="210mm"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="mm"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     showborder="true"
+     gridspacingx="0.5mm"
+     gridspacingy="0.5mm"
+     gridanglex="8.4666669mm"
+     gridanglez="8.4666669mm"
+     grid_units="mm"
+     gridempspacing="10"
+     inkscape:grid-points="true"
+     inkscape:grid-bbox="true"
+     inkscape:guide-points="true"
+     gridcolor="#f43fff"
+     gridopacity="0.14509804"
+     gridempcolor="#f43fff"
+     gridempopacity="0.37647059"
+     inkscape:window-width="1600"
+     inkscape:window-height="1175"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:object-paths="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Attribution" />
+        <cc:prohibits
+           rdf:resource="http://web.resource.org/cc/CommercialUse" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="34.81324"
+       y="59.745564"
+       id="text2160"><tspan
+         sodipodi:role="line"
+         id="tspan2162"
+         x="34.81324"
+         y="59.745564"
+         style="font-size:32px"><tspan
+   style="font-weight:bold"
+   id="tspan2166">Git</tspan> Cheat Sheet</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="738.35187"
+       y="59.511776"
+       id="text2168"><tspan
+         sodipodi:role="line"
+         id="tspan2170"
+         x="738.35187"
+         y="59.511776">Back – Command Quick Reference</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="938.98419"
+       y="699.02301"
+       id="text3501"><tspan
+         sodipodi:role="line"
+         x="938.98419"
+         y="699.02301"
+         id="tspan3511"
+         style="font-size:8px;text-align:end;text-anchor:end">This is version 2.0 of Jan Krüger's Git cheat sheet. You can contact the author by e-mail at: &lt;jk@jk.gs&gt;.</tspan><tspan
+         sodipodi:role="line"
+         x="938.98419"
+         y="709.02301"
+         style="font-size:8px;text-align:end;text-anchor:end"
+         id="tspan2674">Partially based on work by Zack Rusin, http://zrusin.blogspot.com/</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:0.88582677;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 35.433071,62.007868 L 944.29134,62.007868"
+       id="path6011"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g9570">
+      <rect
+         ry="4"
+         rx="4"
+         y="88.582672"
+         x="35.433071"
+         height="124.01575"
+         width="177.16536"
+         id="rect5376"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         ry="4"
+         rx="4"
+         y="88.582672"
+         x="35.433071"
+         height="17.716536"
+         width="159.44882"
+         id="rect5378"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         id="text5380"
+         y="102.53713"
+         x="88.975845"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans"
+           y="102.53713"
+           x="88.975845"
+           id="tspan5382"
+           sodipodi:role="line">Create</tspan></text>
+      <text
+         id="text3479"
+         y="124.01574"
+         x="53.149605"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="124.01574"
+           x="53.149605"
+           id="tspan3481"
+           sodipodi:role="line">From existing files</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3483"
+           y="134.01574"
+           x="53.149605"
+           sodipodi:role="line">  git init</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3485"
+           y="144.01574"
+           x="53.149605"
+           sodipodi:role="line">  git add .</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3487"
+           y="154.01574"
+           x="53.149605"
+           sodipodi:role="line">  git commit</tspan><tspan
+           id="tspan3489"
+           y="164.01574"
+           x="53.149605"
+           sodipodi:role="line">From remote repository</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3491"
+           y="174.01574"
+           x="53.149605"
+           sodipodi:role="line">  git clone .../old .../new</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3493"
+           y="184.01574"
+           x="53.149605"
+           sodipodi:role="line">  git clone git://...</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3497"
+           y="194.01574"
+           x="53.149605"
+           sodipodi:role="line">  git clone ssh://...</tspan></text>
+    </g>
+    <g
+       id="g9548">
+      <rect
+         ry="4"
+         rx="4"
+         y="230.31496"
+         x="35.433071"
+         height="106.29921"
+         width="177.16534"
+         id="rect3501"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         ry="4"
+         rx="4"
+         y="230.31496"
+         x="35.433071"
+         height="17.716539"
+         width="159.44882"
+         id="rect3503"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         id="text3505"
+         y="244.17714"
+         x="85.865494"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans"
+           y="244.17714"
+           x="85.865494"
+           id="tspan3508"
+           sodipodi:role="line">Browse</tspan></text>
+      <text
+         id="text3510"
+         y="265.74802"
+         x="53.149605"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan3526"
+           y="265.74802"
+           x="53.149605"
+           sodipodi:role="line">git status</tspan><tspan
+           id="tspan3557"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="275.74802"
+           x="53.149605"
+           sodipodi:role="line">git diff <tspan
+   id="tspan3559"
+   style="font-style:italic">oldref newref</tspan></tspan><tspan
+           id="tspan3561"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="285.74802"
+           x="53.149605"
+           sodipodi:role="line">git log [-p] [<tspan
+   id="tspan3565"
+   style="font-style:italic">file</tspan>|<tspan
+   id="tspan3563"
+   style="font-style:italic">dir</tspan>]</tspan><tspan
+           id="tspan3567"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="295.74802"
+           x="53.149605"
+           sodipodi:role="line">git blame <tspan
+   id="tspan3571"
+   style="font-style:italic">file</tspan></tspan><tspan
+           id="tspan3573"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="305.74802"
+           x="53.149605"
+           sodipodi:role="line">git show <tspan
+   id="tspan5489"
+   style="font-style:italic">ref<tspan
+   id="tspan3583"
+   style="font-style:normal">[:</tspan>file</tspan>]</tspan><tspan
+           id="tspan3585"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="315.74802"
+           x="53.149605"
+           sodipodi:role="line">git branch <tspan
+   id="tspan3589"
+   style="font-size:6px;font-family:Bitstream Vera Sans">(shows list, * = current)</tspan></tspan><tspan
+           id="tspan3569"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="325.74802"
+           x="53.149605"
+           sodipodi:role="line">git tag -l <tspan
+   id="tspan3591"
+   style="font-size:6px;font-family:Bitstream Vera Sans">(shows list)</tspan></tspan></text>
+    </g>
+    <g
+       id="g9494">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5163"
+         width="177.16536"
+         height="88.58268"
+         x="35.433071"
+         y="389.76373"
+         rx="4.0003939"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5165"
+         width="159.44882"
+         height="17.716537"
+         x="35.433071"
+         y="389.76376"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="73.499283"
+         y="403.84128"
+         id="text5167"><tspan
+           sodipodi:role="line"
+           id="tspan5169"
+           x="73.499283"
+           y="403.84128"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Track Files</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="53.149605"
+         y="425.19684"
+         id="text5171"><tspan
+           sodipodi:role="line"
+           x="53.149605"
+           y="425.19684"
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan5199">git add files</tspan><tspan
+           sodipodi:role="line"
+           x="53.149605"
+           y="435.19684"
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan5251">git mv old new</tspan><tspan
+           sodipodi:role="line"
+           x="53.149605"
+           y="445.19684"
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan5253">git rm files</tspan><tspan
+           sodipodi:role="line"
+           x="53.149605"
+           y="455.19684"
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan5255">git rm --cached files</tspan><tspan
+           sodipodi:role="line"
+           x="53.149605"
+           y="463.20334"
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           id="tspan5257">       (stop tracking but keep files in working dir)</tspan><tspan
+           sodipodi:role="line"
+           x="53.149605"
+           y="470.70334"
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan5259" /></text>
+    </g>
+    <g
+       id="g9470">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3608"
+         width="177.16536"
+         height="106.29921"
+         x="35.433071"
+         y="496.06299"
+         rx="4.0000005"
+         ry="4.1054301" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3610"
+         width="159.44882"
+         height="17.716534"
+         x="35.433071"
+         y="496.06299"
+         rx="4.0000005"
+         ry="4" />
+      <text
+         transform="scale(0.9869828,1.0131888)"
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="89.603027"
+         y="503.41702"
+         id="text3612"><tspan
+           sodipodi:role="line"
+           id="tspan3614"
+           x="89.603027"
+           y="503.41702"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Revert</tspan></text>
+      <text
+         transform="scale(0.9869828,1.0131888)"
+         xml:space="preserve"
+         style="font-size:8.10318089px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="53.845421"
+         y="516.59143"
+         id="text3616"><tspan
+           sodipodi:role="line"
+           x="53.845421"
+           y="516.59143"
+           style="font-size:6.07738495px;font-family:Bitstream Vera Sans"
+           id="tspan3650">In Git, reverting usually means adding a commit</tspan><tspan
+           id="tspan3756"
+           sodipodi:role="line"
+           x="53.845421"
+           y="524.18816"
+           style="font-size:6.07738495px;font-family:Bitstream Vera Sans">that undos changes in previous commits.</tspan><tspan
+           dy="5.0644879"
+           id="tspan3753"
+           sodipodi:role="line"
+           x="53.845421"
+           y="533.8041"
+           style="font-family:Bitstream Vera Sans Mono">git reset --hard (<tspan
+   id="tspan3741"
+   style="font-weight:bold">NO UNDO</tspan>)</tspan><tspan
+           id="tspan3758"
+           dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5.0644879"
+           sodipodi:role="line"
+           x="53.845421"
+           y="541.91387"
+           style="font-size:6.07738495px;font-family:Bitstream Vera Sans">                (<tspan
+   id="tspan3760"
+   style="font-weight:bold">throw away</tspan> all pending changes)</tspan><tspan
+           id="tspan3762"
+           sodipodi:role="line"
+           x="53.845421"
+           y="551.52981"
+           style="font-family:Bitstream Vera Sans Mono">git revert <tspan
+   style="font-style:italic"
+   id="tspan5487">ref</tspan></tspan><tspan
+           id="tspan3747"
+           sodipodi:role="line"
+           x="53.845421"
+           y="561.65879"
+           style="font-family:Bitstream Vera Sans Mono">git commit -a --amend</tspan><tspan
+           id="tspan3768"
+           sodipodi:role="line"
+           x="53.845421"
+           y="569.76855"
+           style="font-size:6.07738495px;font-family:Bitstream Vera Sans">                (<tspan
+   id="tspan3784"
+   style="font-weight:bold">replace</tspan> previous commit)</tspan><tspan
+           id="tspan3749"
+           sodipodi:role="line"
+           x="53.845421"
+           y="579.38449"
+           style="font-family:Bitstream Vera Sans Mono">git checkout <tspan
+   style="font-style:italic"
+   id="tspan5492">ref file</tspan></tspan></text>
+    </g>
+    <g
+       id="g9208">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3786"
+         width="177.16534"
+         height="106.29924"
+         x="478.34647"
+         y="318.89764"
+         rx="4"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3788"
+         width="159.44882"
+         height="17.716551"
+         x="478.34647"
+         y="318.89764"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="514.80206"
+         y="331.87402"
+         id="text3790"><tspan
+           sodipodi:role="line"
+           id="tspan3792"
+           x="514.80206"
+           y="331.87402"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Object refs</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="490.74805"
+         y="358.33075"
+         id="text3794"><tspan
+           id="tspan3818"
+           sodipodi:role="line"
+           x="490.74805"
+           y="358.33075"
+           style="font-family:Bitstream Vera Sans Mono">master   <tspan
+   id="tspan3884"
+   style="font-family:Bitstream Vera Sans">default devel branch</tspan></tspan><tspan
+           id="tspan3870"
+           sodipodi:role="line"
+           x="490.74805"
+           y="368.33075"
+           style="font-family:Bitstream Vera Sans Mono">origin   <tspan
+   id="tspan3886"
+   style="font-family:Bitstream Vera Sans">default upstream branch</tspan></tspan><tspan
+           id="tspan3872"
+           sodipodi:role="line"
+           x="490.74805"
+           y="378.33075"
+           style="font-family:Bitstream Vera Sans Mono">HEAD     <tspan
+   id="tspan3888"
+   style="font-family:Bitstream Vera Sans">current branch</tspan></tspan><tspan
+           id="tspan3874"
+           sodipodi:role="line"
+           x="490.74805"
+           y="388.33075"
+           style="font-family:Bitstream Vera Sans Mono">HEAD^    <tspan
+   id="tspan3890"
+   style="font-family:Bitstream Vera Sans">parent of </tspan>HEAD</tspan><tspan
+           id="tspan3876"
+           sodipodi:role="line"
+           x="490.74805"
+           y="398.33075"
+           style="font-family:Bitstream Vera Sans Mono">HEAD~4   <tspan
+   id="tspan3892"
+   style="font-family:Bitstream Vera Sans">great-great grandp. of </tspan>HEAD</tspan><tspan
+           id="tspan3878"
+           sodipodi:role="line"
+           x="490.74805"
+           y="408.33075"
+           style="font-family:Bitstream Vera Sans Mono">foo..bar <tspan
+   id="tspan3894"
+   style="font-family:Bitstream Vera Sans">from ref foo to ref bar</tspan></tspan><tspan
+           id="tspan3880"
+           sodipodi:role="line"
+           x="490.74805"
+           y="418.33075"
+           style="font-family:Bitstream Vera Sans Mono" /></text>
+    </g>
+    <g
+       id="g9529">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5075"
+         width="177.16534"
+         height="17.716537"
+         x="35.433071"
+         y="354.33069"
+         rx="4"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5077"
+         width="159.44882"
+         height="17.716537"
+         x="35.433071"
+         y="354.33069"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="85.530533"
+         y="366.99658"
+         id="text5079"><tspan
+           sodipodi:role="line"
+           id="tspan5081"
+           x="85.530533"
+           y="366.99658"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Change</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Mend);stroke-opacity:1;marker-start:url(#Arrow2Mstart)"
+       d="M 124.01575,480.1181 L 124.01575,494.29133"
+       id="path5083"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path5336"
+       d="M 124.01575,373.81889 L 124.01575,387.99212"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Mend);stroke-opacity:1;marker-start:url(#Arrow2Mstart)" />
+    <g
+       id="g9444">
+      <rect
+         ry="4"
+         rx="4"
+         y="620.07874"
+         x="35.433071"
+         height="88.582703"
+         width="177.16534"
+         id="rect5381"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         ry="4"
+         rx="4"
+         y="620.07874"
+         x="35.433071"
+         height="17.716534"
+         width="159.44882"
+         id="rect5383"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         id="text5385"
+         y="632.79932"
+         x="86.302994"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans"
+           y="632.79932"
+           x="86.302994"
+           id="tspan5387"
+           sodipodi:role="line">Update</tspan></text>
+      <text
+         id="text5389"
+         y="653.79303"
+         x="52.669136"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           y="653.79303"
+           x="52.669136"
+           sodipodi:role="line"
+           id="tspan5413">git fetch <tspan
+   id="tspan5485"
+   style="font-size:6px;font-family:Bitstream Vera Sans">(from default upstream)</tspan></tspan><tspan
+           id="tspan5494"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="663.79303"
+           x="52.669136"
+           sodipodi:role="line">git fetch <tspan
+   id="tspan5496"
+   style="font-style:italic">ref</tspan></tspan><tspan
+           id="tspan5498"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="673.79303"
+           x="52.669136"
+           sodipodi:role="line">git pull <tspan
+   id="tspan5500"
+   style="font-size:6px;font-family:Bitstream Vera Serif">(= fetch + merge)</tspan></tspan><tspan
+           id="tspan5502"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="683.79303"
+           x="52.669136"
+           sodipodi:role="line">git am -3 patch.mbox</tspan><tspan
+           id="tspan5504"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="693.79303"
+           x="52.669136"
+           sodipodi:role="line">git apply patch.diff</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path5506"
+       d="M 33.661417,549.21259 L 17.716535,549.21259 L 17.716535,363.18897 L 33.661417,363.18897"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Mend);stroke-opacity:1;marker-start:url(#Arrow2Mstart)" />
+    <g
+       id="g9389">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5632"
+         width="177.16534"
+         height="124.01573"
+         x="248.03149"
+         y="230.31496"
+         rx="4"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect5634"
+         width="159.44882"
+         height="17.716534"
+         x="248.03149"
+         y="230.31496"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="300.1319"
+         y="244.39246"
+         id="text5636"><tspan
+           sodipodi:role="line"
+           id="tspan5638"
+           x="300.1319"
+           y="244.39246"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Record</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="266.19092"
+         y="265.30511"
+         id="text5640"><tspan
+           id="tspan5810"
+           sodipodi:role="line"
+           x="266.19092"
+           y="265.30511"
+           style="font-size:6px;font-family:Bitstream Vera Sans">In Git, commit only respects changes that have</tspan><tspan
+           id="tspan5834"
+           sodipodi:role="line"
+           x="266.19092"
+           y="272.80511"
+           style="font-size:6px;font-family:Bitstream Vera Sans">been marked explicitly with add.</tspan><tspan
+           id="tspan5812"
+           sodipodi:role="line"
+           x="266.19092"
+           y="282.29861"
+           style="font-family:Bitstream Vera Sans Mono"
+           dy="5">git commit [-a]</tspan><tspan
+           id="tspan5820"
+           sodipodi:role="line"
+           x="266.19092"
+           y="290.30511"
+           style="font-size:6px;font-family:Bitstream Vera Sans">            (-a: <tspan
+   id="tspan5838"
+   style="font-family:Bitstream Vera Sans Mono">add</tspan> changed files automatically)</tspan><tspan
+           id="tspan5822"
+           sodipodi:role="line"
+           x="266.19092"
+           y="299.79861"
+           style="font-family:Bitstream Vera Sans Mono">git push [<tspan
+   id="tspan5840"
+   style="font-style:italic">remote</tspan>]</tspan><tspan
+           id="tspan5824"
+           sodipodi:role="line"
+           x="266.19092"
+           y="307.80511"
+           style="font-size:6px;font-family:Bitstream Vera Sans">            (push to origin or <tspan
+   id="tspan5842"
+   style="font-style:italic">remote</tspan>)</tspan><tspan
+           id="tspan5826"
+           sodipodi:role="line"
+           x="266.19092"
+           y="317.29861"
+           style="font-family:Bitstream Vera Sans Mono">git tag foo</tspan><tspan
+           id="tspan5828"
+           sodipodi:role="line"
+           x="266.19092"
+           y="325.30511"
+           style="font-size:6px;font-family:Bitstream Vera Sans">            (mark current version)</tspan><tspan
+           id="tspan5830"
+           sodipodi:role="line"
+           x="266.19092"
+           y="332.80511"
+           style="font-family:Bitstream Vera Sans Mono" /><tspan
+           sodipodi:role="line"
+           x="266.19092"
+           y="340.30511"
+           id="tspan5656"
+           style="font-family:Bitstream Vera Sans Mono" /></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-opacity:1"
+       d="M 212.59843,363.18897 L 230.31496,363.18897 L 230.31496,292.32283 L 246.25984,292.32283"
+       id="path5844"
+       sodipodi:nodetypes="cccc" />
+    <g
+       id="g9409">
+      <rect
+         ry="4"
+         rx="4"
+         y="89.025581"
+         x="247.58858"
+         height="124.01575"
+         width="177.16536"
+         id="rect5870"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         ry="4"
+         rx="4"
+         y="89.025581"
+         x="247.58858"
+         height="17.716536"
+         width="159.44882"
+         id="rect5872"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         id="text5874"
+         y="103.10309"
+         x="299.689"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans"
+           y="103.10309"
+           x="299.689"
+           id="tspan5876"
+           sodipodi:role="line">Branch</tspan></text>
+      <text
+         id="text5878"
+         y="124.45865"
+         x="265.30511"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan5908"
+           y="124.45865"
+           x="265.30511"
+           sodipodi:role="line">git checkout branch</tspan><tspan
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           y="132.46515"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6004">       (switch working dir to branch)</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           y="141.95865"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6006">git merge branch</tspan><tspan
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           y="149.96515"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6008">       (merge into current)</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           y="159.45865"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6010">git branch branch</tspan><tspan
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           y="167.46515"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6012">       (branch current)</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           y="176.95865"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6014">git checkout -b new other</tspan><tspan
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           y="184.96515"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6016">       (branch new from other and</tspan><tspan
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           y="192.46515"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6018">       switch to it)</tspan><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           y="199.96515"
+           x="265.30511"
+           sodipodi:role="line"
+           id="tspan6020" /></text>
+    </g>
+    <g
+       id="g9363">
+      <rect
+         ry="4"
+         rx="4"
+         y="372.04724"
+         x="248.03149"
+         height="70.866142"
+         width="177.16536"
+         id="rect6024"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         ry="4"
+         rx="4"
+         y="372.04724"
+         x="248.03149"
+         height="17.716536"
+         width="159.44882"
+         id="rect6026"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         id="text6028"
+         y="386.12476"
+         x="298.55963"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans"
+           y="386.12476"
+           x="298.55963"
+           id="tspan6030"
+           sodipodi:role="line">Publish</tspan></text>
+      <text
+         id="text6032"
+         y="407.48032"
+         x="265.74802"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-family:Bitstream Vera Sans Mono"
+           id="tspan6062"
+           y="407.48032"
+           x="265.74802"
+           sodipodi:role="line">git push</tspan><tspan
+           id="tspan6178"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="417.48032"
+           x="265.74802"
+           sodipodi:role="line">git push remote</tspan><tspan
+           id="tspan6192"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="427.48032"
+           x="265.74802"
+           sodipodi:role="line">git format-patch origin</tspan><tspan
+           id="tspan6180"
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           y="435.48682"
+           x="265.74802"
+           sodipodi:role="line">            (create set of diffs)</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path6198"
+       d="M 336.61417,354.3307 L 336.61418,370.27558"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-opacity:1" />
+    <g
+       id="g9315">
+      <rect
+         ry="4"
+         rx="4"
+         y="460.62991"
+         x="248.03149"
+         height="106.29922"
+         width="177.16536"
+         id="rect6249"
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         ry="4"
+         rx="4"
+         y="460.62991"
+         x="248.03149"
+         height="17.716537"
+         width="159.44882"
+         id="rect6251"
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         id="text6253"
+         y="474.70743"
+         x="259.70416"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans"
+           y="474.70743"
+           x="259.70416"
+           id="tspan6255"
+           sodipodi:role="line">Resolve Conflicts</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="265.74802"
+         y="496.06299"
+         id="text6292"><tspan
+           sodipodi:role="line"
+           x="265.74802"
+           y="496.06299"
+           style="font-size:6px;font-family:Bitstream Vera Sans"
+           id="tspan6308">Use <tspan
+   id="tspan6360"
+   style="font-family:Bitstream Vera Sans Mono">add</tspan> to mark files as resolved.</tspan><tspan
+           dy="5"
+           id="tspan6348"
+           sodipodi:role="line"
+           x="265.74802"
+           y="505.55649"
+           style="font-family:Bitstream Vera Sans Mono">git diff [--base]</tspan><tspan
+           id="tspan6350"
+           sodipodi:role="line"
+           x="265.74802"
+           y="515.55649"
+           style="font-family:Bitstream Vera Sans Mono">git diff --ours</tspan><tspan
+           id="tspan6352"
+           sodipodi:role="line"
+           x="265.74802"
+           y="525.55649"
+           style="font-family:Bitstream Vera Sans Mono">git diff --theirs</tspan><tspan
+           id="tspan6354"
+           sodipodi:role="line"
+           x="265.74802"
+           y="535.55649"
+           style="font-family:Bitstream Vera Sans Mono">git log --merge</tspan><tspan
+           id="tspan6356"
+           sodipodi:role="line"
+           x="265.74802"
+           y="545.55649"
+           style="font-family:Bitstream Vera Sans Mono">gitk --merge</tspan><tspan
+           id="tspan6358"
+           sodipodi:role="line"
+           x="265.74802"
+           y="555.55649"
+           style="font-family:Bitstream Vera Sans Mono" /></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-opacity:1"
+       d="M 212.59843,664.37007 L 230.31496,664.37007 L 230.31496,513.77952 L 246.25984,513.77952"
+       id="path6362"
+       sodipodi:nodetypes="cccc" />
+    <g
+       id="g9269">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect6425"
+         width="265.74805"
+         height="230.31496"
+         x="673.22833"
+         y="318.89764"
+         rx="4"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect6427"
+         width="212.59843"
+         height="17.716536"
+         x="673.22833"
+         y="318.89764"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="683.64667"
+         y="332.97516"
+         id="text6429"><tspan
+           sodipodi:role="line"
+           id="tspan6431"
+           x="683.64667"
+           y="332.97516"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Other Useful Commands</tspan></text>
+      <text
+         id="text6450"
+         y="354.33069"
+         x="690.94489"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan6456"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="354.33069"
+           x="690.94489"
+           sodipodi:role="line">git archive</tspan><tspan
+           id="tspan6463"
+           style="font-family:Bitstream Vera Sans"
+           y="364.33069"
+           x="690.94489"
+           sodipodi:role="line">                Create release tarball</tspan><tspan
+           id="tspan6465"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="374.33069"
+           x="690.94489"
+           sodipodi:role="line">git bisect</tspan><tspan
+           id="tspan6467"
+           style="font-family:Bitstream Vera Sans"
+           y="384.33069"
+           x="690.94489"
+           sodipodi:role="line">                Binary search for defects</tspan><tspan
+           id="tspan6469"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="394.33069"
+           x="690.94489"
+           sodipodi:role="line">git cherry-pick</tspan><tspan
+           id="tspan6471"
+           style="font-family:Bitstream Vera Sans"
+           y="404.33069"
+           x="690.94489"
+           sodipodi:role="line">                Take single commit from elsewhere</tspan><tspan
+           id="tspan6473"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="414.33069"
+           x="690.94489"
+           sodipodi:role="line">git fsck</tspan><tspan
+           id="tspan6475"
+           style="font-family:Bitstream Vera Sans"
+           y="424.33069"
+           x="690.94489"
+           sodipodi:role="line">                Check tree</tspan><tspan
+           id="tspan6477"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="434.33069"
+           x="690.94489"
+           sodipodi:role="line">git gc</tspan><tspan
+           id="tspan6479"
+           style="font-family:Bitstream Vera Sans"
+           y="444.33069"
+           x="690.94489"
+           sodipodi:role="line">                Compress metadata (performance)</tspan><tspan
+           id="tspan6481"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="454.33069"
+           x="690.94489"
+           sodipodi:role="line">git rebase</tspan><tspan
+           id="tspan6485"
+           style="font-family:Bitstream Vera Sans"
+           y="464.33069"
+           x="690.94489"
+           sodipodi:role="line">                Forward-port local changes to remote branch</tspan><tspan
+           id="tspan6487"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="474.33069"
+           x="690.94489"
+           sodipodi:role="line">git remote add URL</tspan><tspan
+           id="tspan6491"
+           style="font-family:Bitstream Vera Sans"
+           y="484.33069"
+           x="690.94489"
+           sodipodi:role="line">                Register a new remote repository for this tree</tspan><tspan
+           id="tspan6493"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="494.33069"
+           x="690.94489"
+           sodipodi:role="line">git stash</tspan><tspan
+           id="tspan6495"
+           style="font-family:Bitstream Vera Sans"
+           y="504.33069"
+           x="690.94489"
+           sodipodi:role="line">                Temporarily set aside changes</tspan><tspan
+           id="tspan6497"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="514.33069"
+           x="690.94489"
+           sodipodi:role="line">git tag</tspan><tspan
+           id="tspan6505"
+           style="font-size:8px;font-family:Bitstream Vera Sans"
+           y="524.33069"
+           x="690.94489"
+           sodipodi:role="line">                (there's more to it)</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="248.03149"
+       y="602.36218"
+       id="text6563"><tspan
+         sodipodi:role="line"
+         id="tspan6565"
+         x="248.03149"
+         y="602.36218"
+         style="font-size:12px;font-family:Bitstream Vera Sans">Explanation of Syntax</tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="613.37519"
+         style="font-family:Bitstream Vera Sans Mono"
+         id="tspan6591"
+         dy="10.606602">[foo]   foo is optional</tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="623.37519"
+         style="font-family:Bitstream Vera Sans Mono"
+         dy="7.0710678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3.5355339"
+         id="tspan6595">...     You can get creative here</tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="633.37519"
+         style="font-style:italic;font-family:Bitstream Vera Sans Mono"
+         id="tspan6567"
+         dy="7.0710678">foo     foo <tspan
+   style="font-style:normal"
+   id="tspan6569">is a placeholder for</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="643.37519"
+         style="font-style:normal;font-family:Bitstream Vera Sans Mono"
+         id="tspan6571">        something you need to fill in</tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="653.37519"
+         style="font-style:italic;font-family:Bitstream Vera Sans Mono"
+         id="tspan6575"
+         dy="7.0710678">ref     <tspan
+   style="font-style:normal"
+   id="tspan6579">An object hash or name</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="663.37519"
+         style="font-style:normal;font-family:Bitstream Vera Sans Mono"
+         id="tspan6581">        (see &quot;Object Refs&quot; for</tspan><tspan
+         sodipodi:role="line"
+         x="248.03149"
+         y="673.37519"
+         style="font-style:normal;font-family:Bitstream Vera Sans Mono"
+         id="tspan6585">        standard names)</tspan></text>
+    <path
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 212.59843,434.05511 L 230.31496,434.05511 L 230.31496,363.18897"
+       id="path3476" />
+    <g
+       id="g9228">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3480"
+         width="460.62991"
+         height="212.59842"
+         x="478.34647"
+         y="88.58268"
+         rx="4"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3482"
+         width="212.59843"
+         height="17.716536"
+         x="478.34647"
+         y="88.58268"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="530.69647"
+         y="101.24857"
+         id="text3484"><tspan
+           sodipodi:role="line"
+           id="tspan3486"
+           x="530.69647"
+           y="101.24857"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1">Configuration</tspan></text>
+      <text
+         id="text3488"
+         y="124.01575"
+         x="496.06302"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan3490"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="124.01575"
+           x="496.06302"
+           sodipodi:role="line"><tspan
+   id="tspan3617"
+   style="font-family:Bitstream Vera Sans">Change options using</tspan> git config [--global] <tspan
+   id="tspan3602"
+   style="font-style:italic">varname value</tspan><tspan
+   id="tspan3615"
+   style="font-family:Bitstream Vera Sans">. The following variable names are useful:</tspan></tspan><tspan
+           dy="5"
+           id="tspan3498"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="134.01575"
+           x="496.06302"
+           sodipodi:role="line">core.bare</tspan><tspan
+           id="tspan3500"
+           style="font-family:Bitstream Vera Sans"
+           y="144.01575"
+           x="496.06302"
+           sodipodi:role="line">                True for repositories without a working tree (usually public repositories).</tspan><tspan
+           id="tspan3502"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="154.01575"
+           x="496.06302"
+           sodipodi:role="line">core.sharedRepository</tspan><tspan
+           id="tspan3504"
+           style="font-family:Bitstream Vera Sans"
+           y="164.01575"
+           x="496.06302"
+           sodipodi:role="line">                Set to <tspan
+   id="tspan3627"
+   style="font-family:Bitstream Vera Sans Mono">group</tspan> or <tspan
+   id="tspan3629"
+   style="font-family:Bitstream Vera Sans Mono">all</tspan> to make the repository contents writeable for the file group or everybody.</tspan><tspan
+           id="tspan3506"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="174.01575"
+           x="496.06302"
+           sodipodi:role="line">core.compression</tspan><tspan
+           id="tspan3509"
+           style="font-family:Bitstream Vera Sans"
+           y="184.01575"
+           x="496.06302"
+           sodipodi:role="line">                A zlib compression level for objects (0-9, 9 = best compression) or -1 to use zlib's default.</tspan><tspan
+           id="tspan3512"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="194.01575"
+           x="496.06302"
+           sodipodi:role="line">color.branch</tspan><tspan
+           id="tspan3645"
+           style="font-family:Bitstream Vera Sans"
+           y="204.01575"
+           x="496.06302"
+           sodipodi:role="line">                Color-code list of branches (true = always, auto = only when outputting to a terminal)</tspan><tspan
+           id="tspan3516"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="214.01575"
+           x="496.06302"
+           sodipodi:role="line">color.diff</tspan><tspan
+           id="tspan3649"
+           style="font-family:Bitstream Vera Sans"
+           y="224.01575"
+           x="496.06302"
+           sodipodi:role="line">                Color-code diffs (true, auto)</tspan><tspan
+           id="tspan3520"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="234.01575"
+           x="496.06302"
+           sodipodi:role="line">color.status</tspan><tspan
+           id="tspan3522"
+           style="font-family:Bitstream Vera Sans"
+           y="244.01575"
+           x="496.06302"
+           sodipodi:role="line">                Color-code output of <tspan
+   id="tspan3653"
+   style="font-family:Bitstream Vera Sans Mono">git status</tspan> (true, auto).</tspan><tspan
+           id="tspan3524"
+           style="font-family:Bitstream Vera Sans Mono"
+           y="254.01575"
+           x="496.06302"
+           sodipodi:role="line">user.email</tspan><tspan
+           id="tspan3527"
+           style="font-size:8px;font-family:Bitstream Vera Sans"
+           y="264.01575"
+           x="496.06302"
+           sodipodi:role="line">                Your e-mail address (used in commits).</tspan><tspan
+           id="tspan3655"
+           style="font-size:8px;font-family:Bitstream Vera Sans Mono"
+           y="274.01575"
+           x="496.06302"
+           sodipodi:role="line">user.name</tspan><tspan
+           id="tspan3657"
+           style="font-size:8px;font-family:Bitstream Vera Sans"
+           y="284.01575"
+           x="496.06302"
+           sodipodi:role="line">                Your name (used in commits).</tspan><tspan
+           id="tspan3661"
+           style="font-size:8px;font-family:Bitstream Vera Sans"
+           y="294.01575"
+           x="496.06302"
+           sodipodi:role="line" /></text>
+    </g>
+    <g
+       id="g9294">
+      <rect
+         style="fill:#e0e0e0;fill-opacity:1;stroke:#808080;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3742"
+         width="177.16534"
+         height="106.29924"
+         x="478.34647"
+         y="442.91336"
+         rx="4"
+         ry="4" />
+      <rect
+         style="fill:#c0c0c0;fill-opacity:1;stroke:#a0a0a0;stroke-width:0.88582677;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1;color:#000000;fill-rule:nonzero;stroke-linecap:butt;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3744"
+         width="159.44882"
+         height="17.716551"
+         x="478.34647"
+         y="442.91336"
+         rx="4"
+         ry="4" />
+      <text
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-weight:bold;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:1;color:#000000;fill-rule:nonzero;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         x="486.5943"
+         y="455.57925"
+         id="text3746"><tspan
+           sodipodi:role="line"
+           id="tspan3748"
+           x="486.5943"
+           y="455.57925"
+           style="font-size:14px;font-weight:bold;fill:#404040;fill-opacity:1;font-style:normal;font-variant:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Bitstream Vera Sans">Commit Messages</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="490.74805"
+         y="482.34647"
+         id="text3750"><tspan
+           id="tspan3777"
+           sodipodi:role="line"
+           x="490.74805"
+           y="482.34647"
+           style="font-family:Bitstream Vera Sans">Some of Git's viewing tools need com-</tspan><tspan
+           id="tspan3845"
+           sodipodi:role="line"
+           x="490.74805"
+           y="492.34647"
+           style="font-family:Bitstream Vera Sans">mit messages in the following format:</tspan><tspan
+           dy="7.0710678"
+           id="tspan3851"
+           sodipodi:role="line"
+           x="490.74805"
+           y="502.34647"
+           style="font-family:Bitstream Vera Sans Mono">A brief one-line summary</tspan><tspan
+           id="tspan3853"
+           sodipodi:role="line"
+           x="490.74805"
+           y="512.34647"
+           style="font-style:italic;font-family:Bitstream Vera Sans Mono">&lt;blank line&gt;</tspan><tspan
+           id="tspan3855"
+           sodipodi:role="line"
+           x="490.74805"
+           y="522.34647"
+           style="font-family:Bitstream Vera Sans Mono">Details about the commit</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#c0c0c0;stroke-width:0.88599998;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2.65799993,0.88599998;stroke-dashoffset:0"
+       d="M 478.34646,690.94488 L 478.34646,566.92913 L 938.97638,566.92913"
+       id="path3857" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="478.36404"
+       y="563.68109"
+       id="text3859"><tspan
+         sodipodi:role="line"
+         id="tspan3861"
+         x="478.36404"
+         y="563.68109"
+         style="font-size:6px;fill:#808080;fill-opacity:1">There's a little bit of room for your own notes here. This is your chance to customize this cheat sheet!</tspan></text>
+  </g>
+</svg>
