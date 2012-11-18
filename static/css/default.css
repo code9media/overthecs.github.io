@@ -46,6 +46,11 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .index-content a{text-decoration:none;cursor:pointer;}
 .lang-logo{display:inline-block;width:102px;height:100px;border-radius:50em;margin:30px 22px;background-color:#fff;text-align:center;overflow:hidden;*float:left;zoom:1;position:relative;background-size:90%;background-position:50% 50%;background-repeat:no-repeat;}
 .lang-logo span{background-color:rgba(30,30,30,0.9);width:100%;height:100%;position:absolute;top:center;left:0;border-radius:50em;line-height:100px;color:#fff;font-size:18px;text-decoration:none;display:none;background:#222\9;}
+.index-tools{text-align:center;}
+.index-tools a:link,
+.index-tools a:visited,
+.index-tools a:hover,
+.index-tools a:active {display:inline-block;font-size:28px;font-weight:bold;padding:35px;text-decoration:none;color:#222;zoom:1;}
 .index-alphabeta {margin-top:35px;font-size:0;text-align:center;}
 .index-alphabeta a:link,
 .index-alphabeta a:visited {display:inline-block;width:3.8%;text-decoration:none;text-align:center;color:#444;zoom:1;line-height:25px;font-size:16px;}
@@ -103,3 +108,13 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .board-card li.inactive a{color:#666;cursor:default;}
 .board-card li.inactive a:hover{color:#666;background:none;}
 .board-326{min-height:326px;}
+
+.dev-tools {margin-top:60px;}
+.dev-tools-collect{margin-bottom:60px;}
+.dev-tools-collect h2{font-size:28px;font-weight:bold;margin-bottom:20px;}
+.dev-tools a:link,
+.dev-tools a:visited,
+.dev-tools a:hover,
+.dev-tools a:active {display:inline-block;background-color:#fff;padding:20px 15px;margin-bottom:15px;margin-right:15px;text-decoration:none;color:#333;font-size:20px;zoom:1;}
+.dev-tools a:hover{color:#F53D00;background-color:#dfdfdf;}
+.dev-tools-ad{margin-bottom:50px;text-align:center;}
