@@ -42,12 +42,6 @@
             mixpanel.track("Detail Loading",{
                 'page':location.pathname
             });
-            mixpanel.track_links(".board a","Detail Link",function(ele){
-                return {
-                    'page':location.pathname
-                    ,'href':$(ele).attr('href')
-                }
-            });
         </script>
 
         <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
