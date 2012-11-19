@@ -35,7 +35,7 @@ $(function(){
         if(!$(this).parent().hasClass('inactive')){
             window.open($(target).attr('href'));
             mixpanel.track("Cheat Link",{
-                'page':location.pathname
+                'pagename':location.pathname
                 ,'href':$(target).attr('href')
             });
         }
