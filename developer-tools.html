@@ -78,7 +78,6 @@
                     $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
                 });
 
-                mixpanel.track("Tools Loading");
                 mixpanel.track_links(".dev-tools a","Tools Link",function(ele){
                     return {
                         'href':$(ele).attr('href')
