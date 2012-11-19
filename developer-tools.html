@@ -79,6 +79,11 @@
                 });
 
                 mixpanel.track("Tools Loading");
+                mixpanel.track_links(".dev-tools a","Tools Link",function(ele){
+                    return {
+                        'href':$(ele).attr('href')
+                    }
+                });
             </script>
 
         </div>
