@@ -77,6 +77,8 @@
                     var that = this;
                     $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
                 });
+
+                mixpanel.track("Tools Loading");
             </script>
 
         </div>
