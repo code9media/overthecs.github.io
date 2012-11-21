@@ -50,7 +50,8 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .index-tools a:link,
 .index-tools a:visited,
 .index-tools a:hover,
-.index-tools a:active {display:inline-block;font-size:28px;font-weight:bold;padding:35px;text-decoration:none;color:#222;zoom:1;}
+.index-tools a:active {display:inline-block;font-size:28px;font-weight:bold;padding:35px;text-decoration:none;color:#555;zoom:1;}
+.index-tools a:hover {color:#222;}
 .index-alphabeta {margin-top:35px;font-size:0;text-align:center;}
 .index-alphabeta a:link,
 .index-alphabeta a:visited {display:inline-block;width:3.8%;text-decoration:none;text-align:center;color:#444;zoom:1;line-height:25px;font-size:16px;}
