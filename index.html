@@ -1,624 +1,606 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!--
-        * Author:         OverAPI.com
-        -->
-        <meta charset="utf-8" />
-        <title>OverAPI.com | Collecting all the cheat sheets</title>
-        <meta name="author" content="{{ site.author.name }}" />
-        <meta name="description" content="{{ site.description }}" />
-        <link rel="stylesheet" href="/static/css/default.css" type="text/css" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <script type="text/javascript" src="/static/js/jquery.1.7.min.js"></script>
-        <!-- start Mixpanel --><script type="text/javascript">(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.identify people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1})(document,window.mixpanel||[]); mixpanel.init("ed50c28311513adf4b2293887b710db6");</script><!-- end Mixpanel -->
-    </head>
-    <body>
-        <div class="index">
-            <div class="index-logo">
-                <a href="http://overapi.com" class="logo"><img src="/static/images/overapi-logo.png" alt="overapi" width="140" height="140"/></a>
-                <div class="index-desc">
-                    <p><a href="" class="index-desc-logo">OverAPI.com</a></p>
-                    <p class="index-slogan">Collecting All Cheat Sheets</p>
-                </div>
-            </div>
+---
+layout:    root
+---
 
-            <div class="index-content">
-                <a href="/python/" title="Python Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/python-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/python-logo.png', sizingMethod='scale');background-image:none\9;" class="lang-logo">
-                    <span>Python</span>
-                    </div>
-                </a>
-                <a href="/jquery/" title="jQuery Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/jquery-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/jquery-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>jQuery</span>
-                    </div>
-                </a>
-                <a href="/nodejs/" title="NodeJS Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/nodejs-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/nodejs-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>NodeJS</span>
-                    </div>
-                </a>
-                <a href="/php/" title="PHP Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/php-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/php-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>PHP</span>
-                    </div>
-                </a>
-                <a href="/java/" title="Java Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/java-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/java-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>Java</span>
-                    </div>
-                </a>
-                <a href="/ruby/" title="Ruby Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/ruby-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/ruby-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>Ruby</span>
-                    </div>
-                </a>
-                <a href="/javascript/" title="JavaScript Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/javascript-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/javascript-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>JavaScript</span>
-                    </div>
-                </a>
-                <a href="/actionscript/" title="ActionScript Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/actionscript-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/actionscript-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>ActionScript</span>
-                    </div>
-                </a>
-                <a href="/css/" title="CSS Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/css-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/css-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>CSS</span>
-                    </div>
-                </a>
-                <a href="/git/" title="Git Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/git-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/git-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>Git</span>
-                    </div>
-                </a>
-                <a href="/svn/" title="SVN Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/svn-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/svn-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>SVN</span>
-                    </div>
-                </a>
-                <a href="/mysql/" title="MySQL Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/mysql-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/mysql-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>MySQL</span>
-                    </div>
-                </a>
-                <a href="/regex/" title="Regular Expression Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/regex-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/regex-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>RegExp</span>
-                    </div>
-                </a>
-                <a href="/linux/" title="Linux Command Line Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/linux-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/linux-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>Linux</span>
-                    </div>
-                </a>
-                <a href="/html/" title="HTML Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/html-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/html-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>HTML</span>
-                    </div>
-                </a>
-                <a href="/html-dom/" title="HTML-DOM Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/html_dom-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/html_dom-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>HTML-DOM</span>
-                    </div>
-                </a>
-                <a href="/mod_rewrite/" title="mod_rewrite Cheat Sheet">
-                    <div style="background-image:url(/static/images/logo/mod_rewrite-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/mod_rewrite-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
-                    <span>mod_rewrite</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="index-tools">
-                <a href="/developer-tools">Developer Tools &gt;&gt;</a>
-                <a href="/about" style="text-decoration:none">About and Comments &gt;&gt;</a>                                                        
-                <a href="https://chrome.google.com/webstore/detail/all-cheat-sheets/oedodeocfdeegliepeeoieemhdgoijod" target="_blank">Get Chrome Extension &gt;&gt;</a>
-            </div>
-
-            <div class="index-alphabeta" id="more">
-                <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">D</a>
-                <a href="#">E</a> <a href="#">F</a> <a href="#">G</a> <a href="#">H</a>
-                <a href="#">I</a> <a href="#">J</a> <a href="#">L</a>
-                <a href="#">M</a> <a href="#">N</a> <a href="#">O</a> <a href="#">P</a>
-                <a href="#">Q</a> <a href="#">R</a> <a href="#">S</a> <a href="#">T</a>
-                <a href="#">U</a> <a href="#">V</a> <a href="#">W</a> <a href="#">X</a>
-                <a href="#">Y</a> <a href="#">Z</a>
-            </div>
-
-            <div class="index-more">
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="A">A</span>
-                    <div class="index-more-cheat">
-                        <a href="/dotnet/" title=".NET Cheat Sheet">.NET</a>
-                        <a href="/actionscript/" title="ActionScript Cheat Sheet">ActionScript</a>
-                        <a href="/ada/" title="Ada Cheat Sheet">Ada</a>
-                        <a href="/ado-net/" title="ADO.NET Cheat Sheet">ADO.NET</a>
-                        <a href="/adobe/" title="Adobe Cheat Sheet">Adobe</a>
-                        <a href="/adobe-acrobat/" title="Adobe Acrobat Cheat Sheet">Adobe Acrobat</a>
-                        <a href="/ajax/" title="AJAX Cheat Sheet">AJAX</a>
-                        <a href="/algebra/" title="Algebra Cheat Sheet">Algebra</a>
-                        <a href="/apache/" title="Apache Cheat Sheet">Apache</a>
-                        <a href="/apache-ant/" title="Apache Ant Cheat Sheet">Apache Ant</a>
-                        <a href="/apache-camel/" title="Apache Camel Cheat Sheet">Apache Camel</a>
-                        <a href="/apache-cassandra/" title="Apache Cassandra Cheat Sheet">Apache Cassandra</a>
-                        <a href="/apache-solr/" title="Apache Solr Cheat Sheet">Apache Solr</a>
-                        <a href="/apt/" title="APT Cheat Sheet">APT</a>
-                        <a href="/arduino/" title="Arduino Cheat Sheet">Arduino</a>
-                        <a href="/ascii/" title="ASCII Cheat Sheet">ASCII</a>
-                        <a href="/astronomy/" title="Astronomy Cheat Sheet">Astronomy</a>
-                        <a href="/asp/" title="ASP Cheat Sheet">ASP</a>
-                        <a href="/assembly/" title="Assembly Language Cheat Sheet">Assembly Language</a>
-                        <a href="/atom/" title="Atom Cheat Sheet">Atom</a>
-                        <a href="/awk/" title="AWK Cheat Sheet">AWK</a>
-                        <a href="/azure/" title="Azure Cheat Sheet">Azure</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="B">B</span>
-                    <div class="index-more-cheat">
-                        <a href="/shellscript/" title="Bash Cheat Sheet">Bash</a>
-                        <a href="/bazaar/" title="Bazaar Cheat Sheet">Bazaar</a>
-                        <a href="/berkeley-db/" title="BDB Cheat Sheet">BDB</a>
-                        <a href="/berkeley-db/" title="Berkeley DB Cheat Sheet">Berkeley DB</a>
-                        <a href="/birt/" title="BIRT Cheat Sheet">BIRT</a>
-                        <a href="/blazeds/" title="BlazeDS Cheat Sheet">BlazeDS</a>
-                        <a href="/blogger/" title="Blogger Cheat Sheet">Blogger</a>
-                        <a href="/blueprint/" title="Blueprint Cheat Sheet">Blueprint</a>
-                        <a href="/bpel/" title="BPEL Cheat Sheet">BPEL</a>
-                        <a href="/bpm/" title="BPM Cheat Sheet">BPM</a>
-                        <a href="/bpm/" title="BPML Cheat Sheet">BPML</a>
-                        <a href="/bpm/" title="Business Process Modeling Cheat Sheet">Business Process Modeling</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="C">C</span>
-                    <div class="index-more-cheat">
-                        <a href="/c/" title="C Cheat Sheet">C</a>
-                        <a href="/csharp/" title="C# Cheat Sheet">C#</a>
-                        <a href="/cpp/" title="C++ Cheat Sheet">C++</a>
-                        <a href="/calculus/" title="Calculus Cheat Sheet">Calculus</a>
-                        <a href="/camera/" title="Camera Cheat Sheet">Camera</a>
-                        <a href="/catalyst/" title="Catalyst Cheat Sheet">Catalyst</a>
-                        <a href="/characters/" title="Characters Cheat Sheet">Characters</a>
-                        <a href="/chef/" title="Chef Cheat Sheet">Chef</a>
-                        <a href="/chemistry/" title="Chemistry Cheat Sheet">Chemistry</a>
-                        <a href="/chmod/" title="chmod Cheat Sheet">chmod</a>
-                        <a href="/clojure/" title="Clojure Cheat Sheet">Clojure</a>
-                        <a href="/cloud-computing/" title="Cloud Computing Cheat Sheet">Cloud Computing</a>
-                        <a href="/cocoa/" title="Cocoa Cheat Sheet">Cocoa</a>
-                        <a href="/coldfusion/" title="ColdFusion Cheat Sheet">ColdFusion</a>
-                        <a href="/colour/" title="Colour Cheat Sheet">Colour</a>
-                        <a href="/computer-science/" title="Computer Science Cheat Sheet">Computer Science</a>
-                        <a href="/continuous-integration/" title="Continuous Integration Cheat Sheet">Continuous Integration</a>
-                        <a href="/countries/" title="Countries Cheat Sheet">Countries</a>
-                        <a href="/css/" title="CSS Cheat Sheet">CSS</a>
-                        <a href="/cue/" title="CUE Cheat Sheet">CUE</a>
-                        <a href="/cvs/" title="CVS Cheat Sheet">CVS</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="D">D</span>
-                    <div class="index-more-cheat">
-                        <a href="/db2/" title="DB2 Cheat Sheet">DB2</a>
-                        <a href="/db4o/" title="db4o Cheat Sheet">db4o</a>
-                        <a href="/debian/" title="Debian Cheat Sheet">Debian</a>
-                        <a href="/delphi/" title="Delphi Cheat Sheet">Delphi</a>
-                        <a href="/design-pattern/" title="Design Pattern Cheat Sheet">Design Pattern</a>
-                        <a href="/django/" title="Django Cheat Sheet">Django</a>
-                        <a href="/doctrine/" title="Doctrine Cheat Sheet">Doctrine</a>
-                        <a href="/doctypes/" title="Doctypes Cheat Sheet">Doctypes</a>
-                        <a href="/html-dom/" title="DOM Cheat Sheet">DOM</a>
-                        <a href="/ddd/" title="DDD Cheat Sheet">DDD</a>
-                        <a href="/ddd/" title="Domain-Driven Design Cheat Sheet">Domain-Driven Design</a>
-                        <a href="/dot-language/" title="DOT language Cheat Sheet">DOT language</a>
-                        <a href="/drupal/" title="Drupal Cheat Sheet">Drupal</a>
-                        <a href="/dtd/" title="DTD(Document Type Declaration) Cheat Sheet">DTD</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="E">E</span>
-                    <div class="index-more-cheat">
-                        <a href="/eclipse/" title="Eclipse Cheat Sheet">Eclipse</a>
-                        <a href="/ed/" title="Ed Cheat Sheet">Ed</a>
-                        <a href="/ejb/" title="EJB Cheat Sheet">EJB</a>
-                        <a href="/emacs/" title="Emacs Cheat Sheet">Emacs</a>
-                        <a href="/smile/" title="Emoticon Cheat Sheet">Emoticon</a>
-                        <a href="/characters/" title="Encoding Cheat Sheet">Encoding</a>
-                        <a href="/erlang/" title="Erlang Cheat Sheet">Erlang</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="F">F</span>
-                    <div class="index-more-cheat">
-                        <a href="/fsharp/" title="F# Cheat Sheet">F#</a>
-                        <a href="/facebook/" title="Facebook Cheat Sheet">Facebook</a>
-                        <a href="/fedora/" title="Fedora Cheat Sheet">Fedora</a>
-                        <a href="/atom/" title="Feed Cheat Sheet">Feed</a>
-                        <a href="/file/" title="File Cheat Sheet">File</a>
-                        <a href="/firebug/" title="Firebug Cheat Sheet">Firebug</a>
-                        <a href="/firefox/" title="Firefox Cheat Sheet">Firefox</a>
-                        <a href="/firefox-add-ons/" title="Firefox Add-ons Cheat Sheet">Firefox Add-ons</a>
-                        <a href="/fitnesse/" title="FitNesse Cheat Sheet">FitNesse</a>
-                        <a href="/flash/" title="Flash Cheat Sheet">Flash</a>
-                        <a href="/flash-catalyst/" title="Flash Catalyst Cheat Sheet">Flash Catalyst</a>
-                        <a href="/flex/" title="Flex Cheat Sheet">Flex</a>
-                        <a href="/fonts/" title="Fonts Cheat Sheet">Fonts</a>
-                        <a href="/fortran/" title="Fortran Cheat Sheet">Fortran</a>
-                        <a href="/freeware/" title="Freeware Cheat Sheet">Freeware</a>
-                        <a href="/ftp/" title="FTP Cheat Sheet">FTP</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="G">G</span>
-                    <div class="index-more-cheat">
-                        <a href="/gdb/" title="GDB Cheat Sheet">GDB</a>
-                        <a href="/geometry/" title="Geometry Cheat Sheet">Geometry</a>
-                        <a href="/gift/" title="Gift Cheat Sheet">Gift</a>
-                        <a href="/gimp/" title="Gimp Cheat Sheet">Gimp</a>
-                        <a href="/git/" title="Git Cheat Sheet">Git</a>
-                        <a href="/glassfish/" title="GlassFish Cheat Sheet">GlassFish</a>
-                        <a href="/gmail/" title="Gmail Cheat Sheet">Gmail</a>
-                        <a href="/design-pattern/" title="GoF Cheat Sheet">GoF</a>
-                        <a href="/google/" title="Google Cheat Sheet">Google</a>
-                        <a href="/google-chrome/" title="Google Chrome Cheat Sheet">Google Chrome</a>
-                        <a href="/google-maps/" title="Google Maps Cheat Sheet">Google Maps</a>
-                        <a href="/google-app-engine/" title="Google App Engine Cheat Sheet">Google App Engine</a>
-                        <a href="/grails/" title="Grails Cheat Sheet">Grails</a>
-                        <a href="/griffon/" title="Griffon Cheat Sheet">Griffon</a>
-                        <a href="/groovy/" title="Groovy Cheat Sheet">Groovy</a>
-                        <a href="/guitar/" title="Guitar Cheat Sheet">Guitar</a>
-                        <a href="/gwt/" title="GWT Cheat Sheet">GWT</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="H">H</span>
-                    <div class="index-more-cheat">
-                        <a href="/hardware/" title="Hardware Cheat Sheet">Hardware</a>
-                        <a href="/hadoop/" title="Hadoop Cheat Sheet">Hadoop</a>
-                        <a href="/haskell/" title="Haskell Cheat Sheet">Haskell</a>
-                        <a href="/hbase/" title="HBase Cheat Sheet">HBase</a>
-                        <a href="/hibernate/" title="Hibernate Cheat Sheet">Hibernate</a>
-                        <a href="/scalability/" title="High Availability Cheat Sheet">High Availability</a>
-                        <a href="/htaccess/" title="htaccess Cheat Sheet">htaccess</a>
-                        <a href="/html/" title="HTML Cheat Sheet">HTML</a>
-                        <a href="/http/" title="HTTP Cheat Sheet">HTTP</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="I">I</span>
-                    <div class="index-more-cheat">
-                        <a href="/icons/" title="Icons Cheat Sheet">Icons</a>
-                        <a href="/illustrator/" title="Illustrator Cheat Sheet">Illustrator</a>
-                        <a href="/intellij-idea/" title="IntelliJ IDEA Cheat Sheet">IntelliJ IDEA</a>
-                        <a href="/ie/" title="Internet Explorer Cheat Sheet">Internet Explorer</a>
-                        <a href="/irc/" title="IRC Cheat Sheet">IRC</a>
-                        <a href="/ivr/" title="IVR Cheat Sheet">IVR</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="J">J</span>
-                    <div class="index-more-cheat">
-                        <a href="/java/" title="Java Cheat Sheet">Java</a>
-                        <a href="/javaee/" title="Java EE Cheat Sheet">Java EE</a>
-                        <a href="/jpa/" title="Java Persistence API Cheat Sheet">Java Persistence API</a>
-                        <a href="/javafx/" title="JavaFX Cheat Sheet">JavaFX</a>
-                        <a href="/javascript/" title="JavaScript Cheat Sheet">JavaScript</a>
-                        <a href="/jsf/" title="JavaServer Faces Cheat Sheet">JavaServer Faces</a>
-                        <a href="/jboss/" title="JBoss Cheat Sheet">JBoss</a>
-                        <a href="/jdbc/" title="JDBC Cheat Sheet">JDBC</a>
-                        <a href="/jetty/" title="Jetty Cheat Sheet">Jetty</a>
-                        <a href="/jquery/" title="jQuery Cheat Sheet">jQuery</a>
-                        <a href="/jsf/" title="JSF Cheat Sheet">JSF</a>
-                        <a href="/jsp/" title="JSP Cheat Sheet">JSP</a>
-                        <a href="/junit/" title="JUnit Cheat Sheet">JUnit</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="L">L</span>
-                    <div class="index-more-cheat">
-                        <a href="/languages/" title="Languages Cheat Sheet">Languages</a>
-                        <a href="/latex/" title="LaTeX Cheat Sheet">LaTeX</a>
-                        <a href="/latex-suite/" title="LaTeX-Suite Cheat Sheet">LaTeX-Suite</a>
-                        <a href="/less/" title="less Cheat Sheet">less</a>
-                        <a href="/linux/" title="Linux Cheat Sheet">Linux</a>
-                        <a href="/lisp/" title="Lisp Cheat Sheet">Lisp</a>
-                        <a href="/logic/" title="Logic Cheat Sheet">Logic</a>
-                        <a href="/lotus-domino/" title="Lotus Domino Cheat Sheet">Lotus Domino</a>
-                        <a href="/lua/" title="Lua Cheat Sheet">Lua</a>
-                        <a href="/lucene/" title="Lucene Cheat Sheet">Lucene</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="M">M</span>
-                    <div class="index-more-cheat">
-                        <a href="/mac/" title="Mac Cheat Sheet">Mac</a>
-                        <a href="/osx/" title="Mac OS X Cheat Sheet">Mac OS X</a>
-                        <a href="/machine-learning/" title="Machine Learning Cheat Sheet">Machine Learning</a>
-                        <a href="/maple/" title="Maple Cheat Sheet">Maple</a>
-                        <a href="/markdown/" title="Markdown Cheat Sheet">Markdown</a>
-                        <a href="/math/" title="Math Cheat Sheet">Math</a>
-                        <a href="/mathematica/" title="Mathematica Cheat Sheet">Mathematica</a>
-                        <a href="/mathml/" title="MathML Cheat Sheet">MathML</a>
-                        <a href="/mathomatic/" title="Mathomatic Cheat Sheet">Mathomatic</a>
-                        <a href="/matlab/" title="MATLAB Cheat Sheet">MATLAB</a>
-                        <a href="/maven/" title="Maven Cheat Sheet">Maven</a>
-                        <a href="/maxima/" title="Maxima Cheat Sheet">Maxima</a>
-                        <a href="/mfc/" title="MFC Cheat Sheet">MFC</a>
-                        <a href="/microformats/" title="Microformats Cheat Sheet">Microformats</a>
-                        <a href="/microsoft-excel/" title="Microsoft Excel Cheat Sheet">Microsoft Excel</a>
-                        <a href="/msp/" title="Microsoft Project Cheat Sheet">Microsoft Project</a>
-                        <a href="/microsoft-visual-studio/" title="Microsoft Visual Studio Cheat Sheet">Microsoft Visual Studio</a>
-                        <a href="/mime/" title="MIME Cheat Sheet">MIME</a>
-                        <a href="/ssi/" title="mod_include Cheat Sheet">mod_include</a>
-                        <a href="/mod_perl/" title="mod_perl Cheat Sheet">mod_perl</a>
-                        <a href="/mod_rewrite/" title="mod_rewrite Cheat Sheet">mod_rewrite</a>
-                        <a href="/mootools/" title="MooTools Cheat Sheet">MooTools</a>
-                        <a href="/msp/" title="MSP Cheat Sheet">MSP</a>
-                        <a href="/mule/" title="Mule Cheat Sheet">Mule</a>
-                        <a href="/music/" title="Music Cheat Sheet">Music</a>
-                        <a href="/mvvm/" title="MVVM Cheat Sheet">MVVM</a>
-                        <a href="/mysql/" title="MySQL Cheat Sheet">MySQL</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="N">N</span>
-                    <div class="index-more-cheat">
-                        <a href="/netbeans/" title="NetBeans Cheat Sheet">NetBeans</a>
-                        <a href="/nmap/" title="NMAP Cheat Sheet">NMAP</a>
-                        <a href="/nodejs/" title="Node.js Cheat Sheet">Node.js</a>
-                        <a href="/numbers/" title="Numbers Cheat Sheet">Numbers</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="O">O</span>
-                    <div class="index-more-cheat">
-                        <a href="/objective-c/" title="Objective-C Cheat Sheet">Objective-C</a>
-                        <a href="/osmf/" title="Open Source Media Framework Cheat Sheet">Open Source Media Framework</a>
-                        <a href="/opencl/" title="OpenCL Cheat Sheet">OpenCL</a>
-                        <a href="/opencv/" title="OpenCV Cheat Sheet">OpenCV</a>
-                        <a href="/openmp/" title="OpenMP Cheat Sheet">OpenMP</a>
-                        <a href="/opensearch/" title="OpenSearch Cheat Sheet">OpenSearch</a>
-                        <a href="/openssh/" title="OpenSSH Cheat Sheet">OpenSSH</a>
-                        <a href="/openvz/" title="OpenVZ Cheat Sheet">OpenVZ</a>
-                        <a href="/oracle/" title="Oracle Cheat Sheet">Oracle</a>
-                        <a href="/orgmode/" title="org-mode Cheat Sheet">org-mode</a>
-                        <a href="/osx/" title="OS X Cheat Sheet">OS X</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="P">P</span>
-                    <div class="index-more-cheat">
-                        <a href="/perforce/" title="Perforce Cheat Sheet">Perforce</a>
-                        <a href="/perl/" title="Perl Cheat Sheet">Perl</a>
-                        <a href="/photoshop/" title="Photoshop Cheat Sheet">Photoshop</a>
-                        <a href="/php/" title="PHP Cheat Sheet">PHP</a>
-                        <a href="/php-frameworks/" title="PHP Frameworks Cheat Sheet">PHP Frameworks</a>
-                        <a href="/physics/" title="Physics Cheat Sheet">Physics</a>
-                        <a href="/play-framework/" title="Play Framework Cheat Sheet">Play Framework</a>
-                        <a href="/postgresql/" title="PostgreSQL Cheat Sheet">PostgreSQL</a>
-                        <a href="/windows-powershell/" title="PowerShell Cheat Sheet">PowerShell</a>
-                        <a href="/probability-theory/" title="Probability Theory Cheat Sheet">Probability Theory</a>
-                        <a href="/prototype/" title="Prototype Cheat Sheet">Prototype</a>
-                        <a href="/python/" title="Python Cheat Sheet">Python</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="Q">Q</span>
-                    <div class="index-more-cheat">
-                        <a href="/qt/" title="Qt Cheat Sheet">Qt</a>
-                        <a href="/quicksilver/" title="Quicksilver Cheat Sheet">Quicksilver</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="R">R</span>
-                    <div class="index-more-cheat">
-                        <a href="/r/" title="R Cheat Sheet">R</a>
-                        <a href="/redhat/" title="Red Hat Cheat Sheet">Red Hat</a>
-                        <a href="/regex/" title="Regular Expressions Cheat Sheet">Regular Expressions</a>
-                        <a href="/religion/" title="Religion Cheat Sheet">Religion</a>
-                        <a href="/rest/" title="REST Cheat Sheet">REST</a>
-                        <a href="/richfaces/" title="RichFaces Cheat Sheet">RichFaces</a>
-                        <a href="/rpm/" title="rpm Cheat Sheet">rpm</a>
-                        <a href="/atom/" title="RSS Cheat Sheet">RSS</a>
-                        <a href="/ruby/" title="Ruby Cheat Sheet">Ruby</a>
-                        <a href="/rubyrails/" title="Ruby on Rails Cheat Sheet">Ruby on Rails</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="S">S</span>
-                    <div class="index-more-cheat">
-                        <a href="/sandcastle/" title="Sandcastle Cheat Sheet">Sandcastle</a>
-                        <a href="/scala/" title="Scala Cheat Sheet">Scala</a>
-                        <a href="/scalability/" title="Scalability Cheat Sheet">Scalability</a>
-                        <a href="/science/" title="Science Cheat Sheet">Science</a>
-                        <a href="/screen/" title="Screen Cheat Sheet">Screen</a>
-                        <a href="/seam/" title="Seam Cheat Sheet">Seam</a>
-                        <a href="/sed/" title="Sed Cheat Sheet">Sed</a>
-                        <a href="/selenium/" title="Selenium Cheat Sheet">Selenium</a>
-                        <a href="/sendmail/" title="Sendmail Cheat Sheet">Sendmail</a>
-                        <a href="/servicemix/" title="ServiceMix Cheat Sheet">ServiceMix</a>
-                        <a href="/shellscript/" title="Shell Script Cheat Sheet">Shell Script</a>
-                        <a href="/silverlight/" title="Silverlight Cheat Sheet">Silverlight</a>
-                        <a href="/smile/" title="Smile Cheat Sheet">Smile</a>
-                        <a href="/social-bookmarks/" title="Social Bookmarks Cheat Sheet">Social Bookmarks</a>
-                        <a href="/solaris/" title="Solaris Cheat Sheet">Solaris</a>
-                        <a href="/spring/" title="Spring Framework Cheat Sheet">Spring Framework</a>
-                        <a href="/springroo/" title="Spring Roo Cheat Sheet">Spring Roo</a>
-                        <a href="/sql/" title="SQL Cheat Sheet">SQL</a>
-                        <a href="/sqlserver/" title="SQL Server Cheat Sheet">SQL Server</a>
-                        <a href="/sqlite/" title="SQLite Cheat Sheet">SQLite</a>
-                        <a href="/ssi/" title="SSI Cheat Sheet">SSI</a>
-                        <a href="/tls/" title="SSL Cheat Sheet">SSL</a>
-                        <a href="/statistics/" title="Statistics Cheat Sheet">Statistics</a>
-                        <a href="/svg/" title="SVG Cheat Sheet">SVG</a>
-                        <a href="/svn/" title="SVN Cheat Sheet">SVN</a>
-                        <a href="/sybase/" title="Sybase Cheat Sheet">Sybase</a>
-                        <a href="/symfony/" title="Symfony Cheat Sheet">Symfony</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="T">T</span>
-                    <div class="index-more-cheat">
-                        <a href="/tapestry/" title="Tapestry Cheat Sheet">Tapestry</a>
-                        <a href="/tcltk/" title="Tcl/Tk Cheat Sheet">Tcl/Tk</a>
-                        <a href="/tcp/" title="TCP Cheat Sheet">TCP</a>
-                        <a href="/tex/" title="TeX Cheat Sheet">TeX</a>
-                        <a href="/thunderbird/" title="Thunderbird Cheat Sheet">Thunderbird</a>
-                        <a href="/tlds/" title="TLDs Cheat Sheet">TLDs</a>
-                        <a href="/tls/" title="TLS Cheat Sheet">TLS</a>
-                        <a href="/trigonometry/" title="Trigonometry Cheat Sheet">Trigonometry</a>
-                        <a href="/ttcn-3/" title="TTCN-3 Cheat Sheet">TTCN-3</a>
-                        <a href="/twitter/" title="Twitter Cheat Sheet">Twitter</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="U">U</span>
-                    <div class="index-more-cheat">
-                        <a href="/uml/" title="UML Cheat Sheet">UML</a>
-                        <a href="/ubuntu/" title="Ubuntu Cheat Sheet">Ubuntu</a>
-                        <a href="/unicode/" title="Unicode Cheat Sheet">Unicode</a>
-                        <a href="/unix/" title="Unix Cheat Sheet">Unix</a>
-                        <a href="/unicode/" title="UTF Cheat Sheet">UTF</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="V">V</span>
-                    <div class="index-more-cheat">
-                        <a href="/vaadin/" title="Vaadin Cheat Sheet">Vaadin</a>
-                        <a href="/visualbasic/" title="VB Cheat Sheet">VB</a>
-                        <a href="/microsoft-excel/" title="VBA Cheat Sheet">VBA</a>
-                        <a href="/vbscript/" title="VBScript Cheat Sheet">VBScript</a>
-                        <a href="/vcs/" title="Veritas Cluster Cheat Sheet">Veritas Cluster</a>
-                        <a href="/vi/" title="Vi Cheat Sheet">Vi</a>
-                        <a href="/vim/" title="Vim Cheat Sheet">Vim</a>
-                        <a href="/latex-suite/" title="VIM-LaTeX Cheat Sheet">VIM-LaTeX</a>
-                        <a href="/virtualization/" title="Virtualization Cheat Sheet">Virtualization</a>
-                        <a href="/visualbasic/" title="Visual Basic Cheat Sheet">Visual Basic</a>
-                        <a href="/vmware/" title="VMware Cheat Sheet">VMware</a>
-                        <a href="/voicexml/" title="VoiceXML Cheat Sheet">VoiceXML</a>
-                        <a href="/vvvv/" title="vvvv Cheat Sheet">vvvv</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="W">W</span>
-                    <div class="index-more-cheat">
-                        <a href="/webgl/" title="WebGL Cheat Sheet">WebGL</a>
-                        <a href="/webmatrix/" title="WebMatrix Cheat Sheet">WebMatrix</a>
-                        <a href="/wicket/" title="Wicket Cheat Sheet">Wicket</a>
-                        <a href="/wikipedia/" title="Wikipedia Cheat Sheet">Wikipedia</a>
-                        <a href="/windows/" title="Windows Cheat Sheet">Windows</a>
-                        <a href="/azure/" title="Windows Azure Cheat Sheet">Windows Azure</a>
-                        <a href="/wcf/" title="Windows Communication Foundation Cheat Sheet">Windows Communication Foundation</a>
-                        <a href="/wpf/" title="Windows Presentation Foundation Cheat Sheet">Windows Presentation Foundation</a>
-                        <a href="/windows-powershell/" title="Windows PowerShell Cheat Sheet">Windows PowerShell</a>
-                        <a href="/wordpress/" title="WordPress Cheat Sheet">WordPress</a>
-                        <a href="/wow/" title="World of Warcraft Cheat Sheet">World of Warcraft</a>
-                        <a href="/bpel/" title="WS-BPEL Cheat Sheet">WS-BPEL</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="X">X</span>
-                    <div class="index-more-cheat">
-                        <a href="/xhtml/" title="XHTML Cheat Sheet">XHTML</a>
-                        <a href="/xml/" title="XML Cheat Sheet">XML</a>
-                        <a href="/xml-schema/" title="XML Schema Cheat Sheet">XML Schema</a>
-                        <a href="/xpath/" title="XPath Cheat Sheet">XPath</a>
-                        <a href="/xsl/" title="XSL Cheat Sheet">XSL</a>
-                        <a href="/xslt/" title="XSLT Cheat Sheet">XSLT</a>
-                        <a href="/xss/" title="XSS Cheat Sheet">XSS</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="Y">Y</span>
-                    <div class="index-more-cheat">
-                        <a href="/yahoo/" title="Yahoo Cheat Sheet">Yahoo</a>
-                    </div>
-                </div>
-                <div class="index-more-alpha">
-                    <span class="index-alpha-nav" id="Z">Z</span>
-                    <div class="index-more-cheat">
-                        <a href="/zencoding/" title="ZenCoding Cheat Sheet">Zen Coding</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dev-tools-ad">
-                <script type="text/javascript"><!--
-                    google_ad_client = "ca-pub-5503280202576307";
-                    /* overapi-tools */
-                    google_ad_slot = "0215957718";
-                    google_ad_width = 728;
-                    google_ad_height = 90;
-                    //-->
-                </script>
-                <script type="text/javascript"
-                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                </script>
-            </div>
-
-            <div class="back-to-top">
-                <a href="#">&#8593;TOP</a>                                                        
-            </div>  
+<div class="index">
+    <div class="index-logo">
+        <a href="http://overapi.com" class="logo"><img src="/static/images/overapi-logo.png" alt="overapi" width="140" height="140"/></a>
+        <div class="index-desc">
+            <p><a href="" class="index-desc-logo">OverAPI.com</a></p>
+            <p class="index-slogan">Collecting All Cheat Sheets</p>
         </div>
+    </div>
 
-        <script type="text/javascript">
-            $('body').delegate('.index-content .lang-logo','mouseenter',function(){
-                $(this).find('span').fadeIn('fast');
-            }).delegate('.index-content .lang-logo','mouseleave',function(){
-                $(this).find('span').hide();
-            });
-            $('body').delegate('.index-alphabeta a','click',function(e){
-                e.preventDefault();
-                var hash = $(this).text();
-                var offset = $('#'+hash).offset().top;
-                $('body,html').animate({scrollTop:offset-10},300);
-            }).delegate('.back-to-top a','click',function(e){
-                e.preventDefault();
-                $('body,html').animate({scrollTop:0},300);
-            });
+    <div class="index-content">
+        <a href="/python/" title="Python Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/python-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/python-logo.png', sizingMethod='scale');background-image:none\9;" class="lang-logo">
+            <span>Python</span>
+            </div>
+        </a>
+        <a href="/jquery/" title="jQuery Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/jquery-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/jquery-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>jQuery</span>
+            </div>
+        </a>
+        <a href="/nodejs/" title="NodeJS Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/nodejs-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/nodejs-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>NodeJS</span>
+            </div>
+        </a>
+        <a href="/php/" title="PHP Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/php-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/php-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>PHP</span>
+            </div>
+        </a>
+        <a href="/java/" title="Java Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/java-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/java-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>Java</span>
+            </div>
+        </a>
+        <a href="/ruby/" title="Ruby Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/ruby-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/ruby-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>Ruby</span>
+            </div>
+        </a>
+        <a href="/javascript/" title="JavaScript Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/javascript-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/javascript-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>JavaScript</span>
+            </div>
+        </a>
+        <a href="/actionscript/" title="ActionScript Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/actionscript-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/actionscript-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>ActionScript</span>
+            </div>
+        </a>
+        <a href="/css/" title="CSS Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/css-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/css-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>CSS</span>
+            </div>
+        </a>
+        <a href="/git/" title="Git Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/git-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/git-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>Git</span>
+            </div>
+        </a>
+        <a href="/svn/" title="SVN Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/svn-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/svn-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>SVN</span>
+            </div>
+        </a>
+        <a href="/mysql/" title="MySQL Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/mysql-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/mysql-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>MySQL</span>
+            </div>
+        </a>
+        <a href="/regex/" title="Regular Expression Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/regex-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/regex-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>RegExp</span>
+            </div>
+        </a>
+        <a href="/linux/" title="Linux Command Line Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/linux-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/linux-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>Linux</span>
+            </div>
+        </a>
+        <a href="/html/" title="HTML Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/html-logo.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/html-logo.png', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>HTML</span>
+            </div>
+        </a>
+        <a href="/html-dom/" title="HTML-DOM Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/html_dom-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/html_dom-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>HTML-DOM</span>
+            </div>
+        </a>
+        <a href="/mod_rewrite/" title="mod_rewrite Cheat Sheet">
+            <div style="background-image:url(/static/images/logo/mod_rewrite-logo.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/logo/mod_rewrite-logo.jpg', sizingMethod='scale');background-image:none\9" class="lang-logo">
+            <span>mod_rewrite</span>
+            </div>
+        </a>
+    </div>
 
-            (function(){
-                var lnkContainer = $('.back-to-top')
-                var delay;
-                var referNode = $('.index');
-                var viewportHeight;
+    <div class="index-tools">
+        <a href="/developer-tools">Developer Tools &gt;&gt;</a>
+        <a href="/about" style="text-decoration:none">About and Comments &gt;&gt;</a>                                                        
+        <a href="https://chrome.google.com/webstore/detail/all-cheat-sheets/oedodeocfdeegliepeeoieemhdgoijod" target="_blank">Get Chrome Extension &gt;&gt;</a>
+    </div>
 
-                function showBackTop(top){
-                    lnkContainer.show().find('a').stop().animate({top: 0});
-                }
-                function hideBackTop(top){
-                    lnkContainer.hide().find('a').css('top', 40);
-                }
-                $(window).scroll((function() {
-                    return function() {
-                        if (delay) {
-                            clearTimeout(delay);
-                        }
-                        delay = setTimeout(function() {
-                            var top = $(document).scrollTop();
-                            if (top > 600) {
-                                showBackTop(top);
-                            } else {
-                                hideBackTop();
-                            }
-                        }, 100);
-                    }
-                })());
+    <div class="index-alphabeta" id="more">
+        <a href="#">A</a> <a href="#">B</a> <a href="#">C</a> <a href="#">D</a>
+        <a href="#">E</a> <a href="#">F</a> <a href="#">G</a> <a href="#">H</a>
+        <a href="#">I</a> <a href="#">J</a> <a href="#">L</a>
+        <a href="#">M</a> <a href="#">N</a> <a href="#">O</a> <a href="#">P</a>
+        <a href="#">Q</a> <a href="#">R</a> <a href="#">S</a> <a href="#">T</a>
+        <a href="#">U</a> <a href="#">V</a> <a href="#">W</a> <a href="#">X</a>
+        <a href="#">Y</a> <a href="#">Z</a>
+    </div>
 
-                $(window).resize(function() {
-                    viewportHeight = $(window).height();
-                    lnkContainer.css('left', referNode.offset().left + referNode.width() + 20);
-                });
+    <div class="index-more">
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="A">A</span>
+            <div class="index-more-cheat">
+                <a href="/dotnet/" title=".NET Cheat Sheet">.NET</a>
+                <a href="/actionscript/" title="ActionScript Cheat Sheet">ActionScript</a>
+                <a href="/ada/" title="Ada Cheat Sheet">Ada</a>
+                <a href="/ado-net/" title="ADO.NET Cheat Sheet">ADO.NET</a>
+                <a href="/adobe/" title="Adobe Cheat Sheet">Adobe</a>
+                <a href="/adobe-acrobat/" title="Adobe Acrobat Cheat Sheet">Adobe Acrobat</a>
+                <a href="/ajax/" title="AJAX Cheat Sheet">AJAX</a>
+                <a href="/algebra/" title="Algebra Cheat Sheet">Algebra</a>
+                <a href="/apache/" title="Apache Cheat Sheet">Apache</a>
+                <a href="/apache-ant/" title="Apache Ant Cheat Sheet">Apache Ant</a>
+                <a href="/apache-camel/" title="Apache Camel Cheat Sheet">Apache Camel</a>
+                <a href="/apache-cassandra/" title="Apache Cassandra Cheat Sheet">Apache Cassandra</a>
+                <a href="/apache-solr/" title="Apache Solr Cheat Sheet">Apache Solr</a>
+                <a href="/apt/" title="APT Cheat Sheet">APT</a>
+                <a href="/arduino/" title="Arduino Cheat Sheet">Arduino</a>
+                <a href="/ascii/" title="ASCII Cheat Sheet">ASCII</a>
+                <a href="/astronomy/" title="Astronomy Cheat Sheet">Astronomy</a>
+                <a href="/asp/" title="ASP Cheat Sheet">ASP</a>
+                <a href="/assembly/" title="Assembly Language Cheat Sheet">Assembly Language</a>
+                <a href="/atom/" title="Atom Cheat Sheet">Atom</a>
+                <a href="/awk/" title="AWK Cheat Sheet">AWK</a>
+                <a href="/azure/" title="Azure Cheat Sheet">Azure</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="B">B</span>
+            <div class="index-more-cheat">
+                <a href="/shellscript/" title="Bash Cheat Sheet">Bash</a>
+                <a href="/bazaar/" title="Bazaar Cheat Sheet">Bazaar</a>
+                <a href="/berkeley-db/" title="BDB Cheat Sheet">BDB</a>
+                <a href="/berkeley-db/" title="Berkeley DB Cheat Sheet">Berkeley DB</a>
+                <a href="/birt/" title="BIRT Cheat Sheet">BIRT</a>
+                <a href="/blazeds/" title="BlazeDS Cheat Sheet">BlazeDS</a>
+                <a href="/blogger/" title="Blogger Cheat Sheet">Blogger</a>
+                <a href="/blueprint/" title="Blueprint Cheat Sheet">Blueprint</a>
+                <a href="/bpel/" title="BPEL Cheat Sheet">BPEL</a>
+                <a href="/bpm/" title="BPM Cheat Sheet">BPM</a>
+                <a href="/bpm/" title="BPML Cheat Sheet">BPML</a>
+                <a href="/bpm/" title="Business Process Modeling Cheat Sheet">Business Process Modeling</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="C">C</span>
+            <div class="index-more-cheat">
+                <a href="/c/" title="C Cheat Sheet">C</a>
+                <a href="/csharp/" title="C# Cheat Sheet">C#</a>
+                <a href="/cpp/" title="C++ Cheat Sheet">C++</a>
+                <a href="/calculus/" title="Calculus Cheat Sheet">Calculus</a>
+                <a href="/camera/" title="Camera Cheat Sheet">Camera</a>
+                <a href="/catalyst/" title="Catalyst Cheat Sheet">Catalyst</a>
+                <a href="/characters/" title="Characters Cheat Sheet">Characters</a>
+                <a href="/chef/" title="Chef Cheat Sheet">Chef</a>
+                <a href="/chemistry/" title="Chemistry Cheat Sheet">Chemistry</a>
+                <a href="/chmod/" title="chmod Cheat Sheet">chmod</a>
+                <a href="/clojure/" title="Clojure Cheat Sheet">Clojure</a>
+                <a href="/cloud-computing/" title="Cloud Computing Cheat Sheet">Cloud Computing</a>
+                <a href="/cocoa/" title="Cocoa Cheat Sheet">Cocoa</a>
+                <a href="/coldfusion/" title="ColdFusion Cheat Sheet">ColdFusion</a>
+                <a href="/colour/" title="Colour Cheat Sheet">Colour</a>
+                <a href="/computer-science/" title="Computer Science Cheat Sheet">Computer Science</a>
+                <a href="/continuous-integration/" title="Continuous Integration Cheat Sheet">Continuous Integration</a>
+                <a href="/countries/" title="Countries Cheat Sheet">Countries</a>
+                <a href="/css/" title="CSS Cheat Sheet">CSS</a>
+                <a href="/cue/" title="CUE Cheat Sheet">CUE</a>
+                <a href="/cvs/" title="CVS Cheat Sheet">CVS</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="D">D</span>
+            <div class="index-more-cheat">
+                <a href="/db2/" title="DB2 Cheat Sheet">DB2</a>
+                <a href="/db4o/" title="db4o Cheat Sheet">db4o</a>
+                <a href="/debian/" title="Debian Cheat Sheet">Debian</a>
+                <a href="/delphi/" title="Delphi Cheat Sheet">Delphi</a>
+                <a href="/design-pattern/" title="Design Pattern Cheat Sheet">Design Pattern</a>
+                <a href="/django/" title="Django Cheat Sheet">Django</a>
+                <a href="/doctrine/" title="Doctrine Cheat Sheet">Doctrine</a>
+                <a href="/doctypes/" title="Doctypes Cheat Sheet">Doctypes</a>
+                <a href="/html-dom/" title="DOM Cheat Sheet">DOM</a>
+                <a href="/ddd/" title="DDD Cheat Sheet">DDD</a>
+                <a href="/ddd/" title="Domain-Driven Design Cheat Sheet">Domain-Driven Design</a>
+                <a href="/dot-language/" title="DOT language Cheat Sheet">DOT language</a>
+                <a href="/drupal/" title="Drupal Cheat Sheet">Drupal</a>
+                <a href="/dtd/" title="DTD(Document Type Declaration) Cheat Sheet">DTD</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="E">E</span>
+            <div class="index-more-cheat">
+                <a href="/eclipse/" title="Eclipse Cheat Sheet">Eclipse</a>
+                <a href="/ed/" title="Ed Cheat Sheet">Ed</a>
+                <a href="/ejb/" title="EJB Cheat Sheet">EJB</a>
+                <a href="/emacs/" title="Emacs Cheat Sheet">Emacs</a>
+                <a href="/smile/" title="Emoticon Cheat Sheet">Emoticon</a>
+                <a href="/characters/" title="Encoding Cheat Sheet">Encoding</a>
+                <a href="/erlang/" title="Erlang Cheat Sheet">Erlang</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="F">F</span>
+            <div class="index-more-cheat">
+                <a href="/fsharp/" title="F# Cheat Sheet">F#</a>
+                <a href="/facebook/" title="Facebook Cheat Sheet">Facebook</a>
+                <a href="/fedora/" title="Fedora Cheat Sheet">Fedora</a>
+                <a href="/atom/" title="Feed Cheat Sheet">Feed</a>
+                <a href="/file/" title="File Cheat Sheet">File</a>
+                <a href="/firebug/" title="Firebug Cheat Sheet">Firebug</a>
+                <a href="/firefox/" title="Firefox Cheat Sheet">Firefox</a>
+                <a href="/firefox-add-ons/" title="Firefox Add-ons Cheat Sheet">Firefox Add-ons</a>
+                <a href="/fitnesse/" title="FitNesse Cheat Sheet">FitNesse</a>
+                <a href="/flash/" title="Flash Cheat Sheet">Flash</a>
+                <a href="/flash-catalyst/" title="Flash Catalyst Cheat Sheet">Flash Catalyst</a>
+                <a href="/flex/" title="Flex Cheat Sheet">Flex</a>
+                <a href="/fonts/" title="Fonts Cheat Sheet">Fonts</a>
+                <a href="/fortran/" title="Fortran Cheat Sheet">Fortran</a>
+                <a href="/freeware/" title="Freeware Cheat Sheet">Freeware</a>
+                <a href="/ftp/" title="FTP Cheat Sheet">FTP</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="G">G</span>
+            <div class="index-more-cheat">
+                <a href="/gdb/" title="GDB Cheat Sheet">GDB</a>
+                <a href="/geometry/" title="Geometry Cheat Sheet">Geometry</a>
+                <a href="/gift/" title="Gift Cheat Sheet">Gift</a>
+                <a href="/gimp/" title="Gimp Cheat Sheet">Gimp</a>
+                <a href="/git/" title="Git Cheat Sheet">Git</a>
+                <a href="/glassfish/" title="GlassFish Cheat Sheet">GlassFish</a>
+                <a href="/gmail/" title="Gmail Cheat Sheet">Gmail</a>
+                <a href="/design-pattern/" title="GoF Cheat Sheet">GoF</a>
+                <a href="/google/" title="Google Cheat Sheet">Google</a>
+                <a href="/google-chrome/" title="Google Chrome Cheat Sheet">Google Chrome</a>
+                <a href="/google-maps/" title="Google Maps Cheat Sheet">Google Maps</a>
+                <a href="/google-app-engine/" title="Google App Engine Cheat Sheet">Google App Engine</a>
+                <a href="/grails/" title="Grails Cheat Sheet">Grails</a>
+                <a href="/griffon/" title="Griffon Cheat Sheet">Griffon</a>
+                <a href="/groovy/" title="Groovy Cheat Sheet">Groovy</a>
+                <a href="/guitar/" title="Guitar Cheat Sheet">Guitar</a>
+                <a href="/gwt/" title="GWT Cheat Sheet">GWT</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="H">H</span>
+            <div class="index-more-cheat">
+                <a href="/hardware/" title="Hardware Cheat Sheet">Hardware</a>
+                <a href="/hadoop/" title="Hadoop Cheat Sheet">Hadoop</a>
+                <a href="/haskell/" title="Haskell Cheat Sheet">Haskell</a>
+                <a href="/hbase/" title="HBase Cheat Sheet">HBase</a>
+                <a href="/hibernate/" title="Hibernate Cheat Sheet">Hibernate</a>
+                <a href="/scalability/" title="High Availability Cheat Sheet">High Availability</a>
+                <a href="/htaccess/" title="htaccess Cheat Sheet">htaccess</a>
+                <a href="/html/" title="HTML Cheat Sheet">HTML</a>
+                <a href="/http/" title="HTTP Cheat Sheet">HTTP</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="I">I</span>
+            <div class="index-more-cheat">
+                <a href="/icons/" title="Icons Cheat Sheet">Icons</a>
+                <a href="/illustrator/" title="Illustrator Cheat Sheet">Illustrator</a>
+                <a href="/intellij-idea/" title="IntelliJ IDEA Cheat Sheet">IntelliJ IDEA</a>
+                <a href="/ie/" title="Internet Explorer Cheat Sheet">Internet Explorer</a>
+                <a href="/irc/" title="IRC Cheat Sheet">IRC</a>
+                <a href="/ivr/" title="IVR Cheat Sheet">IVR</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="J">J</span>
+            <div class="index-more-cheat">
+                <a href="/java/" title="Java Cheat Sheet">Java</a>
+                <a href="/javaee/" title="Java EE Cheat Sheet">Java EE</a>
+                <a href="/jpa/" title="Java Persistence API Cheat Sheet">Java Persistence API</a>
+                <a href="/javafx/" title="JavaFX Cheat Sheet">JavaFX</a>
+                <a href="/javascript/" title="JavaScript Cheat Sheet">JavaScript</a>
+                <a href="/jsf/" title="JavaServer Faces Cheat Sheet">JavaServer Faces</a>
+                <a href="/jboss/" title="JBoss Cheat Sheet">JBoss</a>
+                <a href="/jdbc/" title="JDBC Cheat Sheet">JDBC</a>
+                <a href="/jetty/" title="Jetty Cheat Sheet">Jetty</a>
+                <a href="/jquery/" title="jQuery Cheat Sheet">jQuery</a>
+                <a href="/jsf/" title="JSF Cheat Sheet">JSF</a>
+                <a href="/jsp/" title="JSP Cheat Sheet">JSP</a>
+                <a href="/junit/" title="JUnit Cheat Sheet">JUnit</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="L">L</span>
+            <div class="index-more-cheat">
+                <a href="/languages/" title="Languages Cheat Sheet">Languages</a>
+                <a href="/latex/" title="LaTeX Cheat Sheet">LaTeX</a>
+                <a href="/latex-suite/" title="LaTeX-Suite Cheat Sheet">LaTeX-Suite</a>
+                <a href="/less/" title="less Cheat Sheet">less</a>
+                <a href="/linux/" title="Linux Cheat Sheet">Linux</a>
+                <a href="/lisp/" title="Lisp Cheat Sheet">Lisp</a>
+                <a href="/logic/" title="Logic Cheat Sheet">Logic</a>
+                <a href="/lotus-domino/" title="Lotus Domino Cheat Sheet">Lotus Domino</a>
+                <a href="/lua/" title="Lua Cheat Sheet">Lua</a>
+                <a href="/lucene/" title="Lucene Cheat Sheet">Lucene</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="M">M</span>
+            <div class="index-more-cheat">
+                <a href="/mac/" title="Mac Cheat Sheet">Mac</a>
+                <a href="/osx/" title="Mac OS X Cheat Sheet">Mac OS X</a>
+                <a href="/machine-learning/" title="Machine Learning Cheat Sheet">Machine Learning</a>
+                <a href="/maple/" title="Maple Cheat Sheet">Maple</a>
+                <a href="/markdown/" title="Markdown Cheat Sheet">Markdown</a>
+                <a href="/math/" title="Math Cheat Sheet">Math</a>
+                <a href="/mathematica/" title="Mathematica Cheat Sheet">Mathematica</a>
+                <a href="/mathml/" title="MathML Cheat Sheet">MathML</a>
+                <a href="/mathomatic/" title="Mathomatic Cheat Sheet">Mathomatic</a>
+                <a href="/matlab/" title="MATLAB Cheat Sheet">MATLAB</a>
+                <a href="/maven/" title="Maven Cheat Sheet">Maven</a>
+                <a href="/maxima/" title="Maxima Cheat Sheet">Maxima</a>
+                <a href="/mfc/" title="MFC Cheat Sheet">MFC</a>
+                <a href="/microformats/" title="Microformats Cheat Sheet">Microformats</a>
+                <a href="/microsoft-excel/" title="Microsoft Excel Cheat Sheet">Microsoft Excel</a>
+                <a href="/msp/" title="Microsoft Project Cheat Sheet">Microsoft Project</a>
+                <a href="/microsoft-visual-studio/" title="Microsoft Visual Studio Cheat Sheet">Microsoft Visual Studio</a>
+                <a href="/mime/" title="MIME Cheat Sheet">MIME</a>
+                <a href="/ssi/" title="mod_include Cheat Sheet">mod_include</a>
+                <a href="/mod_perl/" title="mod_perl Cheat Sheet">mod_perl</a>
+                <a href="/mod_rewrite/" title="mod_rewrite Cheat Sheet">mod_rewrite</a>
+                <a href="/mootools/" title="MooTools Cheat Sheet">MooTools</a>
+                <a href="/msp/" title="MSP Cheat Sheet">MSP</a>
+                <a href="/mule/" title="Mule Cheat Sheet">Mule</a>
+                <a href="/music/" title="Music Cheat Sheet">Music</a>
+                <a href="/mvvm/" title="MVVM Cheat Sheet">MVVM</a>
+                <a href="/mysql/" title="MySQL Cheat Sheet">MySQL</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="N">N</span>
+            <div class="index-more-cheat">
+                <a href="/netbeans/" title="NetBeans Cheat Sheet">NetBeans</a>
+                <a href="/nmap/" title="NMAP Cheat Sheet">NMAP</a>
+                <a href="/nodejs/" title="Node.js Cheat Sheet">Node.js</a>
+                <a href="/numbers/" title="Numbers Cheat Sheet">Numbers</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="O">O</span>
+            <div class="index-more-cheat">
+                <a href="/objective-c/" title="Objective-C Cheat Sheet">Objective-C</a>
+                <a href="/osmf/" title="Open Source Media Framework Cheat Sheet">Open Source Media Framework</a>
+                <a href="/opencl/" title="OpenCL Cheat Sheet">OpenCL</a>
+                <a href="/opencv/" title="OpenCV Cheat Sheet">OpenCV</a>
+                <a href="/openmp/" title="OpenMP Cheat Sheet">OpenMP</a>
+                <a href="/opensearch/" title="OpenSearch Cheat Sheet">OpenSearch</a>
+                <a href="/openssh/" title="OpenSSH Cheat Sheet">OpenSSH</a>
+                <a href="/openvz/" title="OpenVZ Cheat Sheet">OpenVZ</a>
+                <a href="/oracle/" title="Oracle Cheat Sheet">Oracle</a>
+                <a href="/orgmode/" title="org-mode Cheat Sheet">org-mode</a>
+                <a href="/osx/" title="OS X Cheat Sheet">OS X</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="P">P</span>
+            <div class="index-more-cheat">
+                <a href="/perforce/" title="Perforce Cheat Sheet">Perforce</a>
+                <a href="/perl/" title="Perl Cheat Sheet">Perl</a>
+                <a href="/photoshop/" title="Photoshop Cheat Sheet">Photoshop</a>
+                <a href="/php/" title="PHP Cheat Sheet">PHP</a>
+                <a href="/php-frameworks/" title="PHP Frameworks Cheat Sheet">PHP Frameworks</a>
+                <a href="/physics/" title="Physics Cheat Sheet">Physics</a>
+                <a href="/play-framework/" title="Play Framework Cheat Sheet">Play Framework</a>
+                <a href="/postgresql/" title="PostgreSQL Cheat Sheet">PostgreSQL</a>
+                <a href="/windows-powershell/" title="PowerShell Cheat Sheet">PowerShell</a>
+                <a href="/probability-theory/" title="Probability Theory Cheat Sheet">Probability Theory</a>
+                <a href="/prototype/" title="Prototype Cheat Sheet">Prototype</a>
+                <a href="/python/" title="Python Cheat Sheet">Python</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="Q">Q</span>
+            <div class="index-more-cheat">
+                <a href="/qt/" title="Qt Cheat Sheet">Qt</a>
+                <a href="/quicksilver/" title="Quicksilver Cheat Sheet">Quicksilver</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="R">R</span>
+            <div class="index-more-cheat">
+                <a href="/r/" title="R Cheat Sheet">R</a>
+                <a href="/redhat/" title="Red Hat Cheat Sheet">Red Hat</a>
+                <a href="/regex/" title="Regular Expressions Cheat Sheet">Regular Expressions</a>
+                <a href="/religion/" title="Religion Cheat Sheet">Religion</a>
+                <a href="/rest/" title="REST Cheat Sheet">REST</a>
+                <a href="/richfaces/" title="RichFaces Cheat Sheet">RichFaces</a>
+                <a href="/rpm/" title="rpm Cheat Sheet">rpm</a>
+                <a href="/atom/" title="RSS Cheat Sheet">RSS</a>
+                <a href="/ruby/" title="Ruby Cheat Sheet">Ruby</a>
+                <a href="/rubyrails/" title="Ruby on Rails Cheat Sheet">Ruby on Rails</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="S">S</span>
+            <div class="index-more-cheat">
+                <a href="/sandcastle/" title="Sandcastle Cheat Sheet">Sandcastle</a>
+                <a href="/scala/" title="Scala Cheat Sheet">Scala</a>
+                <a href="/scalability/" title="Scalability Cheat Sheet">Scalability</a>
+                <a href="/science/" title="Science Cheat Sheet">Science</a>
+                <a href="/screen/" title="Screen Cheat Sheet">Screen</a>
+                <a href="/seam/" title="Seam Cheat Sheet">Seam</a>
+                <a href="/sed/" title="Sed Cheat Sheet">Sed</a>
+                <a href="/selenium/" title="Selenium Cheat Sheet">Selenium</a>
+                <a href="/sendmail/" title="Sendmail Cheat Sheet">Sendmail</a>
+                <a href="/servicemix/" title="ServiceMix Cheat Sheet">ServiceMix</a>
+                <a href="/shellscript/" title="Shell Script Cheat Sheet">Shell Script</a>
+                <a href="/silverlight/" title="Silverlight Cheat Sheet">Silverlight</a>
+                <a href="/smile/" title="Smile Cheat Sheet">Smile</a>
+                <a href="/social-bookmarks/" title="Social Bookmarks Cheat Sheet">Social Bookmarks</a>
+                <a href="/solaris/" title="Solaris Cheat Sheet">Solaris</a>
+                <a href="/spring/" title="Spring Framework Cheat Sheet">Spring Framework</a>
+                <a href="/springroo/" title="Spring Roo Cheat Sheet">Spring Roo</a>
+                <a href="/sql/" title="SQL Cheat Sheet">SQL</a>
+                <a href="/sqlserver/" title="SQL Server Cheat Sheet">SQL Server</a>
+                <a href="/sqlite/" title="SQLite Cheat Sheet">SQLite</a>
+                <a href="/ssi/" title="SSI Cheat Sheet">SSI</a>
+                <a href="/tls/" title="SSL Cheat Sheet">SSL</a>
+                <a href="/statistics/" title="Statistics Cheat Sheet">Statistics</a>
+                <a href="/svg/" title="SVG Cheat Sheet">SVG</a>
+                <a href="/svn/" title="SVN Cheat Sheet">SVN</a>
+                <a href="/sybase/" title="Sybase Cheat Sheet">Sybase</a>
+                <a href="/symfony/" title="Symfony Cheat Sheet">Symfony</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="T">T</span>
+            <div class="index-more-cheat">
+                <a href="/tapestry/" title="Tapestry Cheat Sheet">Tapestry</a>
+                <a href="/tcltk/" title="Tcl/Tk Cheat Sheet">Tcl/Tk</a>
+                <a href="/tcp/" title="TCP Cheat Sheet">TCP</a>
+                <a href="/tex/" title="TeX Cheat Sheet">TeX</a>
+                <a href="/thunderbird/" title="Thunderbird Cheat Sheet">Thunderbird</a>
+                <a href="/tlds/" title="TLDs Cheat Sheet">TLDs</a>
+                <a href="/tls/" title="TLS Cheat Sheet">TLS</a>
+                <a href="/trigonometry/" title="Trigonometry Cheat Sheet">Trigonometry</a>
+                <a href="/ttcn-3/" title="TTCN-3 Cheat Sheet">TTCN-3</a>
+                <a href="/twitter/" title="Twitter Cheat Sheet">Twitter</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="U">U</span>
+            <div class="index-more-cheat">
+                <a href="/uml/" title="UML Cheat Sheet">UML</a>
+                <a href="/ubuntu/" title="Ubuntu Cheat Sheet">Ubuntu</a>
+                <a href="/unicode/" title="Unicode Cheat Sheet">Unicode</a>
+                <a href="/unix/" title="Unix Cheat Sheet">Unix</a>
+                <a href="/unicode/" title="UTF Cheat Sheet">UTF</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="V">V</span>
+            <div class="index-more-cheat">
+                <a href="/vaadin/" title="Vaadin Cheat Sheet">Vaadin</a>
+                <a href="/visualbasic/" title="VB Cheat Sheet">VB</a>
+                <a href="/microsoft-excel/" title="VBA Cheat Sheet">VBA</a>
+                <a href="/vbscript/" title="VBScript Cheat Sheet">VBScript</a>
+                <a href="/vcs/" title="Veritas Cluster Cheat Sheet">Veritas Cluster</a>
+                <a href="/vi/" title="Vi Cheat Sheet">Vi</a>
+                <a href="/vim/" title="Vim Cheat Sheet">Vim</a>
+                <a href="/latex-suite/" title="VIM-LaTeX Cheat Sheet">VIM-LaTeX</a>
+                <a href="/virtualization/" title="Virtualization Cheat Sheet">Virtualization</a>
+                <a href="/visualbasic/" title="Visual Basic Cheat Sheet">Visual Basic</a>
+                <a href="/vmware/" title="VMware Cheat Sheet">VMware</a>
+                <a href="/voicexml/" title="VoiceXML Cheat Sheet">VoiceXML</a>
+                <a href="/vvvv/" title="vvvv Cheat Sheet">vvvv</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="W">W</span>
+            <div class="index-more-cheat">
+                <a href="/webgl/" title="WebGL Cheat Sheet">WebGL</a>
+                <a href="/webmatrix/" title="WebMatrix Cheat Sheet">WebMatrix</a>
+                <a href="/wicket/" title="Wicket Cheat Sheet">Wicket</a>
+                <a href="/wikipedia/" title="Wikipedia Cheat Sheet">Wikipedia</a>
+                <a href="/windows/" title="Windows Cheat Sheet">Windows</a>
+                <a href="/azure/" title="Windows Azure Cheat Sheet">Windows Azure</a>
+                <a href="/wcf/" title="Windows Communication Foundation Cheat Sheet">Windows Communication Foundation</a>
+                <a href="/wpf/" title="Windows Presentation Foundation Cheat Sheet">Windows Presentation Foundation</a>
+                <a href="/windows-powershell/" title="Windows PowerShell Cheat Sheet">Windows PowerShell</a>
+                <a href="/wordpress/" title="WordPress Cheat Sheet">WordPress</a>
+                <a href="/wow/" title="World of Warcraft Cheat Sheet">World of Warcraft</a>
+                <a href="/bpel/" title="WS-BPEL Cheat Sheet">WS-BPEL</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="X">X</span>
+            <div class="index-more-cheat">
+                <a href="/xhtml/" title="XHTML Cheat Sheet">XHTML</a>
+                <a href="/xml/" title="XML Cheat Sheet">XML</a>
+                <a href="/xml-schema/" title="XML Schema Cheat Sheet">XML Schema</a>
+                <a href="/xpath/" title="XPath Cheat Sheet">XPath</a>
+                <a href="/xsl/" title="XSL Cheat Sheet">XSL</a>
+                <a href="/xslt/" title="XSLT Cheat Sheet">XSLT</a>
+                <a href="/xss/" title="XSS Cheat Sheet">XSS</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="Y">Y</span>
+            <div class="index-more-cheat">
+                <a href="/yahoo/" title="Yahoo Cheat Sheet">Yahoo</a>
+            </div>
+        </div>
+        <div class="index-more-alpha">
+            <span class="index-alpha-nav" id="Z">Z</span>
+            <div class="index-more-cheat">
+                <a href="/zencoding/" title="ZenCoding Cheat Sheet">Zen Coding</a>
+            </div>
+        </div>
+    </div>
 
-                $(window).trigger('resize');
-                mixpanel.track_links('.index-tools a',"Index Tools Link");
-            })();
+    <div class="dev-tools-ad">
+        <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-5503280202576307";
+            /* overapi-tools */
+            google_ad_slot = "0215957718";
+            google_ad_width = 728;
+            google_ad_height = 90;
+            //-->
         </script>
+        <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </div>
 
-        <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
-        <script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
-        <script type="text/javascript" src="/static/js/jquery.quicksearch.js"></script>
-    </body>
-</html>
+    <div class="back-to-top">
+        <a href="#">&#8593;TOP</a>                                                        
+    </div>  
+</div>
+
+<script type="text/javascript">
+    $('body').delegate('.index-content .lang-logo','mouseenter',function(){
+        $(this).find('span').fadeIn('fast');
+    }).delegate('.index-content .lang-logo','mouseleave',function(){
+        $(this).find('span').hide();
+    });
+    $('body').delegate('.index-alphabeta a','click',function(e){
+        e.preventDefault();
+        var hash = $(this).text();
+        var offset = $('#'+hash).offset().top;
+        $('body,html').animate({scrollTop:offset-10},300);
+    }).delegate('.back-to-top a','click',function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop:0},300);
+    });
+
+    (function(){
+        var lnkContainer = $('.back-to-top')
+        var delay;
+        var referNode = $('.index');
+        var viewportHeight;
+
+        function showBackTop(top){
+            lnkContainer.show().find('a').stop().animate({top: 0});
+        }
+        function hideBackTop(top){
+            lnkContainer.hide().find('a').css('top', 40);
+        }
+        $(window).scroll((function() {
+            return function() {
+                if (delay) {
+                    clearTimeout(delay);
+                }
+                delay = setTimeout(function() {
+                    var top = $(document).scrollTop();
+                    if (top > 600) {
+                        showBackTop(top);
+                    } else {
+                        hideBackTop();
+                    }
+                }, 100);
+            }
+        })());
+
+        $(window).resize(function() {
+            viewportHeight = $(window).height();
+            lnkContainer.css('left', referNode.offset().left + referNode.width() + 20);
+        });
+
+        $(window).trigger('resize');
+        mixpanel.track_links('.index-tools a',"Index Tools Link");
+    })();
+</script>
