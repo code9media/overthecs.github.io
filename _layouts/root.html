@@ -5,7 +5,7 @@
         * Author:         OverAPI.com
         -->
         <meta charset="utf-8" />
-        <title>OverAPI.com | Collecting all the cheat sheets</title>
+        <title>{% if page.title %}{{ page.title }}{% endif %}</title>
         <meta name="author" content="{{ site.author.name }}" />
         <meta name="description" content="{{ site.description }}" />
         <link rel="stylesheet" href="/static/css/default.css" type="text/css" />
@@ -17,7 +17,7 @@
         {{ content }}
 
         <script type="text/javascript">
-            mixpanel.track('Page Loading');
+            mixpanel.track('Page Loading',{'PageName':document.title});
         </script>
         <script type="text/javascript" src="http://js.tongji.linezing.com/2871480/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2871480/tongji.gif"/></a></noscript>
         <script type="text/javascript" src="/static/js/jquery.masonry.min.js"></script>
