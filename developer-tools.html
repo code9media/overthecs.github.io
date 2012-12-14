@@ -52,23 +52,26 @@ title:  Developer Tools | OverAPI.com
             //-->
         </script>
         <script type="text/javascript"
-            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            src="">
+        </script>
+        <script type="text/javascript">
+            $.getScript('http://pagead2.googlesyndication.com/pagead/show_ads.js')
         </script>
     </div>
 
-    <span style="cursor:pointer;" id="tools-more">Tell Me More...</span>
-    <div id="disqus_thread"></div>
+    <div class="dev-tools-collect">
+        <h2>Tell Me More</h2>
+        <div id="disqus_thread"></div>
+    </div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         /* * * DON'T EDIT BELOW THIS LINE * * */
         var disqus_shortname = 'overapi'; // required: replace example with your forum shortname
-        $('#tools-more').on('click',function(){
-            $(this).html('Loading......');
-            var that = this;
-            $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+        $(function(){
+            $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js');
+            mixpanel.track_links(".dev-tools a","Tools Link");
         });
 
-        mixpanel.track_links(".dev-tools a","Tools Link");
     </script>
 
 </div>
