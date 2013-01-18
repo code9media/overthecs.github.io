@@ -76,11 +76,9 @@ $(function(){
                 inactiveOffset.sort(function(a,b){return a-b;});
 
                 if(inactiveOffset[0]<150){
-                    $('body').animate({ scrollTop: 0}, 400, 'swing');
-                    $('html').animate({ scrollTop: 0}, 400, 'swing');
+                    $('html,body').animate({ scrollTop: 0}, 400, 'swing');
                 }else{
-                    $('body').animate({ scrollTop: inactiveOffset[0]-80}, 400, 'swing');
-                    $('html').animate({ scrollTop: inactiveOffset[0]-80}, 400, 'swing');
+                    $('html,body').animate({ scrollTop: inactiveOffset[0]-80}, 400, 'swing');
                 }
             },500)
         }
