@@ -249,7 +249,7 @@ title:     Python Cheat Sheet
         <div class="board-card">
             <h3 class="board-card-title">Indexes and Slices</h3>
             <ul>
-                <li>a=[0,1-,2,-3,4,5]</li>
+                <li>a=[0,1,2,3,4,5]</li>
                 <li class="right">6</li>
                 <li>len(a)</li>
                 <li class="right">0</li>
@@ -260,9 +260,9 @@ title:     Python Cheat Sheet
                 <li>a[-1]</li>
                 <li class="right">4</li>
                 <li>a[-2]</li>
-                <li class="right">[1,2,3-,4,5]</li>
+                <li class="right">[1,2,3,4,5]</li>
                 <li>a[1:]</li>
-                <li class="right">[0,1,2-,3,4]</li>
+                <li class="right">[0,1,2,3,4]</li>
                 <li>a[:5]</li>
                 <li class="right">[0,1,2,3]</li>
                 <li>a[:-2]</li>
@@ -388,13 +388,13 @@ title:     Python Cheat Sheet
             <ul>
                 <li>argv</li>
                 <li class="tip">Command line args</li>
-                <li>builtin_module_-names</li>
+                <li>builtin_module_names</li>
                 <li class="tip">Linked C modules</li>
                 <li>byteorder</li>
                 <li class="tip">Native byte order</li>
-                <li>check_-int-erval</li>
+                <li>check_-interval</li>
                 <li class="tip">Signal check frequency</li>
-                <li>exec_p-refix</li>
+                <li>exec_prefix</li>
                 <li class="tip">Root directory</li>
                 <li>executable</li>
                 <li class="tip">Name of executable</li>
@@ -408,7 +408,7 @@ title:     Python Cheat Sheet
                 <li class="tip">Current platform</li>
                 <li>stdin, stdout, stderr</li>
                 <li class="tip">File objects for I/O</li>
-                <li>versio-n_info</li>
+                <li>version_info</li>
                 <li class="tip">Python version info</li>
                 <li>winver</li>
                 <li class="tip">Version number</li>
@@ -418,15 +418,15 @@ title:     Python Cheat Sheet
             <h3 class="board-card-title">sys.argv</h3>
             <ul>
                 <li class="right">foo.py</li>
-                <li>sys.ar-gv[0]</li>
+                <li>sys.argv[0]</li>
                 <li class="right">bar</li>
-                <li>sys.ar-gv[1]</li>
+                <li>sys.argv[1]</li>
                 <li class="right">-c</li>
-                <li>sys.ar-gv[2]</li>
+                <li>sys.argv[2]</li>
                 <li class="right">qux</li>
-                <li>sys.ar-gv[3]</li>
+                <li>sys.argv[3]</li>
                 <li class="right">--h</li>
-                <li>sys.ar-gv[4]</li>
+                <li>sys.argv[4]</li>
             </ul>
         </div>
     </div>
@@ -437,7 +437,7 @@ title:     Python Cheat Sheet
             <h3 class="board-card-title">os Variables</h3>
             <ul>
                 <li>altsep</li>
-                <li class="tip">Altern-ative sep</li>
+                <li class="tip">Alternative sep</li>
                 <li>curdir</li>
                 <li class="tip">Current dir string</li>
                 <li>defpath</li>
@@ -465,26 +465,26 @@ title:     Python Cheat Sheet
         <div class="board-card">
             <h3 class="board-card-title">Special Methods</h3>
             <ul>
-                <li>__new_-_(cls)</li>
-                <li>__lt__-(self, other)</li>
-                <li>__init-__(-self, args)</li>
-                <li>__le__-(self, other)</li>
-                <li>__del_-_(self)</li>
-                <li>__gt__-(self, other)</li>
-                <li>__repr-__(-self)</li>
-                <li>__ge__-(self, other)</li>
-                <li>__str_-_(self)</li>
-                <li>__eq__-(self, other)</li>
-                <li>__cmp_-_(self, other)</li>
-                <li>__ne__-(self, other)</li>
-                <li>__inde-x__-(self)</li>
-                <li>__nonz-ero-__(-self)</li>
-                <li>__hash-__(-self)</li>
-                <li>__geta-ttr-__(-self, name)</li>
-                <li>__geta-ttr-ibu-te_-_(self, name)</li>
-                <li>__seta-ttr-__(-self, name, attr)</li>
-                <li>__dela-ttr-__(-self, name)</li>
-                <li>__call-__(-self, args, kwargs)</li>
+                <li>__new__(cls)</li>
+                <li>__lt__(self, other)</li>
+                <li>__init__(self, args)</li>
+                <li>__le__(self, other)</li>
+                <li>__del__(self)</li>
+                <li>__gt__(self, other)</li>
+                <li>__repr__(self)</li>
+                <li>__ge__(self, other)</li>
+                <li>__str__(self)</li>
+                <li>__eq__(self, other)</li>
+                <li>__cmp__(self, other)</li>
+                <li>__ne__(self, other)</li>
+                <li>__index__(self)</li>
+                <li>__nonzero__(self)</li>
+                <li>__hash__(self)</li>
+                <li>__getattr__(self, name)</li>
+                <li>__getattribute__(self, name)</li>
+                <li>__setattr__(self, name, attr)</li>
+                <li>__delattr__(self, name)</li>
+                <li>__call__(self, args, kwargs)</li>
             </ul>
         </div>
     </div>
@@ -536,11 +536,11 @@ title:     Python Cheat Sheet
             <h3 class="board-card-title">Date Formatting</h3>
             <ul>
                 <li>%a</li>
-                <li class="tip">Abbrev-iated weekday (Sun)</li>
+                <li class="tip">Abbreviated weekday (Sun)</li>
                 <li>%A</li>
                 <li class="tip">Weekday (Sunday)</li>
                 <li>%b</li>
-                <li class="tip">Abbrev-iated month name (Jan)</li>
+                <li class="tip">Abbreviated month name (Jan)</li>
                 <li>%B</li>
                 <li class="tip">Month name (January)</li>
                 <li>%c</li>
@@ -578,7 +578,7 @@ title:     Python Cheat Sheet
                 <li>%Z</li>
                 <li class="tip">Time zone (GMT)</li>
                 <li>%%</li>
-                <li class="tip">A literal "-%" character (%)</li>
+                <li class="tip">A literal "%" character (%)</li>
             </ul>
         </div>
     </div>
