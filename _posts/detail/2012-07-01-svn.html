@@ -41,10 +41,10 @@ title:     Svn Cheat Sheet
                 <li>svnlook</li>
                 <li class="tip">Inspect repository</li>
                 <li>svnadmin</li>
-                <li class="tip">Repository admini-str-ation</li>
-                <li>svndum-pfilter</li>
+                <li class="tip">Repository administration</li>
+                <li>svndumpfilter</li>
                 <li class="tip">Filter repository stream</li>
-                <li>mod_da-v_svn</li>
+                <li>mod_dav_svn</li>
                 <li class="tip">Apache module</li>
                 <li>svnserve</li>
                 <li class="tip">SVN server (SVN protocol)</li>
@@ -59,9 +59,9 @@ title:     Svn Cheat Sheet
         <div class="board-card">
             <h3 class="board-card-title">Checkout Working Copy</h3>
             <ul>
-                <li>$ svn checkout "-/pa-th/-to/-rep-osi-tor-y"</li>
+                <li>$ svn checkout "/path/to/repository"</li>
                 <li class="tip">Checkout working copy into current folder</dli>
-                <li>$ svn checkout "-/pa-th/-to/-rep-osi-tor-y" "-/pa-th/-to/-fol-der-"</li>
+                <li>$ svn checkout "/path/to/repository" "/path/to/folder"</li>
                 <li class="tip">Checkout working copy into target folder</dli>
             </ul>
         </div>
@@ -70,7 +70,7 @@ title:     Svn Cheat Sheet
             <ul>
                 <li>$ svn help</li>
                 <li>$ svn help import</li>
-                <li class="tip">Show help for "-imp-ort-" command</dli>
+                <li class="tip">Show help for "import" command</dli>
             </ul>
         </div>
     </div>
@@ -79,13 +79,13 @@ title:     Svn Cheat Sheet
         <h2 class="board-title">Commit</h2>
         <div class="board-card">
             <ul>
-                <li>$ svn commit "-/pa-th"</li>
+                <li>$ svn commit "/path"</li>
                 <li class="tip">Commit changes to path</dli>
-                <li>$ svn commit -m "-Mes-sag-e" "-/pa-th"</li>
+                <li>$ svn commit -m "Message" "/path"</li>
                 <li class="tip">Commit with log message</dli>
-                <li>$ svn commit -N "-/pa-th"</li>
+                <li>$ svn commit -N "/path"</li>
                 <li class="tip">Commit without recursion</dli>
-                <li>$ svn import "-/pa-th/-to/-fol-der-" "-/pa-th"</li>
+                <li>$ svn import "/path/to/folder" "/path"</li>
                 <li class="tip">Import and commit local folder</dli>
             </ul>
         </div>
@@ -95,9 +95,9 @@ title:     Svn Cheat Sheet
         <h2 class="board-title">Update</h2>
         <div class="board-card">
             <ul>
-                <li>$ svn update "-/pa-th"</li>
+                <li>$ svn update "/path"</li>
                 <li class="tip">Update path</dli>
-                <li>$ svn update -r9 "-/pa-th"</li>
+                <li>$ svn update -r9 "/path"</li>
                 <li class="tip">Update path to revision 9</dli>
             </ul>
         </div>
@@ -108,27 +108,27 @@ title:     Svn Cheat Sheet
         <div class="board-card">
             <h3 class="board-card-title">Differences Between Files</h3>
             <ul>
-                <li>$ svn diff "-/pa-th/-fil-e"</li>
-                <li>$ svn diff "-/pa-th/-fil-e@2-" "-/pa-th/-fil-e@7-"</li>
-                <li>$ svn diff -r 2:7 "-/pa-th/-fol-der-"</li>
+                <li>$ svn diff "/path/file"</li>
+                <li>$ svn diff "/path/file@2" "/path/file@7"</li>
+                <li>$ svn diff -r 2:7 "/path/folder"</li>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">Revert</h3>
             <ul>
-                <li>$ svn revert "-/pa-th"</li>
+                <li>$ svn revert "/path"</li>
                 <li class="tip">Revert changes to path</dli>
-                <li>$ svn revert -R "-/pa-th"</li>
-                <li class="tip">Revert changes recurs-ively</dli>
+                <li>$ svn revert -R "/path"</li>
+                <li class="tip">Revert changes recursively</dli>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">Merge Changes</h3>
             <ul>
-                <li>$ svn merge -r2:7 "-ite-m" "-/pa-th"</li>
-                <li class="tip">Apply diff between revisions 2 and 7 of "-ite-m" to path</dli>
-                <li>$ svn merge "-url-1" "-url-2" "-/pa-th"</li>
-                <li class="tip">Apply diff between "-url-1" and "-url-2" to path</dli>
+                <li>$ svn merge -r2:7 "item" "/path"</li>
+                <li class="tip">Apply diff between revisions 2 and 7 of "item" to path</dli>
+                <li>$ svn merge "url1" "url2" "/path"</li>
+                <li class="tip">Apply diff between "url1" and "url2" to path</dli>
             </ul>
         </div>
     </div>
@@ -139,23 +139,23 @@ title:     Svn Cheat Sheet
             <h3 class="board-card-title">Add Files / Folders</h3>
             <ul>
                 <li>$ svn add *</li>
-                <li class="tip">Add all items, recurs-ively</dli>
+                <li class="tip">Add all items, recursively</dli>
                 <li>$ svn add itemname</li>
-                <li class="tip">Add itemname (if folder, adds recurs-ively)</dli>
+                <li class="tip">Add itemname (if folder, adds recursively)</dli>
                 <li>$ svn add * --force</li>
-                <li class="tip">Force recursion into versioned direct-ories</dli>
+                <li class="tip">Force recursion into versioned directories</dli>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">Deleteing Copying Moving</h3>
             <ul>
-                <li>$ svn delete "-/pa-th"</li>
+                <li>$ svn delete "/path"</li>
                 <li class="tip">Delete path</dli>
-                <li>$ svn -m "-Delete messag-e" delete "-/pa-th"</li>
+                <li>$ svn -m "Delete message" delete "/path"</li>
                 <li class="tip">Delete with log message</dli>
-                <li>$ svn copy "-/so-urc-e" "-/ta-rge-t"</li>
+                <li>$ svn copy "/source" "/target"</li>
                 <li class="tip">Copy source to target</dli>
-                <li>$ svn move "-/so-urc-e" "-/ta-rge-t"</li>
+                <li>$ svn move "/source" "/target"</li>
                 <li class="tip">Move source to target</dli>
             </ul>
         </div>
@@ -165,9 +165,9 @@ title:     Svn Cheat Sheet
         <h2 class="board-title">Logs and Blame</h2>
         <div class="board-card">
             <ul>
-                <li>$ svn log "-/pa-th"</li>
+                <li>$ svn log "/path"</li>
                 <li class="tip">Show log messages for path</dli>
-                <li>$ svn blame "-/pa-th"</li>
+                <li>$ svn blame "/path"</li>
                 <li class="tip">Show commits for path</dli>
             </ul>
         </div>
@@ -195,13 +195,13 @@ title:     Svn Cheat Sheet
         <h2 class="board-title">Repo Admin</h2>
         <div class="board-card">
             <ul>
-                <li>$ svnadmin create "-/pa-th/-to/-rep-osi-tor-y"</li>
+                <li>$ svnadmin create "/path/to/repository"</li>
                 <li class="tip">Create new repository</dli>
-                <li>$ svnadmin setlog "-/pa-th" -r 7 messag-e.txt</li>
-                <li class="tip">Change log message for revision 7 to contents of file messag-e.txt</dli>
-                <li>$ svnadmin dump "-/pa-th/-to/-rep-osi-tor-y" &gt; filename</li>
+                <li>$ svnadmin setlog "/path" r 7 message.txt</li>
+                <li class="tip">Change log message for revision 7 to contents of file message.txt</dli>
+                <li>$ svnadmin dump "/path/to/repository" &gt; filename</li>
                 <li class="tip">Dump repository to file (backup)</dli>
-                <li>$ svnadmin load "-/pa-th/-to/-rep-osi-tor-y" &lt; filename</li>
+                <li>$ svnadmin load "/path/to/repository" &lt; filename</li>
                 <li class="tip">Load repository from file (restore)</dli>
             </ul>
         </div>
@@ -211,17 +211,17 @@ title:     Svn Cheat Sheet
         <h2 class="board-title">Miscellaneous</h2>
         <div class="board-card">
             <ul>
-                <li>$ svn resolve "-/pa-th"</li>
+                <li>$ svn resolve "/path"</li>
                 <li class="tip">Resolve conflict</dli>
-                <li>$ svn cleanup "-/pa-th"</li>
+                <li>$ svn cleanup "/path"</li>
                 <li class="tip">Remove locks and complete operations</dli>
-                <li>$ svn lock "-/pa-th"</li>
+                <li>$ svn lock "/path"</li>
                 <li class="tip">Lock path</dli>
-                <li>$ svn unlock "-/pa-th"</li>
+                <li>$ svn unlock "/path"</li>
                 <li class="tip">Unlock path</dli>
-                <li>$ svn status "-/pa-th"</li>
+                <li>$ svn status "/path"</li>
                 <li class="tip">Get path status</dli>
-                <li>$ svn cat "-/pa-th"</li>
+                <li>$ svn cat "/path"</li>
                 <li class="tip">View file contents</dli>
             </ul>
         </div>
@@ -232,7 +232,7 @@ title:     Svn Cheat Sheet
         <div class="board-card">
             <ul>
                 <li>&nbsp;</li>
-                <li class="tip">No modifi-cations (blank)</li>
+                <li class="tip">No modifications (blank)</li>
                 <li>A</li>
                 <li class="tip">Addition</li>
                 <li>D</li>
@@ -261,7 +261,7 @@ title:     Svn Cheat Sheet
         <h2 class="board-title">Argument Shortcuts</h2>
         <div class="board-card">
             <ul>
-                <li>-m "-Mes-sag-e"</li>
+                <li>-m "Message"</li>
                 <li class="tip">--message</li>
                 <li>-q</li>
                 <li class="tip">--quiet</li>
@@ -272,11 +272,11 @@ title:     Svn Cheat Sheet
                 <li>-c</li>
                 <li class="tip">--change</li>
                 <li>-t</li>
-                <li class="tip">--tran-saction</li>
+                <li class="tip">--transaction</li>
                 <li>-R</li>
-                <li class="tip">--recu-rsive</li>
+                <li class="tip">--recursive</li>
                 <li>-N</li>
-                <li class="tip">--non--rec-ursive</li>
+                <li class="tip">--non-recursive</li>
             </ul>
         </div>
     </div>
