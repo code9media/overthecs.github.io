@@ -94,6 +94,8 @@ body {background:#f5f3ef;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif
 .loading{margin:0 auto;text-align:center;font-style:italic;font-size:20px;color:#999;padding-top:350px;}
 .content{padding-top:45px;margin:0 auto;display:none;}
 .board{border-radius:8px;margin:5px 8px;padding:15px;width:200px;color:#fff;}
+.board-detail-ad{width:750px;margin:50px auto 20px;text-align:center;padding-top:8px;}
+.board-detail-ad .board-title{font-size:22px;}
 .content-250{margin:0 auto;}
 .content-250 .board{width:250px;margin:5px 10px;}
 .content-400{margin:0 auto;}
