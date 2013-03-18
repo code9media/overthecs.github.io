@@ -30,19 +30,19 @@ title:     mod_rewrite Cheat Sheet
                 <li>CO=cookie</li>
                 <li class="tip">Set specified cookie</li>
                 <li>E=var:-value</li>
-                <li class="tip">Set enviro-nmental variable “var” to “value”</li>
+                <li class="tip">Set environmental variable “var” to “value”</li>
                 <li>F</li>
                 <li class="tip">Forbidden (403 header)</li>
                 <li>G</li>
-                <li class="tip">Gone - no longer exists</li>
+                <li class="tip">Gone no longer exists</li>
                 <li>H=handler</li>
                 <li class="tip">Set handler</li>
                 <li>L</li>
-                <li class="tip">Last - stop processing rules</li>
+                <li class="tip">Last stop processing rules</li>
                 <li>N</li>
-                <li class="tip">Next - continue processing</li>
+                <li class="tip">Next continue processing</li>
                 <li>NC</li>
-                <li class="tip">Case insens-itive</li>
+                <li class="tip">Case insensitive</li>
                 <li>NE</li>
                 <li class="tip">Do not escape output</li>
                 <li>NS</li>
@@ -57,7 +57,7 @@ title:     mod_rewrite Cheat Sheet
                 <li class="tip">Append query string</li>
                 <li>S=x</li>
                 <li class="tip">Skip next x rules</li>
-                <li>T=mime--type</li>
+                <li>T=mime-type</li>
                 <li class="tip">Set mime type</li>
             </ul>
         </div>
@@ -120,15 +120,15 @@ title:     mod_rewrite Cheat Sheet
         <h2 class="board-title">Directives</h2>
         <div class="board-card">
             <ul>
-                <li>Rewrit-eEngine</li>
-                <li>Rewrit-eOp-tions</li>
+                <li>RewriteEngine</li>
+                <li>RewriteOptions</li>
                 <li>RewriteLog</li>
-                <li>Rewrit-eLo-gLevel</li>
-                <li>Rewrit-eLock</li>
+                <li>RewriteLogLevel</li>
+                <li>RewriteLock</li>
                 <li>RewriteMap</li>
-                <li>Rewrit-eBase</li>
-                <li>Rewrit-eCond</li>
-                <li>Rewrit-eRule</li>
+                <li>RewriteBase</li>
+                <li>RewriteCond</li>
+                <li>RewriteRule</li>
             </ul>
         </div>
     </div>
@@ -139,7 +139,7 @@ title:     mod_rewrite Cheat Sheet
             <h3 class="board-card-title">RewriteCond Flags</h3>
             <ul>
                 <li>NC</li>
-                <li class="tip">Case insens-itive</li>
+                <li class="tip">Case insensitive</li>
                 <li>OR</li>
                 <li class="tip">Combine with next rule using 'OR' instead of the default of 'AND'</li>
             </ul>
@@ -148,34 +148,34 @@ title:     mod_rewrite Cheat Sheet
             <h3 class="board-card-title">Redirection Header Codes</h3>
             <ul>
                 <li>301</li>
-                <li class="tip">Moved perman-ently</li>
+                <li class="tip">Moved permanently</li>
                 <li>302</li>
-                <li class="tip">Moved tempor-arily (default)</li>
+                <li class="tip">Moved temporarily (default)</li>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">Sample Rule: Site Moved</h3>
             <ul>
-                <li class="tip"># Site moved perman-ently</li>
-                <li>Rewrit-eCond   %{HTTP-_HOST}   ^www.d-oma-in.com$   [NC]</li>
-                <li>Rewrit-eRule   ^(.*)$   http:/-/ww-w.d-oma-in2.com/$1   [R=301,L]</li>
-                <li class="tip">Rewrites domain.com to domain-2.com</li>
+                <li class="tip"># Site moved permanently</li>
+                <li>RewriteCond   %{HTTP_HOST}   ^www.domain.com$   [NC]</li>
+                <li>RewriteRule   ^(.*)$   http://www.domain2.com/$1   [R=301,L]</li>
+                <li class="tip">Rewrites domain.com to domain2.com</li>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">Sample Rule: Temporary Page Move</h3>
             <ul>
-                <li class="tip"># Page has moved tempor-arily</li>
-                <li>Rewrit-eRule   ^page.h-tml$   new_pa-ge.html   [R,NC,L]</li>
-                <li class="tip">Rewrites domain.co-m/p-age.html to domain.co-m/n-ew_-pag-e.html</li>
+                <li class="tip"># Page has moved temporarily</li>
+                <li>RewriteRule   ^page.html$   new_page.html   [R,NC,L]</li>
+                <li class="tip">Rewrites domain.com/page.html to domain.com/new_page.html</li>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">Sample Rule: Nice URLs</h3>
             <ul>
                 <li class="tip"># Nice URLs (no query string)</li>
-                <li>Rewrit-eRule   ^([A-Z-a-z-0-9--]+)/?$   catego-rie-s.p-hp?-name=$1 [L]</li>
-                <li class="tip">Rewrites domain.co-m/c-ate-gor-y-n-ame-1/ to domain.co-m/c-ate-gor-ies.ph-p?n-ame-=ca-teg-ory--name-1</li>
+                <li>RewriteRule   ^([A-Za-z0-9]+)/?$   categories.php?name=$1 [L]</li>
+                <li class="tip">Rewrites domain.com/categoryname1/ to domain.com/categories.php?name=category-name1</li>
             </ul>
         </div>
     </div>
@@ -184,13 +184,13 @@ title:     mod_rewrite Cheat Sheet
         <h2 class="board-title">HTTP Headers</h2>
         <div class="board-card">
             <ul>
-                <li>%{HTTP-_US-ER_-AGENT}</li>
-                <li>%{HTTP-_RE-FERER}</li>
-                <li>%{HTTP-_CO-OKIE}</li>
-                <li>%{HTTP-_FO-RWA-RDED}</li>
-                <li>%{HTTP-_HOST}</li>
-                <li>%{HTTP-_PR-OXY-_CO-NNE-CTION}</li>
-                <li>%{HTTP-_AC-CEPT}</li>
+                <li>%{HTTP_USER_AGENT}</li>
+                <li>%{HTTP_REFERER}</li>
+                <li>%{HTTP_COOKIE}</li>
+                <li>%{HTTP_FORWARDED}</li>
+                <li>%{HTTP_HOST}</li>
+                <li>%{HTTP_PROXY_CONNECTION}</li>
+                <li>%{HTTP_ACCEPT}</li>
             </ul>
         </div>
     </div>
@@ -198,13 +198,13 @@ title:     mod_rewrite Cheat Sheet
         <h2 class="board-title">Server Internals</h2>
         <div class="board-card">
             <ul>
-                <li>%{DOCU-MEN-T_ROOT}</li>
-                <li>%{SERV-ER_-ADMIN}</li>
-                <li>%{SERV-ER_-NAME}</li>
-                <li>%{SERV-ER_-ADDR}</li>
-                <li>%{SERV-ER_-PORT}</li>
-                <li>%{SERV-ER_-PRO-TOCOL}</li>
-                <li>%{SERV-ER_-SOF-TWARE}</li>
+                <li>%{DOCUMENT_ROOT}</li>
+                <li>%{SERVER_ADMIN}</li>
+                <li>%{SERVER_NAME}</li>
+                <li>%{SERVER_ADDR}</li>
+                <li>%{SERVER_PORT}</li>
+                <li>%{SERVER_PROTOCOL}</li>
+                <li>%{SERVER_SOFTWARE}</li>
             </ul>
         </div>
     </div>
@@ -212,11 +212,11 @@ title:     mod_rewrite Cheat Sheet
         <h2 class="board-title">Special</h2>
         <div class="board-card">
             <ul>
-                <li>%{API_-VER-SION}</li>
-                <li>%{THE_-REQ-UEST}</li>
-                <li>%{REQU-EST-_URI}</li>
-                <li>%{REQU-EST-_FI-LENAME}</li>
-                <li>%{IS_S-UBREQ}</li>
+                <li>%{API_VERSION}</li>
+                <li>%{THE_REQUEST}</li>
+                <li>%{REQUEST_URI}</li>
+                <li>%{REQUEST_FILENAME}</li>
+                <li>%{IS_SUBREQ}</li>
                 <li>%{HTTPS}</li>
             </ul>
         </div>
@@ -225,16 +225,16 @@ title:     mod_rewrite Cheat Sheet
         <h2 class="board-title">Request</h2>
         <div class="board-card">
             <ul>
-                <li>%{REMO-TE_-ADDR}</li>
-                <li>%{REMO-TE_-HOST}</li>
-                <li>%{REMO-TE_-PORT}</li>
-                <li>%{REMO-TE_-USER}</li>
-                <li>%{REMO-TE_-IDENT}</li>
-                <li>%{REQU-EST-_ME-THOD}</li>
-                <li>%{SCRI-PT_-FIL-ENAME}</li>
-                <li>%{PATH-_INFO}</li>
-                <li>%{QUER-Y_S-TRING}</li>
-                <li>%{AUTH-_TYPE}</li>
+                <li>%{REMOTE_ADDR}</li>
+                <li>%{REMOTE_HOST}</li>
+                <li>%{REMOTE_PORT}</li>
+                <li>%{REMOTE_USER}</li>
+                <li>%{REMOTE_IDENT}</li>
+                <li>%{REQUEST_METHOD}</li>
+                <li>%{SCRIPT_FILENAME}</li>
+                <li>%{PATH_INFO}</li>
+                <li>%{QUERY_STRING}</li>
+                <li>%{AUTH_TYPE}</li>
             </ul>
         </div>
     </div>
@@ -242,13 +242,13 @@ title:     mod_rewrite Cheat Sheet
         <h2 class="board-title">Time</h2>
         <div class="board-card">
             <ul>
-                <li>%{TIME-_YEAR}</li>
-                <li>%{TIME-_MON}</li>
-                <li>%{TIME-_DAY}</li>
-                <li>%{TIME-_HOUR}</li>
-                <li>%{TIME-_MIN}</li>
-                <li>%{TIME-_SEC}</li>
-                <li>%{TIME-_WDAY}</li>
+                <li>%{TIME_YEAR}</li>
+                <li>%{TIME_MON}</li>
+                <li>%{TIME_DAY}</li>
+                <li>%{TIME_HOUR}</li>
+                <li>%{TIME_MIN}</li>
+                <li>%{TIME_SEC}</li>
+                <li>%{TIME_WDAY}</li>
                 <li>%{TIME}</li>
             </ul>
         </div>
