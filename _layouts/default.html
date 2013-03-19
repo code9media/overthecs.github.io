@@ -20,14 +20,23 @@
         {% include detail_nav.html %}
         {{ content }}
 
-        <div class="board board-detail-ad hide">
+        <!--<div class="board board-detail-ad hide">-->
+        <div class="board hide" id="detail-ad">
             <h2 class="board-title">Support Us</h2>
             <script type="text/javascript"><!--
                 google_ad_client = "ca-pub-5503280202576307";
+                /* overapi-160 */
+                google_ad_slot = "2656228683";
+                google_ad_width = 160;
+                google_ad_height = 600;
+                //-->
+            </script>
+            <script type="text/javascript"><!--
+                //google_ad_client = "ca-pub-5503280202576307";
                 /* overapi-tools */
-                google_ad_slot = "0215957718";
-                google_ad_width = 728;
-                google_ad_height = 90;
+                //google_ad_slot = "0215957718";
+                //google_ad_width = 728;
+                //google_ad_height = 90;
                 //-->
             </script>
             <script type="text/javascript"
@@ -36,8 +45,9 @@
         </div>
 
         <script type="text/javascript">
-            //$('.content').append($('#detail-ad'));
-            $('.board-detail-ad').removeClass('hide');
+            $('.content').append($('#detail-ad'));
+            $('#detail-ad').removeClass('hide');
+            //$('.board-detail-ad').removeClass('hide');
             //mixpanel.track('Page Loading',{'PageURL':location.href});
         </script>
 
