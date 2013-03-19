@@ -891,69 +891,321 @@ title:     PHP Cheat Sheet
     </div>
 
     <div class="board">
-        <h2 class="board-title">MySQL</h2>
+        <h2 class="board-title">MySQLi</h2>
         <div class="board-card">
-            <h3 class="board-card-title">MySQL Functions</h3>
+            <h3 class="board-card-title">MySQLi Class</h3>
             <ul>
-                <li><a href="http://php.net/manual/en/function.mysql-affected-rows.php" title="Returns the number of affected rows in the previous MySQL operation">mysql_affected_rows()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-client-encoding.php" title="Returns the name of the character set for the current connection">mysql_client_encoding()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-close.php" title="Closes a non-persistent MySQL connection">mysql_close()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-connect.php" title="Opens a non-persistent MySQL connection">mysql_connect()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-data-seek.php" title="Moves the record pointer">mysql_data_seek()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-db-name.php" title="Returns a database name from a call to mysql_list_dbs()">mysql_db_name()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-errno.php" title="Returns the error number of the last MySQL operation">mysql_errno()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-error.php" title="Returns the error description of the last MySQL operation">mysql_error()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-fetch-array.php" title="Returns a row from a recordset as an associative array and/or a numeric array">mysql_fetch_array()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-fetch-assoc.php" title="Returns a row from a recordset as an associative array">mysql_fetch_assoc()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-fetch-field.php" title="Returns column info from a recordset as an object">mysql_fetch_field()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-fetch-lengths.php" title="Returns the length of the contents of each field in a result row">mysql_fetch_lengths()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-fetch-object.php" title="Returns a row from a recordset as an object">mysql_fetch_object()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-fetch-row.php" title="Returns a row from a recordset as a numeric array">mysql_fetch_row()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-field-flags.php" title="Returns the flags associated with a field in a recordset">mysql_field_flags()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-field-len.php" title="Returns the maximum length of a field in a recordset">mysql_field_len()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-field-name.php" title="Returns the name of a field in a recordset">mysql_field_name()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-field-seek.php" title="Moves the result pointer to a specified field">mysql_field_seek()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-field-table.php" title="Returns the name of the table the specified field is in">mysql_field_table()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-field-type.php" title="Returns the type of a field in a recordset">mysql_field_type()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-free-result.php" title="Free result memory">mysql_free_result()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-get-client-info.php" title="Returns MySQL client info">mysql_get_client_info()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-get-host-info.php" title="Returns MySQL host info">mysql_get_host_info()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-get-proto-info.php" title="Returns MySQL protocol info">mysql_get_proto_info()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-get-server-info.php" title="Returns MySQL server info">mysql_get_server_info()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-info.php" title="Returns information about the last query">mysql_info()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-insert-id.php" title="Returns the AUTO_INCREMENT ID generated from the previous INSERT operation">mysql_insert_id()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-list-dbs.php" title="Lists available databases on a MySQL server">mysql_list_dbs()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-list-processes.php" title="Lists MySQL processes">mysql_list_processes()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-num-fields.php" title="Returns the number of fields in a recordset">mysql_num_fields()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-num-rows.php" title="Returns the number of rows in a recordset">mysql_num_rows()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-pconnect.php" title="Opens a persistent MySQL connection">mysql_pconnect()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-ping.php" title="Pings a server connection or reconnects if there is no connection">mysql_ping()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-query.php" title="Executes a query on a MySQL database">mysql_query()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-real-escape-string.php" title="Escapes a string for use in SQL statements">mysql_real_escape_string()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-result.php" title="Returns the value of a field in a recordset">mysql_result()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-select-db.php" title="Sets the active MySQL database">mysql_select_db()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-stat.php" title="Returns the current system status of the MySQL server">mysql_stat()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-thread-id.php" title="Returns the current thread ID">mysql_thread_id()</a></li>
-                <li><a href="http://php.net/manual/en/function.mysql-unbuffered-query.php" title="Executes a query on a MySQL database (without fetching / buffering the result)">mysql_unbuffered_query()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.affected-rows.php" title="Gets the number of affected rows in a previous MySQL operation">mysqli::$affected_rows</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.autocommit.php" title="Turns on or off auto-committing database modifications">mysqli::autocommit()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.change-user.php" title="Changes the user of the specified database connection">mysqli::change_user()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.character-set-name.php" title="Returns the default character set for the database connection">mysqli::character_set_name()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.client-info.php" title="Get MySQL client info">mysqli::$client_info</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.client-version.php" title="Returns the MySQL client version as a string">mysqli::$client_version</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.close.php" title="Closes a previously opened database connection">mysqli::close()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.commit.php" title="Commits the current transaction">mysqli::commit()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.connect-errno.php" title="Returns the error code from last connect call">mysqli::$connect_errno</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.connect-error.php" title="Returns a string description of the last connect error">mysqli::$connect_error</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.construct.php" title="Open a new connection to the MySQL server">mysqli::__construct()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.debug.php" title="Performs debugging operations">mysqli::debug()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.dump-debug-info.php" title="Dump debugging information into the log">mysqli::dump_debug_info()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.errno.php" title="Returns the error code for the most recent function call">mysqli::$errno</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.error-list.php" title="Returns a list of errors from the last command executed">mysqli::$error_list</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.error.php" title="Returns a string description of the last error">mysqli::$error</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.field-count.php" title="Returns the number of columns for the most recent query">mysqli::$field_count</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-charset.php" title="Returns a character set object">mysqli::get_charset()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-client-info.php" title="Get MySQL client info">mysqli::get_client_info()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-client-stats.php" title="Returns client per-process statistics">mysqli_get_client_stats()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-client-version.php" title="Returns the MySQL client version as a string">mysqli_get_client_version()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-connection-stats.php" title="Returns statistics about the client connection">mysqli::get_connection_stats()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-host-info.php" title="Returns a string representing the type of connection used">mysqli::$host_info</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-proto-info.php" title="Returns the version of the MySQL protocol used">mysqli::$protocol_version</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-server-info.php" title="Returns the version of the MySQL server">mysqli::$server_info</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-server-version.php" title="Returns the version of the MySQL server as an integer">mysqli::$server_version</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.get-warnings.php" title="Get result of SHOW WARNINGS">mysqli::get_warnings()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.info.php" title="Retrieves information about the most recently executed query">mysqli::$info</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.init.php" title="Initializes MySQLi and returns a resource for use with mysqli_real_connect()">mysqli::init()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.insert-id.php" title="Returns the auto generated id used in the last query">mysqli::$insert_id</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.kill.php" title="Asks the server to kill a MySQL thread">mysqli::kill()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.more-results.php" title="Check if there are any more query results from a multi query">mysqli::more_results()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.multi-query.php" title="Performs a query on the database">mysqli::multi_query()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.next-result.php" title="Prepare next result from multi_query">mysqli::next_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.options.php" title="Set options">mysqli::options()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.ping.php" title="Pings a server connection, or tries to reconnect if the connection has gone down">mysqli::ping()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.poll.php" title="Poll connections">mysqli::poll()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.prepare.php" title="Prepare an SQL statement for execution">mysqli::prepare()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.query.php" title="Performs a query on the database">mysqli::query()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.real-connect.php" title="Opens a connection to a mysql server">mysqli::real_connect()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.real-escape-string.php" title="Escapes special characters in a string for use in an SQL statement, taking into account the current charset of the connection">mysqli::real_escape_string()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.real-query.php" title="Execute an SQL query">mysqli::real_query()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.reap-async-query.php" title="Get result from async query">mysqli::reap_async_query()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.refresh.php" title="Refreshes">mysqli::refresh()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.rollback.php" title="Rolls back current transaction">mysqli::rollback()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.rpl-query-type.php" title="Returns RPL query type">mysqli::rpl_query_type()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.select-db.php" title="Selects the default database for database queries">mysqli::select_db()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.send-query.php" title="Send the query and return">mysqli::send_query()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.set-charset.php" title="Sets the default client character set">mysqli::set_charset()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.set-local-infile-default.php" title="Unsets user defined handler for load local infile command">mysqli::set_local_infile_default()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.set-local-infile-handler.php" title="Set callback function for LOAD DATA LOCAL INFILE command">mysqli::set_local_infile_handler()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.sqlstate.php" title="Returns the SQLSTATE error from previous MySQL operation">mysqli::$sqlstate</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.ssl-set.php" title="Used for establishing secure connections using SSL">mysqli::ssl_set()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.stat.php" title="Gets the current system status">mysqli::stat()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.stmt-init.php" title="Initializes a statement and returns an object for use with mysqli_stmt_prepare">mysqli::stmt_init()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.store-result.php" title="Transfers a result set from the last query">mysqli::store_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.thread-id.php" title="Returns the thread ID for the current connection">mysqli::$thread_id</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.thread-safe.php" title="Returns whether thread safety is given or not">mysqli::thread_safe()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.use-result.php" title="Initiate a result set retrieval">mysqli::use_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli.warning-count.php" title="Returns the number of warnings from the last query for the given link">mysqli::$warning_count</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">MySQLi Stmt Class</h3>
+            <ul>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.affected-rows.php" title="Returns the total number of rows changed, deleted, or inserted by the last executed statement">mysqli_stmt::$affected_rows</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.attr-get.php" title="Used to get the current value of a statement attribute">mysqli_stmt::attr_get()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.attr-set.php" title="Used to modify the behavior of a prepared statement">mysqli_stmt::attr_set()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.bind-param.php" title="Binds variables to a prepared statement as parameters">mysqli_stmt::bind_param()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.bind-result.php" title="Binds variables to a prepared statement for result storage">mysqli_stmt::bind_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.close.php" title="Closes a prepared statement">mysqli_stmt::close()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.data-seek.php" title="Seeks to an arbitrary row in statement result set">mysqli_stmt::data_seek()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.errno.php" title="Returns the error code for the most recent statement call">mysqli_stmt::$errno</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.error-list.php" title="Returns a list of errors from the last statement executed">mysqli_stmt::$error_list</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.error.php" title="Returns a string description for last statement error">mysqli_stmt::$error</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.execute.php" title="Executes a prepared Query">mysqli_stmt::execute()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.fetch.php" title="Fetch results from a prepared statement into the bound variables">mysqli_stmt::fetch()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.field-count.php" title="Returns the number of field in the given statement">mysqli_stmt::$field_count</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.free-result.php" title="Frees stored result memory for the given statement handle">mysqli_stmt::free_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.get-result.php" title="Gets a result set from a prepared statement">mysqli_stmt::get_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.get-warnings.php" title="Get result of SHOW WARNINGS">mysqli_stmt::get_warnings()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.insert-id.php" title="Get the ID generated from the previous INSERT operation">mysqli_stmt::$insert_id</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.more-results.php" title="Check if there are more query results from a multiple query">mysqli_stmt::more_results()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.next-result.php" title="Reads the next result from a multiple query">mysqli_stmt::next_result()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.num-rows.php" title="Return the number of rows in statements result set">mysqli_stmt::$num_rows</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.param-count.php" title="Returns the number of parameter for the given statement">mysqli_stmt::$param_count</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.prepare.php" title="Prepare an SQL statement for execution">mysqli_stmt::prepare()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.reset.php" title="Resets a prepared statement">mysqli_stmt::reset()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.result-metadata.php" title="Returns result set metadata from a prepared statement">mysqli_stmt::result_metadata()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.send-long-data.php" title="Send data in blocks">mysqli_stmt::send_long_data()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.sqlstate.php" title="Returns SQLSTATE error from previous statement operation">mysqli_stmt::$sqlstate</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-stmt.store-result.php" title="Transfers a result set from a prepared statement">mysqli_stmt::store_result()</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">MySQLi Result Class</h3>
+            <ul>
+                <li><a href="http://php.net/manual/en/mysqli-result.current-field.php" title="Get current field offset of a result pointer">mysqli_result::$current_field</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.data-seek.php" title="Adjusts the result pointer to an arbitrary row in the result">mysqli_result::data_seek()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-all.php" title="Fetches all result rows as an associative array, a numeric array, or both">mysqli_result::fetch_all()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-array.php" title="Fetch a result row as an associative, a numeric array, or both">mysqli_result::fetch_array()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-assoc.php" title="Fetch a result row as an associative array">mysqli_result::fetch_assoc()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-field-direct.php" title="Fetch meta-data for a single field">mysqli_result::fetch_field_direct()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-field.php" title="Returns the next field in the result set">mysqli_result::fetch_field()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-fields.php" title="Returns an array of objects representing the fields in a result set">mysqli_result::fetch_fields()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-object.php" title="Returns the current row of a result set as an object">mysqli_result::fetch_object()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.fetch-row.php" title="Get a result row as an enumerated array">mysqli_result::fetch_row()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.field-count.php" title="Get the number of fields in a result">mysqli_result::$field_count</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.field-seek.php" title="Set result pointer to a specified field offset">mysqli_result::field_seek()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.free.php" title="Frees the memory associated with a result">mysqli_result::free()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.lengths.php" title="Returns the lengths of the columns of the current row in the result set">mysqli_result::$lengths</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-result.num-rows.php" title="Gets the number of rows in a result">mysqli_result::$num_rows</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">MySQLi Driver Class</h3>
+            <ul>
+                <li><a href="http://php.net/manual/en/mysqli-driver.embedded-server-end.php" title="Stop embedded server">mysqli_driver::embedded_server_end()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-driver.embedded-server-start.php" title="Initialize and start embedded server">mysqli_driver::embedded_server_start()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-driver.report-mode.php" title="Enables or disables internal report functions">mysqli_driver::$report_mode</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-driver.php" title="The Client API header version">mysqli_driver::$client_info</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-driver.php" title="The Client version">mysqli_driver::$client_version</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-driver.php" title="The MySQLi Driver version">mysqli_driver::$driver_version</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-driver.php" title="Whether MySQLi Embedded support is enabled">mysqli_driver::$embedded</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-driver.php" title="Allow or prevent reconnect (see the mysqli.reconnect INI directive)">mysqli_driver::$reconnect</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-driver.php" title="Set to MYSQLI_REPORT_OFF, MYSQLI_REPORT_ALL or any combination of MYSQLI_REPORT_STRICT (throw Exceptions for errors), MYSQLI_REPORT_ERROR (report errors) and MYSQLI_REPORT_INDEX (errors regarding indexes).">mysqli_driver::$report_mode</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">MySQLi Warning Class</h3>
+            <ul>
+                <li><a href="http://php.net/manual/en/mysqli-warning.construct.php" title="The __construct purpose">mysqli_warning::__construct()</a></li>
+                <li><a href="http://php.net/manual/en/mysqli-warning.next.php" title="The next purpose">mysqli_warning::next()</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-warning.php" title="Message string">mysqli_warning::$message</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-warning.php" title="SQL state">mysqli_warning::$sqlstate</a></li>
+                <li><a href="http://php.net/manual/en/class.mysqli-warning.php" title="The MySQLi Driver version">mysqli_warning::$errno</a></li>
             </ul>
         </div>
         <div class="board-card">
             <h3 class="board-card-title">MySQL Constants</h3>
             <ul>
-                <li>MYSQL_CLIENT_COMPRESS</li>
+                <li>MYSQLI_READ_DEFAULT_GROUP</li>
+                <li class="tip">Read options from the named group from my.cnf or the file specified with MYSQLI_READ_DEFAULT_FILE</li>
+                <li>MYSQLI_READ_DEFAULT_FILE</li>
+                <li class="tip">Read options from the named option file instead of from my.cnf</li>
+                <li>MYSQLI_OPT_CONNECT_TIMEOUT</li>
+                <li class="tip">Connect timeout in seconds</li>
+                <li>MYSQLI_OPT_LOCAL_INFILE</li>
+                <li class="tip">Enables command LOAD LOCAL INFILE</li>
+                <li>MYSQLI_INIT_COMMAND</li>
+                <li class="tip">Command to execute when connecting to MySQL server. Will automatically be re-executed when reconnecting.</li>
+                <li>MYSQLI_CLIENT_SSL</li>
+                <li class="tip">Use SSL (encrypted protocol). This option should not be set by application programs; it is set internally in the MySQL client library</li>
+                <li>MYSQLI_CLIENT_COMPRESS</li>
                 <li class="tip">Use compression protocol</li>
-                <li>MYSQL_CLIENT_IGNORE_SPACE</li>
-                <li class="tip">Allow space after function names</li>
-                <li>MYSQL_CLIENT_INTERACTIVE</li>
-                <li class="tip">Allow interactive timeout seconds  of inactivity before closing the connection</li>
-                <li>MYSQL_CLIENT_SSL</li>
-                <li class="tip">Use SSL encryption (only available with version 4+ of the MySQL client library)</li>
-                <li>MYSQL_ASSOC</li>
-                <li class="tip">Columns are returned into the array with the fieldname as the array index</li>
-                <li>MYSQL_BOTH</li>
-                <li class="tip">Columns are returned into the array having both a numerical index and the fieldname as the array index</li>
-                <li>MYSQL_NUM</li>
-                <li class="tip">Columns are returned into the array having a numerical index (index starts at 0)</li>
+                <li>MYSQLI_CLIENT_INTERACTIVE</li>
+                <li class="tip">Allow interactive_timeout seconds (instead of wait_timeout seconds) of inactivity before closing the connection. The client's session wait_timeout variable will be set to the value of the session interactive_timeout variable.</li>
+                <li>MYSQLI_CLIENT_IGNORE_SPACE</li>
+                <li class="tip">Allow spaces after function names. Makes all functions names reserved words.</li>
+                <li>MYSQLI_CLIENT_NO_SCHEMA</li>
+                <li class="tip">Don't allow the db_name.tbl_name.col_name syntax.</li>
+                <li>MYSQLI_CLIENT_MULTI_QUERIES</li>
+                <li class="tip">Allows multiple semicolon-delimited queries in a single mysqli_query() call.</li>
+                <li>MYSQLI_STORE_RESULT</li>
+                <li class="tip">For using buffered resultsets</li>
+                <li>MYSQLI_USE_RESULT</li>
+                <li class="tip">For using unbuffered resultsets</li>
+                <li>MYSQLI_ASSOC</li>
+                <li class="tip">Columns are returned into the array having the fieldname as the array index.</li>
+                <li>MYSQLI_NUM</li>
+                <li class="tip">Columns are returned into the array having an enumerated index.</li>
+                <li>MYSQLI_BOTH</li>
+                <li class="tip">Columns are returned into the array having both a numerical index and the fieldname as the associative index.</li>
+                <li>MYSQLI_NOT_NULL_FLAG</li>
+                <li class="tip">Indicates that a field is defined as NOT NULL</li>
+                <li>MYSQLI_PRI_KEY_FLAG</li>
+                <li class="tip">Field is part of a primary index</li>
+                <li>MYSQLI_UNIQUE_KEY_FLAG</li>
+                <li class="tip">Field is part of a unique index.</li>
+                <li>MYSQLI_MULTIPLE_KEY_FLAG</li>
+                <li class="tip">Field is part of an index.</li>
+                <li>MYSQLI_BLOB_FLAG</li>
+                <li class="tip">Field is defined as BLOB</li>
+                <li>MYSQLI_UNSIGNED_FLAG</li>
+                <li class="tip">Field is defined as UNSIGNED</li>
+                <li>MYSQLI_ZEROFILL_FLAG</li>
+                <li class="tip">Field is defined as ZEROFILL</li>
+                <li>MYSQLI_AUTO_INCREMENT_FLAG</li>
+                <li class="tip">Field is defined as AUTO_INCREMENT</li>
+                <li>MYSQLI_TIMESTAMP_FLAG</li>
+                <li class="tip">Field is defined as TIMESTAMP</li>
+                <li>MYSQLI_SET_FLAG</li>
+                <li class="tip">Field is defined as SET</li>
+                <li>MYSQLI_NUM_FLAG</li>
+                <li class="tip">Field is defined as NUMERIC</li>
+                <li>MYSQLI_PART_KEY_FLAG</li>
+                <li class="tip">Field is part of an multi-index</li>
+                <li>MYSQLI_GROUP_FLAG</li>
+                <li class="tip">Field is part of GROUP BY</li>
+                <li>MYSQLI_TYPE_DECIMAL</li>
+                <li class="tip">Field is defined as DECIMAL</li>
+                <li>MYSQLI_TYPE_NEWDECIMAL</li>
+                <li class="tip">Precision math DECIMAL or NUMERIC field (MySQL 5.0.3 and up)</li>
+                <li>MYSQLI_TYPE_BIT</li>
+                <li class="tip">Field is defined as BIT (MySQL 5.0.3 and up)</li>
+                <li>MYSQLI_TYPE_TINY</li>
+                <li class="tip">Field is defined as TINYINT</li>
+                <li>MYSQLI_TYPE_SHORT</li>
+                <li class="tip">Field is defined as SMALLINT</li>
+                <li>MYSQLI_TYPE_LONG</li>
+                <li class="tip">Field is defined as INT</li>
+                <li>MYSQLI_TYPE_FLOAT</li>
+                <li class="tip">Field is defined as FLOAT</li>
+                <li>MYSQLI_TYPE_DOUBLE</li>
+                <li class="tip">Field is defined as DOUBLE</li>
+                <li>MYSQLI_TYPE_NULL</li>
+                <li class="tip">Field is defined as DEFAULT NULL</li>
+                <li>MYSQLI_TYPE_TIMESTAMP</li>
+                <li class="tip">Field is defined as TIMESTAMP</li>
+                <li>MYSQLI_TYPE_LONGLONG</li>
+                <li class="tip">Field is defined as BIGINT</li>
+                <li>MYSQLI_TYPE_INT24</li>
+                <li class="tip">Field is defined as MEDIUMINT</li>
+                <li>MYSQLI_TYPE_DATE</li>
+                <li class="tip">Field is defined as DATE</li>
+                <li>MYSQLI_TYPE_TIME</li>
+                <li class="tip">Field is defined as TIME</li>
+                <li>MYSQLI_TYPE_DATETIME</li>
+                <li class="tip">Field is defined as DATETIME</li>
+                <li>MYSQLI_TYPE_YEAR</li>
+                <li class="tip">Field is defined as YEAR</li>
+                <li>MYSQLI_TYPE_NEWDATE</li>
+                <li class="tip">Field is defined as DATE</li>
+                <li>MYSQLI_TYPE_INTERVAL</li>
+                <li class="tip">Field is defined as INTERVAL</li>
+                <li>MYSQLI_TYPE_ENUM</li>
+                <li class="tip">Field is defined as ENUM</li>
+                <li>MYSQLI_TYPE_SET</li>
+                <li class="tip">Field is defined as SET</li>
+                <li>MYSQLI_TYPE_TINY_BLOB</li>
+                <li class="tip">Field is defined as TINYBLOB</li>
+                <li>MYSQLI_TYPE_MEDIUM_BLOB</li>
+                <li class="tip">Field is defined as MEDIUMBLOB</li>
+                <li>MYSQLI_TYPE_LONG_BLOB</li>
+                <li class="tip">Field is defined as LONGBLOB</li>
+                <li>MYSQLI_TYPE_BLOB</li>
+                <li class="tip">Field is defined as BLOB</li>
+                <li>MYSQLI_TYPE_VAR_STRING</li>
+                <li class="tip">Field is defined as VARCHAR</li>
+                <li>MYSQLI_TYPE_STRING</li>
+                <li class="tip">Field is defined as CHAR or BINARY</li>
+                <li>MYSQLI_TYPE_CHAR</li>
+                <li class="tip">Field is defined as TINYINT. For CHAR, see MYSQLI_TYPE_STRING</li>
+                <li>MYSQLI_TYPE_GEOMETRY</li>
+                <li class="tip">Field is defined as GEOMETRY</li>
+                <li>MYSQLI_NEED_DATA</li>
+                <li class="tip">More data available for bind variable</li>
+                <li>MYSQLI_NO_DATA</li>
+                <li class="tip">No more data available for bind variable</li>
+                <li>MYSQLI_DATA_TRUNCATED</li>
+                <li class="tip">Data truncation occurred. Available since PHP 5.1.0 and MySQL 5.0.5.</li>
+                <li>MYSQLI_ENUM_FLAG</li>
+                <li class="tip">Field is defined as ENUM. Available since PHP 5.3.0.</li>
+                <li>MYSQLI_CURSOR_TYPE_FOR_UPDATE</li>
+                <li class="tip"></li>
+                <li>MYSQLI_CURSOR_TYPE_NO_CURSOR</li>
+                <li class="tip"></li>
+                <li>MYSQLI_CURSOR_TYPE_READ_ONLY</li>
+                <li class="tip"></li>
+                <li>MYSQLI_CURSOR_TYPE_SCROLLABLE</li>
+                <li class="tip"></li>
+                <li>MYSQLI_STMT_ATTR_CURSOR_TYPE</li>
+                <li class="tip"></li>
+                <li>MYSQLI_STMT_ATTR_PREFETCH_ROWS</li>
+                <li class="tip"></li>
+                <li>MYSQLI_STMT_ATTR_UPDATE_MAX_LENGTH</li>
+                <li class="tip"></li>
+                <li>MYSQLI_SET_CHARSET_NAME</li>
+                <li class="tip"></li>
+                <li>MYSQLI_REPORT_INDEX</li>
+                <li class="tip">Report if no index or bad index was used in a query.</li>
+                <li>MYSQLI_REPORT_ERROR</li>
+                <li class="tip">Report errors from mysqli function calls.</li>
+                <li>MYSQLI_REPORT_STRICT</li>
+                <li class="tip">Throw a mysqli_sql_exception for errors instead of warnings.</li>
+                <li>MYSQLI_REPORT_ALL</li>
+                <li class="tip">Set all options on (report all).</li>
+                <li>MYSQLI_REPORT_OFF</li>
+                <li class="tip">Turns reporting off.</li>
+                <li>MYSQLI_DEBUG_TRACE_ENABLED</li>
+                <li class="tip">Is set to 1 if mysqli_debug() functionality is enabled.</li>
+                <li>MYSQLI_SERVER_QUERY_NO_GOOD_INDEX_USED</li>
+                <li class="tip"></li>
+                <li>MYSQLI_SERVER_QUERY_NO_INDEX_USED</li>
+                <li class="tip"></li>
+                <li>MYSQLI_REFRESH_GRANT</li>
+                <li class="tip">Refreshes the grant tables.</li>
+                <li>MYSQLI_REFRESH_LOG</li>
+                <li class="tip">Flushes the logs, like executing the FLUSH LOGS SQL statement.</li>
+                <li>MYSQLI_REFRESH_TABLES</li>
+                <li class="tip">Flushes the table cache, like executing the FLUSH TABLES SQL statement.</li>
+                <li>MYSQLI_REFRESH_HOSTS</li>
+                <li class="tip">Flushes the host cache, like executing the FLUSH HOSTS SQL statement.</li>
+                <li>MYSQLI_REFRESH_STATUS</li>
+                <li class="tip">Reset the status variables, like executing the FLUSH STATUS SQL statement.</li>
+                <li>MYSQLI_REFRESH_THREADS</li>
+                <li class="tip">Flushes the thread cache.</li>
+                <li>MYSQLI_REFRESH_SLAVE</li>
+                <li class="tip">On a slave replication server: resets the master server information, and restarts the slave. Like executing the RESET SLAVE SQL statement.</li>
+                <li>MYSQLI_REFRESH_MASTER</li>
+                <li class="tip">On a master replication server: removes the binary log files listed in the binary log index, and truncates the index file. Like executing the RESET MASTER SQL statement.</li>
             </ul>
         </div>
     </div>
