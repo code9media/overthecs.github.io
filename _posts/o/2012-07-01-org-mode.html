@@ -1,9 +1,9 @@
 ---
-layout:    more
+layout:    default
 title:     Org-mode Cheat Sheet 
 ---
-<div class="content content-400">
-    <div class="board board-326">
+<div class="content">
+    <div class="board">
         <h2 class="board-title">Resource</h2>
         <div class="board-card">
             <h3 class="board-card-title">Online</h3>
@@ -17,9 +17,110 @@ title:     Org-mode Cheat Sheet
             <ul>
                 <li><a href="http://orgmode.org/orgcard.pdf">Org-Mode Reference Card [.pdf]</a></li>
                 <li><a href="/static/cs/orgcard.pdf">Org-Mode Reference Card [backup]</a></li>
-                <li><a href="http://cheat.errtheblog.com/s/orgmode/">$ cheat orgmode - Org-Mode Reference Card by by Camping, Heroku and, to a lesser extent, GitHub [html] (cheat.errtheblog.com)</a></li>
-                <li><a href="/static/cs/org-mode.pdf">Org-mode cheat sheet (russian) [.pdf]</li>
+                <li><a href="http://cheat.errtheblog.com/s/orgmode/">Org-Mode Reference Card</a></li>
+                <li><a href="/static/cs/org-mode.pdf">Org-mode cheat sheet (russian) [.pdf]</a></li>
             </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Structural markup elements</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Document title</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Document-title.html#Document-title" title="The title of the exported document">#+TITLE: This is the title of the document</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Headings and sections</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Headings-and-sections.html#Headings-and-sections" title="How many levels will be used as headings">#+OPTIONS: H:4</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Table of contents</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Table-of-contents.html#Table-of-contents" title="Only to two levels in TOC">#+OPTIONS: toc:2</a></li>
+                <li><a href="http://orgmode.org/manual/Table-of-contents.html#Table-of-contents" title="No TOC at all">#+OPTIONS: toc:nil</a></li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Text before the first headline</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Initial-text.html#Initial-text" title="deprecated.defines a menu list"> </a></li>
+                <li class="tip">
+                #+OPTIONS: skip:t <br>
+                #+TEXT: This text will go before the *first* headline. <br>
+                #+TEXT: [TABLE-OF-CONTENTS] <br>
+                #+TEXT: This goes between the table of contents and the *first* headline
+                </li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Paragraphs</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Paragraphs.html#Paragraphs" title="Keep the line breaks in a region">#+BEGIN_VERSE</a></li>
+                <li><a href="http://orgmode.org/manual/Paragraphs.html#Paragraphs" title="Paragraph that is indented on both the left and the right margin">#+BEGIN_QUOTE</a></li>
+                <li><a href="http://orgmode.org/manual/Paragraphs.html#Paragraphs" title="Centered text">#+BEGIN_CENTER</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="board">
+        <h2 class="board-title">Formatting</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Format</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace" title="Bold">*bold*</a></li>
+                <li><a href="http://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace" title="Italic">/italic/</a></li>
+                <li><a href="http://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace" title="Underlined">_underlined_</a></li>
+                <li><a href="http://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace" title="Code">=code=</a></li>
+                <li><a href="http://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace" title="Verbatim">~verbatim~</a></li>
+                <li><a href="http://orgmode.org/manual/Emphasis-and-monospace.html#Emphasis-and-monospace" title="Strike-through">+strike-through+</a></li>
+            </u>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Horizontal rules</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Horizontal-rules.html#Horizontal-rules" title="At least 5 dashes">-----</a></li>
+            </u>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Lists</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Unordered list</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Unordered list">- Bullet</a></li>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Unordered list">+ Bullet</a></li>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Unordered list">* Bullet</a></li>
+            </u>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Ordered list</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Ordered list">1. Bullet</a></li>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Ordered list">2. Bullet</a></li>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Ordered list">3) Bullet</a></li>
+            </u>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Description list</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Plain-lists.html#Plain-lists" title="Description list">+ Term :: Long description text</a></li>
+            </u>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Headline</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Headline</h3>
+            <ul>
+                <li><a href="http://orgmode.org/manual/Headlines.html#Headlines" title="Top level headline">* Top level headline</a></li>
+                <li><a href="http://orgmode.org/manual/Headlines.html#Headlines" title="Second level">** Second level</a></li>
+                <li><a href="http://orgmode.org/manual/Headlines.html#Headlines" title="3rd level">*** 3rd level</a></li>
+            </u>
         </div>
     </div>
 </div>
