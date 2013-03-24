@@ -48,4 +48,23 @@ title:     R Cheat Sheet
             </ul>
         </div>
     </div>
+
+    <div class="board">
+        <h2 class="board-title">Input / Output</h2>
+        <div class="board-card">
+            <ul>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/source.html" title="includes and executes my.R in this place">source("my.R")</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/data.html" title="loads specified data sets">data(f)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/library.html" title="load add-on packages">library(s)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="reads a file in table format and creates a data frame from it">read.table(f)</a></li>
+                <li class="tip">sep="" is any whitespace by default</li>
+                <li class="tip">header=TRUE to read the first line as a header of column names</li>
+                <li class="tip">as.is=TRUE to prevent character vectors from being converted to factors</li>
+                <li class="tip">comment.char="" to prevent "#" from being interpreted as a comment</li>
+                <li class="tip">skip=n to skip n lines before reading data</li>
+                <li class="tip">see the help for options on row naming, NA treatment, and others</li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="id. but with defaults set for reading comma-delimited files">read.csv(f,header=TRUE)</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
