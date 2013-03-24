@@ -1,6 +1,6 @@
 ---
 layout:    more
-title:     R Cheat Sheet 
+title:     R Cheat Sheet
 ---
 <div class="content content-400">
     <div class="board board-326">
@@ -25,6 +25,45 @@ title:     R Cheat Sheet
             <h3 class="board-card-title">Related</h3>
             <ul>
                 <li><a href="/statistics/" title="Statistics Cheat Sheet">Statistics</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Help</h2>
+        <div class="board-card">
+            <ul>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/help.html" title="documentation on topic">help(topic)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/zMachine.html" title="help about maximum values on your machine">?.Machine</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/help.search.html" title="search the help system">help.search("topic")</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/apropos.html" title="the names of all objects in the search list matching the regular expression 'topic'">apropos("topic")</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/help.start.html" title="start the HTML version of help">help.start()</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/str.html" title="display the internal structure of an R object">str(a)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/summary.html" title="gives a 'summary' of a, usually a statistical summary but it is generic meaning it has different operations for different classes of a">summary(a)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/ls.html" title="show objects in the search path; specify pat='pat' to search on a pattern">ls()</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/ls_str.html" title="str() for each variable in the search path">ls.str()</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/list.files.html" title="show files in the current directory">dir()</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/methods/html/Methods.html" title="shows S3 methods of a">methods(a)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/methods/html/Classes.html" title="lists all the methods to handle objects of class a">methods(class=class(a))</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Input / Output</h2>
+        <div class="board-card">
+            <ul>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/source.html" title="includes and executes my.R in this place">source("my.R")</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/data.html" title="loads specified data sets">data(f)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/library.html" title="load add-on packages">library(s)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="reads a file in table format and creates a data frame from it">read.table(f)</a></li>
+                <li class="tip">sep="" is any whitespace by default</li>
+                <li class="tip">header=TRUE to read the first line as a header of column names</li>
+                <li class="tip">as.is=TRUE to prevent character vectors from being converted to factors</li>
+                <li class="tip">comment.char="" to prevent "#" from being interpreted as a comment</li>
+                <li class="tip">skip=n to skip n lines before reading data</li>
+                <li class="tip">see the help for options on row naming, NA treatment, and others</li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="id. but with defaults set for reading comma-delimited files">read.csv(f,header=TRUE)</a></li>
             </ul>
         </div>
     </div>
