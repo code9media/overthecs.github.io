@@ -1341,6 +1341,30 @@ title:     PHP Cheat Sheet
             </ul>
         </div>
     </div>
+    
+        <div class="board">
+		<h2 class="board-title">OOP</h2>
+		<div class="board-card">
+			<h3 class="board-card-title">Magic Methods</h3>
+			<ul>
+				<li><a href="http://www.php.net/manual/en/language.oop5.decon.php#object.construct" title="Classes which have a constructor method call this method on each newly-created object, so it is suitable for any initialization that the object may need before it is used. ">__construct()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.decon.php#object.destruct" title="Called as soon as there are no other references to a particular object, or in any order during the shutdown sequence. ">__destruct()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.callstatic" title="Triggered when invoking inaccessible methods in a static context. ">__callStatic()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.call" title="Triggered when invoking inaccessible methods in an object context. ">__call()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.get" title="Utilized for reading data from inaccessible properties. ">__get()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.set" title="Run when writing data to inaccessible properties. ">__set()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.isset" title="Triggered by calling isset() or empty() on inaccessible properties. ">__isset()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.unset" title="Invoked when unset() is used on inaccessible properties. ">__unset()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.magic.php#object.sleep" title=" The intended use of __sleep() is to commit pending data or perform similar cleanup tasks. Also, the function is useful if you have very large objects which do not need to be saved completely. ">__sleep()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.magic.php#object.wakeup" title="The intended use of __wakeup() is to reestablish any database connections that may have been lost during serialization and perform other reinitialization tasks. ">__wakeup()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.magic.php#object.tostring" title="Allows a class to decide how it will react when it is treated like a string. ">__toString()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.magic.php#object.invoke" title="Called when a script tries to call an object as a function. ">__invoke()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.magic.php#object.set-state" title="Called for classes exported by var_export() since PHP 5.1.0. ">__set_state()</a></li>
+				<li><a href="http://www.php.net/manual/en/language.oop5.cloning.php#object.clone" title="Once the cloning is complete, if a __clone() method is defined, then the newly created object's __clone() method will be called, to allow any necessary properties that need to be changed. ">__clone()</a></li>
+			</ul>
+		</div>
+	</div>
+    
 
     <div class="board">
         <h2 class="board-title">Zip</h2>

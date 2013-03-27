@@ -64,6 +64,25 @@ title:     R Cheat Sheet
                 <li class="tip">skip=n to skip n lines before reading data</li>
                 <li class="tip">see the help for options on row naming, NA treatment, and others</li>
                 <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="id. but with defaults set for reading comma-delimited files">read.csv(f,header=TRUE)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="id. but with defaults set for reading tab-delimited files">read.delim(f,header=TRUE)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="read a table of f ixed width f ormatted data into a 'data.frame'">read.fwf(f,widths,header=FALSE,sep="",as.is=FALSE)</a></li>
+                <li class="tip">widths is an integer vector, giving the widths of the fixed-width fields</li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/save.html" title="saves the specified objects (...) in the XDR platform-independent binary format">save(f,...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/save.html" title="saves all objects">save.image(f)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/load.html" title="load the datasets written with save">load(f)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/cat.html" title="prints the arguments after coercing to character; sep is the character separator between arguments">cat(..., file=f, sep="")</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/print.html" title="prints its arguments; generic, meaning it can have different methods for different objects">print(a, ...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/format.info.html" title="format an R object for pretty printing">format(x, ...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/write.table.html" title="prints x after converting to a data frame">write.table(x, file=f, row.names=TRUE, col.names=TRUE, sep="")</a></li>
+                <li class="tip">if quote is TRUE, character or factor columns are surrounded by quotes (")</li>
+                <li class="tip">sep is the field separator, eol is the end-of-line separator</li>
+                <li class="tip">na is the string for missing values</li>
+                <li class="tip">col.names=NA to add a blank column header to get the column headers aligned correctly for spreadsheet input</li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/sink.html" title="output to f, until sink()">sink(f)</a></li>
+                <li class="tip">Most of the I/O functions have a file argument and means the standard input or output. Connections can include files, pipes, zipped files, clipboard and R variables</li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="read tables with office applications on windows via clipboard">df &lt;- read.delim("clipboard")</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/write.table.html" title="write tables with office applications on windows via clipboard">write.table(df,"clipboard",sep="\t",col.names=NA)</a></li>
+                <li class="tip">For database interaction, see packages RODBC, DBI, RMySQL, RPgSQL, ROracle, for other file formats see XML, hdf5, netCDF</li>
             </ul>
         </div>
     </div>
