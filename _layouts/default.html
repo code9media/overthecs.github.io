@@ -20,7 +20,7 @@
         {% include detail_nav.html %}
         {{ content }}
 
-        <div class="index-tools" style="margin:40px 0;">
+        <div class="index-tools hide" style="margin:40px 0;" id="de_donate">
             <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_xclick">
                 <input type="hidden" name="business" value="dewreg@gmail.com">
@@ -55,6 +55,9 @@
         <!--</div>-->
 
         <script type="text/javascript">
+            $(function(){
+                $('#de_donate').removeClass('hide');
+            })
             //$('.content').append($('#detail-ad'));
             //$('#detail-ad').removeClass('hide');
             //$('.board-detail-ad').removeClass('hide');
