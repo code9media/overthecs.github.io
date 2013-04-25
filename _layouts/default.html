@@ -20,33 +20,43 @@
         {% include detail_nav.html %}
         {{ content }}
 
+        <div class="index-tools" style="margin:40px 0;">
+            <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="dewreg@gmail.com">
+                <input type="hidden" name="item_name" value="OverAPI.com Donation">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="amount">
+                <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+            </form>
+        </div>
         <!--<div class="board board-detail-ad hide">-->
-        <div class="board hide" id="detail-ad">
-            <h2 class="board-title">Support Us</h2>
+        <!--<div class="board hide" id="detail-ad">-->
+            <!--<h2 class="board-title">Support Us</h2>-->
             <script type="text/javascript"><!--
-                google_ad_client = "ca-pub-5503280202576307";
+                //google_ad_client = "ca-pub-5503280202576307";
                 /* overapi-160 */
-                google_ad_slot = "2656228683";
-                google_ad_width = 160;
-                google_ad_height = 600;
+                //google_ad_slot = "2656228683";
+                //google_ad_width = 160;
+                //google_ad_height = 600;
                 //-->
             </script>
             <script type="text/javascript"><!--
                 //google_ad_client = "ca-pub-5503280202576307";
-                /* overapi-tools */
+                 //overapi-tools */
                 //google_ad_slot = "0215957718";
                 //google_ad_width = 728;
                 //google_ad_height = 90;
-                //-->
+                -->
             </script>
-            <script type="text/javascript"
-                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-        </div>
+            <!--<script type="text/javascript"-->
+                <!--src="http://pagead2.googlesyndication.com/pagead/show_ads.js">-->
+            <!--</script>-->
+        <!--</div>-->
 
         <script type="text/javascript">
-            $('.content').append($('#detail-ad'));
-            $('#detail-ad').removeClass('hide');
+            //$('.content').append($('#detail-ad'));
+            //$('#detail-ad').removeClass('hide');
             //$('.board-detail-ad').removeClass('hide');
             //mixpanel.track('Page Loading',{'PageURL':location.href});
         </script>
