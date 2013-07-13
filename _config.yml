@@ -1,7 +1,7 @@
 auto: true
 markdown: rdiscount
 pygments: true
-paginate: 6
+paginate: 8
 permalink: /:title
 
 title: OverAPI.com
