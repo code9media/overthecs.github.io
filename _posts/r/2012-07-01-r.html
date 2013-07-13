@@ -15,9 +15,9 @@ title:     R Cheat Sheet
         <div class="board-card">
             <h3 class="board-card-title">Download</h3>
             <ul>
-                <li><a href="http://cran.za.r-project.org/doc/contrib/Short-refcard.pdf">R Reference Card [.pdf]</a></li>
+                <li><a href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf">R Reference Card [.pdf]</a></li>
                 <li><a href="/static/cs/R-Short-refcard.pdf">R Reference Card [backup]</a></li>
-                <li><a href="http://cran.za.r-project.org/doc/contrib/refcard.pdf">R reference card [.pdf]</a></li>
+                <li><a href="http://cran.r-project.org/doc/contrib/refcard.pdf">R reference card [.pdf]</a></li>
                 <li><a href="/static/cs/R-refcard.pdf">R reference card [backup]</a></li>
             </ul>
         </div>
@@ -83,6 +83,26 @@ title:     R Cheat Sheet
                 <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/read.table.html" title="read tables with office applications on windows via clipboard">df &lt;- read.delim("clipboard")</a></li>
                 <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/utils/html/write.table.html" title="write tables with office applications on windows via clipboard">write.table(df,"clipboard",sep="\t",col.names=NA)</a></li>
                 <li class="tip">For database interaction, see packages RODBC, DBI, RMySQL, RPgSQL, ROracle, for other file formats see XML, hdf5, netCDF</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Data creation</h2>
+        <div class="board-card">
+            <ul>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/c.html" title="generic function to combine arguments with the default forming a vector; with recursive=TRUE descends through lists combining all elements into one vector">с(...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/seq.html" title="generates a sequence by= speciﬁes increment">seq(from, to, by = )</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/seq.html" title="generates a sequence length=speciﬁes desired length">seq(from, to, len = )</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/rep.html" title="replicate x times; use each= to repeat “each” element of x each times; rep(c(1,2,3),2) is 1 2 3 1 2 3; rep(c(1,2,3),each=2) is 1 1 2 2 3 3">rep(x, times)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/list.html" title="create a list of the named or unnamed arguments; list(a=c(1,2),b="hi",c=3i);">list(...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/data.frame.html" title="create a data frame of the named or unnamed arguments; data.frame(v=1:4,ch=c("a","B","c","d"),n=10); shorter vectors are recycled to the length of the longest">data.frame(...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/array.html" title="array with data x; specify dimensions like dim=c(3,4,2); elements of x recycle if x is not long enough">array(data, dims)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/matrix.html" title="matrix; elements of x recycle">matrix(data, nrow = , ncol = , byrow = )</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/factor.html" title="encodes a vector x as a factor">factor(x, levels = )</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/gl.html" title="generate levels (factors) by specifying the pattern of their levels; k is the number of levels, and n is the number of replications">gl(n, k, length = n*k, labels = 1:n)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/cbind.html" title="combine arguments by rows for matrices, data frames, and others">rbind(...)</a></li>
+                <li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/cbind.html" title="combine arguments by columns for matrices, data frames, and others">cbind(...)</a></li>
             </ul>
         </div>
     </div>
