@@ -48,11 +48,11 @@ $(function(){
         shareInputFocus = false;
     });
 
-    $('body').bind('keydown',function (e) {
-        if (!shareInputFocus && !e.metaKey && !e.shiftKey && !e.ctrlKey && !e.altKey && e.keyCode != 27 && e.keyCode!= 32 && e.keyCode!=33 && e.keyCode!=34 && !$('#searchApi').is(':focus')) {
-            $('#searchApi').focus();
-        }
-    });
+    //$('body').bind('keydown',function (e) {
+        //if (!shareInputFocus && !e.metaKey && !e.shiftKey && !e.ctrlKey && !e.altKey && e.keyCode != 27 && e.keyCode!= 32 && e.keyCode!=33 && e.keyCode!=34 && !$('#searchApi').is(':focus')) {
+            //$('#searchApi').focus();
+        //}
+    //});
 
     var scrollTimeout;
     $('#searchApi').quicksearch('.board-card li', {
