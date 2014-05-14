@@ -5,3 +5,6 @@ This is the whole code of [OverAPI](http://overapi.com "Collecting all cheat she
 Waiting for your pull request.
 
 Thanks a lot!
+
+To view the site use
+`jekyll serve --watch --baseurl=''`
