@@ -37,10 +37,18 @@ doc_url:   http://www.cmake.org/cmake/help/v2.8.12/cmake.html
         <li><a href="{{ page.doc_url }}#command:while">while</a></li>
         <li><a href="{{ page.doc_url }}#command:endwhile">endwhile</a></li>
       </ul>
+      <h3 class="board-card-title">Functions</h3>
+      <ul>
+        <li><a href="{{ page.doc_url }}#command:endfunction">endfunction</a></li>
+        <li><a href="{{ page.doc_url }}#command:endmacro">endmacro</a></li>
+        <li><a href="{{ page.doc_url }}#command:function">function</a></li>
+        <li><a href="{{ page.doc_url }}#command:macro">macro</a></li>
+        <li><a href="{{ page.doc_url }}#command:return">return</a></li>
+      </ul>
     </div>
   </div>
   <div class="board">
-    <h2 class="board-title">All Other Commands</h2>
+    <h2 class="board-title">Targets</h2>
     <div class="board-card">
       <ul>
         <li><a href="{{ page.doc_url }}#command:add_compile_options">add_compile_options</a></li>
@@ -52,28 +60,7 @@ doc_url:   http://www.cmake.org/cmake/help/v2.8.12/cmake.html
         <li><a href="{{ page.doc_url }}#command:add_library">add_library</a></li>
         <li><a href="{{ page.doc_url }}#command:add_subdirectory">add_subdirectory</a></li>
         <li><a href="{{ page.doc_url }}#command:add_test">add_test</a></li>
-        <li><a href="{{ page.doc_url }}#command:aux_source_directory">aux_source_directory</a></li>
-        <li><a href="{{ page.doc_url }}#command:build_command">build_command</a></li>
-        <li><a href="{{ page.doc_url }}#command:cmake_host_system_information">cmake_host_system_information</a></li>
-        <li><a href="{{ page.doc_url }}#command:cmake_minimum_required">cmake_minimum_required</a></li>
-        <li><a href="{{ page.doc_url }}#command:cmake_policy">cmake_policy</a></li>
         <li><a href="{{ page.doc_url }}#command:configure_file">configure_file</a></li>
-        <li><a href="{{ page.doc_url }}#command:create_test_sourcelist">create_test_sourcelist</a></li>
-        <li><a href="{{ page.doc_url }}#command:define_property">define_property</a></li>
-        <li><a href="{{ page.doc_url }}#command:enable_language">enable_language</a></li>
-        <li><a href="{{ page.doc_url }}#command:enable_testing">enable_testing</a></li>
-        <li><a href="{{ page.doc_url }}#command:endfunction">endfunction</a></li>
-        <li><a href="{{ page.doc_url }}#command:endmacro">endmacro</a></li>
-        <li><a href="{{ page.doc_url }}#command:execute_process">execute_process</a></li>
-        <li><a href="{{ page.doc_url }}#command:export">export</a></li>
-        <li><a href="{{ page.doc_url }}#command:file">file</a></li>
-        <li><a href="{{ page.doc_url }}#command:find_file">find_file</a></li>
-        <li><a href="{{ page.doc_url }}#command:find_library">find_library</a></li>
-        <li><a href="{{ page.doc_url }}#command:find_package">find_package</a></li>
-        <li><a href="{{ page.doc_url }}#command:find_path">find_path</a></li>
-        <li><a href="{{ page.doc_url }}#command:find_program">find_program</a></li>
-        <li><a href="{{ page.doc_url }}#command:fltk_wrap_ui">fltk_wrap_ui</a></li>
-        <li><a href="{{ page.doc_url }}#command:function">function</a></li>
         <li><a href="{{ page.doc_url }}#command:get_cmake_property">get_cmake_property</a></li>
         <li><a href="{{ page.doc_url }}#command:get_directory_property">get_directory_property</a></li>
         <li><a href="{{ page.doc_url }}#command:get_filename_component">get_filename_component</a></li>
@@ -81,42 +68,79 @@ doc_url:   http://www.cmake.org/cmake/help/v2.8.12/cmake.html
         <li><a href="{{ page.doc_url }}#command:get_source_file_property">get_source_file_property</a></li>
         <li><a href="{{ page.doc_url }}#command:get_target_property">get_target_property</a></li>
         <li><a href="{{ page.doc_url }}#command:get_test_property">get_test_property</a></li>
-        <li><a href="{{ page.doc_url }}#command:include">include</a></li>
-        <li><a href="{{ page.doc_url }}#command:include_directories">include_directories</a></li>
-        <li><a href="{{ page.doc_url }}#command:include_external_msproject">include_external_msproject</a></li>
-        <li><a href="{{ page.doc_url }}#command:include_regular_expression">include_regular_expression</a></li>
         <li><a href="{{ page.doc_url }}#command:install">install</a></li>
-        <li><a href="{{ page.doc_url }}#command:link_directories">link_directories</a></li>
-        <li><a href="{{ page.doc_url }}#command:list">list</a></li>
-        <li><a href="{{ page.doc_url }}#command:load_cache">load_cache</a></li>
-        <li><a href="{{ page.doc_url }}#command:load_command">load_command</a></li>
-        <li><a href="{{ page.doc_url }}#command:macro">macro</a></li>
-        <li><a href="{{ page.doc_url }}#command:mark_as_advanced">mark_as_advanced</a></li>
-        <li><a href="{{ page.doc_url }}#command:math">math</a></li>
-        <li><a href="{{ page.doc_url }}#command:message">message</a></li>
-        <li><a href="{{ page.doc_url }}#command:option">option</a></li>
-        <li><a href="{{ page.doc_url }}#command:project">project</a></li>
-        <li><a href="{{ page.doc_url }}#command:qt_wrap_cpp">qt_wrap_cpp</a></li>
-        <li><a href="{{ page.doc_url }}#command:qt_wrap_ui">qt_wrap_ui</a></li>
-        <li><a href="{{ page.doc_url }}#command:remove_definitions">remove_definitions</a></li>
-        <li><a href="{{ page.doc_url }}#command:return">return</a></li>
-        <li><a href="{{ page.doc_url }}#command:separate_arguments">separate_arguments</a></li>
-        <li><a href="{{ page.doc_url }}#command:set">set</a></li>
         <li><a href="{{ page.doc_url }}#command:set_directory_properties">set_directory_properties</a></li>
         <li><a href="{{ page.doc_url }}#command:set_property">set_property</a></li>
         <li><a href="{{ page.doc_url }}#command:set_source_files_properties">set_source_files_properties</a></li>
         <li><a href="{{ page.doc_url }}#command:set_target_properties">set_target_properties</a></li>
         <li><a href="{{ page.doc_url }}#command:set_tests_properties">set_tests_properties</a></li>
-        <li><a href="{{ page.doc_url }}#command:site_name">site_name</a></li>
-        <li><a href="{{ page.doc_url }}#command:source_group">source_group</a></li>
-        <li><a href="{{ page.doc_url }}#command:string">string</a></li>
         <li><a href="{{ page.doc_url }}#command:target_compile_definitions">target_compile_definitions</a></li>
         <li><a href="{{ page.doc_url }}#command:target_compile_options">target_compile_options</a></li>
         <li><a href="{{ page.doc_url }}#command:target_include_directories">target_include_directories</a></li>
         <li><a href="{{ page.doc_url }}#command:target_link_libraries">target_link_libraries</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="board">
+    <h2 class="board-title">Locating Resources</h2>
+    <div class="board-card">
+      <ul>
+        <li><a href="{{ page.doc_url }}#command:find_file">find_file</a></li>
+        <li><a href="{{ page.doc_url }}#command:find_library">find_library</a></li>
+        <li><a href="{{ page.doc_url }}#command:find_package">find_package</a></li>
+        <li><a href="{{ page.doc_url }}#command:find_path">find_path</a></li>
+        <li><a href="{{ page.doc_url }}#command:find_program">find_program</a></li>
+        <li><a href="{{ page.doc_url }}#command:include_directories">include_directories</a></li>
+        <li><a href="{{ page.doc_url }}#command:include_external_msproject">include_external_msproject</a></li>
+        <li><a href="{{ page.doc_url }}#command:include_regular_expression">include_regular_expression</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="board">
+    <h2 class="board-title">Utilities</h2>
+    <div class="board-card">
+      <ul>
+        <li><a href="{{ page.doc_url }}#command:define_property">define_property</a></li>
+        <li><a href="{{ page.doc_url }}#command:file">file</a></li>
+        <li><a href="{{ page.doc_url }}#command:list">list</a></li>
+        <li><a href="{{ page.doc_url }}#command:mark_as_advanced">mark_as_advanced</a></li>
+        <li><a href="{{ page.doc_url }}#command:math">math</a></li>
+        <li><a href="{{ page.doc_url }}#command:message">message</a></li>
+        <li><a href="{{ page.doc_url }}#command:option">option</a></li>
+        <li><a href="{{ page.doc_url }}#command:separate_arguments">separate_arguments</a></li>
+        <li><a href="{{ page.doc_url }}#command:set">set</a></li>
+        <li><a href="{{ page.doc_url }}#command:string">string</a></li>
+        <li><a href="{{ page.doc_url }}#command:unset">unset</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="board">
+    <h2 class="board-title">All Other Commands</h2>
+    <div class="board-card">
+      <ul>
+        <li><a href="{{ page.doc_url }}#command:aux_source_directory">aux_source_directory</a></li>
+        <li><a href="{{ page.doc_url }}#command:build_command">build_command</a></li>
+        <li><a href="{{ page.doc_url }}#command:cmake_host_system_information">cmake_host_system_information</a></li>
+        <li><a href="{{ page.doc_url }}#command:cmake_minimum_required">cmake_minimum_required</a></li>
+        <li><a href="{{ page.doc_url }}#command:cmake_policy">cmake_policy</a></li>
+        <li><a href="{{ page.doc_url }}#command:create_test_sourcelist">create_test_sourcelist</a></li>
+        <li><a href="{{ page.doc_url }}#command:enable_language">enable_language</a></li>
+        <li><a href="{{ page.doc_url }}#command:enable_testing">enable_testing</a></li>
+        <li><a href="{{ page.doc_url }}#command:execute_process">execute_process</a></li>
+        <li><a href="{{ page.doc_url }}#command:export">export</a></li>
+        <li><a href="{{ page.doc_url }}#command:fltk_wrap_ui">fltk_wrap_ui</a></li>
+        <li><a href="{{ page.doc_url }}#command:include">include</a></li>
+        <li><a href="{{ page.doc_url }}#command:link_directories">link_directories</a></li>
+        <li><a href="{{ page.doc_url }}#command:load_cache">load_cache</a></li>
+        <li><a href="{{ page.doc_url }}#command:load_command">load_command</a></li>
+        <li><a href="{{ page.doc_url }}#command:project">project</a></li>
+        <li><a href="{{ page.doc_url }}#command:qt_wrap_cpp">qt_wrap_cpp</a></li>
+        <li><a href="{{ page.doc_url }}#command:qt_wrap_ui">qt_wrap_ui</a></li>
+        <li><a href="{{ page.doc_url }}#command:remove_definitions">remove_definitions</a></li>
+        <li><a href="{{ page.doc_url }}#command:site_name">site_name</a></li>
+        <li><a href="{{ page.doc_url }}#command:source_group">source_group</a></li>
         <li><a href="{{ page.doc_url }}#command:try_compile">try_compile</a></li>
         <li><a href="{{ page.doc_url }}#command:try_run">try_run</a></li>
-        <li><a href="{{ page.doc_url }}#command:unset">unset</a></li>
         <li><a href="{{ page.doc_url }}#command:variable_watch">variable_watch</a></li>
       </ul>
     </div>
