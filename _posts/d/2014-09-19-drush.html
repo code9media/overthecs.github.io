@@ -1,0 +1,257 @@
+---
+layout:    more
+title:     Drush Cheat Sheet
+---
+<div class="content">
+    <div class="board">
+        <h2 class="board-title">Archive</h2>
+        <div class="board-card">
+            <ul>
+                <li>archive-dump (ard)(arb)</li>
+                <li class="tip">Backup code, files and DB into single file</li>
+                <li>archive-restore (arr)</li>
+                <li class="tip">Expand site archive into Drupal website</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Cache</h2>
+        <div class="board-card">
+            <ul>
+                <li>cache-clear (cc)</li>
+                <li class="tip">Clear Drupal caches</li>
+                <li>cache-get (cg)</li>
+                <li class="tip">Fetch cached object</li>
+                <li>cache-rebuild (cr)</li>
+                <li class="tip">Rebuild Drupal 8 site and clear all its caches</li>
+                <li>cache-set (cs)</li>
+                <li class="tip">Cache JSON object</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Core</h2>
+        <div class="board-card">
+            <ul>
+                <li>core-cli (php)</li>
+                <li class="tip">Open interactive PHP shell</li>
+                <li>core-config (conf)</li>
+                <li class="tip">Edit drushrc and settings.php</li>
+                <li>core-cron (cron)</li>
+                <li class="tip">Run all cron hooks</li>
+                <li>core-execute (exec)</li>
+                <li class="tip">Execute shell command</li>
+                <li>core-quick-drupal (qd)</li>
+                <li class="tip">Create minimal Drupal site</li>
+                <li>core-requirements (rq)</li>
+                <li class="tip">Inspect Drupal installation</li>
+                <li>core-rsync (rsync)</li>
+                <li class="tip">Rsync Drupal files with server</li>
+                <li>core-status (st)</li>
+                <li class="tip">Print site status report</li>
+                <li>drupal-directory (dd)</li>
+                <li class="tip">Print path to module/theme</li>
+                <li>help</li>
+                <li class="tip">Print drush cheat sheet</li>
+                <li>php-eval (ev)(eval)</li>
+                <li class="tip">Evaluate PHP after bootstrap</li>
+                <li>php-script (scr)</li>
+                <li class="tip">Run PHP scripts</li>
+                <li>updatedb (updb)</li>
+                <li class="tip">Apply required DB updates</li>
+                <li>updatedb-status (updbst)</li>
+                <li class="tip">List any pending DB updates</li>
+                <li>version</li>
+                <li class="tip">Show drush version</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Field</h2>
+        <div class="board-card">
+            <ul>
+                <li>field-clone</li>
+                <li class="tip">Clone field and all its instances</li>
+                <li>field-create</li>
+                <li class="tip">Create fields and instances</li>
+                <li>field-delete</li>
+                <li class="tip">Delete a field and instances</li>
+                <li>field-info</li>
+                <li class="tip">View information about fields</li>
+                <li>field-update</li>
+                <li class="tip">Return URL for field editing</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Make</h2>
+        <div class="board-card">
+            <ul>
+                <li>make</li>
+                <li class="tip">Create Drupal codebase from a makefile</li>
+                <li>make-generate</li>
+                <li class="tip">Generate makefile from current Drupal site</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Project management</h2>
+        <div class="board-card">
+            <ul>
+                <li>pm-disable (dis)</li>
+                <li class="tip">Disable one or more extensions</li>
+                <li>pm-download (dl)</li>
+                <li class="tip">Download modules or themes</li>
+                <li>pm-enable (en)</li>
+                <li class="tip">Enable one or more extensions</li>
+                <li>pm-info (pmi)</li>
+                <li class="tip">Show extension(s) info</li>
+                <li>pm-list (pml)</li>
+                <li class="tip">Show available extensions</li>
+                <li>pm-refresh (rf)</li>
+                <li class="tip">Refresh update status info</li>
+                <li>pm-releasenotes (rln)</li>
+                <li class="tip">Print project release notes</li>
+                <li>pm-releases (rl)</li>
+                <li class="tip">Print project release information</li>
+                <li>pm-uninstall (pmu)</li>
+                <li class="tip">Uninstall one or more modules</li>
+                <li>pm-update (up)</li>
+                <li class="tip">Same as pm-updatecode + <br>updatedb</li>
+                <li>pm-updatecode (upc)</li>
+                <li class="tip">Update Drupal core and contrib projects to latest recommended release</li>
+                <li>pm-updatestatus (ups)</li>
+                <li class="tip">Show list of available updates</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Role</h2>
+        <div class="board-card">
+            <ul>
+                <li>role-add-perm (rap)</li>
+                <li class="tip">Grant a permission to a role</li>
+                <li>role-create (rcrt)</li>
+                <li class="tip">Create new role</li>
+                <li>role-delete (rdel)</li>
+                <li class="tip">Delete a role</li>
+                <li>role-list (rls)</li>
+                <li class="tip">Display all defined roles</li>
+                <li>role-remove-perm (rmp)</li>
+                <li class="tip">Remove permission from a role</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Search</h2>
+        <div class="board-card">
+            <ul>
+                <li>search-index</li>
+                <li class="tip">Index remaining search items</li>
+                <li>search-reindex</li>
+                <li class="tip">Force search index to be rebuilt</li>
+                <li>search-status</li>
+                <li class="tip">Show how many items pending to be indexed</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Sitealias</h2>
+        <div class="board-card">
+            <ul>
+                <li>shell-alias (sha)</li>
+                <li class="tip">Print all known shell aliases</li>
+                <li>site-alias (sa)</li>
+                <li class="tip">Print known site aliases</li>
+                <li>site-set (use)</li>
+                <li class="tip">Set site alias for the session</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Sql</h2>
+        <div class="board-card">
+            <ul>
+                <li>sql-cli (sqlc)</li>
+                <li class="tip">Open SQL client using Drupal's credentials</li>
+                <li>sql-connect</li>
+                <li class="tip">String for connecting to the DB</li>
+                <li>sql-create</li>
+                <li class="tip">Create a database</li>
+                <li>sql-drop</li>
+                <li class="tip">Drop all tables in database</li>
+                <li>sql-dump</li>
+                <li class="tip">Exports Drupal DB as SQL</li>
+                <li>sql-query (sqlq)</li>
+                <li class="tip">Execute a query against the DB</li>
+                <li>sql-sanitize (sqlsan)</li>
+                <li class="tip">Run sanitization operations</li>
+                <li>sql-sync</li>
+                <li class="tip">Copy and import source DB <br>to target DB via rsync</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">User</h2>
+        <div class="board-card">
+            <ul>
+                <li>user-add-role (urol)</li>
+                <li class="tip">Add role to specified user(s)</li>
+                <li>user-block (ublk)</li>
+                <li class="tip">Block specified user(s)</li>
+                <li>user-cancel (ucan)</li>
+                <li class="tip">Cancel user account</li>
+                <li>user-create (ucrt)</li>
+                <li class="tip">Create user account</li>
+                <li>user-information (uinf)</li>
+                <li class="tip">Print info about specified user</li>
+                <li>user-login (uli)</li>
+                <li class="tip">Display one-time login link</li>
+                <li>user-password (upwd)</li>
+                <li class="tip">Set password for specified user</li>
+                <li>user-remove-role (urrol)</li>
+                <li class="tip">Remove role from user account</li>
+                <li>user-unblock (uublk)</li>
+                <li class="tip">Unblock specified user(s)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Variable</h2>
+        <div class="board-card">
+            <ul>
+                <li>variable-delete (vdel)</li>
+                <li class="tip">Delete a variable</li>
+                <li>variable-get (vget)</li>
+                <li class="tip">Get site variables and values</li>
+                <li>variable-set (vset)</li>
+                <li class="tip">Set a variable</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+        <h2 class="board-title">Watchdog</h2>
+        <div class="board-card">
+            <ul>
+                <li>watchdog-delete (wd-del)</li>
+                <li class="tip">Delete watchdog messages</li>
+                <li>watchdog-list (wd-list)</li>
+                <li class="tip">Show message types and severity levels</li>
+                <li>watchdog-show (ws)</li>
+                <li class="tip">Show watchdog messages</li>
+            </ul>
+        </div>
+    </div>
+</div>
