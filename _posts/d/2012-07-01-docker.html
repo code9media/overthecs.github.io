@@ -1,0 +1,103 @@
+---
+layout:    more
+title:     Docker Cheat Sheet 
+---
+<div class="content content-400">
+    <div class="board board-326">
+        <h2 class="board-title">Resource</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Online</h3>
+            <ul>
+                <li><a href="https://www.docker.com/">Official wsebsite</a></li>
+                <li><a href="https://docs.docker.com/">Official documentation</a></li>
+                <li><a href="https://www.docker.com/">Central images hub</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="board board-326">
+        <h2 class="board-title">Daemon</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Lifecycle</h3>
+            <ul>
+                <li>service docker start</li>
+                <li>service docker stop</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Settings</h3>
+            <ul>
+                <li>/etc/default/docker</li>
+                <li class="tip">docker daemon settings file</li>
+            </ul>
+        </div>
+    </div>
+    <div class="board board-326">
+        <h2 class="board-title">Images</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Provisionning</h3>
+            <ul>
+                <li>docker pull image/name:label</li>
+                <li class="tip"> pull image image/name with label label from registry</li>
+                <li>docker pull registryhost:registryport/image/name:label</li>
+                <li class="tip"> pull image image/name with label label from given registry</li>
+                <li>docker push registryhost:registryport/image/name</li>
+                <li class="tip"> push image image/name to registryhost. image must have been tagged before</li>
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Control</h3>
+            <ul>
+                <li>docker images</li>
+                <li class="tip"> list current available images</li>
+                <li>docker tag image/name registryhost:registryport/image/name</li>
+                <li class="tip">tag image/name to be pushed to new registry registryhost:registryport</li>
+                
+            </ul>
+        </div>
+        <div class="board-card">
+            <h3 class="board-card-title">Import/Export</h3>
+            <ul>
+                <li>docker save -o image_archive.docker image/name</li>
+                <li class="tip">save image to image_archive.docker file</li>
+                <li>docker load image_archive.docker</li>
+                <li class="tip">loads the images from the archive</li>
+            </ul>
+        </div>
+    </div>
+    <div class="board board-326">
+        <h2 class="board-title">Containers</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Lifecycle</h3>
+            <ul>
+                <li>docker ps -a</li>
+                <li class="tip"> list all containers</li>
+                <li>docker rm name</li>
+                <li class="tip"> Remove container instance with given name or id</li>
+                <li>docker run --name ubuntu_bash -it ubuntu bash</li>
+                <li class="tip">runs bash sheel in an ubuntu instance nammed ubuntu_bash</li>
+            </ul>
+            <h3 class="board-card-title">Run options</h3>
+            <ul>
+                <li>-d</li>
+                <li class="tip">runs as a daemon</li>
+                <li>-p HOSTPORT:CONTAINERPORT</li>
+                <li class="tip">port routing between host port and container port</li>
+                <li>-v host/path:/container/mount/point</li>
+                <li class="tip">mount the host path to the container at the given mount point</li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="board board-326">
+        <h2 class="board-title">Registry</h2>
+        <div class="board-card">
+            <h3 class="board-card-title">Local</h3>
+            <ul>
+                <li>docker run -d -p 5000:5000 --restart=always --name registry -v `pwd`/data:/var/lib/registry registry:2</li>
+                <li class="tip"><a href="https://docs.docker.com/registry/deploying/">source</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+</div>
