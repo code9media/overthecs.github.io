@@ -25,31 +25,18 @@
           gtag('config', 'UA-154846433-1');
         </script>
 
-        <!-- start Mixpanel --><script type="text/javascript">(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.identify people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1})(document,window.mixpanel||[]); mixpanel.init("ed50c28311513adf4b2293887b710db6");</script><!-- end Mixpanel -->
-    </head>
+        </head>
     <body class="cheat-detail">
         {% include detail_nav.html %}
         {{ content }}
 
         <div id="ad" class="board hide">
-            <h2 class="board-title">Ad</h2>
-            <script type="text/javascript"><!--
-                google_ad_client = "ca-pub-5503280202576307";
-                /* overapi-336 */
-                google_ad_slot = "7680797348";
-                google_ad_width = 336;
-                google_ad_height = 280;
-                //-->
-            </script>
-            <script type="text/javascript"
-                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
+            
         </div>
 
         <script type="text/javascript">
             $('.content').append($('#ad'));
             $('#ad').removeClass('hide');
-            //mixpanel.track('Page Loading',{'PageURL':location.href});
         </script>
 
         <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fddf49419e0facd"></script>
